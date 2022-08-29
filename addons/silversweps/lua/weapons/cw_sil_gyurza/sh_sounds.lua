@@ -1,0 +1,11 @@
+CustomizableWeaponry:addFireSound("CW_KK_INS2_GYURZA_FIRE", "weapons/gyurza/makarov_fp.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_KK_INS2_GYURZA_FIRE_SUPPRESSED", "weapons/gyurza/makarov_suppressed_fp.wav", 1, 75, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_MAKAROV_BOLTBACK", "weapons/makarov/handling/makarov_boltback.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_MAKAROV_BOLTRELEASE", "weapons/makarov/handling/makarov_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_MAKAROV_EMPTY", "weapons/makarov/handling/makarov_empty.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GYURZA_MAGHIT", "weapons/gyurza/handling/makarov_maghit.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GYURZA_MAGIN", "weapons/gyurza/handling/makarov_magin.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GYURZA_MAGOUT", "weapons/gyurza/handling/makarov_magout.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GYURZA_MAGRELEASE", "weapons/gyurza/handling/makarov_magrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_MAKAROV_SAFETY", "weapons/makarov/handling/makarov_safety.wav")

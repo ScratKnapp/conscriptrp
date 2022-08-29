@@ -1,0 +1,11 @@
+CustomizableWeaponry:addFireSound("CW_SIL_FORT12_FIRE", "weapons/fort12/fort12_fire.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_SIL_FORT12_FIRE_SUPPRESSED", "weapons/fort12/fort12_fire_suppressed.wav", 1, 75, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_BOLTBACK", "weapons/m9/handling/m9_boltback.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_BOLTRELEASE", "weapons/m9/handling/m9_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_EMPTY", "weapons/m9/handling/m9_empty.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_MAGHIT", "weapons/m9/handling/m9_maghit.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_MAGIN", "weapons/m9/handling/m9_magin.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_MAGOUT", "weapons/m9/handling/m9_magout.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_MAGRELEASE", "weapons/m9/handling/m9_magrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_M9_SAFETY", "weapons/m9/handling/m9_safety.wav")

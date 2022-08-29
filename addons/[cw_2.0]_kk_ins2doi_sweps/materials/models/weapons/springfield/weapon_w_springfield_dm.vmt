@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\springfield\weapon_w_springfield_dm"
+	"$bumpmap" 			"models\weapons\springfield\weapon_w_springfield_nm"
+	
+	"$phongtint" 			"[0.6 0.8 1.0]"
+
+	"$phong" 			"1"
+	"$phongexponent" 		"25"
+	"$phongboost"			"0.6"	
+	"$phongFresnelRanges" 		"[.3 .3 1]"
+	"$phongdisablehalflambert" 	"1"
+
+	
+}

@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\upgrades\a_enfield_bayonet_dm"
+	"$bumpmap"			"models\weapons\upgrades\a_enfield_bayonet_nm"
+
+	//"$envmap"			"env_cubemap"
+	//"$envmaptint"			"[0.1 0.1 0.1]"
+	//"$envmapfresnel"		"1.4"
+	
+
+	"$phong"			"1"
+	"$phongboost"			".2"
+	"$phongexponent"		"38"
+	"$phongfresnelranges"		"[1 3 4]"
+	"$phongtint" 			"[0.6 0.8 1]"
+	"$phongalbedotint" 		"1"
+
+	"$halflambert"			"1"
+}

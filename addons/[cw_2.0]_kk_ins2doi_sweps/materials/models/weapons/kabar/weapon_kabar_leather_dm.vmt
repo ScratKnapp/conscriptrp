@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture"					"models\weapons\kabar\weapon_kabar_dm"
+	"$bumpmap"						"models\weapons\kabar\weapon_kabar_nm"
+	"$model"						"1"
+    "$color2"						"[1 1 1]"
+
+//PHONG
+	"$phong"                        "1"
+	"$phongtint"                    "[.67 .85 1]"
+	"$phongboost"                   "1.33"
+	"$phongexponent"				"40"
+	"$phongfresnelranges"           "[1 3 6]"
+
+//ENVMAP
+	"$envmap"						"env_cubemap"
+	"$envmapfresnel" 				".1"
+	"$envmaptint"                   "[.02 .02 .02]"
+}

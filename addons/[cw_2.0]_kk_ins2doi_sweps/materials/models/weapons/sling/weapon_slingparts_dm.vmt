@@ -1,0 +1,27 @@
+"VertexLitGeneric"
+{
+//BASIC
+	"$basetexture"					"models\weapons\sling\weapon_slingparts_dm"
+	"$bumpmap" 						"models\weapons\sling\weapon_slingparts_nm"
+	"$model"						"1"
+    "$color2"						"[1 1 1]"
+	
+//PHONG
+	"$phong"                        "1"
+	"$phongtint"                    "[ .67 .85 1 ]"
+	"$phongboost"                   "100"
+	"$phongexponent"				"50"
+	"$phongfresnelranges"           "[ 0 0.5 1 ]"
+
+//RIMLIGHT
+	$rimlight					"1"
+	$rimlightexponent       	"60"
+	$rimmask					"0"
+	$rimlightboost          	".25"	
+
+//ENVMAP
+	"$envmap"                       "env_cubemap"
+	"$envmapfresnel" 				"1"
+	"$normalmapalphaenvmapmask" 	"1"
+	"$envmaptint"                   "[ .3 .3 .3 ]"
+}

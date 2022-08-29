@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\upgrades\w_garand_bayonet_dm"
+	"$bumpmap"			"models\weapons\upgrades\w_garand_bayonet_nm"
+	
+	"$model"						"1"
+    "$color2"						"[1 1 1]"
+
+//PHONG
+	"$phong"                        "1"
+	"$phongtint"                    "[.67 .85 1]"
+	"$phongboost"                   "3.5"
+	"$phongexponent"				"45"
+	"$phongfresnelranges"           "[1 3 6]" 
+}

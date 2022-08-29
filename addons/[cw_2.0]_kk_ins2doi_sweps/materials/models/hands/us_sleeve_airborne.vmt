@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models\hands\us_sleeve_airborne"
+	"$bumpmap" 				"models\hands\us_sleeve_airborne_normal"
+	"$phongexponenttexture"	"models\hands\us_sleeve_airborne_exp"
+}

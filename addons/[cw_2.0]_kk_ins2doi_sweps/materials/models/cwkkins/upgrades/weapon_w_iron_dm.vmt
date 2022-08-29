@@ -1,0 +1,22 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\cwkkins\upgrades\weapon_w_iron_dm"
+	"$bumpmap" 			"models\cwkkins\upgrades\weapon_w_iron_nm"
+	"$color2"			"[1 1 1]"
+
+	$normalmapalphaenvmapmask 	"1"
+
+	 $phongtint 			"[.6 .8 1]"
+
+	$envmap 			env_cubemap
+	$envmaptint 			"[.007 .007 .007  ]"
+
+	$phong 				"1"
+	//$PhongAlbedoTint 		"0"	
+	//$BasemapLuminancePhongMask	"1"
+	
+	$phongexponent 			"45"
+	$phongboost 			"1     "
+	$phongfresnelranges		"[.5 1 3]"
+}
+      

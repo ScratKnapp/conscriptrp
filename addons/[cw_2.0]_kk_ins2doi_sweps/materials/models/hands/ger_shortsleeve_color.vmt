@@ -1,0 +1,10 @@
+patch
+{
+include 			"materials\models\hands\ww2_sleeves_shared.vmt"
+insert
+{
+$basetexture 		"models\hands\ger_shortsleeve_color"
+$bumpmap 			"models\hands\gen_shortsleeve_normal"
+//$rimmask 1
+}
+}

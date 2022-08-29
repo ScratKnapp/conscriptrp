@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\fg42\weapon_w_fg42_dm"
+	"$bumpmap"				"models\weapons\fg42\weapon_w_fg42_nm"
+	
+	"$phong"  				"1"
+	"$phongexponent" 		"36"
+	"$phongboost" 			"0.03"
+	"$phongfresnelranges" 	"[2 4 6]"
+	"$phongtint" 			"[0.6 0.8 1]"
+	"$phongalbedotint" 		"1"	
+	
+}

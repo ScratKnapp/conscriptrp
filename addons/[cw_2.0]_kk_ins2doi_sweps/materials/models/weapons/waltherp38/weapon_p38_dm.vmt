@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\waltherp38\weapon_p38_dm"
+	"$bumpmap"			"models\weapons\waltherp38\weapon_p38_nm"
+   
+	"$phong"  			"1"
+	"$phongexponent"		"37"
+	"$phongboost" 			"1"
+	"$phongfresnelranges" 		"[.9 2 5]"
+	"$phongtint" 			"[0.6 0.6 0.6]"
+	"$phongalbedotint" 		"1"	
+
+	"$envmap" 			"env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+	"$envmaptint"			"[0.02 0.02 0.02]"
+}

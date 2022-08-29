@@ -1,0 +1,26 @@
+"VertexLitGeneric"
+{
+//BASIC
+	"$basetexture"					"models\weapons\m1a1\weapon_m1a1_dm"
+	"$bumpmap" 						"models\weapons\m1a1\weapon_m1a1_nm"
+	"$selfillummask"				"models\weapons\generic\weapon_generic_si"
+	"$model"						"1"
+    "$color2"						"[1 1 1]"
+
+//SELFILLUM (subtle to avoid complete occlusion)
+	"$selfillum"					"1"
+	"$selfillumtint"				"[1 1 1]"
+
+//PHONG
+	"$phong"                        "1"
+	"$phongtint"                    "[.67 .85 1]"
+	"$phongboost"                   "3.5"
+	"$phongexponent"				"65"
+	"$phongfresnelranges"           "[1 3 6]"
+
+//ENVMAP
+	"$envmap"                       "env_cubemap"
+	"$envmapfresnel" 				".33"
+	"$basealphaenvmapmask" 			"1"
+	"$envmaptint"                   "[.0375 .0375 .0375]"
+}

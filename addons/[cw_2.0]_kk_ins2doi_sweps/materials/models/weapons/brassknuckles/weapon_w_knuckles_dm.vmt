@@ -1,0 +1,12 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\brassknuckles\weapon_w_knuckles_dm"
+	"$bumpmap"			"models\weapons\brassknuckles\weapon_w_knuckles_nm"
+	
+	"$phong"                        "1"
+	"$phongtint"                    "[0.97 0.8 0.5]"
+	"$phongexponent" 		"65"
+	"$phongboost"			"2"	
+	"$phongFresnelRanges" 		"[.3 .3 1]"
+	"$phongdisablehalflambert" 	"1"
+}

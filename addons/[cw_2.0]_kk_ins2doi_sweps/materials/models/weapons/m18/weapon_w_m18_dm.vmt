@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	$basetexture			"models\weapons\m18\weapon_w_m18_dm"
+	$bumpmap				"dev\flat_normal"
+	
+	"$phongtint" 			"[0.6 0.8 1.0]"
+
+	"$phong" 			"1"
+	"$phongexponent" 		"25"
+	"$phongboost"			".4"	
+	"$phongFresnelRanges" 		"[.3 .3 1]"
+	"$phongdisablehalflambert" 	"1"
+}

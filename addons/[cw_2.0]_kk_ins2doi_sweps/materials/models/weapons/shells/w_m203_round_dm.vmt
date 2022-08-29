@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\shells\w_m203_round_dm"
+	"$bumpmap" 			"models\weapons\shells\w_m203_round_nm"
+	"$color2"			"[1 1 1]"
+	
+	$normalmapalphaenvmapmask 	"1"
+
+	$phong 				"1"
+	
+	$phongexponent 			"45"
+	$phongboost 			"0.2"
+	$phongfresnelranges		"[5 9 3]"
+}

@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\thompson\weapon_thompson_dm"
+	"$bumpmap"	 			"models\weapons\thompson\weapon_thompson_nm"
+
+	"$phong"  				"1"
+	"$phongtint"			"[0.65 0.9 1]"
+	"$phongboost"			"1.5"
+	"$phongexponent" 		"48"
+	"$phongfresnelranges"	"[1 2 4]"
+
+	"$envmap"					"env_cubemap"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmaptint"				"[0.08 0.08 0.08]"
+}

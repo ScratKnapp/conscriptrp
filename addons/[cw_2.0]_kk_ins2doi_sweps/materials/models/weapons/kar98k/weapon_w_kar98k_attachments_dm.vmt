@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	$basetexture			"models\weapons\kar98k\weapon_w_kar98k_attachments_dm"
+	$bumpmap 			"models\weapons\kar98k\weapon_w_kar98k_attachments_nm"
+	
+	"$phongtint" 			"[0.6 0.8 1.0]"
+
+	"$phong" 			"1"
+	"$phongexponent" 		"25"
+	"$phongboost"			"0.1"	
+	"$phongFresnelRanges" 		"[.3 .3 1]"
+	"$phongdisablehalflambert" 	"1"
+}

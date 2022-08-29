@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+
+	$basetexture 			"models\hands\us_gloves_standard"
+	$bumpmap 				"models\hands\us_gloves_standard_normal"
+	$phongexponenttexture 	"models\hands\us_gloveS_standard_exp"
+
+	$phong 					"1"
+	$phongboost 			".05"
+	$phongTint 				"[.4 .5 .8]"
+	$phongfresnelranges 	"[.1 1 .10]"
+	
+	$rimlight 				"1"
+	$rimlightexponent 		"20"
+	$rimlightboost 			".1"
+	
+	$halflambert 			"0"
+	$ambientocclusion 		"1"
+	
+	$lightwarptexture 		"models\hands\skin_warp"
+}

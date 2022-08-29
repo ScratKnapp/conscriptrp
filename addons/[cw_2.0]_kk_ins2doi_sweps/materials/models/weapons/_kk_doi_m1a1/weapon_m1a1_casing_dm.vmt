@@ -1,0 +1,21 @@
+"VertexLitGeneric"
+{
+//BASIC
+	"$basetexture"					"models\weapons\m1a1\weapon_m1a1_dm"
+	"$bumpmap" 						"models\weapons\m1a1\weapon_m1a1_nm"
+	"$model"						"1"
+    "$color2"						"[1 1 1]"
+
+//PHONG
+	"$phong"                        "1"
+	"$phongtint"                    "[0.97 0.8 0.5]"
+	"$phongboost"                   "5"
+	"$phongexponent"				"60"
+	"$phongfresnelranges"           "[1 3 7]"
+
+//ENVMAP
+	"$envmap"                       "env_cubemap"
+	"$envmapfresnel" 				"1"
+	"$basealphaenvmapmask" 			"1"
+	"$envmaptint"                   "[0.1 0.05 0]"
+}

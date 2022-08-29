@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\m3greasegun\weapon_w_m3_dm"
+	"$bumpmap"			"models\weapons\m3greasegun\weapon_w_m3_nm"
+	
+	"$phongtint" 			"[0.6 0.8 1.0]"
+
+	"$phong" 			"1"
+	"$phongexponent" 		"25"
+	"$phongboost"			"0.3"	
+	"$phongFresnelRanges" 		"[.3 .3 1]"
+	"$phongdisablehalflambert" 	"1"
+}

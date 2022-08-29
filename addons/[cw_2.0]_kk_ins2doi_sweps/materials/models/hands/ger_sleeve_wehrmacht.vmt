@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models\hands\ger_sleeve_wehrmacht"
+	"$bumpmap" 				"models\hands\ger_sleeve_wehrmacht_normal"
+	"$phongexponenttexture"	"models\hands\ger_sleeve_wehrmacht_exp"
+}

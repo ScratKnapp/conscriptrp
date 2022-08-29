@@ -1,0 +1,15 @@
+patch
+{
+	include "materials\models\hands\ww2_shared.vmt"
+	insert
+	{
+		$basetexture "models\hands\gen_hands_color"
+		$phongexponenttexture "models\hands\gen_hands_exp"
+		$bumpmap "models\hands\gen_hands_normal"
+
+	"$roughnessmultiplier"		"1.8"
+	"$fuzz"						"1"
+	"$fuzzmultiplier"			"0.4"
+	"$subsurfacescattering"		"1"
+	}
+}
