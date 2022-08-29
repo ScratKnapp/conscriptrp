@@ -1,0 +1,10 @@
+ITEM.name = "Doctor's Needle"
+ITEM.model = "models/artefacts/pin.mdl"
+ITEM.description = "A white needle looking artifact."
+ITEM.longdesc = "A small, thin artifact in the shape of a white needle that appears brittle to the touch but doesn't seem to bend or break, with two sharp ends reminiscent of the spines on other artifacts of a similar variety.  This artifact is extremely rare, forming only in anomalies such as the Burnt Fuzz from which it is difficult to extract, and is highly sought after by stalker searching for the remedy to otherwise life-threatening physical ailments. It will dissolve upon use."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 150000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 0.01

@@ -1,0 +1,9 @@
+ITEM.name = "Fabric Roll"
+ITEM.model = "models/ethprops/crafting/textile_patch_b.mdl"
+ITEM.description = "A roll of textile fabrics."
+ITEM.longdesc = "A roll of textile fabric material. Used in the production of upper-scale clothing. Could be valuable."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 3500
+ITEM.width = 1
+ITEM.height = 1

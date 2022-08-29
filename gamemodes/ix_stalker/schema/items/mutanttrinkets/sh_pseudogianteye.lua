@@ -1,0 +1,11 @@
+ITEM.name = "Pseudogiant Eye"
+ITEM.model ="models/jerry/items/flesheye.mdl"
+ITEM.description = "The gigantic eye of a Pseudogiant. Kinda creepy."
+ITEM.longdesc = "The gigantic, wet, rubbery eye of a Pseudogiant. Heavy and smelling horribly, the only real use is selling to the Ecologists, or if you're in need of a kickball."
+ITEM.width = 2
+ITEM.height = 2
+ITEM.price = 6000
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 3
+ITEM.quantity = 1

@@ -1,0 +1,20 @@
+ITEM.name = "Steel Wool"
+ITEM.model = "models/artefacts/cocon.mdl"
+ITEM.description = "A metallic cocoon-like web of metal strings interconnected together."
+ITEM.longdesc = "The Steel Wool was a recent discovery made by Freedomers who began the practice of tossing garbage in anomaly fields to see what would spring out, enough scrap metal would eventually form this oddly shaped artifact that negates the effects of burns entirely, converting them into impact damage. Emits moderate levels of radiation.\n\nConverts Thermal damage to Impact damage\nRads +2"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 7500
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 4
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

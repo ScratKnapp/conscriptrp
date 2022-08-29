@@ -1,0 +1,9 @@
+ITEM.name = "Silver Chain"
+ITEM.model = "models/illusion/eftcontainers/chain.mdl"
+ITEM.description = "A piece of bling."
+ITEM.longdesc = "A chain made of Silver, typically worn by those with copious amounts of freely spent money. In the Zone, these are often found on Bandits, Renegades, and braggart Loners. Could be worth something."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 5000
+ITEM.width = 1
+ITEM.height = 1

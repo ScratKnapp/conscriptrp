@@ -1,0 +1,20 @@
+ITEM.name = "???"
+ITEM.model ="models/srp/items/art_zoonlight.mdl"
+ITEM.description = "A spherical orb with a glass-like texture."
+ITEM.longdesc = "While perhaps mistaken for a Fireball, this peculiar artifact is heavier and appears to be made of fragile glass, too hot to handle with bare hands. \n\nFragile, violent fire explosion on shatter"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 85000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 5
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

@@ -1,0 +1,20 @@
+ITEM.name = "Mushroom"
+ITEM.model ="models/predatorcz/stalker/artifacts/medusa.mdl"
+ITEM.description = "An oddly colored artifact that resembles a Jellyfish."
+ITEM.longdesc = "An oddly colored artifact that resembles a Jellyfish, although with some minor differences, it emits fumes that, when inhaled, help in the process of blood coagulation. Also emits small amounts of radiation. \n\n-2 Bleeding\n+1 Rads"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 8000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

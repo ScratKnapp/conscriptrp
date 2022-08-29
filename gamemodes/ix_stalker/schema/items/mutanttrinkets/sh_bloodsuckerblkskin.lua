@@ -1,0 +1,11 @@
+ITEM.name = "Underground Bloodsucker Skin"
+ITEM.model = "models/kek1ch/hide_bloodsucker.mdl"
+ITEM.description = "The skin of an Underground Bloodsucker. Looks very sturdy. Feels like studded hide."
+ITEM.longdesc = "A cut of an Underground Bloodsucker hide that is extraordinarily rough, and absorbent of liquids. Smells like iron and old meat. Feels like studded hide."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 3750
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 2
+ITEM.quantity = 1

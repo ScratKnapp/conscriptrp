@@ -1,0 +1,14 @@
+ITEM.name = "Zarya Stun Grenade"
+ITEM.model = ("models/silver/stalker/weapons/w_zarya.mdl")
+ITEM.description = "A Zarya Stun Grenade, it stuns people if you use it right."
+ITEM.class = "cw_sil_nade_zarya"
+ITEM.weaponCategory = "secondary"
+ITEM.isWeapon = true
+ITEM.noAmmo = true
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 1200
+ITEM.flag = "1"
+ITEM.category = "Weapons"
+ITEM.isGrenade = true
+ITEM.weight = 0.236

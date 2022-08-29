@@ -1,0 +1,22 @@
+ITEM.name = "Mica"
+ITEM.model = "models/nasca/etherealsrp_artifacts/mica.mdl"
+ITEM.description = "Brown artifact."
+ITEM.longdesc = "Formed from chemical anomalies, this artifact is semi-transparent and hard in texture. It is rare, only forming under intense conditions. The artifact is known to mitigate severe bleeding.\n\nBleeding -3\nThermal -1\nChemical -1"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 75000
+ITEM.flag = "A"
+ITEM.buff = "woundheal"
+ITEM.buffval = 3
+ITEM.isArtefact = true
+ITEM.weight = 0.6
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = -0.10,
+	["Radiation"] = 0.00,
+	["Chemical"] = -0.10,
+	["Psi"] = 0.00,
+}

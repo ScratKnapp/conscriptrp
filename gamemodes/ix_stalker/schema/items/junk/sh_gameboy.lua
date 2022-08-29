@@ -1,0 +1,9 @@
+ITEM.name = "Handheld Game Console"
+ITEM.model = "models/illusion/eftcontainers/tetriz.mdl"
+ITEM.description = "A portable game console."
+ITEM.longdesc = "All the rage in the modern day, gaming on the go is a fast growing commodity in the world. In the Zone, these items are an oddity, more often than not, they are seen as useless purchases conducted at trading spots all along the perimeter, the sort of thing that tourists and particularly stupid rookies waste time on. However, those Stalkers who can afford such a device, can keep it powered, and intact, tend to at least do better for one's mental health. Good luck finding any cartridge other than Paper Mario, though."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 8000
+ITEM.width = 1
+ITEM.height = 1

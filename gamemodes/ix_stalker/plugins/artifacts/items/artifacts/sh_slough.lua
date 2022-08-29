@@ -1,0 +1,22 @@
+ITEM.name = "Slough"
+ITEM.model = "models/artefacts/spaika.mdl"
+ITEM.description = "A strange looking artifact."
+ITEM.longdesc = "Upon wearing this artifact, the user's skin becomes resistant and impermeable to harmful chemicals. Chemicals are neutralized upon contact with the user and form into a gel-like substance which often must be peeled away once the artifact is no longer in use.\n\nRads +2\nChemical +4"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 35000
+ITEM.flag = "A"
+ITEM.debuff = "rads"
+ITEM.debuffval = 2
+ITEM.isArtefact = true
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.40,
+	["Psi"] = 0.00,
+}
+ITEM.weight = 3.1

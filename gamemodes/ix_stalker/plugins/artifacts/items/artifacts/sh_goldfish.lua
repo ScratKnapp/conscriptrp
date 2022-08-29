@@ -1,0 +1,14 @@
+ITEM.name = "Goldfish"
+ITEM.model = "models/nasca/etherealsrp_artifacts/goldfish.mdl"
+ITEM.description = "Golden, beautiful artifact."
+ITEM.longdesc = "Resulting from the interaction of a large number of gravitational anomalies, this artifact produces its own internally directed gravity field. It renders items within its range nearly weightless, allowing stalkers to carry more equipment.\n\nRads +2\nWeight -4 (+12kg)"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 85000
+ITEM.flag = "A"
+ITEM.buff = "weight"
+ITEM.buffval = 12
+ITEM.debuff = "rads"
+ITEM.debuffval = 2
+ITEM.isArtefact = true
+ITEM.weight = 1.7

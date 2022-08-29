@@ -1,0 +1,9 @@
+ITEM.name = "Luxury Watch"
+ITEM.model = "models/illusion/eftcontainers/rolex.mdl"
+ITEM.description = "A fancy time-telling fashion piece."
+ITEM.longdesc = "Expensive watches like this are usually found among the garbs of traders, bandit bosses, and anyone with a need to express how important they are with a far inferior method of keeping time than simple electronics. Not uncommon for freshly arrived Rookies to bring these in as well, unaware of how it makes them a target."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 12000
+ITEM.width = 1
+ITEM.height = 1

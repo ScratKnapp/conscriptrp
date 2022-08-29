@@ -1,0 +1,9 @@
+ITEM.name = "9M Upgrade Kit (Stingray-9M)"
+ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
+ITEM.description = "Parts meant to modernize the design of a Stingray-9. Four of these and a Stingray-9 could result in something interesting."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 80000
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1

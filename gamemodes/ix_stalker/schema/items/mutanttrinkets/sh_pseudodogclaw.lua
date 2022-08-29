@@ -1,0 +1,11 @@
+ITEM.name = "Pseudodog's Claw"
+ITEM.model ="models/kek1ch/item_chimera_cogot.mdl"
+ITEM.description = "An jagged sharp claw belonging to a Pseudodog."
+ITEM.longdesc = "The claw of a Pseudodog. It's jagged and rough, covered in dirt and other unknown grime, blood, and likely feces... Easy to give you an infection if you're not careful"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 350
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = .3
+ITEM.quantity = 1

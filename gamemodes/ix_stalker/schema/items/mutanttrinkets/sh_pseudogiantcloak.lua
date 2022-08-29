@@ -1,0 +1,11 @@
+ITEM.name = "Pseudogiant Hide Cloak"
+ITEM.model ="models/stalker/outfit/bandit3.mdl"
+ITEM.description = "A trenchcoat with sewing lines on the inside, it's quite heavy and hot if worn."
+ITEM.longdesc = "A cloak layered on the inside with the thick hide of a Pseudogiant. It offers superb protection against mutants, as it can be easily taken on or off. It's often noted to be quite hot and heavy when worn by many stalkers. \n\n+1 Impact tier (Up to tier 5)\n+1 weight tier\n-1 Thermal tier"
+ITEM.width = 2
+ITEM.height = 1
+ITEM.price = 50000
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 6
+ITEM.quantity = 1

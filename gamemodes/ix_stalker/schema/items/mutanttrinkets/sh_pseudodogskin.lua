@@ -1,0 +1,11 @@
+ITEM.name = "Pseudodog Skin"
+ITEM.model ="models/kek1ch/hide_flesh.mdl"
+ITEM.description = "The skin of a Pseudodog. Feels rough and brittle, though warm."
+ITEM.longdesc = "A cut of Pseudodog hide that is extraordinarily rough, and absorbent of liquids. Smells like rot. Chemical fibers may stick to the stick, though it could offer some good thermal protection."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 5000
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 1.5
+ITEM.quantity = 1

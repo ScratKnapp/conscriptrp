@@ -1,0 +1,12 @@
+ITEM.name = "7.62x54mm Belt Match Grade"
+ITEM.model = "models/kek1ch/ammo_pkm.mdl"
+ITEM.width = 2
+ITEM.height = 1
+ITEM.ammo = "7.62x54MMB -MG-"
+ITEM.description = "A belt that contains %s rounds of 7.62x54mmR. The rounds are of Match quality."
+ITEM.category = "Ammunition"
+ITEM.price = 15000
+ITEM.flag = "A"
+ITEM.ammoAmount = 100
+ITEM.weight = 0.039
+ITEM.isAmmo = true

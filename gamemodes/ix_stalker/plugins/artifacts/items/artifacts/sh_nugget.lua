@@ -1,0 +1,20 @@
+ITEM.name = "Nugget"
+ITEM.model = "models/artefacts/spike.mdl"
+ITEM.description = "A grotesque looking artifact."
+ITEM.longdesc = "A grotesque-looking artifact created out of the union between a Jellyfish and a Stone Flower in psi-heavy gravitational fields, the two artifacts merging into one caused the effects to be moderately warped. It’s rumored to cause slight emotional distress after overuse.\n\nRads -2\nPsi -1"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 5000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.40,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

@@ -1,0 +1,20 @@
+ITEM.name = "Weave"
+ITEM.model = "models/artefacts/lighthouse.mdl"
+ITEM.description = "A weave of glowing energy"
+ITEM.longdesc = "Composed of what can best be described as interwoven beams of hard light forced into place by the bizarre workings of a Spatial-heavy environment. Inside a Spatial Anomaly Field, the Weave bounces in and out of the warped reality, and the reality that the Spatial Anomalies inhabit. However, once it is touched by a Stalker it seems 'anchored' in place in the physical realm.\nThe Weave itself is nearly indestructible, being able to withstand bullets, grenades, and other anomalous attacks with ease. The artifact is capable of severely dampening the effects of psi on the wielder. However, because of it's construction, it is quite hot already, and additional thermal energy usually siphons off into connected bodies with unusual ease. Extraordinarily light.\nPsi +3p\nThermal -2"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 36000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 0.2
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.30,
+}

@@ -1,0 +1,35 @@
+ITEM.name = "CS-2 Patrol Armor (Female)"
+ITEM.model ="models/kek1ch/cs_heavy_outfit.mdl"
+ITEM.replacements ="models/silver/stalker/female_cs2_lone.mdl"
+ITEM.description= "A Clear Sky patrol suit."
+ITEM.longdesc = "A waterproof bodysuit intended for protecting and surveying areas scouted by Clear Sky. It implements Clear Sky's AIR-1 protective solution as a safeguard against environmental hazards, while its lightweight bulletproof vest is capable of stopping low-caliber rounds.\n\nBallistic Protection:\nSkull: IIIA\nNeck & Face: 0\nTorso: IIIA\nLimbs: IIA\nWeight: 2"
+ITEM.width = 2
+ITEM.height = 2
+ITEM.price = 45000
+ITEM.flag = "3"
+ITEM.br = 0.28
+ITEM.fbr = 8
+ITEM.ar = 0.20
+ITEM.far = 3
+ITEM.isGasmask = true
+ITEM.isHelmet = true
+ITEM.isArmor = true
+ITEM.overlayPath = "vgui/overlays/hud_gas"
+ITEM.img = Material("vgui/hud/eo20.png")
+ITEM.artifactcontainers = {"2"}
+ITEM.weight = 10
+ITEM.maxArmor = 10
+ITEM.res = {
+	["Bullet"] = 0.10,
+	["Blast"] = 0.10,
+	["Fall"] = 0.10,
+	["Burn"] = 0.20,
+	["Radiation"] = 0.20,
+	["Chemical"] = 0.20,
+	["Shock"] = 0.20,
+	["Psi"] = 0.10,
+}
+
+ITEM.newSkin = 0
+ITEM.bodygroup = {0}
+ITEM.bodygroupsub = {0}

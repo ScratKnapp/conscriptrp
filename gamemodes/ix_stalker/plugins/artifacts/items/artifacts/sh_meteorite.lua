@@ -1,0 +1,20 @@
+ITEM.name = "Meteorite"
+ITEM.model = "models/artefacts/ball.mdl"
+ITEM.description = "A rocky ball typically found in Gravitational anomalies."
+ITEM.longdesc = "A rocky ball typically found in Gravitational anomalies. This oversized oddity has the ability to reinforce one’s resistance to physical attacks by sending a small shockwave to counter the impact of one being sent the user’s way. Emits a moderate amount of radiation.\n\nImpact +2p\nSeconds Movement -3\nRads +2"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 10000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 8.5
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.30,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}
