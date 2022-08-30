@@ -2,13 +2,13 @@
 -- You can define factions in the factions/ folder. You need to have at least one faction that is the default faction - i.e the
 -- faction that will always be available without any whitelists and etc.
 
-FACTION.name = "Monolith"
-FACTION.description = "Idi ko mne"
-FACTION.isDefault = false
-FACTION.color = Color(102, 63, 76)
+FACTION.name = "Conscripts"
+FACTION.description = "Malcontents or those caught in the wrong place, wrong time conscripted by the Combine."
+FACTION.isDefault = true
+FACTION.color = Color(110, 80, 0)
 FACTION.models = {
-	{"models/nasca/stalker/male_anorak.mdl", 2, "000002"},
-	{"models/nasca/stalker/female_anorak.mdl", 2, "000002"},
+	{"models/nasca/stalker/male_anorak.mdl", 0, "000002"},
+	{"models/nasca/stalker/female_anorak.mdl", 0, "000002"},
 
 }
 
@@ -17,4 +17,4 @@ FACTION.models = {
 
 -- Note that the player's team will also have the same value as their current character's faction index. This means you can use
 -- client:Team() == FACTION_CITIZEN to compare the faction of the player's current character.
-FACTION_SIRCAA = FACTION.index
+FACTION_CONSCRIPTS = FACTION.index

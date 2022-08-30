@@ -2,12 +2,12 @@
 -- You can define factions in the factions/ folder. You need to have at least one faction that is the default faction - i.e the
 -- faction that will always be available without any whitelists and etc.
 
-FACTION.name = "SIRCAA"
-FACTION.description = "Much spook"
+FACTION.name = "Overwatch"
+FACTION.description = "Members of the Overwatch Transhuman Arm."
 FACTION.isDefault = false
-FACTION.color = Color(140, 140, 140)
+FACTION.color = Color(230, 0, 0)
 FACTION.models = {
-	{"models/nasca/stalker/male_anorak.mdl", 2, "000002"},
+	{"models/nasca/stalker/male_anorak.mdl", 1, "000002"},
 	{"models/nasca/stalker/female_anorak.mdl", 2, "000002"},
 
 }
@@ -17,4 +17,4 @@ FACTION.models = {
 
 -- Note that the player's team will also have the same value as their current character's faction index. This means you can use
 -- client:Team() == FACTION_CITIZEN to compare the faction of the player's current character.
-FACTION_SIRCAA = FACTION.index
+FACTION_OVERWATCH = FACTION.index
