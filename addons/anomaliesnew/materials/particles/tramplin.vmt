@@ -1,8 +1,0 @@
-"SpriteCard"
-{
-$basetexture "particles\tramplin"
-$vertexcolor 1
-$vertexalpha 1
-$translucent 1
-$alphatest 1
-}
