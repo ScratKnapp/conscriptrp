@@ -43,16 +43,11 @@ ix.flag.Add ("7", "Weapon Technician")
 
 
 
-ALWAYS_RAISED["weapon_flashlight"] = true
-ALWAYS_RAISED["stalker_bolt"] = true
-ALWAYS_RAISED["detector_bear"] = true
-ALWAYS_RAISED["detector_veles"] = true
-ALWAYS_RAISED["detector_echo"] = true
-ALWAYS_RAISED["guitar"] = true
 
-ix.currency.symbol = "₽"
-ix.currency.singular = "ruble"
-ix.currency.plural = "rubles"
+
+ix.currency.symbol = "Ŧ"
+ix.currency.singular = "token"
+ix.currency.plural = "tokens"
 
 -- We will use this better later
 local stalker_models = { 	
