@@ -108,7 +108,7 @@ function PANEL:Init()
 
 -------------------------- NEW
 	-- charsheet subpanel
-	--[[ self.charsheet = self:AddSubpanel("charsheet")
+	self.charsheet = self:AddSubpanel("charsheet")
 	self.charsheet:SetTitle("chooseDescription")
 
 	local charsheetModelList = self.charsheet:Add("Panel")
@@ -141,8 +141,7 @@ function PANEL:Init()
 	charsheetProceed:Dock(BOTTOM)
 	charsheetProceed.DoClick = function()
 		if (self:VerifyProgression("charsheet")) then
-			self.progress:IncrementProgress()
-			self:SetActiveSubpanel("attributes")
+			self:SendPayload()
 		end
 	end
 ------------------------------ NEW END
@@ -180,7 +179,7 @@ create:SetContentAlignment(6)
 create:Dock(TOP)
 create.DoClick = function()
     self:SendPayload()
-end ]]
+end
 
 
 	-- creation progress panel
