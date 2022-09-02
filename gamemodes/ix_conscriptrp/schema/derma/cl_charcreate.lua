@@ -108,7 +108,7 @@ function PANEL:Init()
 
 -------------------------- NEW
 	-- charsheet subpanel
-	self.charsheet = self:AddSubpanel("charsheet")
+	--[[ self.charsheet = self:AddSubpanel("charsheet")
 	self.charsheet:SetTitle("chooseDescription")
 
 	local charsheetModelList = self.charsheet:Add("Panel")
@@ -148,39 +148,40 @@ function PANEL:Init()
 ------------------------------ NEW END
 
 	-- attributes subpanel
-	self.attributes = self:AddSubpanel("attributes")
-	self.attributes:SetTitle("chooseSkills")
-  
-  	local attributesModelList = self.attributes:Add("Panel")
-	attributesModelList:Dock(LEFT)
-	attributesModelList:SetSize(halfWidth, halfHeight)
+self.attributes = self:AddSubpanel("attributes")
+self.attributes:SetTitle("chooseSkills")
 
-	local attributesBack = attributesModelList:Add("ixMenuButton")
-	attributesBack:SetText("return")
-	attributesBack:SetContentAlignment(4)
-	attributesBack:Dock(TOP)
-	attributesBack.DoClick = function()
-		self.progress:DecrementProgress()
-		self:SetActiveSubpanel("charsheet")
-	end
+local attributesModelList = self.attributes:Add("Panel")
+attributesModelList:Dock(LEFT)
+attributesModelList:SetSize(halfWidth, halfHeight)
 
-	self.attributesModel = attributesModelList:Add("ixModelPanel")
-	self.attributesModel:Dock(FILL)
-	self.attributesModel:SetModel(self.factionModel:GetModel())
-	self.attributesModel:SetFOV(65)
-	self.attributesModel.PaintModel = self.attributesModel.Paint
+local attributesBack = attributesModelList:Add("ixMenuButton")
+attributesBack:SetText("return")
+attributesBack:SetContentAlignment(4)
+attributesBack:Dock(TOP)
+attributesBack.DoClick = function()
+    self.progress:DecrementProgress()
+    self:SetActiveSubpanel("charsheet")
+end
 
-	self.attributesPanel = self.attributes:Add("Panel")
-	self.attributesPanel:SetWide(halfWidth + padding * 2)
-	self.attributesPanel:Dock(RIGHT)
+self.attributesModel = attributesModelList:Add("ixModelPanel")
+self.attributesModel:Dock(FILL)
+self.attributesModel:SetModel(self.factionModel:GetModel())
+self.attributesModel:SetFOV(65)
+self.attributesModel.PaintModel = self.attributesModel.Paint
 
-	local create = self.attributesPanel:Add("ixMenuButton")
-	create:SetText("finish")
-	create:SetContentAlignment(6)
-	create:Dock(TOP)
-	create.DoClick = function()
-		self:SendPayload()
-	end
+self.attributesPanel = self.attributes:Add("Panel")
+self.attributesPanel:SetWide(halfWidth + padding * 2)
+self.attributesPanel:Dock(RIGHT)
+
+local create = self.attributesPanel:Add("ixMenuButton")
+create:SetText("finish")
+create:SetContentAlignment(6)
+create:Dock(TOP)
+create.DoClick = function()
+    self:SendPayload()
+end ]]
+
 
 	-- creation progress panel
 	self.progress = self:Add("ixSegmentedProgress")
