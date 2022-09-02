@@ -2,9 +2,9 @@
 -- The shared init file. You'll want to fill out the info for your schema and include any other files that you need.
 
 -- Schema info
-Schema.name = "Call of the Zone"
-Schema.author = "faggot, verne"
-Schema.description = "A STALKER Roleplaying gamemode with tabletop elements."
+Schema.name = "Conscript Military RP"
+Schema.author = "Scrat Knapp and many others"
+Schema.description = "A Half Life 2 Beta-inspired Roleplaying gamemode with tabletop elements."
 --Schema.logo = "vgui/background/wallpaper.jpg"
 
 
@@ -48,51 +48,3 @@ ix.flag.Add ("7", "Weapon Technician")
 ix.currency.symbol = "Ŧ"
 ix.currency.singular = "token"
 ix.currency.plural = "tokens"
-
--- We will use this better later
-local stalker_models = { 	
-	["models/Barney.mdl"] = true,
-	["models/nasca/stalker/male_berill1.mdl"] = true,
-	["models/nasca/stalker/male_sunset_lone.mdl"] = true,
-	["models/nasca/stalker/male_ssp_eco.mdl"] = true,
-	["models/nasca/stalker/female_ssp_eco.mdl"] = true,
-	["models/nasca/stalker/male_eagle_lone.mdl"] = true,
-	["models/nasca/stalker/male_expedition.mdl"] = true,
-	["models/nasca/stalker/female_midnight_lone.mdl"] = true,
-	["models/nasca/stalker/female_sunrise_lone.mdl"] = true,
-	["models/nasca/stalker/male_berill5m_lone.mdl"] = true,
-	["models/nasca/stalker/male_cs1a.mdl"] = true,
-	["models/nasca/stalker/male_cs1b.mdl"] = true,
-	["models/nasca/stalker/male_cs2.mdl"] = true,
-	["models/nasca/stalker/male_cs3a.mdl"] = true,
-	["models/nasca/stalker/male_cs3b.mdl"] = true,
-	["models/nasca/stalker/female_expedition.mdl"] = true,
-	["models/nasca/stalker/male_exo_lone.mdl"] = true,
-	["models/nasca/stalker/male_hawk_lone.mdl"] = true,
-	["models/nasca/stalker/male_jupiter_duty.mdl"] = true,
-	["models/nasca/stalker/male_midnight_lone.mdl"] = true,
-	["models/nasca/stalker/male_nbc_lone.mdl"] = true,
-	["models/nasca/stalker/male_seva_lone.mdl"] = true,
-	["models/nasca/stalker/male_stingray9_lone.mdl"] = true,
-	["models/nasca/stalker/male_sunrise_lone.mdl"] = true,
-	["models/silver/stalker/female_cs1a_lone.mdl"] = true,
-	["models/silver/stalker/female_cs1b_lone.mdl"] = true,
-	["models/silver/stalker/female_dusk_lone.mdl"] = true,
-	["models/silver/stalker/female_nbc_lone.mdl"] = true,
-	["models/silver/stalker/female_seva_lone.mdl"] = true,
-	["models/silver/stalker/male_cs1a_lone.mdl"] = true,
-	["models/silver/stalker/male_cs1b_lone.mdl"] = true,
-	["models/silver/stalker/female_sunset_lone.mdl"] = true
-
-
-
-
-
-}
-
-for k, v in pairs(stalker_models) do
-	player_manager.AddValidModel("stalker_default", k)
-	util.PrecacheModel(k)
-end
-
-player_manager.AddValidHands( "stalker_default", "models/arms/c_arms_stalker.mdl", 0, 0 )
