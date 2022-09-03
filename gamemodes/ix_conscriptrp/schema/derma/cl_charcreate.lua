@@ -141,12 +141,12 @@ function PANEL:Init()
 	charsheetProceed:Dock(BOTTOM)
 	charsheetProceed.DoClick = function()
 		if (self:VerifyProgression("charsheet")) then
-			self:SendPayload()
+			self:SetActiveSubpanel("description")
 		end
 	end
 ------------------------------ NEW END
 
-	--[[ -- attributes subpanel
+ -- attributes subpanel
 self.attributes = self:AddSubpanel("attributes")
 self.attributes:SetTitle("chooseSkills")
 
@@ -179,7 +179,7 @@ create:SetContentAlignment(6)
 create:Dock(TOP)
 create.DoClick = function()
     self:SendPayload()
-end ]]
+end 
 
 
 	-- creation progress panel
@@ -480,7 +480,7 @@ function PANEL:Populate()
 
 		self.progress:AddSegment("Character Background")
 
-		if (#self.attributesPanel:GetChildren() > 1) then
+		00if (#self.attributesPanel:GetChildren() > 1) then
 			self.progress:AddSegment("@skills")
 		end
 
