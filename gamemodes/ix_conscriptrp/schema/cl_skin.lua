@@ -4,10 +4,10 @@ local gradientUp = surface.GetTextureID("vgui/gradient-u")
 local gradientLeft = surface.GetTextureID("vgui/gradient-l")
 local gradientRadial = Material("helix/gui/radial-gradient.png")
 local background = Material("stalker/x.png")
-local background2 = Material("vgui/background/wallpaper.jpg")
-local background3 = Material("vgui/background/stalkerbackground1.png")
-local background4 = Material("vgui/background/stalkerbackground2.jpg")
-local background5 = Material("vgui/background/stalkerbackground3.jpg")
+local background2 = Material("vgui/testsmiley.png")
+local background3 = Material("vgui/testsmiley.png")
+local background4 = Material("vgui/testsmiley.png")
+local background5 = Material("vgui/testsmiley.png")
 local menubuttonbackground = Material("stalker/menubutton.png")
 local panelbackground = Material("stalker/ui.png")
 local defaultBackgroundColor = Color(30, 30, 30, 200)
@@ -168,7 +168,7 @@ function SKIN:PaintMenuBackground(panel, width, height, alphaFraction)
 	alphaFraction = alphaFraction or 1
 
 	surface.SetDrawColor(ColorAlpha(color_transparent, alphaFraction * 255))
-	-- surface.SetMaterial(background3)
+	surface.SetMaterial(background3)
 	surface.DrawTexturedRect(0, 0, width, height)
 
 	--ix.util.DrawBlur(panel, alphaFraction * 15, nil, 0)
@@ -283,13 +283,13 @@ end
 
 function SKIN:PaintCharacterCreateBackground(panel, width, height)
 	surface.SetDrawColor(100, 100, 100, 255)
-	-- surface.SetMaterial(background2)
+	surface.SetMaterial(background2)
 	surface.DrawTexturedRect(0, 0, width, height)
 end
 
 function SKIN:PaintCharacterLoadBackground(panel, width, height)
 	surface.SetDrawColor(150, 150, 150, 255)
-	-- surface.SetMaterial(background4)
+	surface.SetMaterial(background4)
 	surface.DrawTexturedRect(0, 0, width, height)
 end
 
@@ -431,7 +431,7 @@ function SKIN:PaintChatboxBackground(panel, width, height)
 
 	if (panel:GetActive()) then
 		surface.SetDrawColor(255, 255, 255, 255)
-		-- surface.SetMaterial(background)
+		surface.SetMaterial(background)
 		surface.DrawTexturedRect(0, 0, width, height)
 	end
 
