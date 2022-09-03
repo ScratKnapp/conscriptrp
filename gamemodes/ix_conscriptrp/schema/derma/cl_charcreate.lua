@@ -201,12 +201,12 @@ end ]]
 				self.factionModel:SetModel(model[1], model[2] or 0, model[3])
 				self.descriptionModel:SetModel(model[1], model[2] or 0, model[3])
 				self.charsheetModel:SetModel(model[1], model[2] or 0, model[3])
-				self.attributesModel:SetModel(model[1], model[2] or 0, model[3])
+				--self.attributesModel:SetModel(model[1], model[2] or 0, model[3])
 			else
 				self.factionModel:SetModel(model)
 				self.descriptionModel:SetModel(model)
 				self.charsheetModel:SetModel(model)
-				self.attributesModel:SetModel(model)
+				-- self.attributesModel:SetModel(model)
 			end
 		end
 	end)
