@@ -2,10 +2,10 @@
 -- You can define factions in the factions/ folder. You need to have at least one faction that is the default faction - i.e the
 -- faction that will always be available without any whitelists and etc.
 
-FACTION.name = "Civil Protection"
+FACTION.name = "Metropolitan Police Force"
 FACTION.description = "Members of the Metropolice."
 FACTION.isDefault = false
-FACTION.color = Color(20, 80, 200)
+FACTION.color = Color(36, 187, 225)
 FACTION.models = {
 	{"models/nasca/stalker/male_anorak.mdl", 1, "000002"},
 	{"models/nasca/stalker/female_anorak.mdl", 2, "000002"},

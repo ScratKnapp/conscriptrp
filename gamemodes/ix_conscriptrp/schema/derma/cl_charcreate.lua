@@ -146,7 +146,7 @@ function PANEL:Init()
 	end
 ------------------------------ NEW END
 
-	-- attributes subpanel
+	--[[ -- attributes subpanel
 self.attributes = self:AddSubpanel("attributes")
 self.attributes:SetTitle("chooseSkills")
 
@@ -179,7 +179,7 @@ create:SetContentAlignment(6)
 create:Dock(TOP)
 create.DoClick = function()
     self:SendPayload()
-end
+end ]]
 
 
 	-- creation progress panel

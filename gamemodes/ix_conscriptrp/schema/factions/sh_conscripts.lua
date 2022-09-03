@@ -5,10 +5,30 @@
 FACTION.name = "Conscripts"
 FACTION.description = "Malcontents or those caught in the wrong place, wrong time conscripted by the Combine."
 FACTION.isDefault = true
-FACTION.color = Color(110, 80, 0)
+FACTION.color = Color(34, 115, 22)
 FACTION.models = {
-	{"models/nasca/stalker/male_anorak.mdl", 0, "000002"},
-	{"models/nasca/stalker/female_anorak.mdl", 0, "000002"},
+
+	-- Male 
+	{"models/wichacks/artnovest.mdl", 0, "000002"},
+	{"models/wichacks/erdimnovest.mdl", 0, "000002"},
+	{"models/wichacks/ericnovest.mdl", 0, "000002"},
+	{"models/wichacks/joenovest.mdl", 0, "000002"},
+	{"models/wichacks/mikenovest.mdl", 0, "000002"},
+	{"models/wichacks/sandronovest.mdl", 0, "000002"},
+	{"models/wichacks/tednovest.mdl", 0, "000002"},
+	{"models/wichacks/vannovest.mdl", 0, "000002"},
+	{"models/wichacks/tednovest.mdl", 0, "000002"},
+	{"models/wichacks/vancenovest.mdl", 0, "000002"},
+
+	-- Female
+
+	{"models/models/army/female_01.mdl", 0, "000002"},
+	{"models/models/army/female_02.mdl", 0, "000002"},
+	{"models/models/army/female_03.mdl", 0, "000002"},
+	{"models/models/army/female_04.mdl", 0, "000002"},	
+	{"models/models/army/female_06.mdl", 0, "000002"},
+	{"models/models/army/female_07.mdl", 0, "000002"},
+
 
 }
 
