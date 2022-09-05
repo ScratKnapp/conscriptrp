@@ -19,10 +19,10 @@ ITEM.res = {
 	["Radiation"] = 0,
 	["Psi"] = 0,
 }
-ITEM.ballisticlevels = {"1", "1", "1", "1", "1", "1", "1"}
-ITEM.ballisticareas = {"  Head:", "  Torso:", "  Abdomen:", "  Arms:", "  Legs:", "  Anomaly:", "  Radiation:"}
-ITEM.ballisticrpgtypes = {"Ballistic (Body)", "Ballistic (Limb)"}
-ITEM.anomalousrpgtypes = {"Impact","Burning","Radiation","Chemical","Electrical"}
+ITEM.headarmor = "0"
+ITEM.neckfacearmor = "0"
+ITEM.chestarmor = "0"
+ITEM.limbarmor = "0"
 ITEM.br = 0
 ITEM.fbr = 0
 ITEM.ar = 0
@@ -682,15 +682,8 @@ function ITEM:GetDescription()
 	local quant = self:GetData("quantity", 1)
 	local str = self.description.."\n\n"..self.longdesc or ""
 	local cc = false
-	local bodyap = 0
-	local limbap = 0
-	local headap = 0
+
 	
-	if self.ballisticrpglevels then
-		bodyap = tonumber(self.ballisticrpglevels["body"]) or 0
-		limbap = tonumber(self.ballisticrpglevels["limb"]) or 0
-		headap = tonumber(self.ballisticrpglevels["head"]) or 0
-	end
 
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
@@ -700,6 +693,14 @@ function ITEM:GetDescription()
 	if (customData.longdesc) then
 		str = str.. "\n\n" ..customData.longdesc 
 	end
+
+
+	str = str.. .."\n\n"
+	str = str.. "Head:" ..self.headarmor..  .."\n"
+	str = str.. "Neck/Face:" ..self.neckfacearmor..  .."\n"
+	str = str.. "Torso:" ..self.chestarmor..  .."\n"
+	str = str.. "Limbs:" ..self.limbarmor..  .."\n"
+
 	
 	if self.res then
 		
@@ -735,56 +736,7 @@ function ITEM:GetDescription()
 
 
 
-		if mods then
-			for x,y in pairs(mods) do
-				local moditem = ix.item.Get(y[1])
-				local modres = moditem.res
-				
-				if modres then
-					for k,v in pairs(modres) do
-						if resistances[k] then
-							resistances[k] = resistances[k] + v
-						end
-					end 
-				end
-				
-				if moditem.cc then
-					cc = moditem.cc
-				end
-				
-				if moditem.limbap then
-					if moditem.limbap > limbap then
-						limbap = moditem.limbap
-					end
-				end
-				
-				if moditem.ap then
-					if moditem.ap > bodyap then
-						bodyap = moditem.ap
-					end
-				end
-				
-				if moditem.apbonus then
-					bodyap = bodyap + moditem.apbonus
-				end
-			end
-		end
-		
-		if self.Special then
-			local spec = self.Special
-			if istable(spec) then
-				for k,v in pairs(spec) do
-					if string.match(v,"CC") then
-						cc = true
-					end
-				end
-			end
-		end
-		
-		if cc then
-			str = str.."\n\nHas a Closed Cycle system"
-		end
-		
+	
 		str = str.."\n\nResistances:"
 		
 
@@ -806,22 +758,7 @@ function ITEM:GetDescription()
 		end
 	end
 	
-	if self.ballisticrpglevels then
-		if bodyap > 0 or limbap > 0 or headap > 0 then
-			str = str.."\n\nAP Values:"
-			if bodyap > 0 then
-				str = str.."\nTorso: "..bodyap
-			end
-			
-			if limbap > 0 then
-				str = str.."\nLimb: "..limbap
-			end
-			
-			if headap > 0 then
-				str = str.."\nHead: "..headap
-			end
-		end
-	end
+
 
 	if (self.entity) then
 		return (self.description .. "\n \nDurability: " .. math.floor(self:GetData("durability", 100)) .. "%")
