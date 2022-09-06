@@ -23,7 +23,6 @@ ITEM.res = {
 	["Chemical"] = 0.3,
 	["Shock"] = 0.2,
 	["Psi"] = 0.3,
-	["Chest"] = 0.3,
 }
 
 
