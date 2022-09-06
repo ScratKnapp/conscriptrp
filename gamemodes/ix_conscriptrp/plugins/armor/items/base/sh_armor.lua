@@ -823,6 +823,15 @@ function ITEM:GetDescription()
 		end
 	end
 
+
+	if mods then
+		str = str .. "\n\nModifications:"
+		for _,v in pairs(mods) do
+			local moditem = ix.item.Get(v[1])
+			str = str .. "\n" .. moditem.name
+		end
+	end
+
 	if (self.entity) then
 		return (self.description .. "\n \nDurability: " .. math.floor(self:GetData("durability", 100)) .. "%")
 	else
