@@ -11,15 +11,9 @@ ITEM.br = 0.5
 ITEM.fbr = 5
 ITEM.ar = 0.4
 ITEM.far = 4
-ITEM.isGasmask = true
-ITEM.isHelmet = true
 ITEM.isArmor = true
 ITEM.noBusiness = true
 ITEM.weight = 20
-ITEM.headarmor = "0"
-ITEM.neckfacearmor = "0"
-ITEM.chestarmor = "II"
-ITEM.limbarmor = "IIA"
 ITEM.res = {
 	["Bullet"] = 0.4,
 	["Blast"] = 0.4,
@@ -29,7 +23,9 @@ ITEM.res = {
 	["Chemical"] = 0.3,
 	["Shock"] = 0.2,
 	["Psi"] = 0.3,
+	["Chest"] = 0.3,
 }
+
 
 ITEM.newSkin = 0
 ITEM.bodygroup = {0}
