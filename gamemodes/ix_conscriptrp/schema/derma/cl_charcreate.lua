@@ -480,7 +480,7 @@ function PANEL:Populate()
 
 		self.progress:AddSegment("Character Background")
 
-		00if (#self.attributesPanel:GetChildren() > 1) then
+		if (#self.attributesPanel:GetChildren() > 1) then
 			self.progress:AddSegment("@skills")
 		end
 
