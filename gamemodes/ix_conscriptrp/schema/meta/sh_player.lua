@@ -1,6 +1,7 @@
 
 local PLAYER = FindMetaTable("Player")
 
-function PLAYER:IsPolice()
-	return self:Team() == FACTION_POLICE
+function PLAYER:IsCombine()
+	local faction = self:Team()
+	return faction == FACTION_MPF or faction == FACTION_OTA
 end

@@ -4,7 +4,7 @@
 
 local CHAR = ix.meta.character
 
-function playerMeta:IsCombine()
+function CHAR:IsCombine()
 	local faction = self:Team()
 	return faction == FACTION_MPF or faction == FACTION_OTA
 end

@@ -1,4 +1,4 @@
-PLUGIN.name = "Rankings"
+--[[ PLUGIN.name = "Rankings"
 PLUGIN.author = "Lt. Taylor"
 PLUGIN.desc = "Ranking list plugin."
 
@@ -894,4 +894,4 @@ else
 			netstream.Start(client, "SetupInfoPanel", plydata)
 		end
 	end)
-end
+end ]]

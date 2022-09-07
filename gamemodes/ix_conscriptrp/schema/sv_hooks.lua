@@ -55,6 +55,18 @@ function Schema:GetPlayerPainSound(client)
 	return table.Random(painSounds)
 end
 
+function Schema:PlayerFootstep(client, position, foot, soundName, volume)
+	local factionTable = ix.faction.Get(client:Team())
+
+	if (factionTable.runSounds and client:IsRunning()) then
+		client:EmitSound(factionTable.runSounds[foot])
+		return true
+	end
+
+	client:EmitSound(soundName)
+	return true
+end
+
 function Schema:PlayerSpawnEffect(client, weapon, info)
 	return client:IsAdmin() or client:GetCharacter():HasFlags("N")
 end

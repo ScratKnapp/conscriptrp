@@ -1,4 +1,4 @@
-local PLUGIN = PLUGIN
+--[[ local PLUGIN = PLUGIN
 PLUGIN.name = "Reputation"
 PLUGIN.author = "Verne?"
 PLUGIN.desc = "Reputation System"
@@ -184,4 +184,4 @@ ix.command.Add("charrepnameremove", {
             target:Notify(client:Name().." has removed your repname.")
         end
 	end
-}) 
+})  ]]
