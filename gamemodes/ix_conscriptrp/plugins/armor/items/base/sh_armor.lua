@@ -685,6 +685,8 @@ function ITEM:GetDescription()
 	local bodyap = 0
 	local limbap = 0
 	local headap = 0
+
+	
 	
 	if self.ballisticrpglevels then
 		bodyap = tonumber(self.ballisticrpglevels["body"]) or 0
@@ -700,6 +702,8 @@ function ITEM:GetDescription()
 	if (customData.longdesc) then
 		str = str.. "\n\n" ..customData.longdesc 
 	end
+
+	str = str .. "\n\nModifications:"
 	
 	if self.res then
 		
@@ -732,7 +736,7 @@ function ITEM:GetDescription()
 			resistances["Psi"] = customData.psi
 		end
 	
-
+		
 
 
 		if mods then
@@ -823,7 +827,7 @@ function ITEM:GetDescription()
 		end
 	end
 
-
+	
 	if mods then
 		str = str .. "\n\nModifications:"
 		for _,v in pairs(mods) do

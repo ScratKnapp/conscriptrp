@@ -1,25 +1,48 @@
 
 -- Here is where all of your serverside hooks should go.
 
-function Schema:OnCharacterCreated(client, character)
-	local inventory = character:GetInventory()
 
-	if (inventory) then		
-		local items = {}
-	
-		if (character:GetFaction() == FACTION_LONERS) then
-			items = {
-				"oldmeat",
-				"waterdirty",
-				"pda",
-			}
+function Schema:PlayerMessageSend(speaker, chatType, text, anonymous, receivers, rawText)
+	if (chatType == "ic" or chatType == "w" or chatType == "y" or chatType == "dispatch") then
+		local class = self.voices.GetClass(speaker)
+
+		for k, v in ipairs(class) do
+			local info = self.voices.Get(v, rawText)
+
+			if (info) then
+				local volume = 80
+
+				if (chatType == "w") then
+					volume = 60
+				elseif (chatType == "y") then
+					volume = 150
+				end
+
+				if (info.sound) then
+					if (info.global) then
+						netstream.Start(nil, "PlaySound", info.sound)
+					else
+						local sounds = {info.sound}
+
+						if (speaker:IsCombine()) then
+							speaker.bTypingBeep = nil
+							sounds[#sounds + 1] = "NPC_MetroPolice.Radio.Off"
+						end
+
+						ix.util.EmitQueuedSounds(speaker, sounds, nil, nil, volume)
+					end
+				end
+
+				if (speaker:IsCombine()) then
+					return string.format("<:: %s ::>", info.text)
+				else
+					return info.text
+				end
+			end
 		end
-		
-		local i = 7
-		for k, v in pairs(items) do
-			timer.Simple(i + k, function()
-				inventory:Add(v)
-			end)
+
+		if (speaker:IsCombine()) then
+			return string.format("<:: %s ::>", text)
 		end
 	end
 end
@@ -27,34 +50,6 @@ end
 function Schema:PlayerSpray(client)
 	return true
 end
-
-local deathSounds = {
-Sound("stalkersound/die1.wav"),
-Sound("stalkersound/die2.wav"),
-Sound("stalkersound/die3.wav"),
-Sound("stalkersound/die4.wav"),
-}
-
-function Schema:GetPlayerDeathSound(client)
-	return table.Random(deathSounds)
-end
-
-local painSounds = {
-Sound("stalkersound/pain1.wav"),
-Sound("stalkersound/pain2.wav"),
-Sound("stalkersound/pain3.wav"),
-Sound("stalkersound/pain4.wav"),
-Sound("stalkersound/pain5.wav"),
-Sound("stalkersound/pain6.wav"),
-Sound("stalkersound/pain7.wav"),
-Sound("stalkersound/pain8.wav"),
-Sound("stalkersound/pain9.wav"),
-Sound("stalkersound/pain10.wav"),
-Sound("stalkersound/pain11.wav"),
-Sound("stalkersound/pain12.wav"),
-Sound("stalkersound/pain13.wav"),
-Sound("stalkersound/pain14.wav"),
-}
 
 function Schema:GetPlayerPainSound(client)
 	return table.Random(painSounds)
