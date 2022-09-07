@@ -3,7 +3,7 @@
 
 
 function Schema:PlayerMessageSend(speaker, chatType, text, anonymous, receivers, rawText)
-	if (chatType == "ic" or chatType == "w" or chatType == "y" or chatType == "dispatch") then
+	if (chatType == "ic" or chatType == "w" or chatType == "y") then
 		local class = self.voices.GetClass(speaker)
 
 		for k, v in ipairs(class) do
