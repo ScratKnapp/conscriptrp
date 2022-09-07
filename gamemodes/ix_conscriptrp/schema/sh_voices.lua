@@ -376,5 +376,5 @@ Schema.voices.Add("Combine", "ZONE", "Zone!", "npc/metropolice/vo/zone.wav")
 
 Schema.voices.AddClass("Combine", function(client)
 	return client:IsCombine()
-end)
+end
 
