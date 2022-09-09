@@ -9,7 +9,7 @@ AccessorFunc(PANEL, "backgroundColor", "BackgroundColor")
 AccessorFunc(PANEL, "backgroundAlpha", "BackgroundAlpha")
 
 function PANEL:Init()
-	self:SetFont("stalkerregulartitlefont")
+	self:SetFont("ixMenuButtonFont")
 	self:SetTextColor(color_white)
 	self:SetDrawBackground(false)
 	self:SetContentAlignment(4)
