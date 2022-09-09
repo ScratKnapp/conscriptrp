@@ -3,8 +3,8 @@ PLUGIN.name = "Perks"
 PLUGIN.author = "Verne"
 PLUGIN.desc = "Perks that can be added to a character.."
 
-ix.command.Add("CharSetPerk", {
-	description = "@cmdCharSetPerk",
+ix.command.Add("CharSetTrait", {
+	description = "Set a character's trait. Set to 0 to remove.",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
@@ -24,8 +24,8 @@ ix.command.Add("CharSetPerk", {
 	end
 })
 
-ix.command.Add("CharAddPerk", {
-	description = "@cmdCharAddPerk",
+ix.command.Add("CharAddTrait", {
+	description = "Add a trait to a character.",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
@@ -37,11 +37,11 @@ ix.command.Add("CharAddPerk", {
 		for k, v in pairs(ix.perks.list) do
 			if (ix.util.StringMatches(L(v.name, client), perkName) or ix.util.StringMatches(k, perkName)) then
 				target:UpdatePrk(k, math.abs(level))
-				return "Perk Updated", target:GetName(), L(v.name, client), math.abs(level)
+				return "Trait Updated", target:GetName(), L(v.name, client), math.abs(level)
 			end
 		end
 
-		return "Perk not found!"
+		return "Trait not found!"
 	end
 })
 
@@ -58,7 +58,7 @@ ix.command.Add("CharShowTraits", {
 	OnRun = function(self, client, target)
 	
 		local str = ""
-		str = str.. target:GetName().. "has the following traits:"
+		str = str.. target:GetName().. " has the following traits:"
 		local perklist = {}
 		for k, v in pairs(ix.perks.list) do
 			perklist[k] = target:GetPerk(k, 0)
