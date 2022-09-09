@@ -15,9 +15,9 @@ local defaultBackgroundColor = Color(30, 30, 30, 200)
 local SKIN = {}
 derma.DefineSkin("helix", "The base skin for the Helix framework.", SKIN)
 
-SKIN.fontCategory = "stalkerregularfont"
-SKIN.fontCategoryBlur = "stalkerregularfont"
-SKIN.fontSegmentedProgress = "stalkerregularfont"
+--SKIN.fontCategory = "stalkerregularfont"
+--SKIN.fontCategoryBlur = "stalkerregularfont"
+--SKIN.fontSegmentedProgress = "stalkerregularfont"
 
 SKIN.Colours = table.Copy(derma.SkinList.Default.Colours)
 
