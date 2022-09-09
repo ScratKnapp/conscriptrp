@@ -12,13 +12,13 @@ ITEM.fbr = 5
 ITEM.ar = 0.4
 ITEM.far = 4
 ITEM.isArmor = true
-ITEM.isBodyArmor = false 
+ITEM.isBodyArmor = true
 ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
 	["Impact"] = 1,
-	["Shock"] = 0,
-	["Fire"] = 0,
+	["Shock"] = 1,
+	["Fire"] = 1,
 	["Toxic"] = 0,
 }
 

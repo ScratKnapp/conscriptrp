@@ -686,6 +686,14 @@ function ITEM:GetDescription()
 	local limbap = 0
 	local headap = 0
 
+
+
+	if self.isBodyArmor then
+		str = str.. "\n Accepts replacement armor vests\n" 
+	else 
+		str = str.. "\n Does not accept replacement armor vests\n"
+	end
+
 	
 	
 	if self.ballisticrpglevels then
@@ -710,12 +718,10 @@ function ITEM:GetDescription()
 		
 		local mods = self:GetData("mod")
 		local resistances = {
-			["Fall"] = 0,
+			["Impact"] = 0,
 			["Shock"] = 0,
-			["Burn"] = 0,
-			["Radiation"] = 0,
-			["Chemical"] = 0,
-			["Psi"] = 0,
+			["Fire"] = 0,
+			["Toxic"] = 0,
 		}
 		
 
@@ -728,12 +734,10 @@ function ITEM:GetDescription()
 
 	
 		if(customData.impact) then
-			resistances["Fall"] = customData.impact
+			resistances["Impact"] = customData.impact
 			resistances["Shock"] = customData.shock
-			resistances["Burn"] = customData.burn
-			resistances["Radiation"] = customData.radiation
-			resistances["Chemical"] = customData.chemical
-			resistances["Psi"] = customData.psi
+			resistances["Fire"] = customData.burn
+			resistances["Toxic"] = customData.chemical
 		end
 	
 		
@@ -792,21 +796,10 @@ function ITEM:GetDescription()
 		str = str.."\n\nResistances:"
 		
 
-		local multinum = 10
-
 		for k,v in pairs(resistances) do
 
-			if tonumber(v) < 1 then
-				multinum = 10
-			else
-				multinum = 10
-			end
-
-			if k == "Fall" then
-				str = str.."\n".."Impact"..": T"..(v*multinum)
-			else
-				str = str.."\n"..k..": T"..(v*multinum)
-			end
+			str = str.."\n"..k..": T"..v
+		
 		end
 	end
 	
