@@ -1,4 +1,4 @@
-ITEM.name = "Conscript Uniform"
+ITEM.name = "Conscript Body Armor"
 ITEM.model = "models/props_c17/BriefCase001a.mdl"
 ITEM.replacements = "models/wichacks/tednovest.mdl"
 ITEM.description = "Conscript standard issue."

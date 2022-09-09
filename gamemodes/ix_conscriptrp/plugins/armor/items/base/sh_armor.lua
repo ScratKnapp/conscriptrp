@@ -689,9 +689,9 @@ function ITEM:GetDescription()
 
 
 	if self.isBodyArmor then
-		str = str.. "\n Accepts replacement armor vests\n" 
+		str = str.. "\n\nAccepts replacement armor vests\n" 
 	else 
-		str = str.. "\n Does not accept replacement armor vests\n"
+		str = str.. "\n\nDoes not accept replacement armor vests\n"
 	end
 
 	
@@ -710,8 +710,6 @@ function ITEM:GetDescription()
 	if (customData.longdesc) then
 		str = str.. "\n\n" ..customData.longdesc 
 	end
-
-	str = str .. "\n\nModifications:"
 	
 	if self.res then
 		
