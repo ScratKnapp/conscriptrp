@@ -9,7 +9,7 @@ ITEM.slot = 1
 ITEM.flag = "A"
 ITEM.isUpgrade = true
 ITEM.weight = 0.9
-ITEM.isArmorUpg = true
+
 
 ITEM.res = {
     ["Shock"] = 1,

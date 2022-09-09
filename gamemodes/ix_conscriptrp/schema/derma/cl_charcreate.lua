@@ -141,7 +141,8 @@ function PANEL:Init()
 	charsheetProceed:Dock(BOTTOM)
 	charsheetProceed.DoClick = function()
 		if (self:VerifyProgression("charsheet")) then
-			self:SetActiveSubpanel("description")
+			--self:SetActiveSubpanel("description")
+			self:SendPayload()
 		end
 	end
 ------------------------------ NEW END

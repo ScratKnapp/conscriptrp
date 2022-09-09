@@ -818,8 +818,8 @@ function ITEM:GetDescription()
 		end
 	end
 
-	local mods = item:GetData("mod", {})
-	
+	local mods = self:GetData("mod", {})
+
 	if mods then
 		str = str .. "\n\nModifications:"
 		for _,v in pairs(mods) do

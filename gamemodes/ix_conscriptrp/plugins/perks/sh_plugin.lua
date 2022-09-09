@@ -45,6 +45,56 @@ ix.command.Add("CharAddPerk", {
 	end
 })
 
+
+
+ix.command.Add("CharShowTraits", {
+	description = "List the perks the given character currently has.",
+	privilege = "Manage Character Attributes",
+	adminOnly = true,
+	arguments = {
+		ix.type.character
+	},
+
+	OnRun = function(self, client, target)
+	
+		local str = ""
+		str = str.. target:GetName().. "has the following traits:"
+		local perklist = {}
+		for k, v in pairs(ix.perks.list) do
+			perklist[k] = target:GetPerk(k, 0)
+		end
+
+		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
+
+			if perklist[k] > 1 then
+				str = str.. "\n" ..v.name
+			end 
+		end	
+		return str
+	end 
+	})
+
+ix.command.Add("MyTraits", {
+	description = "View your traits.",
+	privilege = "Manage Character Attributes",
+	adminOnly = false,
+	OnRun = function(self, client)
+		local str = "Your current traits are:"
+		local perklist = {}
+		for k, v in pairs(ix.perks.list) do
+			perklist[k] = client:GetCharacter():GetPerk(k, 0)
+		end
+
+		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
+
+			if perklist[k] > 1 then
+				str = str.. "\n" ..v.name
+			end 
+		end	
+		return str
+	end
+})
+
 function PLUGIN:PostPlayerLoadout(client)
 	ix.perks.Setup(client)
 end
