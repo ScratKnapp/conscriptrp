@@ -818,6 +818,7 @@ function ITEM:GetDescription()
 		end
 	end
 
+	local mods = item:GetData("mod", {})
 	
 	if mods then
 		str = str .. "\n\nModifications:"
