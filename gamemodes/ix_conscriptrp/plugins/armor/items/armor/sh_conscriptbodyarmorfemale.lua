@@ -1,6 +1,6 @@
-ITEM.name = "Conscript Body Armor"
+ITEM.name = "Conscript Body Armor (Female)"
 ITEM.model = "models/props_c17/BriefCase001a.mdl"
-ITEM.replacements = "models/wichacks/ted.mdl"
+ITEM.replacements = "models/models/army/female_02.mdl"
 ITEM.description = "A slight improvement on the more common conscript standard issue."
 ITEM.longdesc = "An improvement on the basic Conscript Uniform, this suit sports higher quality materials for better protection from environmental hazards and the ability to apply one's armor vest of choice. \nWeight: 1\n\nLimbs: II"
 ITEM.width = 2
