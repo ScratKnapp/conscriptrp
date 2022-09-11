@@ -14,16 +14,9 @@ ITEM.isAttachment = true
 
 -- Slot Numbers Defined
 
--- Under Armor: 1
--- Armor: 2
--- NVGs: 3
--- Helmet Upgrades: 4
--- Anom Upgrades 1: 5
--- Anom Upgrades 2: 6
--- Anom Upgrades 3: 7
--- Respirator Upgrades: 8
--- Side Armor: 9
--- Anom Upgrades 4: 10
+-- Armor Vest: 1
+-- Mask: 2
+-- Helmet: 3
 
 local function attachment(item, data, combine)
     local client = item.player
