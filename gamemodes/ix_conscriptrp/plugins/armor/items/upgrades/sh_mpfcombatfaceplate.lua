@@ -8,6 +8,7 @@ ITEM.price = 40000
 ITEM.slot = 2
 ITEM.flag = "A"
 ITEM.isUpgrade = true
+ITEM.isGasmaskUpg = true
 ITEM.weight = 0.05
 ITEM.res = {
     ["Toxic"] = 2,

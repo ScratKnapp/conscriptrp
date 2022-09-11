@@ -13,4 +13,5 @@ ITEM.res = {
     ["Fire"] = 2,
     ["Toxic"] = 3,
 }
+ITEM.isHelmetUpg = true
 

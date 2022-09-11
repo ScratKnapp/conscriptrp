@@ -12,4 +12,4 @@ ITEM.weight = 0.05
 ITEM.res = {
     ["Toxic"] = 2,
 }
-
+ITEM.isGasmaskUpg = true

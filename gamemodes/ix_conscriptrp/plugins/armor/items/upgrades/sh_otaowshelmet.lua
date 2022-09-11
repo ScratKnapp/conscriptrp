@@ -8,6 +8,7 @@ ITEM.price = 40000
 ITEM.slot = 3
 ITEM.flag = "A"
 ITEM.isUpgrade = true
+ITEM.isHelmetUpg = true
 ITEM.weight = 0.05
 ITEM.res = {
     ["Fire"] = 2,

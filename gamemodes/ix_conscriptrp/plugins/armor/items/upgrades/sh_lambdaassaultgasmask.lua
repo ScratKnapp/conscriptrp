@@ -13,4 +13,4 @@ ITEM.res = {
     ["Toxic"] = 2,
     ["Fire"] = 1,
 }
-
+ITEM.isGasmaskUpg = true

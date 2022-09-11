@@ -9,5 +9,5 @@ ITEM.slot = 3
 ITEM.flag = "A"
 ITEM.isUpgrade = true
 ITEM.weight = 0.05
-
+ITEM.isHelmetUpg = true
 
