@@ -1,5 +1,5 @@
 ITEM.name = "MPF Command Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 ITEM.replacements = "models/dpfilms/metropolice/police_bt.mdl"
 ITEM.description = "A uniform issued to lower-level commanders of the MPF."
 ITEM.longdesc = "This suit is issued to Squad Leaders, Officers, and Elite Protection Units. It sports a modular build, tougher limb armor, and well rounded environmental protection. \nWeight: 2\n\n\nLimbs: IIIA"

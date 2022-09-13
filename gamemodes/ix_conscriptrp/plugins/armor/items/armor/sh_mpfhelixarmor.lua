@@ -1,5 +1,5 @@
 ITEM.name = "MPF-HELIX Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 ITEM.replacements = "models/dpfilms/metropolice/civil_medic.mdl"
 ITEM.description = "A uniform issued to members of the HELIX division."
 ITEM.longdesc = "This suit is issued to members of the HELIX division. HELIX is responsible for providing basic medical aid to fellow officers as well as citizens. It is further lined with materials to avoid contamination of biohazards. \nWeight: 2\n\nChest: IIIA\nLimbs: II"

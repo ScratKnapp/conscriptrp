@@ -1,5 +1,5 @@
 ITEM.name = "MPF-HAMMER Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 ITEM.replacements = "models/dpfilms/metropolice/hunter_police.mdl"
 ITEM.description = "A uniform issued to units of the HAMMER division."
 ITEM.longdesc = "This suit is issued to HAMMER units. HAMMER is the riot control and breaching unit, with armor to match. It incorporates Combine-created materials and alloys to provide fine protection at the cost of some weight. \nWeight: 3\n\n\nLimbs: IIIA"

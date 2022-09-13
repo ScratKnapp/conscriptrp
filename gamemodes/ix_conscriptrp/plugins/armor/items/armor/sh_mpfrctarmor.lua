@@ -1,5 +1,5 @@
 ITEM.name = "MPF-Rct Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 ITEM.replacements = "models/dpfilms/metropolice/hdpolice.mdl"
 ITEM.description = "A uniform issued to new recruits of the Metropolitan Police Force."
 ITEM.longdesc = "This set of armor is not too commonly seen outside of cities, as MPF Recruits generally do not leave them. While capable of protecting the wearer from unruly citizens throwing objects or possessing some improvised weaponry, it is generally a poor choice of protection.\nWeight: 1\n\nChest: II\nLimbs: IIA"
