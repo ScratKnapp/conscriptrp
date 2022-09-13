@@ -1,5 +1,5 @@
 
-local gradient = surface.GetTextureID("vgui/gradient-d")
+--local gradient = surface.GetTextureID("vgui/gradient-d")
 local audioFadeInTime = 2
 local animationTime = 0.5
 
