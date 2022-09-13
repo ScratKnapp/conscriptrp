@@ -1,6 +1,5 @@
 
 local gradient = surface.GetTextureID("vgui/gradient-d")
-local background5 = Material("vgui/background/stalkerbackground3.jpg")
 local audioFadeInTime = 2
 local animationTime = 0.5
 
@@ -509,7 +508,6 @@ function PANEL:Close(bFromMenu)
 end
 
 function PANEL:Paint(width, height)
-	surface.SetMaterial(background5)
 	surface.SetDrawColor(255, 255, 255, 255)
 	surface.DrawTexturedRect(0, 0, width, height)
 
