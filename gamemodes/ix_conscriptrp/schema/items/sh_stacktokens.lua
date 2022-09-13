@@ -1,7 +1,7 @@
-ITEM.name = "Ukrainian rubles"
-ITEM.description = "A bunch of weathered Ukrainian currency."
-ITEM.longdesc = "Trade in the Zone is primarily conducted via hard currency, due to a lack of faith in electronic transfers over PDAs. While it is an option, few believe it to be safe, as losing your PDA could then mean losing all of your wealth."
-ITEM.model = "models/kek1ch/money_ukraina.mdl"
+ITEM.name = "Tokens"
+ITEM.description = "A bunch of Universal Union tokens."
+ITEM.longdesc = "Tokens pressed from an unknown alloy with a logo engraved. Each token has a mini RFID chip inside that confirms its authenticity. Ironically enough, Tokens are sometimes still accepted among the Resistance even if bartering is preferred, due to the inherent value and use in the strong alloy they're made from and can be melted down into."
+ITEM.model = "models/bioshockinfinite/hext_coin.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.flag = "A"
@@ -30,7 +30,7 @@ ITEM.functions.use = {
 		local client = item.player
 		local quant = item:GetData("quantity", 1)
 		client:GetCharacter():GiveMoney(quant)
-		ix.chat.Send(item.player, "iteminternal", "counts up some rubles and puts them in their wallet.", false)
+		ix.chat.Send(item.player, "iteminternal", "counts up some Tokens and puts them in their wallet.", false)
 	end,
 	OnCanRun = function(item)
 		return (!IsValid(item.entity))
@@ -48,11 +48,12 @@ function ITEM:GetDescription()
 
 	if (self.entity) then
 		local quant = self:GetData("quantity", 1)
-		return self.description.."\n \nThis bundle of cash has a value of "..math.Round(quant).." rubles."
+		return self.description.."\n \nThis stack of coins has a value of "..math.Round(quant).." Tokens."
 	else
-        return (str.."\n\n".."This bundle of cash has a value of "..math.Round(quant).." rubles.")
+        return (str.."\n\n".."This stack of Coins has a value of "..math.Round(quant).." Tokens.")
 	end
 end
+
 
 function ITEM:GetName()
 	local name = self.name

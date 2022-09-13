@@ -1,5 +1,5 @@
 ITEM.name = "Universal Union Whiskey"
-ITEM.model = "models/bioshockinfinite/xoffee_mug_closed.mdl"
+ITEM.model = "models/bioshockinfinite/ebsinthebottle.mdl"
 ITEM.thirst = 20
 ITEM.description = "A Universal Union approved Whiskey bottle, available to Loyalists."
 ITEM.longdesc = "This UU-branded Whiskey bottle is of a bit higher class than most boozes a Citizen can get, in that it actually tastes pretty good. Available mostly to proven Loyalists."

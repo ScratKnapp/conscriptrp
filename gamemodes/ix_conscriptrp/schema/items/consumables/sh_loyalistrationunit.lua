@@ -1,10 +1,9 @@
 ITEM.name = "Universal Union Loyalist Ration Unit"
 ITEM.model = "models/pg_plops/pg_food/pg_tortellinap.mdl"
 ITEM.hunger = 15
-ITEM.thirst = 15
 ITEM.description = "A Universal Union issued Loyalist Ration Unit."
 ITEM.longdesc = "Loyalist Issue Rations tend to be both more pleasing to the taste buds and better for the body, with varied menus that resemble pre-war food. Given to Combine ass-kissers, usually CWU or 'model citizens.'"
-ITEM.quantity = 2
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 2

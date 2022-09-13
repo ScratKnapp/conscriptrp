@@ -14,7 +14,7 @@ function ITEM:GetDescription()
 	local quant = self:GetData("quantity", 1)
 	local str = self.description
 	if self.longdesc then
-		str = str.."\n"..(self.longdesc or "")
+		str = str.."\n\n"..(self.longdesc or "")
 	end
 
 	local customData = self:GetData("custom", {})
@@ -23,7 +23,7 @@ function ITEM:GetDescription()
 	end
 
 	if (customData.longdesc) then
-		str = str.."\n"..customData.longdesc or ""
+		str = str.."\n\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then

@@ -285,7 +285,7 @@ do
 				amount = math.Clamp(math.Round(amount),1,500000000)
 				hook.Run("DroppedMoney",client, amount)
 				client:GetCharacter():TakeMoney(amount)
-				ix.item.Spawn("bagrubles", client:GetItemDropPos(), nil, AngleRand(), {["quantity"] = amount})
+				ix.item.Spawn("stacktokens", client:GetItemDropPos(), nil, AngleRand(), {["quantity"] = amount})
 			end
 		})
 	end)

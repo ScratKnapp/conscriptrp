@@ -1,7 +1,7 @@
 ITEM.name = "Combine Med-gel Injector"
 ITEM.description = "A one-use injector with a glowing green substance inside."
 ITEM.longdesc = "A white and red injector with a small bit of biogel inside. Injected anywhere into the body, it provides immediate pain relief and aids in wound healing a little."
-ITEM.model = "models/illusion/eftcontainers/morphine.mdl"
+ITEM.model = "models/ccr/props/syringe.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.category = "Medical"

@@ -1,10 +1,9 @@
 ITEM.name = "Universal Union Priority Ration Unit"
 ITEM.model = "models/pg_plops/pg_food/pg_tortellinat.mdl"
 ITEM.hunger = 30
-ITEM.thirst = 30
 ITEM.description = "A Universal Union issued Priority Ration Unit."
 ITEM.longdesc = "The best of the best when it comes to ration units. Issued to high priority Citizens, such as Administrators, CWU leadership, or other Combine's pets. The menu is vast and flavorful despite its plain boxed appearence, proving that the Combine can make positive improvements to the culinary arts just as much as they lower the bar. Too bad most people are never going to see it."
-ITEM.quantity = 2
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 2

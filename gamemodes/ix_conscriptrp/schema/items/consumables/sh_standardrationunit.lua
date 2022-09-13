@@ -1,10 +1,9 @@
 ITEM.name = "Universal Union Standard Ration Unit"
 ITEM.model = "models/pg_plops/pg_food/pg_tortellinar.mdl"
 ITEM.hunger = 10
-ITEM.thirst = 10
 ITEM.description = "A Universal Union issued Minimal Ration Unit."
 ITEM.longdesc = "Standard Ration Units are the baseline meals. Often plain and unimaginitive, they're still a decent offering with enough calories, vitamins, and minimals to keep one properly healthy, but not enough to grow physically strong to rebel."
-ITEM.quantity = 2
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 2

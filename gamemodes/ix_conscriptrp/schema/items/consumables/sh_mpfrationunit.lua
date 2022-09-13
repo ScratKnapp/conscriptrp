@@ -1,10 +1,9 @@
 ITEM.name = "Universal Union MPF Ration Unit"
 ITEM.model = "models/pg_plops/pg_food/pg_tortellinac.mdl"
 ITEM.hunger = 20
-ITEM.thirst = 20
 ITEM.description = "A Universal Union issued MPF Ration Unit."
 ITEM.longdesc = "All members of the Metropolitan Police Force recive these ration packs. Rich in proteins and iron, they're meant to keep officers well fed and strong so they can easily overpower the more frail citizens."
-ITEM.quantity = 2
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 2

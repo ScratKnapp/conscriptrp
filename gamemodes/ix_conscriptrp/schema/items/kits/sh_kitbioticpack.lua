@@ -1,7 +1,7 @@
-ITEM.name = "MPF Grade Ration Pack"
-ITEM.description= "A packaged MPF Meal."
-ITEM.longdesc = "MPF packs are given to all members of the Metropolitan Police Force. While quite filling, they do not have the luxury of much variety. Officers are issued their daily rations from the armory that they can pick up whenever they've got a minute."
-ITEM.model = "models/weapons/w_packatm.mdl"
+ITEM.name = "Biotic Grade Ration Pack"
+ITEM.description= "A packed Biotic Meal."
+ITEM.longdesc = "Biotic packs are specifically meant to meet the dietary needs of Vortigaunts. Though the rotten flesh smell that invades the nostrils the moment its unsealed is a turn-off for humans, Vorts generally tend to be content with them."
+ITEM.model = "models/weapons/w_packatc.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Kits"
@@ -10,15 +10,13 @@ ITEM.items[1] = {
 	dropRareChance = 35, --chances for the rarer drops
 	dropVeryRareChance = 15,
 	itemsCommon = {
-		{"mpfrationunit"},
+		{"bioticrationunit"},
 	},
 	itemsRare = {
 		{"watercan"}, 
-		{"cannedcoffee"}, 
 	},
 	itemsVeryRare = {
-		{"chocolate"}, 
-		
+		{"watercan"}, 
 	}
 }
 

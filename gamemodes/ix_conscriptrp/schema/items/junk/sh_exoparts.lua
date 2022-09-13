@@ -1,9 +1,0 @@
-ITEM.name = "3rd Gen Exoskeleton Parts (Exo)"
-ITEM.model = "models/kek1ch/safe_container.mdl"
-ITEM.description = "A supply crate with third generation exoskeleton servos. Five of these and a TB-3 could result in something useful."
-ITEM.category = "Parts"
-ITEM.flag = "A"
-ITEM.price = 33000
-ITEM.width = 2
-ITEM.height = 2
-ITEM.weight = 1
