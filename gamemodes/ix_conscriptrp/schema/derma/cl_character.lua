@@ -170,8 +170,8 @@ function PANEL:Init()
 		ix.util.DrawBlur(panel, 15, nil, 200)
 
 		-- background dim
-		surface.SetDrawColor(0, 0, 0, 100)
-		surface.DrawRect(0, y, width, newHeight)
+		--surface.SetDrawColor(0, 0, 0, 100)
+		--surface.DrawRect(0, y, width, newHeight)
 
 		-- border lines
 		surface.SetDrawColor(ix.config.Get("color") or color_white)
