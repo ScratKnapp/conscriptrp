@@ -1,8 +1,9 @@
-ITEM.name = "Universal Union Bread"
-ITEM.model = "models/bioshockinfinite/dread_loaf.mdl"
-ITEM.hunger = 15
-ITEM.description = "A Universal Union approved bread loaf."
-ITEM.longdesc = "This UU-branded bread loaf is often stale when eaten, but serves its purpose as a staple food."
+ITEM.name = "Universal Union Potato Chips"
+ITEM.model = "models/bioshockinfinite/bag_of_hhips.mdl"
+ITEM.hunger = 5
+ITEM.thirst = -5
+ITEM.description = "A Universal Union approved bag of stale chips."
+ITEM.longdesc = "This UU-branded bag of chips (or crisps if you prefer) provides a satisfying enough crunch, but is ultimately a luxury food - it's empty calories and you definitely believe all the salt will dehydrate you."
 ITEM.quantity = 3
 ITEM.price = 525
 ITEM.width = 1

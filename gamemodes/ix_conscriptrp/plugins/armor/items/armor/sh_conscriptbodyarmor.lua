@@ -1,5 +1,5 @@
 ITEM.name = "Conscript Body Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
 ITEM.replacements = "models/wichacks/ted.mdl"
 ITEM.description = "A slight improvement on the more common conscript standard issue."
 ITEM.longdesc = "An improvement on the basic Conscript Uniform, this suit sports higher quality materials for better protection from environmental hazards and the ability to apply one's armor vest of choice. \nWeight: 1\n\nLimbs: II"

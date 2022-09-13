@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Salvaged EOW Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebeloverwatch.mdl"
 ITEM.replacements = "models/humans/group03/male_118.mdl"
 ITEM.description = "A set of Overwatch Elite armor salvaged by Resistance techs."
 ITEM.longdesc = "For a resistance member to kill a member of the Overwatch Elite, escape with the body, and have enough of an armor to salvage is quite the series of accomplishments. The result is a tough but heavy piece of kit; as much a trophy for the owner as a protective suit. \nWeight: 4\n\nChest: IV\nLimbs: III"

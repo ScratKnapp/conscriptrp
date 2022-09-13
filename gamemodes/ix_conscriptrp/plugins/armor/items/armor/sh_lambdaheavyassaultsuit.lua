@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Heavy Assault Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebel_molle.mdl"
 ITEM.replacements = "models/humans/group03/reno.mdl"
 ITEM.description = "A set of heavy armor meant for the toughest battles."
 ITEM.longdesc = "When it comes to assaulting Combine strongholds and other major facilities, the Heavy Assault suit is the answer. Sporting some of the Combine's own materials against them, it's issued in times of great need, and in very limited number. \nWeight: 3\n\nLimbs: III"

@@ -1,8 +1,9 @@
-ITEM.name = "Universal Union Canned Coffee"
-ITEM.model = "models/bioshockinfinite/xoffee_mug_closed.mdl"
+ITEM.name = "Universal Union Water"
+ITEM.model = "models/props_lunk/popcan01a.mdl"
 ITEM.thirst = 15
-ITEM.description = "A Universal Union approved can of coffee, ready to drink."
-ITEM.longdesc = "This UU-branded can of coffee is ready to drink, having a bitter but strong taste. Perfect for when you've been informed you'll be pulling a double shift at the factory for the third consecutive day."
+ITEM.description = "Universal Union approved canned water."
+ITEM.longdesc = "This UU-branded water can is exactly what it says on the label - plain, uncarbonated water in a can. Rumors are that they put 'something' in it to weaken your mind, but you don't remember ever experiencing anything like that."
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1

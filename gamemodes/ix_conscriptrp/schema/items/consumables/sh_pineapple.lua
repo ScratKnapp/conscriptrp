@@ -1,14 +1,14 @@
-ITEM.name = "Universal Union Potato"
-ITEM.model = "models/bioshockinfinite/hext_potato.mdl"
+ITEM.name = "Universal Union Pineapple"
+ITEM.model = "models/bioshockinfinite/hext_pineapple.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved potato."
-ITEM.longdesc = "This UU-branded tater has a slightly moldy taste, but creative citizens have made wonders with them. Hey, starving kids in Ireland would probably kill for it."
+ITEM.description = "A Universal Union approved pineapple."
+ITEM.longdesc = "This UU-branded pineapple is a rare sight, but is appreciated for its sweetness when it's available. It's a Class 2 Civil Offense to put it on pizza."
 ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
-ITEM.quantity = 1
+ITEM.quantity = 2
 ITEM.flag = "5"
 ITEM:Hook("use", function(item)
 	item.player:EmitSound(item.sound or "items/battery_pickup.wav")

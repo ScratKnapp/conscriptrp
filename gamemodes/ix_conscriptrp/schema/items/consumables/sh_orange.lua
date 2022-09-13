@@ -1,11 +1,11 @@
-ITEM.name = "Universal Union Chocolate Bar"
-ITEM.model = "models/bioshockinfinite/hext_candy_chocolate.mdl"
+ITEM.name = "Universal Union Orange"
+ITEM.model = "models/bioshockinfinite/hext_orange.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved chocolate substitute."
-ITEM.longdesc = "This UU-branded chocolate bar is powdery and bitter, but savvy citizens have melted them down to use in home cooking to make sweets, where its downsides are less apparent."
-ITEM.quantity = 2
+ITEM.description = "A Universal Union approved orange."
+ITEM.longdesc = "This UU-branded orange has a slightly moldy taste, but it's still got some satisfying sweetness."
+ITEM.quantity = 1
 ITEM.price = 525
-ITEM.width = 2
+ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
 ITEM.quantity = 1

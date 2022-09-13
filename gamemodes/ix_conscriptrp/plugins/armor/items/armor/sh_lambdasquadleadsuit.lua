@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Squad Leader Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelbag.mdl"
 ITEM.replacements = "models/humans/group03/male_117.mdl"
 ITEM.description = "A suit used by more seasoned Resistance members."
 ITEM.longdesc = "Resistance members who have proven their skills and dedication to the cause are given suits with better armoring and generally serve as individual squad leaders. \nWeight: 2\n\nLimbs: IIIA"

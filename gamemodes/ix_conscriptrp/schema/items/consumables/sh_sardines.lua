@@ -1,11 +1,11 @@
-ITEM.name = "Universal Union Chocolate Bar"
-ITEM.model = "models/bioshockinfinite/hext_candy_chocolate.mdl"
+ITEM.name = "Universal Union Canned Fish"
+ITEM.model = "models/bioshockinfinite/cardine_can_open.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved chocolate substitute."
-ITEM.longdesc = "This UU-branded chocolate bar is powdery and bitter, but savvy citizens have melted them down to use in home cooking to make sweets, where its downsides are less apparent."
-ITEM.quantity = 2
+ITEM.description = "A Universal Union approved fish substitute."
+ITEM.longdesc = "This UU-branded can of fish at first looks like ordinary canned sardines, but the 'Replacement' label makes one wonder exactly where they got it."
+ITEM.quantity = 3
 ITEM.price = 525
-ITEM.width = 2
+ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
 ITEM.quantity = 1

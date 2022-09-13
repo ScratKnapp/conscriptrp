@@ -1,6 +1,6 @@
 ITEM.name = "OTA-OWM Armor"
 ITEM.model = "models/props_c17/BriefCase001a.mdl"
-ITEM.replacements = "models/Combine_Soldier.mdl"
+ITEM.replacements = "models/player/roleplay/groundunits/transhuman_soldier_sniper.mdl"
 ITEM.description = "A uniform issued to Marksmen of the Overwatch Transhuman Arm."
 ITEM.longdesc = "This suit is issued to members of the Overwatch Transhuman Arm designated as snipers. In exchange for lesser armor, they are kept more mobile than their more common brethren to navigate terrain with surprising speed. It is usable by regular humans without any modification, but is uncomfortable and not as suited to agile movement as it is on a transhuman.   \nWeight: 4\n\nChest: III+\nLimbs: III"
 ITEM.width = 3

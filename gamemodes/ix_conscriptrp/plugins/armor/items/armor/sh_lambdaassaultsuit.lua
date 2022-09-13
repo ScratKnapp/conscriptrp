@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Assault Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelbag.mdl"
 ITEM.replacements = "models/humans/group03/male_117.mdl"
 ITEM.description = "Improved armor for those taking the fight to the combine."
 ITEM.longdesc = "This suit is used by those expecting to engage hostile creatures or the Combine, usually the MPF, in direct combat. It features improved armor and environmental protection.  \nWeight: 2\n\nLimbs: II"

@@ -1,5 +1,5 @@
 ITEM.name = "Anti-Citizen Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 ITEM.replacements = "models/Humans/Group03/male_09.mdl"
 ITEM.description = "Standard Resistance wear."
 ITEM.longdesc = "The Anti-Citizen suit is a suit used by the Resistance, cobbled together with a looted MPF vest and some rugged clothing. When fighting Combine, it's better than nothing. \nWeight: 2\n\nChest: IIIA\nLimbs: IIA"

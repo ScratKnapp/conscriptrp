@@ -1,5 +1,5 @@
 ITEM.name = "Conscript Uniform"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
 ITEM.replacements = "models/wichacks/tednovest.mdl"
 ITEM.description = "Conscript standard issue."
 ITEM.longdesc = "The standard issue uniform for all Conscripts commanded by the Combine. It has a soft level two vest and some light kevlar sewn into the sleeves, and is barely the bare minimum in terms of overall protection.\nWeight: 1\n\nChest: II\nLimbs: IIA"

@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Resistance Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebel1.mdl"
 ITEM.replacements = "models/humans/group03/male_42.mdl"
 ITEM.description = "Improved wear for Resistance members."
 ITEM.longdesc = "After a new Resistance member starts to get settled in, they'll often seek out something better than salvaged MPF kit. The Lambda Resistance suit is modular and supports better all-round protection. \nWeight: 2\n\nLimbs: II"

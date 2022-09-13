@@ -1,14 +1,14 @@
-ITEM.name = "Universal Union Potato"
-ITEM.model = "models/bioshockinfinite/hext_potato.mdl"
+ITEM.name = "Universal Union Pickles"
+ITEM.model = "models/bioshockinfinite/dickle_jar.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved potato."
-ITEM.longdesc = "This UU-branded tater has a slightly moldy taste, but creative citizens have made wonders with them. Hey, starving kids in Ireland would probably kill for it."
-ITEM.quantity = 1
+ITEM.description = "A Universal Union approved jar of pickles."
+ITEM.longdesc = "This UU-branded pickle jar contains stubby, acid-y pickles. Good for putting on sandwitches, or eating the entire jar over the course of a lonely night of self-loathing."
+ITEM.quantity = 3
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
-ITEM.quantity = 1
+ITEM.quantity = 2
 ITEM.flag = "5"
 ITEM:Hook("use", function(item)
 	item.player:EmitSound(item.sound or "items/battery_pickup.wav")

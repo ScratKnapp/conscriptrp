@@ -1,14 +1,13 @@
-ITEM.name = "Universal Union Potato"
-ITEM.model = "models/bioshockinfinite/hext_potato.mdl"
+ITEM.name = "Universal Union Bran Cereal"
+ITEM.model = "models/bioshockinfinite/hext_cereal_box_cornflakes.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved potato."
-ITEM.longdesc = "This UU-branded tater has a slightly moldy taste, but creative citizens have made wonders with them. Hey, starving kids in Ireland would probably kill for it."
-ITEM.quantity = 1
+ITEM.description = "A Universal Union approved box of 'Bran' flakes."
+ITEM.longdesc = "This UU-branded cereal box raises some eyebrows with its unexplained quotation marks, but it's still relatively good, if often stale."3
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
-ITEM.quantity = 1
+ITEM.quantity = 2
 ITEM.flag = "5"
 ITEM:Hook("use", function(item)
 	item.player:EmitSound(item.sound or "items/battery_pickup.wav")

@@ -1,8 +1,8 @@
-ITEM.name = "Universal Union Canned Coffee"
+ITEM.name = "Universal Union Whiskey"
 ITEM.model = "models/bioshockinfinite/xoffee_mug_closed.mdl"
-ITEM.thirst = 15
-ITEM.description = "A Universal Union approved can of coffee, ready to drink."
-ITEM.longdesc = "This UU-branded can of coffee is ready to drink, having a bitter but strong taste. Perfect for when you've been informed you'll be pulling a double shift at the factory for the third consecutive day."
+ITEM.thirst = 20
+ITEM.description = "A Universal Union approved Whiskey bottle, available to Loyalists."
+ITEM.longdesc = "This UU-branded Whiskey bottle is of a bit higher class than most boozes a Citizen can get, in that it actually tastes pretty good. Available mostly to proven Loyalists."
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1

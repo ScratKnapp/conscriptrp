@@ -1,7 +1,7 @@
 ITEM.name = "Level II Kevlar Vest"
 ITEM.description = "A Level II kevlar vest, a popular choice for good for protection against small and medium pistol calibers."
 ITEM.category = "Upgrades"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/armor/w_eq_armor.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.price = 40000

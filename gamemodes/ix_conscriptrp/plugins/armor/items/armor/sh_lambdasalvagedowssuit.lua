@@ -1,5 +1,5 @@
 ITEM.name = "Lambda Salvaged OWS Suit"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/tnb/items/aphelion/shirt_rebeloverwatch.mdl"
 ITEM.replacements = "models/humans/group03/male_118.mdl"
 ITEM.description = "A set of Overwatch armor repurposed by Resistance technicians."
 ITEM.longdesc = "A set of OWS armor salvaged by the Resistance. In exchange for a fair amount of its protective properties, it is much lighter and more comfortable for a normal human to wear. \nWeight: 3\n\nChest: III+\nLimbs: IIIA"

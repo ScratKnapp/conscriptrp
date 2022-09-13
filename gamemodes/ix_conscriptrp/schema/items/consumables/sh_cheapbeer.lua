@@ -1,8 +1,9 @@
-ITEM.name = "Universal Union Canned Coffee"
-ITEM.model = "models/bioshockinfinite/xoffee_mug_closed.mdl"
-ITEM.thirst = 15
-ITEM.description = "A Universal Union approved can of coffee, ready to drink."
-ITEM.longdesc = "This UU-branded can of coffee is ready to drink, having a bitter but strong taste. Perfect for when you've been informed you'll be pulling a double shift at the factory for the third consecutive day."
+ITEM.name = "Universal Union Beer"
+ITEM.model = "models/bioshockinfinite/hext_bottle_lager.mdl"
+ITEM.thirst = 10
+ITEM.description = "Universal Union approved beer substitute."
+ITEM.longdesc = "This UU-branded bottle of beer has an alcohol content of 0.5% ABV, or roughly one tenth that of beers before the war. It's effectively water with barley flavoring."
+ITEM.quantity = 1
 ITEM.price = 525
 ITEM.width = 1
 ITEM.height = 1

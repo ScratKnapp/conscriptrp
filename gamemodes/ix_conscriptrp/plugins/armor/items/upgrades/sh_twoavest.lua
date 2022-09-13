@@ -1,7 +1,7 @@
 ITEM.name = "Level IIA Kevlar Vest"
 ITEM.description = "A Level IIA kevlar vest. Though considered outdated and not much in use even before the war, it's often better than nothing."
 ITEM.category = "Upgrades"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/armor/w_eq_armor.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.price = 40000

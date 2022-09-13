@@ -1,11 +1,11 @@
-ITEM.name = "Universal Union Chocolate Bar"
-ITEM.model = "models/bioshockinfinite/hext_candy_chocolate.mdl"
+ITEM.name = "Universal Union Banana"
+ITEM.model = "models/bioshockinfinite/hext_banana.mdl"
 ITEM.hunger = 10
-ITEM.description = "A Universal Union approved chocolate substitute."
-ITEM.longdesc = "This UU-branded chocolate bar is powdery and bitter, but savvy citizens have melted them down to use in home cooking to make sweets, where its downsides are less apparent."
-ITEM.quantity = 2
+ITEM.description = "A Universal Union approved banana."
+ITEM.longdesc = "This UU-branded nanner has a slightly moldy taste and never seems to brown if left sit for long periods. It's also never been seen in a green unripe form."
+ITEM.quantity = 1
 ITEM.price = 525
-ITEM.width = 2
+ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
 ITEM.quantity = 1
