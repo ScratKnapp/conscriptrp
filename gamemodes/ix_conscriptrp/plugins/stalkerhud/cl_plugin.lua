@@ -9,7 +9,7 @@ local Texture1 = Material("stalker/ui/health.png", "noclamp smooth")
 local Ammo = Material("stalker/ui/ammo.png", "noclamp smooth") 
 
 surface.CreateFont("stalkermainmenufont", {
-	font = "stalker2",
+	font = "alsina",
 	size = ScreenScale(8),
 	extended = true,
 	weight = 500 
