@@ -1,5 +1,5 @@
 ITEM.name = "OTA-EOW Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/nemez/combine_soldier_prop_vest_elite.mdl"
 ITEM.replacements = "models/Combine_Super_Soldier.mdl"
 ITEM.description = "A uniform issued to Elite Overwatch Soldiers."
 ITEM.longdesc = "This suit is issued to Elite Overwatch units, either deployed as squad leads or in areas of vital importance. The pinnacle of personal body armor, it offers unmatched protection from nearly any threat. The resulting outfit is so heavy, however, that individuals without the extensive augmentation the Elites have will struggle to use it at all. \nWeight: 6\n\nChest: V\nLimbs: III+"

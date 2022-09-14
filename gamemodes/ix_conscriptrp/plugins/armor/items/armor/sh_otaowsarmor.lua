@@ -1,5 +1,5 @@
 ITEM.name = "OTA-OWS Armor"
-ITEM.model = "models/props_c17/BriefCase001a.mdl"
+ITEM.model = "models/nemez/combine_soldier_prop_vest.mdl"
 ITEM.replacements = "models/Combine_Soldier.mdl"
 ITEM.description = "A uniform issued to members of the Overwatch Transhuman Arm."
 ITEM.longdesc = "This suit is issued to members of the Overwatch Transhuman Arm. With superior ballistic and environmental protection, even a single soldier is a formidable foe. The resulting kit is very heavy, and those who have not undergone Transhuman procedures find the armor extremely uncomfortable in its weight and ergonomics, causing many Resistance members to cut out parts seen as unnecessary to lighten the load. \nWeight: 5\n\nChest: IV\nLimbs: III"
