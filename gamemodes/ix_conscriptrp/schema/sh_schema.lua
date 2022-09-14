@@ -44,6 +44,17 @@ ix.flag.Add ("7", "Weapon Technician")
 
 
 
+ix.anim.SetModelClass("models/dpfilms/metropolice/biopolice.mdl", "metrocop") -- GRID
+ix.anim.SetModelClass("models/dpfilms/metropolice/civil_medic.mdl", "metrocop") -- HELIX
+ix.anim.SetModelClass("models/dpfilms/metropolice/rtb_police.mdl", "metrocop") -- SHIELD
+ix.anim.SetModelClass("models/dpfilms/metropolice/hunter_police.mdl", "metrocop") -- HAMMER
+ix.anim.SetModelClass("models/policetrench.mdl", "metrocop") -- JURY
+ix.anim.SetModelClass("models/dpfilms/metropolice/hdpolice.mdl", "metrocop") -- RCT
+ix.anim.SetModelClass("models/dpfilms/metropolice/urban_police.mdl") -- UNION
+ix.anim.SetModelClass("models/dpfilms/metropolice/police_bt.mdl") -- Command
+ix.anim.SetModelClass("models/dpfilms/metropolice/playermodels/pm_elite_police.mdl") -- High Command
+
+
 
 
 ix.currency.symbol = "Ŧ"
