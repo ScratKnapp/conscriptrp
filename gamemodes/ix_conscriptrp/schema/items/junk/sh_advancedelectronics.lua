@@ -1,7 +1,7 @@
 ITEM.name = "Advanced Grade Electronics"
 ITEM.model = "models/illusion/eftcontainers/circuitboard.mdl"
-ITEM.description = "An extremely high-tech piece of electronic equipment."
-ITEM.longdesc = "It is rare in the Zone for state-of-the-art electronics to be deployed, and even more rare for there to be spare parts. Objects like these are valuable to all groups with any number of needs, though these pieces often come from dangerous spots: UKM supply drops, raided Ecologist bunkers, or X-Labs, meaning that many Stalkers stay away from taking them, on the off chance they end up on the wrong end of an inspection."
+ITEM.description = "A quite high-tech piece of electronic equipment."
+ITEM.longdesc = "Electronics that come from machines that were more top of the line before the war are valued in their ability to keep those machines running even decades later."
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 16000

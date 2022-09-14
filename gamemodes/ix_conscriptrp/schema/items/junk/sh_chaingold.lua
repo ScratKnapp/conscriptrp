@@ -1,7 +1,7 @@
 ITEM.name = "Gold Chain"
 ITEM.model = "models/illusion/eftcontainers/goldchain.mdl"
 ITEM.description = "A piece of bling."
-ITEM.longdesc = "A chain made of Gold, typically worn by those with copious amounts of freely spent money. In the Zone, these are often found on Bandits, Renegades, and braggart Loners. Could be worth something."
+ITEM.longdesc = "A chain made of Gold, typically worn by Loyalists afforded such luxuries or Outlands inhabitants that want to look flashy."
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 8000

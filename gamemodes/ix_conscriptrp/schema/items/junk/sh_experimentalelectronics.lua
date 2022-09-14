@@ -1,7 +1,7 @@
 ITEM.name = "Experimental Grade Electronics"
 ITEM.model = "models/illusion/eftcontainers/virtex.mdl"
 ITEM.description = "A piece of electronic equipment not known to the public eye."
-ITEM.longdesc = "These electronics are so rare, and so powerful when used properly that nearly all factions are willing to take great risks, and bestow great rewards upon their acquisition. These pieces of tech are usually plundered from 'fresh' X-Labs which have not seen much looting, or similar installations in the deepest parts of the North. It is said that there are materials used in the construction of these electronics that are not known to the world at large. Acquiring these materials is borderline a bragging right, as only those who've undergone extensive tribulation could hope to sell them in the first place."
+ITEM.longdesc = "These electronics are from some sort of high-tech facility before the war, used in technologies the public eye never got to see. To say that Combine and Resistance alike are very interested in these things is an understatement."
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 50000

@@ -1,12 +1,12 @@
-ITEM.name = "Modern Military Backpack (Russian)"
-ITEM.description = "A backpack. Features compartments for easy storage of your valuables."
+ITEM.name = "Rugged Backpack"
+ITEM.description = "A tan colored backpack used by hikers and other well-prepared outdoorsy types."
 ITEM.width = 2
 ITEM.height = 2
 ITEM.invWidth = 5
 ITEM.invHeight = 3
 ITEM.flag = "1"
 ITEM.price = 5000
-ITEM.model = "models/kek1ch/sumka3.mdl"
+ITEM.model = "models/shtokerbox/ground_backpack_czech.mdl"
 ITEM.weaponCategory = "back"
 ITEM.exRender = true
 ITEM.iconCam = {

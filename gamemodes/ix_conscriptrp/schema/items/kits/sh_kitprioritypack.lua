@@ -28,6 +28,7 @@ ITEM.items[1] = {
 		{"chocolate"}, 
 		{"cannedcoffee"}, 
 		{"chips"}, 
+		{"cigarettes2"}, 
 	}
 }
 

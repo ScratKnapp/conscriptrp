@@ -15,9 +15,17 @@ ITEM.functions.use = {
 	name = "Use",
 	icon = "icon16/stalker/heal.png",
 	OnRun = function(item)
-		item.player:AddBuff("buff_staminarestore", 300, { amount = 10 })
-		
+		local quantity = item:GetData("quantity", item.quantity)
+	
 		ix.chat.Send(item.player, "iteminternal", "applies their "..item.name..".", false)
+
+
+		quantity = quantity - 1
+
+		if (quantity >= 1) then
+			item:SetData("quantity", quantity)
+			return false
+		end
 
 		return true
 	end,

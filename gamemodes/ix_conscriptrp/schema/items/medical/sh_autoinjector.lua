@@ -7,7 +7,7 @@ ITEM.height = 1
 ITEM.category = "Medical"
 ITEM.price = "4000"
 ITEM.flag = "1"
-ITEM.sound = "items/smallmedkit1.wav"
+ITEM.sound = "ccr/syringe/health_pen.mp3"
 ITEM.weight = 0.05
 
 ITEM.functions.use = {

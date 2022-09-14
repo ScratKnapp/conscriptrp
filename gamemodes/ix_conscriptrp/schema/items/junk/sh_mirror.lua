@@ -1,9 +1,0 @@
-ITEM.name = "Telescopic Hand Mirror"
-ITEM.model = "models/kek1ch/mirror.mdl"
-ITEM.description = "A mirror on a telescopic metal stick."
-ITEM.longdesc = "A mirror on a stick that can be extended to peek into uncertain areas."
-ITEM.category = "junk"
-ITEM.flag = "1"
-ITEM.price = 1000
-ITEM.width = 1
-ITEM.height = 1

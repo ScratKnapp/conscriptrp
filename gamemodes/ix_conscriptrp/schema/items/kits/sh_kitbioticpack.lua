@@ -1,7 +1,7 @@
 ITEM.name = "Biotic Grade Ration Pack"
 ITEM.description= "A packed Biotic Meal."
 ITEM.longdesc = "Biotic packs are specifically meant to meet the dietary needs of Vortigaunts. Though the rotten flesh smell that invades the nostrils the moment its unsealed is a turn-off for humans, Vorts generally tend to be content with them."
-ITEM.model = "models/weapons/w_packatc.mdl"
+ITEM.model = "models/weapons/w_packatb.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Kits"
