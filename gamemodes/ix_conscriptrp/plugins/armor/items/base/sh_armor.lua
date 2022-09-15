@@ -27,7 +27,6 @@ ITEM.br = 0
 ITEM.fbr = 0
 ITEM.ar = 0
 ITEM.far = 0
-ITEM.radProt = 0
 ITEM.equipIcon = Material("materials/vgui/ui/stalker/misc/equip.png")
 ITEM.skincustom = {}
 ITEM.outfitCategory = "model"
@@ -78,11 +77,6 @@ end,
 	end,
 	OnRun = function(item, data)
 		local client = item.player
-		
-	    if item:GetData("durability", 100) < 100 then
-            client:NotifyLocalized("Must Repair Armor")
-            return false
-        end
 		
 		if (data) then
 			local char = client:GetChar()

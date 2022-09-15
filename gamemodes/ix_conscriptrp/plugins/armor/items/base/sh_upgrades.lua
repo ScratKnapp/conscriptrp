@@ -38,12 +38,7 @@ local function attachment(item, data, combine)
         client:NotifyLocalized("noArmorTarget")
         return false
     else
-        
-        if target:GetData("durability", 100) < 100 then
-            client:NotifyLocalized("Must Repair Armor")
-            return false
-        end
-        
+             
         local mods = target:GetData("mod", {})
         -- Is the Armor Slot Filled?
         if (mods[item.slot]) then
