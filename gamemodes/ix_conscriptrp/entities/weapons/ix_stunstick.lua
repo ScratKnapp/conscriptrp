@@ -38,7 +38,7 @@ SWEP.Secondary.Automatic = false
 SWEP.Secondary.Ammo = ""
 
 SWEP.ViewModel = Model("models/weapons/c_stunstick.mdl")
-SWEP.WorldModel = Model("models/weapons/w_stunbaton.mdl")
+SWEP.WorldModel = Model("models/dpfilms/metropolice/props/hd_stunbaton.mdl")
 
 SWEP.UseHands = true
 SWEP.LowerAngles = Angle(15, -10, -20)

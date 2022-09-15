@@ -1,7 +1,7 @@
-ITEM.name = "Med-gel Vial"
-ITEM.description = "A medium size application of medical gel."
-ITEM.longdesc = "A glass vial of med-gel. Twist off the top lid, then apply gel to any wound to provide immediate pain relief and aid in healing."
-ITEM.model = "models/ez2models/items/arbeit/healthvial.mdl"
+ITEM.name = "Military Bandage"
+ITEM.description = "Military grade wound packing."
+ITEM.longdesc = "Typically found in pre-war IFAK kits before the Combine largely moved to its gel-based creations, these things still end up in the hands of professionals for when the fighting gets heavy."
+ITEM.model = "models/illusion/eftcontainers/armybandage.mdl"
 ITEM.width = 1
 ITEM.height = 2
 ITEM.category = "Medical"
@@ -33,7 +33,6 @@ ITEM.functions.use = {
 		return (!IsValid(item.entity))
 	end
 }
-
 
 function ITEM:GetDescription()
 	if (!self.entity or !IsValid(self.entity)) then

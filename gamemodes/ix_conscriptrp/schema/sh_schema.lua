@@ -50,9 +50,9 @@ ix.anim.SetModelClass("models/dpfilms/metropolice/rtb_police.mdl", "metrocop") -
 ix.anim.SetModelClass("models/dpfilms/metropolice/hunter_police.mdl", "metrocop") -- HAMMER
 ix.anim.SetModelClass("models/policetrench.mdl", "metrocop") -- JURY
 ix.anim.SetModelClass("models/dpfilms/metropolice/hdpolice.mdl", "metrocop") -- RCT
-ix.anim.SetModelClass("models/dpfilms/metropolice/urban_police.mdl") -- UNION
-ix.anim.SetModelClass("models/dpfilms/metropolice/police_bt.mdl") -- Command
-ix.anim.SetModelClass("models/dpfilms/metropolice/playermodels/pm_elite_police.mdl") -- High Command
+ix.anim.SetModelClass("models/dpfilms/metropolice/urban_police.mdl", "metrocop") -- UNION
+ix.anim.SetModelClass("models/dpfilms/metropolice/police_bt.mdl", "metrocop") -- Command
+ix.anim.SetModelClass("models/dpfilms/metropolice/playermodels/pm_elite_police.mdl", "metrocop") -- High Command
 
 
 
