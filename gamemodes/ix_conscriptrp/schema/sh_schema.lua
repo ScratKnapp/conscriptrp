@@ -52,8 +52,7 @@ ix.anim.SetModelClass("models/policetrench.mdl", "metrocop") -- JURY
 ix.anim.SetModelClass("models/dpfilms/metropolice/hdpolice.mdl", "metrocop") -- RCT
 ix.anim.SetModelClass("models/dpfilms/metropolice/urban_police.mdl", "metrocop") -- UNION
 ix.anim.SetModelClass("models/dpfilms/metropolice/police_bt.mdl", "metrocop") -- Command
-ix.anim.SetModelClass("models/dpfilms/metropolice/playermodels/pm_elite_police.mdl", "metrocop") -- High Command
-
+ix.anim.SetModelClass("models/dpfilms/metropolice/playermodels/elite_police.mdl", "metrocop") -- High Command
 
 
 

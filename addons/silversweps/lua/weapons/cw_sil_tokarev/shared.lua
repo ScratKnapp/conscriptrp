@@ -92,7 +92,7 @@ SWEP.SpeedDec = 10
 
 SWEP.Slot = 1
 SWEP.SlotPos = 0
-SWEP.NormalHoldType = "revolver"
+SWEP.NormalHoldType = "pistol"
 SWEP.RunHoldType = "normal"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_kk_ins2_base"
