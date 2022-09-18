@@ -21,7 +21,7 @@ ix.util.Include("libs/thirdparty/sh_netstream2.lua")
 ix.util.Include("cl_schema.lua")
 ix.util.Include("sv_schema.lua")
 
-ix.util.Include("cl_skin.lua")
+--ix.util.Include("cl_skin.lua")
 
 ix.util.Include("cl_hooks.lua")
 ix.util.Include("sh_hooks.lua")
@@ -39,8 +39,9 @@ ix.flag.Add("P", "PAC Access")
 ix.flag.Add("3", "T2 Trade.")
 ix.flag.Add("4", "T3 Trade.")
 ix.flag.Add("5", "Consumables")
-ix.flag.Add("6", "Armor Technician")
-ix.flag.Add ("7", "Weapon Technician")
+ix.flag.Add("6", "Tech Nerd Craftables")
+ix.flag.Add ("7", "Field Medic Craftables")
+ix.flag.Add("8", "Pyromaniac Craftables")
 
 
 
