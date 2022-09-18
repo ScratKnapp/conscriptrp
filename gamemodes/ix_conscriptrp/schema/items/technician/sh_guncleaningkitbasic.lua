@@ -6,6 +6,7 @@ ITEM.category = "Technician"
 ITEM.repairAmount = 500
 ITEM.repairTreshhold = 8000
 ITEM.maxStack = 3
+ITEM.flag = "A"
 ITEM.sound = "ambient/water/drip2.wav"
 ITEM.weight = 0.5
 ITEM.price = 15000

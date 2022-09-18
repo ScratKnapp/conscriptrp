@@ -16,3 +16,4 @@ RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 			return true
 		end
 	end
+end)
