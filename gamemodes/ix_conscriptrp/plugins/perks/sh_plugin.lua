@@ -67,8 +67,8 @@ ix.command.Add("CharShowTraits", {
 
 			if perklist[k] >= 1 then
 				str = str.. "\n" ..v.name
-				str = str.. "\n" ..v.effects
-				str = str.. "=====" 
+				str = str.. "\n" ..v.effect
+				str = str.. "\n=====\n" 
 			end 
 		end	
 		return str
@@ -91,8 +91,8 @@ ix.command.Add("MyTraits", {
 			if perklist[k] >= 1 then
 				str = str.. "\n" ..v.name
 				str = str.. "\n" ..v.description
-				str = str.. "\n" ..v.effects
-				str = str.. "=====" 
+				str = str.. "\n" ..v.effect
+				str = str.. "\n=====" 
 			end 
 		end	
 		return str

@@ -73,7 +73,7 @@ ix.command.Add("Rollstat", {
 
         elseif stat == "evadeantlion" then
             
-            local statadd = client:GetCharacter():GetPerk("evade", 0)
+            local statadd = client:GetCharacter():GetPerk("agile", 0)
 
             if statadd == 1 then
                 add = add + 5
@@ -89,7 +89,7 @@ ix.command.Add("Rollstat", {
         
         elseif stat == "evadezombie" then
             
-            local statadd = client:GetCharacter():GetPerk("evade", 0)
+            local statadd = client:GetCharacter():GetPerk("agile", 0)
 
             if statadd == 1 then
                 add = add + 5
