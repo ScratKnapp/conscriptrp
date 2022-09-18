@@ -3,41 +3,40 @@ PLUGIN.name = "Perks"
 PLUGIN.author = "Verne"
 PLUGIN.desc = "Perks that can be added to a character.."
 
-ix.command.Add("CharSetTrait", {
-	description = "Set a character's trait. Set to 0 to remove.",
+ix.command.Add("CharAddTrait", {
+	description = "Assign a trait to a character.",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string,
-		ix.type.number
 	},
-	OnRun = function(self, client, target, perkName, level)
+	OnRun = function(self, client, target, perkName)
+
 		for k, v in pairs(ix.perks.list) do
 			if (ix.util.StringMatches(L(v.name, client), perkName) or ix.util.StringMatches(k, perkName)) then
-				target:SetPrk(k, math.abs(level))
-				return "@attributeSet", target:GetName(), L(v.name, client), math.abs(level)
+				target:SetPrk(k, 1)
+				return "Added trait " ..perkName.. " to " .. target:GetName()
 			end
 		end
 
-		return "Perk not found!"
+		return "Trait not found!"
 	end
 })
 
-ix.command.Add("CharAddTrait", {
-	description = "Add a trait to a character.",
+ix.command.Add("CharRemoveTrait", {
+	description = "Remove a trait from a character.",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string,
-		ix.type.number
 	},
-	OnRun = function(self, client, target, perkName, level)
+	OnRun = function(self, client, target, perkName)
 		for k, v in pairs(ix.perks.list) do
 			if (ix.util.StringMatches(L(v.name, client), perkName) or ix.util.StringMatches(k, perkName)) then
-				target:UpdatePrk(k, math.abs(level))
-				return "Trait Updated", target:GetName(), L(v.name, client), math.abs(level)
+				target:SetPrk(k, 0)
+				return "Removed trait " ..perkName.. " from " .. target:GetName()
 			end
 		end
 
@@ -66,8 +65,10 @@ ix.command.Add("CharShowTraits", {
 
 		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
 
-			if perklist[k] > 1 then
+			if perklist[k] >= 1 then
 				str = str.. "\n" ..v.name
+				str = str.. "\n" ..v.effects
+				str = str.. "=====" 
 			end 
 		end	
 		return str
@@ -87,13 +88,17 @@ ix.command.Add("MyTraits", {
 
 		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
 
-			if perklist[k] > 1 then
+			if perklist[k] >= 1 then
 				str = str.. "\n" ..v.name
+				str = str.. "\n" ..v.description
+				str = str.. "\n" ..v.effects
+				str = str.. "=====" 
 			end 
 		end	
 		return str
 	end
 })
+
 
 function PLUGIN:PostPlayerLoadout(client)
 	ix.perks.Setup(client)
