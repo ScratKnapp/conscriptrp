@@ -5,6 +5,13 @@ ITEM.model = "models/weapons/w_packati.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Kits"
+ITEM.itemsForcedDrop[1] = {
+
+	["orange"] = 1,
+}
+
+
+
 ITEM.items[1] = {
 	dropAmount = 3, --How many times it will roll for drop
 	dropRareChance = 30, --chances for the rarer drops
