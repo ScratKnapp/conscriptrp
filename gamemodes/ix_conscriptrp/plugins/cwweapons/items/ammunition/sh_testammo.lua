@@ -1,0 +1,12 @@
+ITEM.name = "Pulse Rifle Energy Box"
+ITEM.model = "models/Items/combine_rifle_cartridge01.mdl"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.ammo = "ar2" // type of the ammo
+ITEM.ammoAmount = 30 // amount of the ammo
+ITEM.description= "A box of Pulse Rifle cells."
+ITEM.longdesc = "A box of pulse rifle cells resembling more traditional boxed magazines loaded into machine guns."
+ITEM.price = 1000
+ITEM.flag = "3"
+ITEM.weight = 0.015
+ITEM.isAmmo = true
