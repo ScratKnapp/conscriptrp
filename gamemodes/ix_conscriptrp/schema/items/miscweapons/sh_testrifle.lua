@@ -1,7 +1,7 @@
 ITEM.name = "Overwatch Standard Issue Pulse Rifle"
 ITEM.description = "A Metropolitan Police Force standard issue steel baton with electrified tip. Dubbed a 'Citizen Compliance and Punishment Tool' by the Combine, it has several power settings for simply causing pain, or nonlethal incapacitation."
 ITEM.model = "models/dpfilms/metropolice/props/hd_stunbaton.mdl"
-ITEM.class = "ix_stunstick"
+ITEM.class = "weapon_ar2"
 ITEM.weaponCategory = "primary"
 ITEM.price = 5000
 ITEM.flag = "1"
