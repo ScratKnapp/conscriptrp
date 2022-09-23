@@ -1,5 +1,5 @@
 ITEM.name = "7.62x39mm Belt"
-ITEM.model = "models/silver/stalker/items/item_762x39belt.mdl"
+ITEM.model = "models/Items/BoxMRounds.mdl"
 ITEM.width = 2
 ITEM.height = 1
 ITEM.ammo = "7.62x39MMB"

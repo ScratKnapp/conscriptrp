@@ -1,6 +1,6 @@
-ITEM.name = "9x18mm"
-ITEM.model = "models/Items/BoxSRounds.mdl"
-ITEM.ammo = "9x18MM" 
+ITEM.name = "Pulse Rifle Ammo"
+ITEM.model = "models/Items/combine_rifle_cartridge01.mdl"
+ITEM.ammo = "ar2" 
 ITEM.ammoAmount = 30 
 ITEM.description= "A box that contains %s rounds of 9x18mm ammo."
 ITEM.longdesc = "This 9x18mm round contains full metal jacket rounds with a steel penetrator and a lead core under a metal jacket."

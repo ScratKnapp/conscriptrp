@@ -955,13 +955,7 @@ ITEM.functions.SwapAmmo = {
     if (atts) then
         for atcat, data in pairs(atts) do
             for k, name in pairs(data.atts) do
-                if name == "am_matchgrade" then
-                    ammoname = "Match Grade"
-                    table.insert(targets, {
-                        name = ammoname,
-                        data = {name},
-                    })
-				elseif name == "am_penetrator" then
+				if name == "am_penetrator" then
                     ammoname = "Penetrator"
                     table.insert(targets,{
                         name = ammoname,

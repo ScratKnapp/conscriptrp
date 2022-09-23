@@ -1,5 +1,5 @@
 ITEM.name = "4.6x30mm"
-ITEM.model = "models/kek1ch/ammo_762x25_p.mdl"
+ITEM.model = "models/Items/BoxMRounds.mdl"
 ITEM.ammo = "4.6x30MM" // type of the ammo
 ITEM.ammoAmount = 30 // amount of the ammo
 ITEM.description= "A box that contains %s rounds of 4.6x30mm ammo."

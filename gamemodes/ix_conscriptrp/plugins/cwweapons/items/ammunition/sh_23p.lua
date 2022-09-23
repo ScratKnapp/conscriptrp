@@ -1,5 +1,5 @@
 ITEM.name = "23x75mm Penetrator"
-ITEM.model = "models/kek1ch/ammo_12x70_buck.mdl"
+ITEM.model = "models/Items/BoxBuckshot.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.ammo = "23mm Shell -P-"

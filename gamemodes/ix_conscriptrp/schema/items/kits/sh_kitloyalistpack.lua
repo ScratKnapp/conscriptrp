@@ -5,8 +5,15 @@ ITEM.model = "models/weapons/w_packatl.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Kits"
+ITEM.itemsForcedDrop = {
+
+	{"watercan"},
+	{"loyalistrationunit"},
+	{"chocolate"}, 
+
+}
 ITEM.items[1] = {
-	dropAmount = 5, --How many times it will roll for drop
+	dropAmount = 3, --How many times it will roll for drop
 	dropRareChance = 35, --chances for the rarer drops
 	dropVeryRareChance = 15,
 	itemsCommon = {
