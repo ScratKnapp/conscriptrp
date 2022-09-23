@@ -63,9 +63,10 @@ end
 SWEP.CanRestOnObjects = true
 
 SWEP.Attachments = {
---	[1] = {header = "Silencer", offset = {-400, 150}, atts = {"md_tundra9mm"}},
---	["+reload"] = {header = "Match", offset = {1200, 200}, atts = {"am_matchgrade""}},
-}
+	--	[1] = {header = "Silencer", offset = {-400, 150}, atts = {"md_tundra9mm"}},
+	--	["+reload"] = {header = "Match", offset = {1200, 200}, atts = {"am_matchgrade""}},
+	}
+	
 
 SWEP.Animations = {fire = {"IR_fire"},
 	reload = "IR_reload",
@@ -95,7 +96,6 @@ SWEP.Author			= "TGSKing"
 SWEP.Contact		= ""
 SWEP.Purpose		= ""
 SWEP.Instructions	= ""
-SWEP.UseHands       = true
 SWEP.AddSafeMode = true
 SWEP.ViewModelFOV = 54
 SWEP.ViewModelFlip	= false
