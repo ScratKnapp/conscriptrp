@@ -172,6 +172,9 @@ ITEM.functions.split = {
 }
 
 ITEM.functions.combine = {
+	name = "Combine",
+    tip = "Combine ammo boxes of the same type.",
+    icon = "icon16/stalker/split.png",
 	OnCanRun = function(item, data)
 		if !data then
 			return false
