@@ -1,9 +1,0 @@
-ITEM.name = "Advanced Grade Electronics"
-ITEM.model = "models/illusion/eftcontainers/circuitboard.mdl"
-ITEM.description = "A quite high-tech piece of electronic equipment."
-ITEM.longdesc = "Electronics that come from machines that were more top of the line before the war are valued in their ability to keep those machines running even decades later."
-ITEM.category = "junk"
-ITEM.flag = "1"
-ITEM.price = 16000
-ITEM.width = 2
-ITEM.height = 1
