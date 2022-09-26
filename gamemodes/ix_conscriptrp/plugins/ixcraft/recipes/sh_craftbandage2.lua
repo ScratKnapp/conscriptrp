@@ -1,11 +1,12 @@
-RECIPE.name = "Field Medic Test"
-RECIPE.description = "Field Medics Only"
-RECIPE.model = "models/props_junk/PopCan01a.mdl"
+RECIPE.name = "Bandage"
+RECIPE.description = "Sterilize some cloth with high proof Whiskey for a basic bandage."
+RECIPE.model = "models/illusion/eftcontainers/bandage.mdl"
 RECIPE.requirements = {
-	["conscriptuniform"] = 1,
+	["whiskey"] = 1,
+	["fabricpatch"] = 1,
 }
 RECIPE.results = {
-	["conscriptuniformfemale"] = 1
+	["bandage"] = 1
 
 }
 RECIPE.flag = "7" 

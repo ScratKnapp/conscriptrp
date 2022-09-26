@@ -1,6 +1,6 @@
-ITEM.name = "VOG-25 Khattabka Grenade"
+ITEM.name = "Improvised Grenade"
 ITEM.model = ("models/silver/outbreak/weapons/w_vog25.mdl")
-ITEM.description = "A Makeshift Grenade"
+ITEM.description = "A homemade grenade."
 ITEM.class = "cw_sil_nade_vog25"
 ITEM.weaponCategory = "secondary"
 ITEM.isWeapon = true

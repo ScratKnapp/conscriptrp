@@ -1,14 +1,16 @@
-RECIPE.name = "Pyromaniac Test"
-RECIPE.description = "Pyros Only"
-RECIPE.model = "models/props_junk/PopCan01a.mdl"
+RECIPE.name = "IFAK"
+RECIPE.description = "Assemble an Individual First Aid Kit from some higher grade first aid items."
+RECIPE.model = "models/illusion/eftcontainers/ifak.mdl"
 RECIPE.requirements = {
-	["conscriptuniform"] = 1,
+	["morphine"] = 1,
+	["armybandage"] = 1,
+	["syringe"] = 1,
 }
 RECIPE.results = {
-	["conscriptuniformfemale"] = 1
+	["medkitarmy"] = 1
 
 }
-RECIPE.flag = "8" 
+RECIPE.flag = "7" 
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do
