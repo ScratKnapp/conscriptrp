@@ -42,7 +42,7 @@ function ITEM:GetDescription()
 
 		return str
 	else
-		return self.desc
+		return self.description
 	end
 end
 
