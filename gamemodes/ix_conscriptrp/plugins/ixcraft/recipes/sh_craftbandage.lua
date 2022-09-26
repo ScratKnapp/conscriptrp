@@ -1,4 +1,4 @@
-RECIPE.name = "Bandage"
+RECIPE.name = "Bandage with Vodka"
 RECIPE.description = "Sterilize some cloth with high proof Vodka for a basic bandage."
 RECIPE.model = "models/illusion/eftcontainers/bandage.mdl"
 RECIPE.requirements = {

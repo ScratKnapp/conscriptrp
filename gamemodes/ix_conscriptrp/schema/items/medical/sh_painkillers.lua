@@ -1,7 +1,7 @@
 ITEM.name = "Painkillers"
 ITEM.description = "A bottle of drug-store painkillers."
 ITEM.longdesc = "It's your regular over the counter pain reliver, like Asprin. Useful for getting rid of minor pains. Don't mix with alcohol!"
-ITEM.model = "models/illusion/eftcontainers/morphine.mdl"
+ITEM.model = "models/illusion/eftcontainers/ibuprofen.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.category = "Medical"

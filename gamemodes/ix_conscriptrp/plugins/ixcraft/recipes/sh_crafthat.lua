@@ -2,12 +2,12 @@ RECIPE.name = "Hat"
 RECIPE.description = "Craft a hat with Refined Metal."
 RECIPE.model = "models/tnb/items/aphelion/beanie.mdl"
 RECIPE.requirements = {
-	["refineddmetal"] = 3,
+	["refinedmetal"] = 3,
 }
 
 
 RECIPE.results = {
-	["metalmask"] = 1
+	["beanie"] = 1
 
 }
 

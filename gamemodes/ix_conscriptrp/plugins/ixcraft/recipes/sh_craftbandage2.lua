@@ -1,4 +1,4 @@
-RECIPE.name = "Bandage"
+RECIPE.name = "Bandage with Whiskey"
 RECIPE.description = "Sterilize some cloth with high proof Whiskey for a basic bandage."
 RECIPE.model = "models/illusion/eftcontainers/bandage.mdl"
 RECIPE.requirements = {
@@ -9,7 +9,7 @@ RECIPE.results = {
 	["bandage"] = 1
 
 }
-RECIPE.flag = "7" 
+RECIPE.flag = "7"
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do

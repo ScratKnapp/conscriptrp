@@ -1,7 +1,7 @@
 ITEM.name = "Medical"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.desc = "Helps your body survive in the zone - in one way or another."
+ITEM.desc = "Medical supply."
 ITEM.longdesc = " "
 ITEM.stopsBleed = false
 ITEM.quantity = 1
