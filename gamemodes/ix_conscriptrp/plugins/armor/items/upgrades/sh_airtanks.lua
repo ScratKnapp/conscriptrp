@@ -11,9 +11,9 @@ ITEM.isUpgrade = true
 ITEM.isMiscUpg = true
 ITEM.weight = 0.05
 ITEM.iconCam = {
-	pos = Vector(-200, 0, 52.287582397461)
-	ang = Angle(0, 0, 0)
-	fov = 7.6470588235294,
+    pos = Vector(-200, 0, 52.287582397461),
+    ang = Angle(0, 0, 0),
+    fov = 7.6470588235294
 }
 
 
