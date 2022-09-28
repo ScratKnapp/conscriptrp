@@ -3,6 +3,7 @@ ITEM.description = "Nice desc"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.isArmor = true
+ITEM.isMisc = true
 ITEM.price = 1
 ITEM.model = "models/props_c17/BriefCase001a.mdl"
 ITEM.playermodel = nil

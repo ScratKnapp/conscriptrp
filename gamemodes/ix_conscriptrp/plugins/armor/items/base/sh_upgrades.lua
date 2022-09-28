@@ -12,11 +12,13 @@ ITEM.quantity = 1
 ITEM.flag = "2"
 ITEM.isAttachment = true
 
+
 -- Slot Numbers Defined
 
 -- Armor Vest: 1
 -- Mask: 2
 -- Helmet: 3
+-- Misc: 4
 
 local function attachment(item, data, combine)
     local client = item.player
@@ -115,6 +117,11 @@ ITEM.functions.Upgrade = {
                             data = {v:GetID()},
                         })
                     elseif v.isGasmask and item.isGasmaskUpg then
+						table.insert(targets, {
+                            name = L(v.name),
+                            data = {v:GetID()},
+                        })
+                    elseif v.isMisc and item.isMiscUpg then
 						table.insert(targets, {
                             name = L(v.name),
                             data = {v:GetID()},
