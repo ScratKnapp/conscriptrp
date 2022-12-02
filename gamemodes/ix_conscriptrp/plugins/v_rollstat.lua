@@ -27,14 +27,14 @@ ix.command.Add("Rollstat", {
                 add = 10
             end
 
-            statadd = client:GetCharacter():GetPerk("fivefingerdiscount", 0)
+            statadd = client:GetCharacter():GetPerk("stickyfingers2", 0)
 
             if statadd == 1 then
                 add = 15
             end
 
 
-            local statadd = client:GetCharacter():GetPerk("mastertakerofthings", 0)
+            local statadd = client:GetCharacter():GetPerk("stickyfingers3", 0)
 
             if statadd == 1 then
                 add = 15
@@ -49,14 +49,14 @@ ix.command.Add("Rollstat", {
                 add = 5
             end
 
-            statadd = client:GetCharacter():GetPerk("locksmith", 0)
+            statadd = client:GetCharacter():GetPerk("housebreaker2", 0)
 
             if statadd == 1 then
                 add = 10
             end
 
 
-            statadd = client:GetCharacter():GetPerk("mastertakerofthings", 0)
+            statadd = client:GetCharacter():GetPerk("housebreaker3", 0)
 
             if statadd == 1 then
                 add = 15
