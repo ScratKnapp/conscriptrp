@@ -149,7 +149,7 @@ function PANEL:Init()
 
  -- attributes subpanel
 self.attributes = self:AddSubpanel("attributes")
-self.attributes:SetTitle("chooseSkills")
+self.attributes:SetTitle("Assign points to your attributes. Below 5 incurs a roll penalty.")
 
 local attributesModelList = self.attributes:Add("Panel")
 attributesModelList:Dock(LEFT)
