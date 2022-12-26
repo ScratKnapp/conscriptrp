@@ -1,4 +1,4 @@
-PLUGIN.name = "Attributes
+PLUGIN.name = "Attributes"
 PLUGIN.author = "Scrat Knapp"
 PLUGIN.desc = "RPG Attributes for Frontline CMRP and some extra commands"
 

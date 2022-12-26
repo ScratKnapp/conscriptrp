@@ -100,88 +100,51 @@ function PANEL:Init()
 	descriptionProceed:Dock(BOTTOM)
 	descriptionProceed.DoClick = function()
 		if (self:VerifyProgression("description")) then
+			-- there are no panels on the attributes section other than the create button, so we can just create the character
+			if (#self.attributesPanel:GetChildren() < 2) then
+				self:SendPayload()
+				return
+			end
 
 			self.progress:IncrementProgress()
-			self:SetActiveSubpanel("charsheet")
+			self:SetActiveSubpanel("attributes")
 		end
 	end
 
--------------------------- NEW
-	-- charsheet subpanel
-	self.charsheet = self:AddSubpanel("charsheet")
-	self.charsheet:SetTitle("chooseDescription")
+	-- attributes subpanel
+	self.attributes = self:AddSubpanel("attributes")
+	self.attributes:SetTitle("chooseSkills")
 
-	local charsheetModelList = self.charsheet:Add("Panel")
-	charsheetModelList:Dock(LEFT)
-	charsheetModelList:SetSize(halfWidth, halfHeight)
+	local attributesModelList = self.attributes:Add("Panel")
+	attributesModelList:Dock(LEFT)
+	attributesModelList:SetSize(halfWidth, halfHeight)
 
-	local charsheetBack = charsheetModelList:Add("ixMenuButton")
-	charsheetBack:SetText("return")
-	charsheetBack:SetContentAlignment(4)
-	charsheetBack:Dock(BOTTOM)
-	charsheetBack.DoClick = function()
+	local attributesBack = attributesModelList:Add("ixMenuButton")
+	attributesBack:SetText("return")
+	attributesBack:SetContentAlignment(4)
+	attributesBack:Dock(BOTTOM)
+	attributesBack.DoClick = function()
 		self.progress:DecrementProgress()
 		self:SetActiveSubpanel("description")
-
 	end
 
-	self.charsheetModel = charsheetModelList:Add("ixModelPanel")
-	self.charsheetModel:Dock(FILL)
-	self.charsheetModel:SetModel(self.factionModel:GetModel())
-	self.charsheetModel:SetFOV(65)
-	self.charsheetModel.PaintModel = self.charsheetModel.Paint
+	self.attributesModel = attributesModelList:Add("ixModelPanel")
+	self.attributesModel:Dock(FILL)
+	self.attributesModel:SetModel(self.factionModel:GetModel())
+	self.attributesModel:SetFOV(65)
+	self.attributesModel.PaintModel = self.attributesModel.Paint
 
-	self.charsheetPanel = self.charsheet:Add("Panel")
-	self.charsheetPanel:SetWide(halfWidth + padding * 2)
-	self.charsheetPanel:Dock(RIGHT)
+	self.attributesPanel = self.attributes:Add("Panel")
+	self.attributesPanel:SetWide(halfWidth + padding * 2)
+	self.attributesPanel:Dock(RIGHT)
 
-	local charsheetProceed = self.charsheetPanel:Add("ixMenuButton")
-	charsheetProceed:SetText("proceed")
-	charsheetProceed:SetContentAlignment(6)
-	charsheetProceed:Dock(BOTTOM)
-	charsheetProceed.DoClick = function()
-		if (self:VerifyProgression("charsheet")) then
-			--self:SetActiveSubpanel("description")
-			self:SendPayload()
-		end
+	local create = self.attributesPanel:Add("ixMenuButton")
+	create:SetText("finish")
+	create:SetContentAlignment(6)
+	create:Dock(BOTTOM)
+	create.DoClick = function()
+		self:SendPayload()
 	end
------------------------------- NEW END
-
- -- attributes subpanel
-self.attributes = self:AddSubpanel("attributes")
-self.attributes:SetTitle("Assign points to your attributes. Below 5 incurs a roll penalty.")
-
-local attributesModelList = self.attributes:Add("Panel")
-attributesModelList:Dock(LEFT)
-attributesModelList:SetSize(halfWidth, halfHeight)
-
-local attributesBack = attributesModelList:Add("ixMenuButton")
-attributesBack:SetText("return")
-attributesBack:SetContentAlignment(4)
-attributesBack:Dock(TOP)
-attributesBack.DoClick = function()
-    self.progress:DecrementProgress()
-    self:SetActiveSubpanel("charsheet")
-end
-
-self.attributesModel = attributesModelList:Add("ixModelPanel")
-self.attributesModel:Dock(FILL)
-self.attributesModel:SetModel(self.factionModel:GetModel())
-self.attributesModel:SetFOV(65)
-self.attributesModel.PaintModel = self.attributesModel.Paint
-
-self.attributesPanel = self.attributes:Add("Panel")
-self.attributesPanel:SetWide(halfWidth + padding * 2)
-self.attributesPanel:Dock(RIGHT)
-
-local create = self.attributesPanel:Add("ixMenuButton")
-create:SetText("finish")
-create:SetContentAlignment(6)
-create:Dock(TOP)
-create.DoClick = function()
-    self:SendPayload()
-end 
-
 
 	-- creation progress panel
 	self.progress = self:Add("ixSegmentedProgress")
@@ -201,13 +164,11 @@ end
 			if (istable(model)) then
 				self.factionModel:SetModel(model[1], model[2] or 0, model[3])
 				self.descriptionModel:SetModel(model[1], model[2] or 0, model[3])
-				self.charsheetModel:SetModel(model[1], model[2] or 0, model[3])
-				--self.attributesModel:SetModel(model[1], model[2] or 0, model[3])
+				self.attributesModel:SetModel(model[1], model[2] or 0, model[3])
 			else
 				self.factionModel:SetModel(model)
 				self.descriptionModel:SetModel(model)
-				self.charsheetModel:SetModel(model)
-				-- self.attributesModel:SetModel(model)
+				self.attributesModel:SetModel(model)
 			end
 		end
 	end)
@@ -348,8 +309,6 @@ function PANEL:GetContainerPanel(name)
 	-- TODO: yuck
 	if (name == "description") then
 		return self.descriptionPanel
-	elseif (name == "charsheet") then
-		return self.charsheetPanel
 	elseif (name == "attributes") then
 		return self.attributesPanel
 	end
@@ -478,8 +437,6 @@ function PANEL:Populate()
 		end
 
 		self.progress:AddSegment("@description")
-
-		self.progress:AddSegment("Character Background")
 
 		if (#self.attributesPanel:GetChildren() > 1) then
 			self.progress:AddSegment("@skills")
