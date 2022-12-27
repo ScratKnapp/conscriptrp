@@ -1,6 +1,3 @@
---[[
-Barely tested. Made upon request and then never used again afaik. Report any issues to me (Val#0420 on discord).
-]]
 local PLUGIN = PLUGIN
 PLUGIN.name = "Stat Rolling"
 PLUGIN.author = "Val"
@@ -13,135 +10,42 @@ ix.command.Add("Rollstat", {
         maximum = math.Clamp(maximum or 100, 0, 1000000)
 
         local value = math.random(0, maximum)
-        local add = 0
-        local stat = ""
-        stat = attrib
-        -- This is gonna get messy.
-      
-
-        if stat == "pickpocket" then
-            
-            local statadd = client:GetCharacter():GetPerk("stickyfingers", 0)
-
-            if statadd == 1 then
-                add = 10
-            end
-
-            statadd = client:GetCharacter():GetPerk("stickyfingers2", 0)
-
-            if statadd == 1 then
-                add = 15
-            end
-
-
-            local statadd = client:GetCharacter():GetPerk("stickyfingers3", 0)
-
-            if statadd == 1 then
-                add = 15
-            end
         
-       
-        elseif stat == "lockpick" then
-
-            local statadd = client:GetCharacter():GetPerk("housebreaker", 0)
-
-            if statadd == 1 then
-                add = 5
-            end
-
-            statadd = client:GetCharacter():GetPerk("housebreaker2", 0)
-
-            if statadd == 1 then
-                add = 10
-            end
-
-
-            statadd = client:GetCharacter():GetPerk("housebreaker3", 0)
-
-            if statadd == 1 then
-                add = 15
-            end
-        
-        elseif stat == "evade" then
-            
-            local statadd = client:GetCharacter():GetPerk("agile", 0)
-
-            if statadd == 1 then
-                add = 5
-            end
-
-
-        elseif stat == "evadeantlion" then
-            
-            local statadd = client:GetCharacter():GetPerk("agile", 0)
-
-            if statadd == 1 then
-                add = add + 5
-            end
-
-            statadd = client:GetCharacter():GetPerk("bughunter", 0)
-
-            if statadd == 1 then
-                add = add + 10
-            end
-
-        
-        
-        elseif stat == "evadezombie" then
-            
-            local statadd = client:GetCharacter():GetPerk("agile", 0)
-
-            if statadd == 1 then
-                add = add + 5
-            end
-
-            statadd = client:GetCharacter():GetPerk("zombiehunter", 0)
-
-            if statadd == 1 then
-                add = add + 10
-            end
-
-            
-        elseif stat == "attackantlion" then
-            
-            local statadd = client:GetCharacter():GetPerk("bughunter", 0)
-
-            if statadd == 1 then
-                add = add + 10
-            end
-
-
-                      
-        elseif stat == "attackzombie" then
-            
-            local statadd = client:GetCharacter():GetPerk("zombiehunter", 0)
-
-            if statadd == 1 then
-                add = add + 10
-            end
-
-
-        else 
-            return "Invalid stat."
-            
-        end
-    
-
-
+        local translate_tbl = {
+			-- The first string indicates what the player has to type in to properly get a bonus based on their roll. The second string is the actual attribute.
+			["strength"] = "strength",
+            ["reflex"] = "reflex",
+            ["fortitude"] = "fortitude".
+            ["observation"] = "observation",
+            ["fortune"]
+			--[[
+            ["medical"] = "medical",
+			["accuracy"] = "accuracy",
+			["agility"] = "agility",
+			["constitution"] = "constitution",
+            ["fabrication"] = "fabrication",
+            ]]
+            -- Add more attributes here by following the previous format if desired.
+        }
+        local temp_attrib = attrib
+        if #temp_attrib > 3 then attrib = translate_tbl[string.lower(temp_attrib)] end
+        local att = client:GetCharacter():GetAttribute(attrib,0)
+        local add = math.Round(att*1)
+		value = value+add
 
         ix.chat.Send(client, "rollStat", tostring(value), nil, nil, {
             max = maximum,
-            attr=string.upper(stat),
-            additive=add,
+            attr=string.upper(attrib),
+            additive=add
             initialroll = value
         })
 
-        ix.log.Add(client, "rollStat", value, maximum, stat, add)
+        ix.log.Add(client, "rollStat", value, maximum, attrib, add)
     end
 })
 
 ix.chat.Register("rollstat", {
-    format = "** %s rolled for %s: %s+%s = %s out of %s",
+    format = "** %s has rolled %s out of %s with a %q bonus of %s.",
     color = Color(155, 111, 176),
     CanHear = ix.config.Get("chatRange", 280),
     deadCanChat = true,
@@ -149,7 +53,41 @@ ix.chat.Register("rollstat", {
         local max = data.max or 100
         local att = data.attr or "STR"
         local add = data.additive or 0
-        local total = data.additive + data.initialroll
+
+        if add == 0 then
+            add = -5
+        end
+
+        if add == 1 then
+            add = -4
+        end
+
+        if add == 2 then
+            add = -3
+        end
+
+        if add == 3 then
+            add = -2
+        end
+
+        if add == 4 then
+            add = -1
+        end
+        
+
+        if add >= 7 then 
+            local i = add
+            add = 0
+            while i < 0
+             add = add + 1
+             i = i - 2
+            end
+        end 
+
+
+        local total = add + data.initialroll
+        
+
         local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
 
         chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), att, text, add, total, max))
