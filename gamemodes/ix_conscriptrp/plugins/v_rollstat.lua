@@ -76,7 +76,7 @@ ix.chat.Register("rollstat", {
         
 
         if add >= 7 then 
-            local i = add
+            local i = add - 6
             add = 0
             while i < 0
              add = add + 1
