@@ -17,7 +17,7 @@ ix.command.Add("Rollstat", {
             ["reflex"] = "reflex",
             ["fortitude"] = "fortitude".
             ["observation"] = "observation",
-            ["fortune"]
+            ["fortune"] = "fortune",
 			--[[
             ["medical"] = "medical",
 			["accuracy"] = "accuracy",
@@ -45,7 +45,7 @@ ix.command.Add("Rollstat", {
 })
 
 ix.chat.Register("rollstat", {
-    format = "** %s has rolled %s out of %s with a %q bonus of %s.",
+    format = "** %s rolled for %s: %s+%s = %s out of %s",
     color = Color(155, 111, 176),
     CanHear = ix.config.Get("chatRange", 280),
     deadCanChat = true,
