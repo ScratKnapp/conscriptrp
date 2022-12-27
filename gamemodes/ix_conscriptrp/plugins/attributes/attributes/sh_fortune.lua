@@ -1,2 +1,2 @@
-ATTRIBUTE.name = "Observation"
-ATTRIBUTE.description = "Affects trap detection, passive detection checks, identification of enemy weak points."
+ATTRIBUTE.name = "Fortune"
+ATTRIBUTE.description = "Affects looting rolls, other random strokes of fortune or misfortune."

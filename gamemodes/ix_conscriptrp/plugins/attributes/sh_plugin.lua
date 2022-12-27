@@ -2,7 +2,10 @@ PLUGIN.name = "Attributes"
 PLUGIN.author = "Scrat Knapp"
 PLUGIN.desc = "RPG Attributes for Frontline CMRP and some extra commands"
 
-
+ix.config.Add("attributeStartingPoints", 25, "The amount of attribute points a new character can distibute upon creation.", nil, {
+	data = {min = 1, max = 100},
+	category = "Characters"
+})
 
 ix.command.Add("CharShowAttribs", {
 	description = "List the perks the given character currently has.",

@@ -15,7 +15,7 @@ ix.command.Add("Rollstat", {
 			-- The first string indicates what the player has to type in to properly get a bonus based on their roll. The second string is the actual attribute.
 			["strength"] = "strength",
             ["reflex"] = "reflex",
-            ["fortitude"] = "fortitude".
+            ["fortitude"] = "fortitude",
             ["observation"] = "observation",
             ["fortune"] = "fortune",
 			--[[
@@ -31,12 +31,12 @@ ix.command.Add("Rollstat", {
         if #temp_attrib > 3 then attrib = translate_tbl[string.lower(temp_attrib)] end
         local att = client:GetCharacter():GetAttribute(attrib,0)
         local add = math.Round(att*1)
-		value = value+add
+		value = value
 
         ix.chat.Send(client, "rollStat", tostring(value), nil, nil, {
             max = maximum,
             attr=string.upper(attrib),
-            additive=add
+            additive=add,
             initialroll = value
         })
 
@@ -45,55 +45,14 @@ ix.command.Add("Rollstat", {
 })
 
 ix.chat.Register("rollstat", {
-    format = "** %s rolled for %s: %s+%s = %s out of %s",
+    format = "** %s rolled for %s: %s + %s = %s out of %s",
     color = Color(155, 111, 176),
     CanHear = ix.config.Get("chatRange", 280),
     deadCanChat = true,
     OnChatAdd = function(self, speaker, text, bAnonymous, data)
         local max = data.max or 100
         local att = data.attr or "STR"
-        local add = data.additive or 0
-
-        if add == 0 then
-            add = -5
-        end
-
-        if add == 1 then
-            add = -4
-        end
-
-        if add == 2 then
-            add = -3
-        end
-
-        if add == 3 then
-            add = -2
-        end
-
-        if add == 4 then
-            add = -1
-        end
-
-        if add == 5 then
-            add = 0
-        end
-
-        
-        if add == 6 then
-            add = 0
-        end
-
-
-        if add >= 7 then 
-            local i = add - 5
-            add = 0
-            while i < 0
-             add = add + 1
-             i = i - 2
-            end
-        end 
-
-
+        local add = math.floor(data.additive / 2) or 0
         local total = add + data.initialroll
         
 
