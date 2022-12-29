@@ -592,7 +592,7 @@ do
 						count = count + v
 					end
 
-					if (count > (hook.Run("GetDefaultAttributePoints", client, count) or ix.config.Get("maxAttributes", 30))) then
+					if (count > ix.config.Get("attributeStartingPoints", 65)) then
 						return false, "unknownError"
 					end
 				else

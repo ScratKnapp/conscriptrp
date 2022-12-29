@@ -2,6 +2,18 @@
 -- Here is where all of your serverside hooks should go.
 
 
+function Schema:LoadData()
+	self:LoadCombineLocks()
+end
+
+
+
+function Schema:SaveData()
+	self:SaveCombineLocks()
+end
+
+
+
 function Schema:PlayerMessageSend(speaker, chatType, text, anonymous, receivers, rawText)
 	if (chatType == "ic" or chatType == "w" or chatType == "y") then
 		local class = self.voices.GetClass(speaker)

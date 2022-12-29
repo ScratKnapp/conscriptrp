@@ -30,7 +30,7 @@ ix.command.Add("Rollstat", {
         local temp_attrib = attrib
         if #temp_attrib > 3 then attrib = translate_tbl[string.lower(temp_attrib)] end
         local att = client:GetCharacter():GetAttribute(attrib,0)
-        local add = math.Round(att*1)
+        local add = att --math.Round(att*1)
 		value = value
 
         ix.chat.Send(client, "rollStat", tostring(value), nil, nil, {
@@ -52,10 +52,78 @@ ix.chat.Register("rollstat", {
     OnChatAdd = function(self, speaker, text, bAnonymous, data)
         local max = data.max or 100
         local att = data.attr or "STR"
-        local add = math.floor(data.additive / 2) or 0
-        local total = add + data.initialroll
-        
+        local add = data.additive
+        local totaladd = 0
+        local total = 0
 
+        -- Real yanderedev hours here
+
+        if (add == 0) then 
+            add = -10
+            total = data.initialroll - 10
+        end 
+
+        if (add == 1) then 
+            add = -9
+            total = data.initialroll - 9
+        end 
+
+        if (add == 2) then 
+            add = -8
+            total = data.initialroll - 8
+        end 
+
+        if (add == 3) then 
+            add = -7
+            total = data.initialroll - 7
+        end 
+
+        if (add == 4) then 
+            add = -6
+            total = data.initialroll - 6
+        end 
+
+        if (add == 5) then 
+            add = -5
+            total = data.initialroll - 5
+        end 
+
+        if (add == 6) then 
+            add = -4
+            total = data.initialroll - 4
+        end 
+
+        if (add == 7) then 
+            add = -3
+            total = data.initialroll - 3
+        end 
+
+        if (add == 8) then 
+            add = -2
+            total = data.initialroll - 2
+        end 
+
+        if (add == 9) then 
+            add = -1
+            total = data.initialroll - 1
+        end 
+
+
+        if (add >= 10) then
+           
+            add = add - 10
+            add = math.floor(add / 2)
+            total = data.initialroll + add
+
+
+        end
+
+
+
+
+
+        
+        --local total = add + data.initialroll
         local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
 
         chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), att, text, add, total, max))
