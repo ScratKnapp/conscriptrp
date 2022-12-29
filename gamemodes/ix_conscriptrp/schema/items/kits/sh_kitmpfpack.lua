@@ -1,6 +1,6 @@
 ITEM.name = "MPF Grade Ration Pack"
 ITEM.description= "A packaged MPF Meal."
-ITEM.longdesc = "MPF packs are given to all members of the Metropolitan Police Force. While quite filling, they do not have the luxury of much variety. Officers are issued their daily rations from the armory that they can pick up whenever they've got a minute."
+ITEM.longdesc = "MPF packs are given to all members of the Metropolitan Police Force. While quite filling, they do not have the luxury of much variety. Officers are issued their daily rations from the armory that they can pick up whenever they've got a minute. Contains a generous Token allotment."
 ITEM.model = "models/weapons/w_packatm.mdl"
 ITEM.width = 2
 ITEM.height = 2
@@ -8,6 +8,7 @@ ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 
 	{"watercan"},
+	{"stacktokens", {["quantity"] = 60}}, 
 	{"mpfationunit"},
 
 }

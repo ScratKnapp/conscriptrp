@@ -1,6 +1,6 @@
 ITEM.name = "Loyalist Grade Ration Pack"
 ITEM.description= "A packaged Loyalist Meal."
-ITEM.longdesc = "Loyalist packs are given to those who have good rapport with the Combine. These lucky owners are able to cut ahead of regular citizens to collect their food, returning home with some nice meals that will please most - especially those previously stuck with Standard packs. Some even come with beer, even if is basically water anyway."
+ITEM.longdesc = "Loyalist packs are given to those who have good rapport with the Combine. These lucky owners are able to cut ahead of regular citizens to collect their food, returning home with some nice meals that will please most - especially those previously stuck with Standard packs. Some even come with beer, even if is basically water anyway. Has an increased Token allotment."
 ITEM.model = "models/weapons/w_packatl.mdl"
 ITEM.width = 2
 ITEM.height = 2
@@ -9,6 +9,7 @@ ITEM.itemsForcedDrop = {
 
 	{"watercan"},
 	{"loyalistrationunit"},
+	{"stacktokens", {["quantity"] = 40}}, 
 	{"chocolate"}, 
 
 }

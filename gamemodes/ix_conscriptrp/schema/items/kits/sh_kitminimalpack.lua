@@ -1,6 +1,6 @@
 ITEM.name = "Minimal Grade Ration Pack"
 ITEM.description= "A packaged Minimal Meal."
-ITEM.longdesc = "The Minimal ration packs have less than other packs, have almost zero interesting variety, and are barely enough to live.. with the occassional treat to give you false hope. To be issued this is a punishment."
+ITEM.longdesc = "The Minimal ration packs have less than other packs, have almost zero interesting variety, and are barely enough to live.. with the occassional treat to give you false hope. Has no Token allotment.  To be issued this is a punishment."
 ITEM.model = "models/weapons/w_packati.mdl"
 ITEM.width = 2
 ITEM.height = 2
