@@ -44,3 +44,73 @@ function Schema:LoadCombineLocks()
 		end
 	end
 end
+
+
+
+
+function Schema:SaveCWULocks()
+	local data = {}
+
+	for _, v in ipairs(ents.FindByClass("ix_cwulock")) do
+		if (IsValid(v.door)) then
+			data[#data + 1] = {
+				v.door:MapCreationID(),
+				v.door:WorldToLocal(v:GetPos()),
+				v.door:WorldToLocalAngles(v:GetAngles()),
+				v:GetLocked()
+			}
+		end
+	end
+
+	ix.data.Set("cwuLocks", data)
+end
+
+
+function Schema:LoadCWULocks()
+	for _, v in ipairs(ix.data.Get("cwuLocks") or {}) do
+		local door = ents.GetMapCreatedEntity(v[1])
+
+		if (IsValid(door) and door:IsDoor()) then
+			local lock = ents.Create("ix_cwulock")
+
+			lock:SetPos(door:GetPos())
+			lock:Spawn()
+			lock:SetDoor(door, door:LocalToWorld(v[2]), door:LocalToWorldAngles(v[3]))
+			lock:SetLocked(v[4])
+		end
+	end
+end
+
+
+function Schema:SaveHackedLocks()
+	local data = {}
+
+	for _, v in ipairs(ents.FindByClass("ix_hackedlock")) do
+		if (IsValid(v.door)) then
+			data[#data + 1] = {
+				v.door:MapCreationID(),
+				v.door:WorldToLocal(v:GetPos()),
+				v.door:WorldToLocalAngles(v:GetAngles()),
+				v:GetLocked()
+			}
+		end
+	end
+
+	ix.data.Set("hackedLocks", data)
+end
+
+
+function Schema:LoadHackedLocks()
+	for _, v in ipairs(ix.data.Get("hackedLocks") or {}) do
+		local door = ents.GetMapCreatedEntity(v[1])
+
+		if (IsValid(door) and door:IsDoor()) then
+			local lock = ents.Create("ix_hackedlock")
+
+			lock:SetPos(door:GetPos())
+			lock:Spawn()
+			lock:SetDoor(door, door:LocalToWorld(v[2]), door:LocalToWorldAngles(v[3]))
+			lock:SetLocked(v[4])
+		end
+	end
+end

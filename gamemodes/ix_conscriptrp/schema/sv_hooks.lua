@@ -4,13 +4,16 @@
 
 function Schema:LoadData()
 	self:LoadCombineLocks()
+	self:LoadCWULocks()
+	self:LoadHackedLocks()
 end
-
-
 
 function Schema:SaveData()
 	self:SaveCombineLocks()
+	self:SaveCWULocks()
+	self:SaveHackedLocks()
 end
+
 
 
 

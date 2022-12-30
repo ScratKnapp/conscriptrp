@@ -8,3 +8,9 @@ function CHAR:IsCombine()
 	local faction = self:Team()
 	return faction == FACTION_MPF or faction == FACTION_OTA
 end
+
+
+function CHAR:IsCWU()
+	local faction = self:Team()
+	return faction == FACTION_CWU
+end
