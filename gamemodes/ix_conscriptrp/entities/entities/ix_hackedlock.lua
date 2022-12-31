@@ -68,7 +68,7 @@ if (SERVER) then
 		local normal = client:GetEyeTrace().HitNormal:Angle()
 		local position, angles = self:GetLockPosition(door, normal)
 
-		local entity = ents.Create("ix_cwulock")
+		local entity = ents.Create("ix_hackedlock")
 		entity:SetPos(trace.HitPos)
 		entity:Spawn()
 		entity:Activate()
@@ -148,7 +148,10 @@ if (SERVER) then
 			return
 		end
 
-		if (!client:GetCharacter():GetInventory():HasItem("lockcard")) then
+		local character = client:GetCharacter()
+		local inventory = character:GetInventory()
+
+		if (!inventory:hasItem("lockcard")) then
 			self:DisplayError()
 			self.nextUseTime = CurTime() + 2
 
@@ -165,7 +168,7 @@ if (SERVER) then
 else
 	local glowMaterial = ix.util.GetMaterial("sprites/glow04_noz")
 	local color_green = Color(0, 255, 0, 255)
-	local color_purple = Color(0, 128,0,128)
+	local color_purple = Color(55, 128,0,128)
 	local color_red = Color(255, 50, 50, 255)
 
 	function ENT:Draw()
