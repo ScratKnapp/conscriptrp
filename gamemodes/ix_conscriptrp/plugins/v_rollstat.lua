@@ -132,6 +132,6 @@ ix.chat.Register("rollstat", {
 
 if (SERVER) then
     ix.log.AddType("rollStat", function(client, value, maximum, attrib, add)
-        return string.format("%s has rolled %s out of %d with a %q bonus of %s", client:Name(), value, maximum, attrib, add)
+        return string.format("%s has rolled a base %s out of %d with a %q skill of %s", client:Name(), value, maximum, attrib, add)
     end)
 end

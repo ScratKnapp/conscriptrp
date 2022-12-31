@@ -1,7 +1,7 @@
 ITEM.name = "USP Match"
 ITEM.description= "A semi-automatic pistol chambered for 9x19mm."
 ITEM.longdesc = "The USP Match was a formerly discontinued USP model, with included recoil compensator. It was selected by the Combine as the standard service pistol of the Metropolitan Police Force, and put back into production. To keep resource costs down, it has had its attachment points removed.\n\nAmmo: 9x19mm\nMagazine Capacity: 15"
-ITEM.model = "models/weapons/ethereal/w_m9.mdl"
+ITEM.model = "models/weapons/w_pistol.mdl"
 ITEM.class = "cw_usp"
 ITEM.weaponCategory = "sidearm"
 ITEM.width = 2
