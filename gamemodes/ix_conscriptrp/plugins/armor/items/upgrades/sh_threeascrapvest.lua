@@ -12,6 +12,6 @@ ITEM.isArmorUpg = true
 ITEM.weight = 0.05
 
 ITEM.res = {
-    ["Impact"] = 1,
+    ["Impact"] = 2,
     ["Shock"] = -1,
 }
