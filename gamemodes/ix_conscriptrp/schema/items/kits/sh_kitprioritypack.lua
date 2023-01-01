@@ -4,6 +4,7 @@ ITEM.longdesc = "Priority packs are given to only the superior brownnosers, citi
 ITEM.model = "models/weapons/w_packatm.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.price = 500
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 

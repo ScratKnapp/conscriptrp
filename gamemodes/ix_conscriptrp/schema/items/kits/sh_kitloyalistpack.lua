@@ -4,6 +4,7 @@ ITEM.longdesc = "Loyalist packs are given to those who have good rapport with th
 ITEM.model = "models/weapons/w_packatl.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.price = 350
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 

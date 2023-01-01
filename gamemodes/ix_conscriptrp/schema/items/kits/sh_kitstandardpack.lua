@@ -4,6 +4,7 @@ ITEM.longdesc = "Standard packs are what the vast majority of Citizens are given
 ITEM.model = "models/weapons/w_packatc.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.price = 120
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 

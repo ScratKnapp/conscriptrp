@@ -4,6 +4,6 @@ ITEM.description = "A chunk of Combine alloy."
 ITEM.longdesc = "A chunk of Combine alloy. It has no publicly known name or clear composition, but it almost certainly wasn't originating from Earth. It's used by the Combine to build damned near everything, but is seldom used by other groups due to how hard it is to shape with conventional metalworking tools."
 ITEM.category = "junk"
 ITEM.flag = "1"
-ITEM.price = 8000
+ITEM.price = 125
 ITEM.width = 1
 ITEM.height = 1

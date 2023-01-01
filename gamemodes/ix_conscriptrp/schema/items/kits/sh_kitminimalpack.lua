@@ -4,6 +4,7 @@ ITEM.longdesc = "The Minimal ration packs have less than other packs, have almos
 ITEM.model = "models/weapons/w_packati.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.price = 40
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 

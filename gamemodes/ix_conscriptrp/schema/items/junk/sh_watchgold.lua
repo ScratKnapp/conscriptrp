@@ -4,6 +4,6 @@ ITEM.description = "A fancy time-telling fashion piece."
 ITEM.longdesc = "Expensive watches used to be a sign of luxury and ritz, now they're just about as useful as any other watch for telling the time. Still, some folks out there still appreciate style."
 ITEM.category = "junk"
 ITEM.flag = "1"
-ITEM.price = 12000
+ITEM.price = 400
 ITEM.width = 1
 ITEM.height = 1

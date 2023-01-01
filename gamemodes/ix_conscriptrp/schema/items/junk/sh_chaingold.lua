@@ -4,6 +4,6 @@ ITEM.description = "A piece of bling."
 ITEM.longdesc = "A chain made of Gold, typically worn by Loyalists afforded such luxuries or Outlands inhabitants that want to look flashy."
 ITEM.category = "junk"
 ITEM.flag = "1"
-ITEM.price = 8000
+ITEM.price = 325
 ITEM.width = 1
 ITEM.height = 1

@@ -4,6 +4,6 @@ ITEM.description = "A pile of various vaguely labeled medicines."
 ITEM.longdesc = "A mix of pills, tablets, and liquids with vague labels. While there could indeed be some useful things in here, to randomly go through popping pills without knowing what you're doing would be tremendously stupid."
 ITEM.category = "junk"
 ITEM.flag = "1"
-ITEM.price = 2700
+ITEM.price = 250
 ITEM.width = 1
 ITEM.height = 1

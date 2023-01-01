@@ -4,6 +4,7 @@ ITEM.longdesc = "Biotic packs are specifically meant to meet the dietary needs o
 ITEM.model = "models/weapons/w_packatb.mdl"
 ITEM.width = 2
 ITEM.height = 2
+ITEM.price = 50
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {
 

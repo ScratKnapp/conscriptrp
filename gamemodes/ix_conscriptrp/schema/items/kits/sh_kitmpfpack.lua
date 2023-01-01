@@ -5,6 +5,7 @@ ITEM.model = "models/weapons/w_packatm.mdl"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Kits"
+ITEM.price = 300
 ITEM.itemsForcedDrop = {
 
 	{"watercan"},
