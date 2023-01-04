@@ -1,4 +1,4 @@
-ITEM.name = "Lambda Resistance Suit"
+ITEM.name = "Resistance Squddie Suit"
 ITEM.model = "models/tnb/items/aphelion/shirt_rebel1.mdl"
 ITEM.replacements = "models/humans/group03/male_42.mdl"
 ITEM.description = "Improved wear for Resistance members."
@@ -19,8 +19,8 @@ ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
 	["Impact"] = 3,
-	["Shock"] = 4,
-	["Fire"] = 3,
+	["Shock"] = 2,
+	["Fire"] = 2,
 	["Toxic"] = 2,
 }
 

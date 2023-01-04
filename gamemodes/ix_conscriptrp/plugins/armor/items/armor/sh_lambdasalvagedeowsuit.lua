@@ -18,10 +18,10 @@ ITEM.isGasmask = true
 ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
-	["Impact"] = 5,
+	["Impact"] = 6,
 	["Shock"] = 3,
 	["Fire"] = 3,
-	["Toxic"] = 2,
+	["Toxic"] = 4,
 }
 
 

@@ -20,7 +20,7 @@ ITEM.weight = 2
 ITEM.res = {
 	["Impact"] = 5,
 	["Shock"] = 1,
-	["Fire"] = 2,
+	["Fire"] = 3,
 	["Toxic"] = 2,
 }
 

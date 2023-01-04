@@ -16,9 +16,9 @@ ITEM.isBodyArmor = true
 ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
-	["Impact"] = 2,
-	["Shock"] = 2,
-	["Fire"] = 1,
+	["Impact"] = 3,
+	["Shock"] = 3,
+	["Fire"] = 2,
 	["Toxic"] = 2,
 }
 

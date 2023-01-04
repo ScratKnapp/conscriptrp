@@ -18,9 +18,9 @@ ITEM.isGasmask = true
 ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
-	["Impact"] = 2,
+	["Impact"] = 3,
 	["Shock"] = 4,
-	["Fire"] = 1,
+	["Fire"] = 2,
 	["Toxic"] = 0,
 }
 

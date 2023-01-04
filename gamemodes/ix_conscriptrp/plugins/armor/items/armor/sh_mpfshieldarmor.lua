@@ -19,8 +19,8 @@ ITEM.noBusiness = true
 ITEM.weight = 2
 ITEM.res = {
 	["Impact"] = 6,
-	["Shock"] = 4,
-	["Fire"] = 4,
+	["Shock"] = 5,
+	["Fire"] = 5,
 	["Toxic"] = 3,
 }
 
