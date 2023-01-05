@@ -135,3 +135,51 @@ if (SERVER) then
         return string.format("%s has rolled a base %s out of %d with a %q skill of %s", client:Name(), value, maximum, attrib, add)
     end)
 end
+
+
+ix.command.Add("Rollstatmodifier", {
+    description = "Roll a number out of the given maximum and add the given amount to it.",
+    arguments = {ix.type.number, bit.bor(ix.type.number, ix.type.optional)},
+    OnRun = function(self, client, modifier, maximum)
+        maximum = math.Clamp(maximum or 100, 0, 1000000)
+
+        local value = math.random(0, maximum)
+        local modifier = modifier or 0
+        local total = value + modifier
+     
+        
+        ix.chat.Send(client, "rollStatModifier", tostring(value), nil, nil, {
+            val = value,
+            mod = modifier,
+            max = maximum,
+            tot = total
+            
+        })
+
+        ix.log.Add(client, "rollStatModifier", value, modifier, maximum)
+    end
+})
+
+ix.chat.Register("rollStatModifier", {
+    format = "** %s rolled %s + %s = %s out of %s",
+    color = Color(155, 111, 176),
+    CanHear = ix.config.Get("chatRange", 280),
+    deadCanChat = true,
+    OnChatAdd = function(self, speaker, text, bAnonymous, data)
+        local max = data.max or 100
+        local mod = data.mod or 0
+        local val = data.val
+        local tot = data.tot
+     
+        --local total = add + data.initialroll
+        local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
+
+        chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), val, text, mod, tot, max))
+    end
+})
+
+if (SERVER) then
+    ix.log.AddType("rollStatModifier", function(client, value, maximum, modifier, total)
+        return string.format("%s has rolled %s out of %d with a modifier of %s for a total of %s", client:Name(), value, maximum, modifier, total)
+    end)
+end
