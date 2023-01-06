@@ -286,6 +286,14 @@ function ITEM:DecideFunction()
 					end)
 				end
 
+
+		
+				if (istable(self.attribBoosts)) then
+					for k, v in pairs(self.attribBoosts) do
+						character:AddBoost(self.uniqueID, k, v)
+					end
+				end
+
 				quantity = quantity - 1
 				
 				if (quantity >= 1) then
