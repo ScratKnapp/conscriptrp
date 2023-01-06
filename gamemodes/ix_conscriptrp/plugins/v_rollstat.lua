@@ -40,7 +40,7 @@ ix.command.Add("Rollstat", {
             initialroll = value
         })
 
-        ix.log.Add(client, "rollStat", value, maximum, attrib, add)
+       -- ix.log.Add(client, "rollStat", value, maximum, attrib, add)
     end
 })
 
@@ -123,19 +123,19 @@ ix.chat.Register("rollstat", {
 
 
         
-        --local total = add + data.initialroll
+ 
         local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
 
         chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), att, text, add, total, max))
     end
 })
 
-if (SERVER) then
+--[[ if (SERVER) then
     ix.log.AddType("rollStat", function(client, value, maximum, attrib, add)
         return string.format("%s has rolled a base %s out of %d with a %q skill of %s", client:Name(), value, maximum, attrib, add)
     end)
 end
-
+ ]]
 
 ix.command.Add("Rollstatmodifier", {
     description = "Roll a number out of the given maximum and add the given amount to it.",
@@ -156,7 +156,7 @@ ix.command.Add("Rollstatmodifier", {
             
         })
 
-        ix.log.Add(client, "rollStatModifier", value, modifier, maximum)
+       -- ix.log.Add(client, "rollStatModifier", value, total, modifier, maximum)
     end
 })
 
@@ -174,12 +174,14 @@ ix.chat.Register("rollStatModifier", {
         --local total = add + data.initialroll
         local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
 
-        chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), val, text, mod, tot, max))
+        chat.AddText(self.color, translated and "** "..translated or string.format(self.format,speaker:Name(), val, mod, tot, max))
     end
 })
 
-if (SERVER) then
+--[[ if (SERVER) then
     ix.log.AddType("rollStatModifier", function(client, value, maximum, modifier, total)
         return string.format("%s has rolled %s out of %d with a modifier of %s for a total of %s", client:Name(), value, maximum, modifier, total)
     end)
-end
+end ]]
+
+
