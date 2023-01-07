@@ -15,4 +15,4 @@ FACTION.models = {
 
 -- Note that the player's team will also have the same value as their current character's faction index. This means you can use
 -- client:Team() == FACTION_CITIZEN to compare the faction of the player's current character.
-FACTION_ADMINS = FACTION.index
+FACTION_ADMIN = FACTION.index

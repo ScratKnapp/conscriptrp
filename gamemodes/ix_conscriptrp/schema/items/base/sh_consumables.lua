@@ -290,7 +290,7 @@ function ITEM:DecideFunction()
 		
 				if (istable(self.attribBoosts)) then
 					for k, v in pairs(self.attribBoosts) do
-						character:AddBoost(self.uniqueID, k, v)
+						player.GetCharacter():AddBoost(self.uniqueID, k, v)
 					end
 				end
 

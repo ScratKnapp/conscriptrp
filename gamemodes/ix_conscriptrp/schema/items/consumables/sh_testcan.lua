@@ -1,4 +1,4 @@
-ITEM.name = "Universal Union Water"
+ITEM.name = "Testcan"
 ITEM.model = "models/props_lunk/popcan01a.mdl"
 ITEM.thirst = 15
 ITEM.description = "Universal Union approved canned water."

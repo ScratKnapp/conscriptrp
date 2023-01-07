@@ -1,8 +1,8 @@
-ITEM.name = "Headlamp"
-ITEM.model = "models/kek1ch/dev_torch_light.mdl"
+ITEM.name = "Flashlight"
+ITEM.model = "models/maxofs2d/lamp_flashlight.mdl"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.description = "A standard headmounted flashlight that can be toggled."
+ITEM.description = "A standard flashlight that can be toggled."
 ITEM.category = "Electronics"
 ITEM.flag = "1"
 ITEM.price = 2000
