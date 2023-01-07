@@ -136,19 +136,19 @@ if (SERVER) then
 			function(client)
 				local character = client:GetCharacter()
 
-				if (character and character:GetInventory() and !character:GetInventory():HasItem("cid")) then
+				if (client:Team() == FACTION_CONSCRIPTS or client:Team() == FACTION_CWU)
 					return true
 				else
 					return false
 				end
 			end,
-			"Only allow with valid CID."
+			"Allow all Loyalist forces."
 		},
 		{
 			function(client)
 				return true
 			end,
-			"Never allow citizens."
+			"Only allow MPF and Overwatch."
 		}
 	}
 
