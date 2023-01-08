@@ -1,5 +1,4 @@
-
---local gradient = surface.GetTextureID("vgui/gradient-d")
+local gradient = surface.GetTextureID("vgui/gradient-d")
 local audioFadeInTime = 2
 local animationTime = 0.5
 
@@ -170,8 +169,8 @@ function PANEL:Init()
 		ix.util.DrawBlur(panel, 15, nil, 200)
 
 		-- background dim
-		--surface.SetDrawColor(0, 0, 0, 100)
-		--surface.DrawRect(0, y, width, newHeight)
+		surface.SetDrawColor(0, 0, 0, 100)
+		surface.DrawRect(0, y, width, newHeight)
 
 		-- border lines
 		surface.SetDrawColor(ix.config.Get("color") or color_white)
@@ -443,7 +442,7 @@ function PANEL:Close(bFromMenu)
 	self.bClosing = true
 	self.bFromMenu = bFromMenu
 
-	local fadeOutTime = animationTime * 3
+	local fadeOutTime = animationTime * 8
 
 	self:CreateAnimation(fadeOutTime, {
 		index = 1,
@@ -508,17 +507,22 @@ function PANEL:Close(bFromMenu)
 end
 
 function PANEL:Paint(width, height)
-	surface.SetDrawColor(255, 255, 255, 255)
+	surface.SetTexture(gradient)
+	surface.SetDrawColor(0, 0, 0, 255)
 	surface.DrawTexturedRect(0, 0, width, height)
 
 	if (!ix.option.Get("cheapBlur", false)) then
-		surface.SetDrawColor(255, 255, 255, 150)
+		surface.SetDrawColor(0, 0, 0, 150)
 		surface.DrawTexturedRect(0, 0, width, height)
-		--ix.util.DrawBlur(self, Lerp((self.currentAlpha - 200) / 255, 0, 10))
+		ix.util.DrawBlur(self, Lerp((self.currentAlpha - 200) / 255, 0, 10))
 	end
 end
 
 function PANEL:PaintOver(width, height)
+	if (self.bClosing and self.bFromMenu) then
+		surface.SetDrawColor(color_black)
+		surface.DrawRect(0, 0, width, height)
+	end
 end
 
 vgui.Register("ixCharMenu", PANEL, "EditablePanel")
