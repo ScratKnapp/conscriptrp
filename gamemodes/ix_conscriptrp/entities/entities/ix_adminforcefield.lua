@@ -135,8 +135,9 @@ if (SERVER) then
 		{
 			function(client)
 				local character = client:GetCharacter()
+				
 
-				if !client:Team() == FACTION_OTA then
+				if !(client:Team() == FACTION_OTA) then
 					return true
 				else
 					return false
@@ -148,7 +149,7 @@ if (SERVER) then
 			function(client)
 				local character = client:GetCharacter()
 
-				if (character and character:GetInventory() and !character:GetInventory():HasItem("forcefieldrfidcard")) then
+				if character and character:GetInventory() and !character:GetInventory():HasItem("forcefieldrfidcard") then
 					return true
 				else
 					return false
@@ -165,7 +166,7 @@ if (SERVER) then
 			return
 		end
 
-		if (activator:IsCombine()) then
+		if (activator:Team() == FACTION_ADMIN) then
 			self:SetMode(self:GetMode() + 1)
 
 			if (self:GetMode() > #MODES) then
@@ -202,7 +203,7 @@ if (SERVER) then
 
 		if (IsValid(entity) and entity:GetClass() == "ix_adminforcefield") then
 			if (IsValid(client)) then
-				if client:Team() == FACTION_ADMIN) then
+				if client:Team() == FACTION_ADMIN then
 					return false
 				end
 
