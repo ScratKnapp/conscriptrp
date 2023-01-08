@@ -137,3 +137,26 @@ function Schema:LoadForceFields()
 		field:SetMode(v[3])
 	end
 end
+
+
+function Schema:SaveAdminForceFields()
+	local data = {}
+
+	for _, v in ipairs(ents.FindByClass("ix_adminforcefield")) do
+		data[#data + 1] = {v:GetPos(), v:GetAngles(), v:GetMode()}
+	end
+
+	ix.data.Set("adminForceFields", data)
+end
+
+
+function Schema:LoadForceFields()
+	for _, v in ipairs(ix.data.Get("adminforceFields") or {}) do
+		local field = ents.Create("ix_adminforcefield")
+
+		field:SetPos(v[1])
+		field:SetAngles(v[2])
+		field:Spawn()
+		field:SetMode(v[3])
+	end
+end

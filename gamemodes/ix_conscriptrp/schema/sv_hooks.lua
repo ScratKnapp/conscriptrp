@@ -7,6 +7,7 @@ function Schema:LoadData()
 	self:LoadCWULocks()
 	self:LoadHackedLocks()
 	self:LoadForceFields()
+	self:LoadAdminForceFields()
 end
 
 function Schema:SaveData()
@@ -14,6 +15,7 @@ function Schema:SaveData()
 	self:SaveCWULocks()
 	self:SaveHackedLocks()
 	self:SaveForceFields()
+	self:SaveAdminForceFields()
 end
 
 
