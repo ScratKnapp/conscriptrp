@@ -136,7 +136,7 @@ if (SERVER) then
 			function(client)
 				local character = client:GetCharacter()
 
-				if !client:Team() == FACTION_CONSCRIPTS or !client:Team() == FACTION_CWU then
+				if (!client:Team() == FACTION_CONSCRIPTS or !client:Team() == FACTION_CWU) then
 					return true
 				else
 					return false
