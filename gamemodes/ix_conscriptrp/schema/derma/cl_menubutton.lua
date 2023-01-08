@@ -10,7 +10,7 @@ AccessorFunc(PANEL, "backgroundAlpha", "BackgroundAlpha")
 function PANEL:Init()
 	self:SetFont("ixMenuButtonFont")
 	self:SetTextColor(color_white)
-	self:SetDrawBackground(false)
+	self:SetPaintBackground(false)
 	self:SetContentAlignment(4)
 	self:SetTextInset(buttonPadding, 0)
 
@@ -28,9 +28,8 @@ function PANEL:SetText(text, noTranslation)
 end
 
 function PANEL:PaintBackground(width, height)
-	surface.SetMaterial( Material("stalker/textentry.png") )
-	surface.SetDrawColor(255, 255, 255, 255)
-	surface.DrawTexturedRect(0, 0, width, height)
+	surface.SetDrawColor(ColorAlpha(self.backgroundColor, self.currentBackgroundAlpha))
+	surface.DrawRect(0, 0, width, height)
 end
 
 function PANEL:Paint(width, height)
@@ -141,9 +140,7 @@ end
 
 function PANEL:PaintBackground(width, height)
 	local alpha = self.selected and 255 or self.currentBackgroundAlpha
-	surface.SetMaterial( Material("stalker/textentry.png") )
-	surface.SetDrawColor(255, 255, 255, 255)
-	surface.DrawTexturedRect(0, 0, width, height)
+
 	derma.SkinFunc("DrawImportantBackground", 0, 0, width, height, ColorAlpha(self.backgroundColor, alpha))
 end
 
