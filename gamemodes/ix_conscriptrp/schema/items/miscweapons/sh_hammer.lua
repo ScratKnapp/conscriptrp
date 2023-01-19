@@ -1,6 +1,6 @@
 ITEM.name = "Hammer"
 ITEM.description = "A common claw hammer for hammering down or prying out nails. Not only useful for smashing skulls, but in craft work too."
-ITEM.model = "models/weapons/tfa_nmrih/w_me_bcd.mdl"
+ITEM.model = "models/tnb/weapons/w_hammer.mdl"
 ITEM.class = "tfa_nmrih_bcd"
 ITEM.weaponCategory = "melee"
 ITEM.price = 1500
