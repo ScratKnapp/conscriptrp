@@ -16,7 +16,7 @@ ITEM.attribBoosts = {
 ITEM:Hook("use", function(item)
 	item.player:EmitSound(item.sound or "items/battery_pickup.wav")
 	item.player:AddBuff("buff_staminarestore", 20, { amount = 0.5 })
-	item.player:AddBuff("buff_strength", 60, { amount = 5 })
+	item.player:AddBuff("buff_strength", 10, { amount = 5 })
 
 
 	ix.chat.Send(item.player, "iteminternal", "takes a swig of their "..item.name..".", false)
