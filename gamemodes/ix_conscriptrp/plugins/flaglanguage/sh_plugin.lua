@@ -12,7 +12,7 @@ local languages = {
     ["J"] = "Japanese",
     ["M"] = "Mandarian",
     ["H"] = "Czech",
-    ["J"] = "Spanish",
+    ["L"] = "Spanish",
     ["K"] = "French"
 }
 
