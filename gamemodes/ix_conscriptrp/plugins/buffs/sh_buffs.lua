@@ -97,3 +97,14 @@ PLUGIN.buffs[ "leghurt" ] = {
 	end,
 }
 */
+
+
+
+
+PLUGIN.buffs[ "buff_strength" ] = {
+	name = "Strength Boost",
+	desc = "Your strength has been buffed!",
+	func = function( player, parameter)
+		player:AddBoost("StrBoost", "strength", parameter.amount)
+	end,
+}
