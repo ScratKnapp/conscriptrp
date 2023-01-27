@@ -6,7 +6,14 @@ PLUGIN.description = "Adds three languages that are able to be used."
 local languages = {
     ["Z"] = "Russian",
     ["X"] = "Polish",
-    ["Y"] = "English"
+    ["Y"] = "Ukranian",
+    ["V"] = "Vortigese",
+    ["G"] = "German",
+    ["J"] = "Japanese",
+    ["M"] = "Mandarian",
+    ["H"] = "Czech",
+    ["J"] = "Spanish",
+    ["K"] = "French"
 }
 
 local languageChatTypes = {}
