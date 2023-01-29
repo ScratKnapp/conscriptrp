@@ -26,6 +26,6 @@ ITEM.res = {
 
 
 ITEM.newSkin = 0
-ITEM.bodygroups = {
+ITEM.bodyGroups = {
 	["gear"] = 2,
-	}
+}

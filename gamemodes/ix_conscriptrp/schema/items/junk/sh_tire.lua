@@ -1,5 +1,5 @@
 ITEM.name = "Tire"
-ITEM.model = " models/props_vehicles/carparts_tire01a.mdl"
+ITEM.model = "models/props_vehicles/carparts_tire01a.mdl"
 ITEM.description = "A perfectly intact tire, it has clearly seen a lot of use in the past."
 ITEM.category = "junk"
 ITEM.flag = "1"

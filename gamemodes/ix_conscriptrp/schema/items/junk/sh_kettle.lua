@@ -4,5 +4,5 @@ ITEM.description = "A stainless steel kettle to brew tea or other such things, o
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 30
-ITEM.width = 1
-ITEM.height = 2
+ITEM.width = 2
+ITEM.height = 1

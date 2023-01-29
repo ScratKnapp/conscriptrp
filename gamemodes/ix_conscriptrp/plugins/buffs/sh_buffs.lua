@@ -104,7 +104,40 @@ PLUGIN.buffs[ "leghurt" ] = {
 PLUGIN.buffs[ "buff_strength" ] = {
 	name = "Strength Boost",
 	desc = "Your strength has been buffed!",
-	func = function( player, parameter)
-		player:AddBoost("StrBoost", "strength", parameter.amount)
+
+	OnDebuffed = function( player, parameter )
+	
+		eeee
+	
 	end,
+
+
+	onbuffed = function( player, parameter )
+	
+		player:Notify("Test")
+		--player:GetCharacter():UpdateAttrib("strength", parameter.amount)
+		
+	end,
+
+
+	func = function( player, parameter)
+		
+		
+
+	end,
+
+
+	onbuffed = function( player, parameter )
+		if !player:HasBuff( "leghurt" ) then
+			player:ChatPrint( nut.lang.Get("buff_legs_injured") )
+		end
+	end,
+	
 }
+
+
+onbuffed = function( player, parameter )
+	if !player:HasBuff( "leghurt" ) then
+		player:ChatPrint( nut.lang.Get("buff_legs_injured") )
+	end
+end,

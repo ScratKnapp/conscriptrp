@@ -4,5 +4,5 @@ ITEM.description = "Gasoline is still used, primarily by the Resistance or other
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 175
-ITEM.width = 1
-ITEM.height = 2
+ITEM.width = 2
+ITEM.height = 3

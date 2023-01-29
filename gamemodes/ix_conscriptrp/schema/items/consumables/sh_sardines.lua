@@ -8,6 +8,7 @@ ITEM.price = 5
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
+ITEM.sound = "npc/barnacle/barnacle_crunch2.wav"
 ITEM.quantity = 1
 ITEM.flag = "5"
 ITEM:Hook("use", function(item)

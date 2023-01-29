@@ -8,8 +8,7 @@ FACTION.isDefault = false
 FACTION.color = Color(36, 187, 225)
 FACTION.runSounds = {[0] = "NPC_MetroPolice.RunFootstepLeft", [1] = "NPC_MetroPolice.RunFootstepRight"}
 FACTION.models = {
-	{"models/dpfilms/metropolice/playermodels/pm_urban_police.mdl", 1, "000002"},
-	{"models/dpfilms/metropolice/playermodels/pm_urban_police.mdl", 1, "000002"},
+	{"models/dpfilms/metropolice/hdpolice.mdl", 1, "000002"},
 
 }
 

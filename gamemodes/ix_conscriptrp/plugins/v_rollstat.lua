@@ -13,11 +13,11 @@ ix.command.Add("Rollstat", {
         
         local translate_tbl = {
 			-- The first string indicates what the player has to type in to properly get a bonus based on their roll. The second string is the actual attribute.
-			["strength"] = "strength",
-            ["reflex"] = "reflex",
-            ["fortitude"] = "fortitude",
-            ["observation"] = "observation",
-            ["fortune"] = "fortune",
+			["str"] = "strength",
+            ["ref"] = "reflex",
+            ["forti"] = "fortitude",
+            ["obs"] = "observation",
+            ["fortu"] = "fortune",
 			--[[
             ["medical"] = "medical",
 			["accuracy"] = "accuracy",
