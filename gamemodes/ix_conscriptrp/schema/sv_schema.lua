@@ -150,7 +150,7 @@ function Schema:SaveAdminForceFields()
 end
 
 
-function Schema:LoadForceFields()
+function Schema:LoadAdminForceFields()
 	for _, v in ipairs(ix.data.Get("adminforceFields") or {}) do
 		local field = ents.Create("ix_adminforcefield")
 

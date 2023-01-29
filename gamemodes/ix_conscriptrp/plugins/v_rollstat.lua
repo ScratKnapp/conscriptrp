@@ -28,7 +28,7 @@ ix.command.Add("Rollstat", {
             -- Add more attributes here by following the previous format if desired.
         }
         local temp_attrib = attrib
-        if #temp_attrib > 3 then attrib = translate_tbl[string.lower(temp_attrib)] end
+        attrib = translate_tbl[string.lower(temp_attrib)]
         local att = client:GetCharacter():GetAttribute(attrib,0)
         local add = att --math.Round(att*1)
 		value = value
@@ -40,7 +40,7 @@ ix.command.Add("Rollstat", {
             initialroll = value
         })
 
-       -- ix.log.Add(client, "rollStat", value, maximum, attrib, add)
+       ix.log.Add(client, "rollStat", value, maximum, attrib, add)
     end
 })
 
@@ -130,12 +130,11 @@ ix.chat.Register("rollstat", {
     end
 })
 
---[[ if (SERVER) then
+ if (SERVER) then
     ix.log.AddType("rollStat", function(client, value, maximum, attrib, add)
         return string.format("%s has rolled a base %s out of %d with a %q skill of %s", client:Name(), value, maximum, attrib, add)
     end)
 end
- ]]
 
 ix.command.Add("Rollstatmodifier", {
     description = "Roll a number out of the given maximum and add the given amount to it.",
@@ -156,7 +155,7 @@ ix.command.Add("Rollstatmodifier", {
             
         })
 
-       -- ix.log.Add(client, "rollStatModifier", value, total, modifier, maximum)
+       ix.log.Add(client, "rollStatModifier", value, total, modifier, maximum)
     end
 })
 
