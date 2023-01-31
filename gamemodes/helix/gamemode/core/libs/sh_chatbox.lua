@@ -470,7 +470,7 @@ ix.chat.Register("pm", {
 ix.chat.Register("event", {
 	CanHear = 1000000,
 	OnChatAdd = function(self, speaker, text)
-		chat.AddText(Color(37, 59, 146), text)
+		chat.AddText(Color(0, 255, 255), text)
 	end,
 	indicator = "chatPerforming"
 })
