@@ -1,4 +1,4 @@
-ITEM.name = "Resistance Squddie Suit"
+ITEM.name = "Resistance Squaddie Suit"
 ITEM.model = "models/tnb/items/aphelion/shirt_rebel1.mdl"
 ITEM.replacements = "models/humans/group03/male_42.mdl"
 ITEM.description = "Improved wear for Resistance members."
