@@ -1,5 +1,5 @@
 ITEM.name = "Handheld Radio"
-ITEM.model = "models/dpfilms/metropolice/props/metrold_radio.mdl"
+ITEM.model = "models/skilllem_radio.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.price = 1750

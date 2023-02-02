@@ -1,5 +1,5 @@
 ITEM.name = "5.56x45mm"
-ITEM.model = "models/Items/BoxMRounds.mdl"
+ITEM.model = "models/items/ammo_556x45mm.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.ammo = "5.56x45MM" // type of the ammo

@@ -1,4 +1,3 @@
-
 local PLUGIN = PLUGIN
 
 PLUGIN.craft = PLUGIN.craft or {}
