@@ -1,8 +1,8 @@
-ITEM.name = "CWU Canned Meat"
+ITEM.name = "Fried CWU Canned Meat"
 ITEM.model = "models/banka.mdl"
-ITEM.hunger = 20
-ITEM.description = "A CWU-branded can of spam-like food."
-ITEM.longdesc = "A Union produced can of preservative-stuffed meat. It has the consistency of both Chicken and Beef. It is unknown what animal it is derived from. It can be cooked, or somehow be eaten raw with no side-effects, other than feeling and tasting disgusting."
+ITEM.hunger = 28
+ITEM.description = "A CWU-branded can of spam-like food that's been fried in a pan."
+ITEM.longdesc = "A Union produced can of preservative-stuffed meat. It has the consistency of both Chicken and Beef. It is unknown what animal it is derived from. It has been fried up, making it more palatable and nutritious."
 ITEM.price = 30
 ITEM.width = 1
 ITEM.height = 1
