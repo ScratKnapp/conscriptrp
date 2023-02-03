@@ -1,7 +1,7 @@
 ITEM.name = "Bootleg Beer"
 ITEM.model = "models/hlvr/props/bottles/bear_bottle_1.mdl"
 ITEM.thirst = 5
-ITEM.description = "Universal Union approved beer substitute."
+ITEM.description = "Homemade booze."
 ITEM.longdesc = "A glass bottle of carbonated, fermented fruit or vegetables that is often produced all over the World by Citizens, Merchants, and Resistance Cells alike. It has a relatively high alcohol content, for beer."
 ITEM.quantity = 2
 ITEM.price = 35
