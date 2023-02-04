@@ -61,7 +61,7 @@ function RECIPE:OnCanSee(client)
 	end
 
 
-	if (self.blueprint and !character:HasItem(self.blueprint)) then
+	if (self.blueprint and !character:GetInventory():HasItem(self.blueprint)) then
 		return false
 	end
 
