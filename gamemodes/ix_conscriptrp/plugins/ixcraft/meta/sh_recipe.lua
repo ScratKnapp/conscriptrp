@@ -60,6 +60,12 @@ function RECIPE:OnCanSee(client)
 		return false
 	end
 
+
+	if (self.blueprint and !character:HasItem(self.blueprint)) then
+		return false
+	end
+
+
 	if (self.postHooks and self.postHooks["OnCanSee"]) then
 		local a, b, c, d, e, f = self.postHooks["OnCanSee"](self, client)
 
