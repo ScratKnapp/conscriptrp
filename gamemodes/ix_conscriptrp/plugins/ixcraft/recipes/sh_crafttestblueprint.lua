@@ -3,7 +3,6 @@ RECIPE.description = "Boil up some clean water to cook a cup of instant noodles 
 RECIPE.model = "models/doshirak_pure.mdl"
 RECIPE.blueprint = "testblueprints"
 
-
 RECIPE.requirements = {
 	["watercan"] = 1,
 }
@@ -12,3 +11,4 @@ RECIPE.results = {
 	["cwuinstantnoodles"] = 1
 
 }
+
