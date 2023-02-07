@@ -7,7 +7,7 @@ RECIPE.requirements = {
 	["watercan"] = 1,
 }
 RECIPE.results = {
-	["medgelautoinjector"] = 1,
+	["coagulant"] = 1,
 
 }
 RECIPE.flag = "7" 

@@ -1,7 +1,7 @@
 ITEM.name = "Med-gel Vial"
 ITEM.description = "A medium size application of medical gel."
 ITEM.longdesc = "A glass vial of med-gel. Twist off the top lid, then apply gel to any wound to provide immediate pain relief and aid in healing."
-ITEM.model = "models/ez2models/items/arbeit/healthvial.mdl"
+ITEM.model = "models/healthvial.mdl"
 ITEM.width = 1
 ITEM.height = 2
 ITEM.category = "Medical"
