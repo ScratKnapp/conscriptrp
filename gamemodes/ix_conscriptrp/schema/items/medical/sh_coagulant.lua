@@ -1,12 +1,12 @@
-ITEM.name = "Medkit"
-ITEM.description = "A medical aid kit for all matter of injury."
-ITEM.longdesc = "A kit full of med gel and other tools for serious injury and improved long-term care."
-ITEM.model = "models/ez2models/items/arbeit/healthkit.mdl"
-ITEM.width = 2
-ITEM.height = 2
+ITEM.name = "Coagulant Auto-injector"
+ITEM.description = "A one use coagulant shot."
+ITEM.longdesc = "A sterile syringe packed with a hemostatic agent, fit for stopping bleeds in a certain area with relative ease. Known for causing blood-clots when used too close to the heart."
+ITEM.model = "models/carlsmei/escapefromtarkov/medical/propital.mdl"
+ITEM.width = 1
+ITEM.height = 1
 ITEM.category = "Medical"
-ITEM.quantity = 3
-ITEM.price = "4000"
+ITEM.quantity = 1
+ITEM.price = "850"
 ITEM.flag = "1"
 ITEM.sound = "items/smallmedkit1.wav"
 ITEM.weight = 0.05
@@ -17,7 +17,7 @@ ITEM.functions.use = {
 	OnRun = function(item)
 		local quantity = item:GetData("quantity", item.quantity)
 	
-		ix.chat.Send(item.player, "iteminternal", "applies their "..item.name..".", false)
+		ix.chat.Send(item.player, "iteminternal", "injects their "..item.name..".", false)
 
 
 		quantity = quantity - 1

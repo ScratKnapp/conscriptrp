@@ -1,13 +1,13 @@
-ITEM.name = "Bandage"
-ITEM.description = "Civillian grade medical wrap."
-ITEM.longdesc = "Often found in consumer or commercial grade first aid kits, some sterile bandaging can lessen or stop bleeding in dire situations."
-ITEM.model = "models/illusion/eftcontainers/bandage.mdl"
-ITEM.width = 1
+ITEM.name = "Hemostatic Trauma Gauze"
+ITEM.description = "A roll of gauze meant to pack deep wounds in emergency situations."
+ITEM.longdesc = "This roll of gauze has coagulant powder spread all across its fabric, making it highly effective at stopping the deepest of bleeds, albeit at the price of the coagulant causing a great deal of pain to the wounded."
+ITEM.model = "models/carlsmei/escapefromtarkov/medical/bandage.mdl"
+ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Medical"
-ITEM.price = "4000"
+ITEM.price = "750"
 ITEM.flag = "1"
-ITEM.quantity = 1
+ITEM.quantity = 2
 ITEM.sound = "items/smallmedkit1.wav"
 ITEM.weight = 0.05
 
@@ -33,6 +33,7 @@ ITEM.functions.use = {
 		return (!IsValid(item.entity))
 	end
 }
+
 
 
 function ITEM:GetDescription()

@@ -1,16 +1,20 @@
 RECIPE.name = "Med-Gel Vial"
-RECIPE.description = "Blend together some grub nuggets, medication, and clean water for a rough approximation of the refining process for a vial of med-gel."
+RECIPE.description = "Utilizing the written formula, carefully combine and extract elements from different chemicals to almost perfectly recreate the Union's regenerative biogel substance, and stick it in a Vial."
 RECIPE.model = "models/ez2models/items/arbeit/healthvial.mdl"
 RECIPE.requirements = {
 	["grubnugget"] = 4,
-	["watercan"] = 2,
-	["pileofmedicine"] = 1,
-}
-RECIPE.results = {
-	["medkitsmall"] = 1,
+	["watercan"] = 4,
+	["vodka"] = 2,
+	["grubjarempty"] = 1,
+	["laundrysauce"] = 2,
 
 }
-RECIPE.flag = "7" 
+RECIPE.results = {
+	["medgelvial"] = 1,
+
+}
+
+RECIPE.blueprint = "blueprintmedgelvial"
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station")) do

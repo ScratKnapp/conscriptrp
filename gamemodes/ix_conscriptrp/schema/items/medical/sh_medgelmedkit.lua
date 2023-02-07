@@ -1,13 +1,13 @@
-ITEM.name = "Bandage"
-ITEM.description = "Civillian grade medical wrap."
-ITEM.longdesc = "Often found in consumer or commercial grade first aid kits, some sterile bandaging can lessen or stop bleeding in dire situations."
-ITEM.model = "models/illusion/eftcontainers/bandage.mdl"
-ITEM.width = 1
+ITEM.name = "Med Gel Medkit"
+ITEM.description = "A medical aid kit for all matter of injury."
+ITEM.longdesc = "A kit full of med gel and other tools for serious injury and improved long-term care."
+ITEM.model = "models/ez2models/items/arbeit/healthkit.mdl"
+ITEM.width = 2
 ITEM.height = 2
 ITEM.category = "Medical"
+ITEM.quantity = 3
 ITEM.price = "4000"
 ITEM.flag = "1"
-ITEM.quantity = 1
 ITEM.sound = "items/smallmedkit1.wav"
 ITEM.weight = 0.05
 

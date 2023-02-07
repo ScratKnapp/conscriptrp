@@ -1,13 +1,13 @@
-ITEM.name = "Bandage"
-ITEM.description = "Civillian grade medical wrap."
-ITEM.longdesc = "Often found in consumer or commercial grade first aid kits, some sterile bandaging can lessen or stop bleeding in dire situations."
-ITEM.model = "models/illusion/eftcontainers/bandage.mdl"
-ITEM.width = 1
+ITEM.name = "Large Surgical Kit"
+ITEM.description = "A well stocked kit ideal for trained personnel."
+ITEM.longdesc = "A large, expansive kit equipped with disposable medical equipment to treat and seal some of the worst wounds. Such a kit can only be used by the medically inclined, including tools and supplies that are too advanced for many to properly use."
+ITEM.model = "models/carlsmei/escapefromtarkov/medical/survival_first_aid_rollup_kit.mdl"
+ITEM.width = 4
 ITEM.height = 2
 ITEM.category = "Medical"
-ITEM.price = "4000"
+ITEM.price = "1000"
 ITEM.flag = "1"
-ITEM.quantity = 1
+ITEM.quantity = 8
 ITEM.sound = "items/smallmedkit1.wav"
 ITEM.weight = 0.05
 
@@ -33,7 +33,6 @@ ITEM.functions.use = {
 		return (!IsValid(item.entity))
 	end
 }
-
 
 function ITEM:GetDescription()
 	if (!self.entity or !IsValid(self.entity)) then
