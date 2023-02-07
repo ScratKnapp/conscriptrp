@@ -1,4 +1,4 @@
-RECIPE.name = "Moltov"
+RECIPE.name = "Molotov"
 RECIPE.description = "Assemble a proper Molotov using some scavenged ingredients."
 RECIPE.model = "models/weapons/ethereal/w_molotov.mdl"
 RECIPE.requirements = {
