@@ -6,7 +6,7 @@ RECIPE.requirements = {
 	["hemostaticagent"] = 1,
 }
 RECIPE.results = {
-	["medgelvial"] = 1,
+	["hemostatictraumagauze"] = 1,
 
 }
 RECIPE.flag = "7" 
