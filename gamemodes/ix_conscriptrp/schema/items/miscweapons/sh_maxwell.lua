@@ -17,9 +17,9 @@ ITEM.Pen = 2
 ITEM.Special = "UnBal, Tool"
 
 
+
 if (CLIENT) then
 	function ITEM:PaintOver(item, w, h)
-		//Equipsquare
 		if (item:GetData("equip")) then
 			surface.SetDrawColor(110, 255, 110, 255)
 			--surface.DrawRect(w - 14, h - 14, 8, 8)
@@ -29,7 +29,7 @@ if (CLIENT) then
 
 		surface.SetMaterial(item.equipIcon)
 		surface.DrawTexturedRect(w-23,h-23,19,19)
-		end
+		
 	end
 
 	function ITEM:PopulateTooltip(tooltip)
