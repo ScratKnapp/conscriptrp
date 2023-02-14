@@ -7,7 +7,7 @@ RECIPE.requirements = {
 }
 
 
-RECIPE.tools {
+RECIPE.tools = {
 	["ironpan"] = 1,
 }
 
