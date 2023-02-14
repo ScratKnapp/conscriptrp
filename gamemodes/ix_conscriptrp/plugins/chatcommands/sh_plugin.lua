@@ -138,3 +138,26 @@ ix.chat.Register("pm", {
 	filter = "pm",
 	deadCanChat = true
 })
+
+
+-- Narrate messages to players.
+ix.chat.Register("narrate", {
+	format = "%s",
+	color = Color(0, 9, 255),
+	filter = "pm",
+	deadCanChat = true
+})
+
+
+ix.command.Add("Narrate", {
+	description = "Narrate something IC to a player."
+	arguments = {
+		ix.type.player,
+		ix.type.text
+	},
+	OnRun = function(self, client, target, message)
+	
+		ix.chat.Send(client, "narrate", message, false, {target}, {target = target})
+		
+	end
+})
