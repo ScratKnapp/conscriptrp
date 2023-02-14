@@ -1,10 +1,11 @@
 RECIPE.name = "Coagulant Auto-Injector"
 RECIPE.description = "Dilute Hemostatic Coagulant powder using a can of Breen's water. Bring to a boil and follow the formula closely to create a proper coagulative concoction."
 RECIPE.model = "models/carlsmei/escapefromtarkov/medical/propital.mdl"
+RECIPE.category = "Medical"
 RECIPE.requirements = {
 	["hemostaticagent"] = 2,
 	["syringe"] = 1,
-	["watercan"] = 1,
+	["waterclean"] = 1,
 }
 RECIPE.results = {
 	["coagulant"] = 1,

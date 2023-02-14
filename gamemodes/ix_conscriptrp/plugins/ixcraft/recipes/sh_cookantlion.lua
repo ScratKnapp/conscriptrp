@@ -4,7 +4,7 @@ RECIPE.model = "models/shampur.mdl"
 RECIPE.category = "Cooking"
 RECIPE.requirements = {
 	["antlionhead"] = 1,
-	["watercan"] = 1,
+	["waterclean"] = 1,
 }
 
 

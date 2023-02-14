@@ -1,6 +1,6 @@
 ITEM.name = "MPF High Command Armor"
 ITEM.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
-ITEM.replacements = "models/dpfilms/metropolice/playermodels/elite_police.mdl"
+ITEM.replacements = "models/dpfilms/metropolice/elite_police.mdl"
 ITEM.description = "A uniform issued to High Command units of the MPF."
 ITEM.longdesc = "This suit is issued to Divisional and Commander units. It is the very best armor the Combine affords to its regular human units, and the quality of Combine tech shines in this suit, offering fine protection to most threats. Though not required to wear it, many High Command units sport strength augmentation to ease the burden of the plated limbs.  \nWeight: 3\n\nLimbs: III"
 ITEM.width = 2

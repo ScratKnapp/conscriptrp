@@ -4,7 +4,7 @@ RECIPE.model = "models/doshirak_pure.mdl"
 RECIPE.category = "Cooking"
 RECIPE.requirements = {
 	["cwuinstantnoodles"] = 1,
-	["watercan"] = 1,
+	["waterclean"] = 1,
 }
 
 RECIPE.results = {

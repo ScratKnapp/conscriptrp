@@ -5,7 +5,7 @@ RECIPE.category = "Medical"
 RECIPE.requirements = {
 	["grubnugget"] = 2,
 	["syringe"] = 1,
-	["watercan"] = 2,
+	["waterclean"] = 2,
 	["laundrysauce"] = 1,
 	["vodka"] = 1,
 }
