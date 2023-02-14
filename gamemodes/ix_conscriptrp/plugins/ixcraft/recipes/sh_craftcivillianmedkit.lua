@@ -1,6 +1,7 @@
 RECIPE.name = "Civillian Medkit"
 RECIPE.description = "Assemble a civillian medkit from common first aid components."
 RECIPE.model = "models/illusion/eftcontainers/carmedkit.mdl"
+RECIPE.category = "Medical"
 RECIPE.requirements = {
 	["syringe"] = 1,
 	["bandage"] = 1,

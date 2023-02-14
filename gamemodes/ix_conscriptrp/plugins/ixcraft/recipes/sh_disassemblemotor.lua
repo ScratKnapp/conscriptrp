@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Electrical Motor"
 RECIPE.description = "Take apart an electrical motor to salvage the juicy components within."
 RECIPE.model = "models/illusion/eftcontainers/engine.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["psu"] = 1,
 }

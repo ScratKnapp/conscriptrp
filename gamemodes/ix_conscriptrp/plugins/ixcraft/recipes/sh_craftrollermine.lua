@@ -1,6 +1,7 @@
 RECIPE.name = "Repair Rollermine"
 RECIPE.description = "Restore a broken Rollermine to working order with spare parts."
 RECIPE.model = "models/roller.mdl"
+RECIPE.category = "Repair"
 RECIPE.requirements = {
 	["rollerminebroken"] = 1,
 	["combinebattery"] = 1,

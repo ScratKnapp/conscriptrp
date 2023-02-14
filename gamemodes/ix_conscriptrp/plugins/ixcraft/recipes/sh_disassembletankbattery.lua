@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Tank Battery"
 RECIPE.description = "Take apart a tank battery for the treasures within."
 RECIPE.model = "models/illusion/eftcontainers/militarybattery.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["tankbattery"] = 1,
 }

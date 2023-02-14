@@ -1,6 +1,7 @@
 RECIPE.name = "Trauma Gauze"
 RECIPE.description = "Disinfecting fabric and combining it with medical bandaging allows you to sew and thread together a more effective roll of proper wound-packing medical gauze."
 RECIPE.model = "models/carlsmei/escapefromtarkov/medical/bandage.mdl"
+RECIPE.category = "Medical"
 RECIPE.requirements = {
 	["vodka"] = 1,
 	["bandage"] = 2,

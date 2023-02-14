@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Camera"
 RECIPE.description = "Take apart a DSLR Camera, because one must see no evil."
 RECIPE.model = "models/mgs4/weapons/dslr.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["camera"] = 1,
 }

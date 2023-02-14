@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Power Supply Unit"
 RECIPE.description = "Take apart a computer's Power Supply. It can be extremely dangerous, but luckily you've got the skills and tools to do so safely."
 RECIPE.model = "models/illusion/eftcontainers/powersupplyunit.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["psu"] = 1,
 }

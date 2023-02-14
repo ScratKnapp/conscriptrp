@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Radio"
 RECIPE.description = "Take apart a handheld radio, because communication is sorely overrated."
 RECIPE.model = "models/illusion/eftcontainers/gasanalyser.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["radio"] = 1,
 }

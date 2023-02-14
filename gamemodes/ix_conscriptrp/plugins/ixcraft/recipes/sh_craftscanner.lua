@@ -1,6 +1,7 @@
 RECIPE.name = "Repair City Scanner"
 RECIPE.description = "Restore a broken City Scanner to working order with spare parts."
 RECIPE.model = "models/gibs/scanner_gib05.mdl"
+RECIPE.category = "Repair"
 RECIPE.requirements = {
 	["scannerbroken"] = 1,
 	["combinebattery"] = 1,

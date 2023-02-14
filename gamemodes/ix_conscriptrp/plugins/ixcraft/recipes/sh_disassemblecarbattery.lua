@@ -1,6 +1,7 @@
 RECIPE.name = "Disassemble Car Battery"
 RECIPE.description = "Take apart a car battery instead of throwing it into the ocean."
 RECIPE.model = "models/illusion/eftcontainers/carbattery.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["carbattery"] = 1,
 }

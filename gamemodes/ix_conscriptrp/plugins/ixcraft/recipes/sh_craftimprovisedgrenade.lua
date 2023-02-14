@@ -1,6 +1,7 @@
 RECIPE.name = "Improvised Grenade"
 RECIPE.description = "Fill a metal shell with gunpowder and shrapnel, as well as match heads, to create a self-igniting weak but useful explosion."
 RECIPE.model = "models/silver/outbreak/weapons/w_vog25.mdl"
+RECIPE.category = "Explosives"
 RECIPE.requirements = {
 	["scrapmetal"] = 2,
 	["reclaimedmetal"] = 1,

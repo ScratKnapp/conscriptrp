@@ -17,6 +17,7 @@ end
 if (SERVER) then
 	function ENT:Initialize()
 		if (!self.uniqueID) then
+		
 			self:Remove()
 
 			return

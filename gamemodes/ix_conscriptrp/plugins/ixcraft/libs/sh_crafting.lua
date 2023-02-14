@@ -29,9 +29,12 @@ function PLUGIN.craft.LoadFromDir(directory, pathType)
 					STATION_ENT.Spawnable = true
 					STATION_ENT.AdminOnly = true
 					scripted_ents.Register(STATION_ENT, "ix_station_"..niceName)
+
 				end
 
+			
 				PLUGIN.craft.stations[niceName] = STATION
+				
 			STATION = nil
 		end
 	end
