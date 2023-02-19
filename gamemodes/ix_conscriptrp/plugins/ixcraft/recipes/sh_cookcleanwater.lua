@@ -3,7 +3,6 @@ RECIPE.description = "Purify a can of Breen Water, removing its questionable che
 RECIPE.model = "models/mosi/fnv/props/drink/water_clean.mdl"
 RECIPE.category = "Cooking"
 RECIPE.requirements = {
-	["pileofmedicine"] = 1,
 	["watercan"] = 1,
 }
 
