@@ -1,10 +1,10 @@
 ITEM.name = "Outlander's Stew"
 ITEM.model = "models/arskvshborsch/borsch.mdl"
-ITEM.hunger = 40
+ITEM.hunger = 55
 ITEM.description = "A plastic container with a mishmash of ingredients made into a stew."
 ITEM.longdesc = "A Tupperware of stew made from various wild-grown veggies, beer, Xenian meat chunks, and whatever spices are available. It's known to be an amenity to Refugees in their travels."
-ITEM.quantity = 2
-ITEM.price = 65
+ITEM.quantity = 3
+ITEM.price = 110
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false
