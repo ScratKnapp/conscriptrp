@@ -28,13 +28,13 @@ function PLUGIN.craft.LoadFromDir(directory, pathType)
 					STATION_ENT.uniqueID = niceName
 					STATION_ENT.Spawnable = true
 					STATION_ENT.AdminOnly = true
-					scripted_ents.Register(STATION_ENT, "ix_station_"..niceName)
+					scripted_ents.Register(STATION_ENT, "ix_station_"..STATION_ENT.uniqueID)
 
 				end
 
 			
 				PLUGIN.craft.stations[niceName] = STATION
-				
+		
 			STATION = nil
 		end
 	end
