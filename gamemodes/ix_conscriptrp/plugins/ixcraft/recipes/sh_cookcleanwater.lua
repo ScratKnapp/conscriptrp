@@ -12,7 +12,7 @@ RECIPE.results = {
 }
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
-	for _, v in pairs(ents.FindByClass("ix_station")) do
+	for _, v in pairs(ents.FindByClass("ix_station_campfire")) do
 		if (client:GetPos():DistToSqr(v:GetPos()) < 100 * 100) then
 			return true
 		end
