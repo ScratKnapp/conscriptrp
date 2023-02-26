@@ -1,7 +1,7 @@
 ITEM.name = "Kukri"
 ITEM.description = "An angled blade used as a weapon and tool, made iconic by the Nepalese Gurkas."
-ITEM.model = "cw_kk_ins2_mel_gurkha"
-ITEM.class = "tfa_nmrih_kknife"
+ITEM.model = "models/weapons/w_gurkha.mdl"
+ITEM.class = "cw_kk_ins2_mel_gurkha"
 ITEM.weaponCategory = "melee"
 ITEM.price = 1500
 ITEM.flag = "1"
