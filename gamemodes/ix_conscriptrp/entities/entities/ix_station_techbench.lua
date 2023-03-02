@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Base            = "base_ai"
 ENT.Type            = "anim"
-ENT.PrintName        = "Campfire"
+ENT.PrintName        = "Technology Bench"
 ENT.Author            = "Ultra"
 ENT.Category         = "Helix"
 
@@ -10,12 +10,12 @@ ENT.AutomaticFrameAdvance = true
 ENT.Spawnable = true
 ENT.AdminOnly = true
 
-ENT.HUDName = "Campfire"
-ENT.HUDDesc = "A campfire."
+ENT.HUDName = "Technology Bench"
+ENT.HUDDesc = "A technology bench."
 
 if (SERVER) then
     function ENT:Initialize()
-        self:SetModel("models/vj_props/fireplace.mdl")
+        self:SetModel("models/props_lab/workspace001.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -35,12 +35,12 @@ if (CLIENT) then
     
         local title = tooltip:AddRow("name")
         title:SetImportant()
-        title:SetText("Campfire")
+        title:SetText("Technology Bench")
         title:SetBackgroundColor(ix.config.Get("color"))
         title:SizeToContents()
     
         local description = tooltip:AddRow("description")
-        description:SetText("A campfire, fitted with metal grille and potholders, making it suitable for basic cooking tasks.")
+        description:SetText("A workstation with some specialized tools and devices for testing electronics and computers - ideal for the more tech-minded.")
         description:SizeToContents()
     
     end

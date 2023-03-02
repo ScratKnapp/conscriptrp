@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Base            = "base_ai"
 ENT.Type            = "anim"
-ENT.PrintName        = "Campfire"
+ENT.PrintName        = "Workbench"
 ENT.Author            = "Ultra"
 ENT.Category         = "Helix"
 
@@ -10,12 +10,12 @@ ENT.AutomaticFrameAdvance = true
 ENT.Spawnable = true
 ENT.AdminOnly = true
 
-ENT.HUDName = "Campfire"
-ENT.HUDDesc = "A campfire."
+ENT.HUDName = "Workbench"
+ENT.HUDDesc = "A workbench."
 
 if (SERVER) then
     function ENT:Initialize()
-        self:SetModel("models/vj_props/fireplace.mdl")
+        self:SetModel("models/props_wasteland/controlroom_desk001b.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -35,12 +35,12 @@ if (CLIENT) then
     
         local title = tooltip:AddRow("name")
         title:SetImportant()
-        title:SetText("Campfire")
+        title:SetText("Workbench")
         title:SetBackgroundColor(ix.config.Get("color"))
         title:SizeToContents()
     
         local description = tooltip:AddRow("description")
-        description:SetText("A campfire, fitted with metal grille and potholders, making it suitable for basic cooking tasks.")
+        description:SetText("A flat, open surface with some drawers - perfect for some handiwork.")
         description:SizeToContents()
     
     end

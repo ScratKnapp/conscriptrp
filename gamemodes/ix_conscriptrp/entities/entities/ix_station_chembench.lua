@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Base            = "base_ai"
 ENT.Type            = "anim"
-ENT.PrintName        = "Campfire"
+ENT.PrintName        = "Chemistry Bench"
 ENT.Author            = "Ultra"
 ENT.Category         = "Helix"
 
@@ -10,12 +10,12 @@ ENT.AutomaticFrameAdvance = true
 ENT.Spawnable = true
 ENT.AdminOnly = true
 
-ENT.HUDName = "Campfire"
-ENT.HUDDesc = "A campfire."
+ENT.HUDName = "Chemistry Bench"
+ENT.HUDDesc = "A chemistry bench."
 
 if (SERVER) then
     function ENT:Initialize()
-        self:SetModel("models/vj_props/fireplace.mdl")
+        self:SetModel("models/ez2models/props/lab_desk01/lab_desk01.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -35,12 +35,12 @@ if (CLIENT) then
     
         local title = tooltip:AddRow("name")
         title:SetImportant()
-        title:SetText("Campfire")
+        title:SetText("Chemistry Table")
         title:SetBackgroundColor(ix.config.Get("color"))
         title:SizeToContents()
     
-        local description = tooltip:AddRow("description")
-        description:SetText("A campfire, fitted with metal grille and potholders, making it suitable for basic cooking tasks.")
+        local description = tooltip:AddRow("A sterile working space with chemistry equipment in its drawers, such as beakers and bunsen burners - used to make chemicals for good or ill."
+        description:SetText("A campfire.")
         description:SizeToContents()
     
     end

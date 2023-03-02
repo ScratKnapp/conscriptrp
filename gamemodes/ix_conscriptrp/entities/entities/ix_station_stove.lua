@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Base            = "base_ai"
 ENT.Type            = "anim"
-ENT.PrintName        = "Campfire"
+ENT.PrintName        = "Stove"
 ENT.Author            = "Ultra"
 ENT.Category         = "Helix"
 
@@ -10,12 +10,12 @@ ENT.AutomaticFrameAdvance = true
 ENT.Spawnable = true
 ENT.AdminOnly = true
 
-ENT.HUDName = "Campfire"
-ENT.HUDDesc = "A campfire."
+ENT.HUDName = "Stove"
+ENT.HUDDesc = "A stove."
 
 if (SERVER) then
     function ENT:Initialize()
-        self:SetModel("models/vj_props/fireplace.mdl")
+        self:SetModel("models/props_c17/furniturestove001a.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)
@@ -35,12 +35,12 @@ if (CLIENT) then
     
         local title = tooltip:AddRow("name")
         title:SetImportant()
-        title:SetText("Campfire")
+        title:SetText("Stove")
         title:SetBackgroundColor(ix.config.Get("color"))
         title:SizeToContents()
     
         local description = tooltip:AddRow("description")
-        description:SetText("A campfire, fitted with metal grille and potholders, making it suitable for basic cooking tasks.")
+        description:SetText("A traditional gas stove, fit for all manner of cooking.")
         description:SizeToContents()
     
     end
