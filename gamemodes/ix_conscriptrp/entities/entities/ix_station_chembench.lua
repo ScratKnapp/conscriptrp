@@ -39,7 +39,7 @@ if (CLIENT) then
         title:SetBackgroundColor(ix.config.Get("color"))
         title:SizeToContents()
     
-        local description = tooltip:AddRow("A sterile working space with chemistry equipment in its drawers, such as beakers and bunsen burners - used to make chemicals for good or ill."
+        local description = tooltip:AddRow("A sterile working space with chemistry equipment in its drawers, such as beakers and bunsen burners - used to make chemicals for good or ill.")
         description:SetText("A campfire.")
         description:SizeToContents()
     
