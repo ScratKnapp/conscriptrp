@@ -3,8 +3,8 @@ ITEM.model = "models/teebeutel/metro/objects/bottle02.mdl"
 ITEM.description = "A bottle of gun lubricants and oil."
 ITEM.longdesc = "When your gun isn't up to standard, a combination of cleaning oils and lubricants can clean off some surface level dirt and reduce friction between parts."
 ITEM.category = "Technician"
-ITEM.repairAmount = 500
-ITEM.repairTreshhold = 8000
+ITEM.repairAmount = 300
+ITEM.repairTreshhold = 7000
 ITEM.maxStack = 3
 ITEM.flag = "A"
 ITEM.sound = "ambient/water/drip2.wav"
@@ -103,7 +103,7 @@ function ITEM:GetDescription()
 	if (self.entity) then
 		return self.description.."\n \nThis tool has "..math.Round(quant).." uses left durability."
 	else
-        return (str.."Amount of durability restored: "..self.repairAmount.."% \nMinimum durability percentage: "..(self.repairTreshhold / 100).."%".."\n \nThis tool has "..quant.."/"..self.maxStack.." uses left.")
+        return (str.."Amount of durability restored: "..self.repairAmount / 100 .."% \nMinimum durability percentage: "..(self.repairTreshhold / 100).."%".."\n \nThis tool has "..quant.."/"..self.maxStack.." uses left.")
 	end
 end
 
