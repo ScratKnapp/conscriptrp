@@ -9,7 +9,7 @@ ITEM.maxStack = 1
 ITEM.flag = "A"
 ITEM.sound = "items/ammocrate_open.wav"
 ITEM.weight = 0.5
-ITEM.price = 15000
+ITEM.price = 1400
 
 ITEM.functions.use = { 
 	name = "Clean Gun",
