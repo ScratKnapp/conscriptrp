@@ -17,6 +17,10 @@ function RECIPE:GetDescription()
 	return self.description
 end
 
+function RECIPE:GetStation()
+	return self.station or "None"
+end 
+
 function RECIPE:GetSkin()
 	return self.skin
 end

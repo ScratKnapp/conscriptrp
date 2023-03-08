@@ -31,6 +31,11 @@ function PLUGIN:PopulateRecipeTooltip(tooltip, recipe)
 	description:SetText(recipe.GetDescription and recipe:GetDescription() or L(recipe.description))
 	description:SizeToContents()
 
+
+	local stationname = tooltip:AddRow("stationname")
+	description:SetText(recipe.GetStation)
+	description:SizeToContents()
+
 	if (recipe.tools) then
 		local tools = tooltip:AddRow("tools")
 		tools:SetText(L("CraftTools"))
@@ -129,6 +134,8 @@ function PLUGIN:PopulateStationTooltip(tooltip, station)
 	local description = tooltip:AddRow("description")
 	description:SetText(station.GetDescription and station:GetDescription() or L(station.description))
 	description:SizeToContents()
+
+	
 
 	if (station.PopulateTooltip) then
 		station:PopulateTooltip(tooltip)
