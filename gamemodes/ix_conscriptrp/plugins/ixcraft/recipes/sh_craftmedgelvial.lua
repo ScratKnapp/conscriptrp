@@ -2,6 +2,7 @@ RECIPE.name = "Med-Gel Vial"
 RECIPE.description = "Utilizing the written formula, carefully combine and extract elements from different chemicals to almost perfectly recreate the Union's regenerative biogel substance, and stick it in a Vial."
 RECIPE.model = "models/healthvial.mdl"
 RECIPE.category = "Medical"
+RECIPE.station = "Chemistry Bench"
 RECIPE.requirements = {
 	["grubnugget"] = 4,
 	["waterclean"] = 4,

@@ -2,6 +2,7 @@ RECIPE.name = "Molotov"
 RECIPE.description = "Assemble a proper Molotov using some scavenged ingredients."
 RECIPE.model = "models/weapons/ethereal/w_molotov.mdl"
 RECIPE.category = "Explosives"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["vodka"] = 1,
 	["fabricpatch"] = 1,

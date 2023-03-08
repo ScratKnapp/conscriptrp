@@ -2,6 +2,7 @@ RECIPE.name = "Repair Manhack"
 RECIPE.description = "Restore a broken Manhack to working order with spare parts."
 RECIPE.model = "models/gibs/manhack_gib02.mdl"
 RECIPE.category = "Repair"
+RECIPE.station = "Technology Bench"
 RECIPE.requirements = {
 	["manhackbroken"] = 1,
 	["combinebattery"] = 1,

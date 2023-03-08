@@ -2,6 +2,7 @@ RECIPE.name = "Disassemble Handheld Game System"
 RECIPE.description = "Take apart a game console for common consumer electronic components. Hopefully nobody had a saved game they needed on there."
 RECIPE.model = "models/illusion/eftcontainers/tetriz.mdl"
 RECIPE.category = "Disassembly"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["gameboy"] = 1,
 }

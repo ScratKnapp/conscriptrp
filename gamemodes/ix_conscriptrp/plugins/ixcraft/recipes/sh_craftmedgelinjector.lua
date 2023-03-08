@@ -2,6 +2,7 @@ RECIPE.name = "Med-Gel Injector Pen"
 RECIPE.description = "Utilizing a written formula, carefully combine and extract elements from different chemicals to almost perfectly recreate the Union's regenerative biogel substance, and stick it in an auto-injector."
 RECIPE.model = "models/ccr/props/syringe.mdl"
 RECIPE.category = "Medical"
+RECIPE.station = "Chemistry Bench"
 RECIPE.requirements = {
 	["grubnugget"] = 2,
 	["syringe"] = 1,

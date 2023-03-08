@@ -2,6 +2,7 @@ RECIPE.name = "IFAK"
 RECIPE.description = "Assemble an Individual First Aid Kit from some higher grade first aid items."
 RECIPE.model = "models/illusion/eftcontainers/ifak.mdl"
 RECIPE.category = "Medical"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["pileofmedicine"] = 1,
 	["armybandage"] = 1,

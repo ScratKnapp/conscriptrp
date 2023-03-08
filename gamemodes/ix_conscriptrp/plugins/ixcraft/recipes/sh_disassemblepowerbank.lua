@@ -2,6 +2,7 @@ RECIPE.name = "Disassemble Powerbank"
 RECIPE.description = "Take apart a charging bank, because only you deserve power."
 RECIPE.model = "models/illusion/eftcontainers/powerbank.mdl"
 RECIPE.category = "Disassembly"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["powerbank"] = 1,
 }

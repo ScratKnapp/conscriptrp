@@ -2,6 +2,7 @@ RECIPE.name = "Painkillers"
 RECIPE.description = "Pick out some painkillers from a few piles of medication that your knowledge tells you won't kill you."
 RECIPE.model = "models/illusion/eftcontainers/ibuprofen.mdl"
 RECIPE.category = "Medical"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["pileofmedicine"] = 1,
 }

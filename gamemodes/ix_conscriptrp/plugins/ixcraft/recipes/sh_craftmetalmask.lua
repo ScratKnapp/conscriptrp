@@ -1,6 +1,7 @@
 RECIPE.name = "Metal Mask"
 RECIPE.description = "Use some extra metal and basic tools to transform a welding mask into proper protective facewear."
 RECIPE.model = "models/ez2models/humans/group03b/welding_mask.mdl"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["weldingmask"] = 1,
 	["scrapmetal"] = 2,

@@ -2,6 +2,7 @@ RECIPE.name = "Repair Rollermine"
 RECIPE.description = "Restore a broken Rollermine to working order with spare parts."
 RECIPE.model = "models/roller.mdl"
 RECIPE.category = "Repair"
+RECIPE.station = "Technology Bench"
 RECIPE.requirements = {
 	["rollerminebroken"] = 1,
 	["combinebattery"] = 1,
@@ -26,7 +27,7 @@ RECIPE.results = {
 RECIPE.flag = "6" 
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
-	for _, v in pairs(ents.FindByClass("ix_station")) do
+	for _, v in pairs(ents.FindByClass("ix_station_techbench")) do
 		if (client:GetPos():DistToSqr(v:GetPos()) < 100 * 100) then
 			return true
 		end

@@ -2,6 +2,7 @@ RECIPE.name = "Purify Breen Water"
 RECIPE.description = "Purify a can of Breen Water, removing its questionable chemical additives and making it suitable for cooking food or other uses."
 RECIPE.model = "models/mosi/fnv/props/drink/water_clean.mdl"
 RECIPE.category = "Cooking"
+RECIPE.station = "Campfire or Stove"
 RECIPE.requirements = {
 	["watercan"] = 1,
 }

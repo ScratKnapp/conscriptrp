@@ -1,6 +1,7 @@
 RECIPE.name = "Scrap Armor Vest"
 RECIPE.description = "Combine some scrap metal with basic metalworking to create a heavy vest capable of stopping pistol rounds."
 RECIPE.model = "models/combine_helicopter/bomb_debris_2.mdl"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["scrapmetal"] = 4,
 	["gascan"] = 1,
