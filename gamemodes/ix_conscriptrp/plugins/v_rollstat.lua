@@ -32,12 +32,29 @@ ix.command.Add("Rollstat", {
         local att = client:GetCharacter():GetAttribute(attrib,0)
         local add = att --math.Round(att*1)
 		value = value
+        local char = client:GetCharacter()
+        local generalmodifier = char.vars.GeneralRollMod
+        local strengthmodifier = char.vars.StrengthRollMod
+        local fortitudemodifier = char.vars.FortitudeRollMod
+        local fortunemodifier = char.vars.FortuneRollMod
+        local reflexmodifier = char.vars.ReflexRollMod
+        local observationmodifier = char.vars.ObservationRollMod
+
 
         ix.chat.Send(client, "rollStat", tostring(value), nil, nil, {
             max = maximum,
             attr=string.upper(attrib),
             additive=add,
-            initialroll = value
+            genmod = generalmodifier,
+            strmod = strengthmodifier,
+            fortimod = fortitudemodifier,
+            fortumod = fortunemodifier,
+            refmod = reflexmodifier,
+            obsmod = observationmodifier,
+            initialroll = value,
+    
+            
+        
         })
 
        ix.log.Add(client, "rollStat", value, maximum, attrib, add)
@@ -55,7 +72,9 @@ ix.chat.Register("rollstat", {
         local add = data.additive
         local totaladd = 0
         local total = 0
-
+      
+    
+        print(generalmodifier)
         -- Real yanderedev hours here
 
         if (add == 0) then 
@@ -118,11 +137,37 @@ ix.chat.Register("rollstat", {
 
         end
 
+       
+        if (data.genmod and data.genmod ~= 0) then
+            add = add + data.genmod
+            total = data.initialroll + add
+        end
+
+        if (att == "STRENGTH" and data.strmod and data.strmod ~= 0) then
+            add = add + data.strmod
+            total = data.initialroll + add
+        end
 
 
+        if (att == "FORTITUDE" and data.fortimod and data.fortimod ~= 0) then
+            add = add + data.fortimod
+            total = data.initialroll + add
+        end
 
+        if (att == "FORTUNE" and data.fortumod and data.fortumod ~= 0) then
+            add = add + data.fortumod
+            total = data.initialroll + add
+        end
 
-        
+        if (att == "REFLEX" and data.refmod and data.refmod ~= 0) then
+            add = add + data.refmod
+            total = data.initialroll + add
+        end
+
+        if (att == "OBSERVATION" and data.obsmod and data.obsmod ~= 0) then
+            add = add + data.obsmod
+            total = data.initialroll + add
+        end
  
         local translated = L2(self.uniqueID.."Format", speaker:Name(), text, max)
 
