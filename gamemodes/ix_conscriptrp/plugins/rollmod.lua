@@ -216,7 +216,6 @@ ix.command.Add("GetRollMods", {
 
 ix.command.Add("MyRollMods", {
 	description = "View your current roll modifiers.",
-	privilege = "Manage Character Attributes",
 	OnRun = function(self, client)
 		local str = ""
         local char = client:GetCharacter()
