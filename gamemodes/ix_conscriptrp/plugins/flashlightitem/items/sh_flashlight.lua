@@ -1,5 +1,5 @@
 ITEM.name = "Flashlight"
-ITEM.model = "models/maxofs2d/lamp_flashlight.mdl"
+ITEM.model = "models/raviool/flashlight.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.description = "A standard flashlight that can be toggled."
