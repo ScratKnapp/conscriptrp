@@ -12,7 +12,6 @@ RECIPE.results = {
 	["traumagauze"] = 1,
 
 }
-RECIPE.flag = "7" 
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do

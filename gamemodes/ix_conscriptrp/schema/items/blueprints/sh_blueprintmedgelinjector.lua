@@ -1,5 +1,5 @@
 ITEM.name = "Reproduction Med-Gel Autoinjector Recipe"
-ITEM.model = "models/illusion/eftcontainers/intel.mdl"
+ITEM.model = "models/mosi/fallout4/props/junk/blueprint.mdl"
 ITEM.description = "A complete recipe for forming a safe dose of a close-enough approximation of Combine Med-Gel into a quick-use autoinjector. A skilled medic could make use of this."
 ITEM.category = "Blueprints"
 ITEM.flag = "3"

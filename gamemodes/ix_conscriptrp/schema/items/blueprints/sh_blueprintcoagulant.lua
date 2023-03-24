@@ -1,5 +1,5 @@
 ITEM.name = "Coagulant Auto-Injector Recipe"
-ITEM.model = "models/illusion/eftcontainers/intel.mdl"
+ITEM.model = "models/mosi/fallout4/props/junk/blueprint.mdl"
 ITEM.description = "A complete recipe for forming a safe dose of coagulant for medical use. A field medic can make use of this."
 ITEM.category = "Blueprints"
 ITEM.flag = "3"

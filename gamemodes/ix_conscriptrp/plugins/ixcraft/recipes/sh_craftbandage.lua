@@ -10,5 +10,5 @@ RECIPE.results = {
 	["bandage"] = 1
 
 }
-RECIPE.flag = "7" 
+
 
