@@ -1,4 +1,4 @@
-ITEM.name = "Car Door"
+ITEM.name = "Car Door TEST"
 ITEM.model = "models/props_vehicles/carparts_door01a.mdl"
 ITEM.description = "A disembodied car door, it has more than a few dents and the window has been shattered, but someone with skills might be able to find a use for it. Otherwise, it can always be sold."
 ITEM.category = "junk"
