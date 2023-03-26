@@ -9,7 +9,7 @@ RECIPE.requirements = {
 	["painkillers"] = 1,
 }
 RECIPE.results = {
-	["medkitcivillian"] = 1
+	["medkitcivillian"] = 1,
 
 }
 

@@ -1,5 +1,5 @@
 ITEM.name = "PDA"
-ITEM.model = "models/kek1ch/dev_pda.mdl"
+ITEM.model = " models/citizen_radio.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.category = "Electronics"

@@ -129,37 +129,72 @@ ix.container.Register("models/props_c17/cashregister01a.mdl", {
 	height = 1
 })
 
-ix.container.Register("models/hgn/srp/containers/crate_unbreakable.mdl", {
-	name = "Wooden crate",
-	description = "A simple wooden crate.",
+ix.container.Register("models/mosi/fallout4/props/junk/ammobag.mdl", {
+	name = "Torn Pouch",
+	description = "A worn ammo pouch.",
+	width = 1,
+	height = 1
+})
+
+ix.container.Register("models/mosi/fallout4/props/junk/ammobag.mdl", {
+	name = "Torn Pouch",
+	description = "A worn ammo pouch.",
+	width = 1,
+	height = 1
+})
+
+ix.container.Register("models/illusion/eftcontainers/thermobag.mdl", {
+	name = "Cooler",
+	description = "A commercial cooler for keeping food nice and chilled.",
 	width = 4,
 	height = 4
 })
 
-ix.container.Register("models/hgn/srp/containers/footlocker_02.mdl", {
-	name = "Footlocker",
-	description = "A footlocker to save some stuff in.",
-	width = 6,
-	height = 5
+ix.container.Register("models/warz/items/lootcrate.mdl", {
+	name = "Small Crate",
+	description = "A small storage crate",
+	width = 2,
+	height = 2
 })
 
-ix.container.Register("models/hgn/srp/containers/footlocker_03.mdl", {
-	name = "Footlocker",
-	description = "A footlocker to save some stuff in.",
-	width = 6,
-	height = 5
+ix.container.Register("models/illusion/eftcontainers/medscase.mdl", {
+	name = "Medical Case",
+	description = "A hardcase for safekeeping of medical items.",
+	width = 4,
+	height = 3
 })
 
-ix.container.Register("models/hgn/srp/items/backpack-1.mdl", {
-	name = "Backpack",
-	description = "Just a backpack that could to be used as a stash.",
+ix.container.Register("models/illusion/eftcontainers/ammocase.mdl", {
+	name = "Munitions Crate",
+	description = "A hardcase for storing ammo and magazines.",
+	width = 2,
+	height = 3
+})
+
+ix.container.Register("models/warz/items/lootcrate.mdl", {
+	name = "Reinforced Safe",
+	description = "A heavy reinforced safe.",
+	width = 4,
+	height = 6
+})
+
+ix.container.Register("models/ez2models/props/props_arbeit/humidor.mdl", {
+	name = "Jewelery Box",
+	description = "A box for storing jewelery.",
+	width = 2,
+	height = 2
+})
+
+ix.container.Register("models/mosi/fnv/props/health/firstaidkit.mdl", {
+	name = "First Aid Case",
+	description = "A case for storing first aid essentials.",
 	width = 3,
 	height = 3
 })
 
-ix.container.Register("models/hgn/srp/items/backpack-2.mdl", {
-	name = "Backpack",
-	description = "Just a backpack that could to be used as a stash.",
-	width = 3,
-	height = 3
+ix.container.Register("models/mosi/fallout4/props/junk/breadbox.mdl", {
+	name = "Bread Box",
+	description = "A plastic box meant to keep loaves of bread fresh.",
+	width = 1,
+	height = 2
 })
