@@ -1,0 +1,14 @@
+ITEM.name = "M18 Smoke Grenade"
+ITEM.model = ("models/weapons/ethereal/w_m18.mdl")
+ITEM.description = "A M18 Smoke Grenade"
+ITEM.class = "cw_kk_ins2_nade_m18"
+ITEM.weaponCategory = "secondary"
+ITEM.isWeapon = true
+ITEM.noAmmo = true
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 1500
+ITEM.flag = "1"
+ITEM.category = "Weapons"
+ITEM.isGrenade = true
+ITEM.weight = 0.538

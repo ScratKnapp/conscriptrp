@@ -132,7 +132,7 @@ function PANEL:Init()
 end
 
 function PANEL:LoadRecipes(category, search)
-	category = category	or "Crafting"
+	category = category	or "General"
 	local recipes = PLUGIN.craft.recipes
 
 	self.scroll:Clear()

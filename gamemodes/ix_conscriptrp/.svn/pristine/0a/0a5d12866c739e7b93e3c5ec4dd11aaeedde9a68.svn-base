@@ -1,0 +1,10 @@
+ITEM.name = "7.62x25mm"
+ITEM.model = "models/Items/BoxSRounds.mdl"
+ITEM.ammo = "7.62x25MM" 
+ITEM.ammoAmount = 30 
+ITEM.description= "A box that contains %s rounds of 7.62x25mm ammo."
+ITEM.longdesc = "This 7.62x25mm round contains full metal jacket rounds with a steel penetrator and a lead core under a metal jacket."
+ITEM.price = 400
+ITEM.flag = "1"
+ITEM.weight = 0.016
+ITEM.isAmmo = true

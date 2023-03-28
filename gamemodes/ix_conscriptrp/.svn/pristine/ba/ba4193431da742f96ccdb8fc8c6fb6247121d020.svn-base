@@ -1,0 +1,12 @@
+ITEM.name = "Level IIA Kevlar Vest"
+ITEM.description = "A Level IIA kevlar vest. It's long been considered obsolete even before the war and generally not made anymore."
+ITEM.category = "Upgrades"
+ITEM.model = "models/armor/w_eq_armor.mdl"
+ITEM.width = 2
+ITEM.height = 2
+ITEM.price = 40000
+ITEM.slot = 2
+ITEM.flag = "A"
+ITEM.isUpgrade = true
+ITEM.isArmorUpg = true
+ITEM.weight = 0.05

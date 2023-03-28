@@ -1,0 +1,3 @@
+PERK.name = "Pressure Point"
+PERK.description = "Your knowledge of general anatomy has lead to you to understand the sensitivity of certain muscles, and so you've decided to use them as a target."
+PERK.effect = "Roll Observation against a DC of 50, upon success, roll Strength against the enemy's Reflex. Upon success, strike the enemy in a sensitive muscle, stunning them for one full turn, or the rest of their current turn (if triggered on Overwatch.) Only works on human enemies."

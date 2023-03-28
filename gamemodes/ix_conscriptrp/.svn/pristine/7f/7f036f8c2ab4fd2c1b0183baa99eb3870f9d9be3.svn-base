@@ -1,0 +1,9 @@
+ITEM.name = "Experimental Grade Electronics"
+ITEM.model = "models/illusion/eftcontainers/virtex.mdl"
+ITEM.description = "A piece of electronic equipment not known to the public eye."
+ITEM.longdesc = "These electronics are from some sort of high-tech facility before the war, used in technologies the public eye never got to see. To say that Combine and Resistance alike are very interested in these things is an understatement."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 15000
+ITEM.width = 2
+ITEM.height = 1

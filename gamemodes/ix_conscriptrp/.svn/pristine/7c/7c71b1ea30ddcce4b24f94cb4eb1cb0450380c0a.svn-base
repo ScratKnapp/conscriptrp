@@ -1,0 +1,9 @@
+ITEM.name = "Soap"
+ITEM.model = "models/illusion/eftcontainers/soap.mdl"
+ITEM.description = "A cleaning instrument."
+ITEM.longdesc = "A bar of soap, one of the most rare and valuable commodities in the Zone that is intentionally kept scarce to ensure an easy profit on behalf of smugglers everywhere. People will kill for it, people have died for it, and many have probably cried while using it, both for the comfort it provides and the realization they are literally burning money with each wipe onto their dirtied flesh. This particular bar smells of green leaf."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 30
+ITEM.width = 1
+ITEM.height = 1

@@ -151,7 +151,7 @@ if (SERVER) then
 		local character = client:GetCharacter()
 		local inventory = character:GetInventory()
 
-		if (!inventory:hasItem("lockcard")) then
+		if (!inventory:HasItem("lockcard")) then
 			self:DisplayError()
 			self.nextUseTime = CurTime() + 2
 
@@ -168,7 +168,7 @@ if (SERVER) then
 else
 	local glowMaterial = ix.util.GetMaterial("sprites/glow04_noz")
 	local color_green = Color(0, 255, 0, 255)
-	local color_purple = Color(55, 128,0,128)
+	local color_purple = Color(128,0,128)
 	local color_red = Color(255, 50, 50, 255)
 
 	function ENT:Draw()

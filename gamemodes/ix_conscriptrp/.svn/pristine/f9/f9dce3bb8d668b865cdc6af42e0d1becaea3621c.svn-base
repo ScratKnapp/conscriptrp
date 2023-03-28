@@ -1,0 +1,12 @@
+ITEM.name = ".357 Magnum"
+ITEM.model = "models/Items/357ammobox.mdl"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.ammo = ".357" // type of the ammo
+ITEM.description = "A box that contains %s rounds of .357 Magnum ammo."
+ITEM.category = "Ammunition"
+ITEM.price = 1000
+ITEM.flag = "3"
+ITEM.ammoAmount = 20
+ITEM.weight = 0.021
+ITEM.isAmmo = true

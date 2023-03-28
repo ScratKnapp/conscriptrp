@@ -140,17 +140,30 @@ ix.chat.Register("pm", {
 })
 
 
--- Narrate messages to players.""
+--[[ -- Narrate messages to players.
 ix.chat.Register("narrate", {
 	format = "%s",
 	color = Color(0, 9, 255),
 	filter = "pm",
 	deadCanChat = true
+
+
+	
+	function data:OnChatAdd(speaker, text, anonymous, info)
+		local color = self.color
+		if (self.GetColor) then
+			color = self:GetColor(speaker, text, info)
+		end
+
+		local translated = L2(chatType.."Format",text)
+
+		chat.AddText(color, translated or string.format(self.format, text))
+	end
 })
 
 
 ix.command.Add("Narrate", {
-	description = "Narrate something IC to a player."
+	description = "Narrate something IC to a player.",
 	adminOnly = true,
 	arguments = {
 		ix.type.player,
@@ -158,7 +171,14 @@ ix.command.Add("Narrate", {
 	},
 	OnRun = function(self, client, target, message)
 	
-		ix.chat.Send(client, "narrate", message, false, {target, client}, {target = target})
-		
+		ix.chat.Send(client, "narrate", message, false, {client, target}, {message = message})
 	end
+
+end
+
+
+
+
 })
+ ]]
+

@@ -1,0 +1,11 @@
+ITEM.name = ".45 ACP"
+ITEM.model = "models/Items/BoxSRounds.mdl"
+ITEM.ammo = ".45 ACP" 
+ITEM.ammoAmount = 20 
+ITEM.description= "A box that contains %s rounds of .45 ACP ammo. "
+ITEM.longdesc = "The .45 caliber full metal jacket round has enjoyed popularity for nearly a hundred years thanks to its ballistic performance and a relatively small propelling charge. As a result, the bullet in this round is relatively slow but highly accurate and provides considerable stopping power."
+ITEM.price = 600
+ITEM.flag = "3"
+ITEM.width = 1
+ITEM.weight = 0.035
+ITEM.isAmmo = true

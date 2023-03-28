@@ -1,0 +1,15 @@
+ITEM.name = "12g Slug"
+ITEM.model = "models/Items/BoxBuckshot.mdl"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.ammo = "12 Gauge -SG-" // type of the ammo
+ITEM.ammoAmount = 20 // amount of the ammo
+ITEM.description= "A box that contains %s 12 gauge slug shells. "
+ITEM.longdesc = "This heavy 12-caliber slug round is normally used for hunting big game, but is also good for other purposes."
+ITEM.price = 1600
+ITEM.flag = "3"
+ITEM.Range = 20
+ITEM.Dmg = 1
+ITEM.Pen = 5
+ITEM.weight = 0.05
+ITEM.isAmmo = true

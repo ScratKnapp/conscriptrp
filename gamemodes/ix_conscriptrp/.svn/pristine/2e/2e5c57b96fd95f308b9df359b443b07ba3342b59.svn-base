@@ -1,0 +1,12 @@
+ITEM.name = "23x75mm Penetrator"
+ITEM.model = "models/Items/BoxBuckshot.mdl"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.ammo = "23mm Shell -P-"
+ITEM.description = "A Box that contains %s 23mm Penetrator shells."
+ITEM.category = "Ammunition"
+ITEM.price = 2000
+ITEM.flag = "4"
+ITEM.ammoAmount = 10
+ITEM.weight = 0.1
+ITEM.isAmmo = true
