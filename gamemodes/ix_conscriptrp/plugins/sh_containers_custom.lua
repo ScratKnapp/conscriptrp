@@ -136,13 +136,6 @@ ix.container.Register("models/mosi/fallout4/props/junk/ammobag.mdl", {
 	height = 1
 })
 
-ix.container.Register("models/mosi/fallout4/props/junk/ammobag.mdl", {
-	name = "Torn Pouch",
-	description = "A worn ammo pouch.",
-	width = 1,
-	height = 1
-})
-
 ix.container.Register("models/illusion/eftcontainers/thermobag.mdl", {
 	name = "Cooler",
 	description = "A commercial cooler for keeping food nice and chilled.",
@@ -171,7 +164,7 @@ ix.container.Register("models/illusion/eftcontainers/ammocase.mdl", {
 	height = 3
 })
 
-ix.container.Register("models/warz/items/lootcrate.mdl", {
+ix.container.Register("models/warz/items/lockbox.mdl", {
 	name = "Reinforced Safe",
 	description = "A heavy reinforced safe.",
 	width = 4,
@@ -196,5 +189,12 @@ ix.container.Register("models/mosi/fallout4/props/junk/breadbox.mdl", {
 	name = "Bread Box",
 	description = "A plastic box meant to keep loaves of bread fresh.",
 	width = 1,
+	height = 2
+})
+
+ix.container.Register("models/warz/items/lootcrate.mdl", {
+	name = "Small Crate",
+	description = "A small storage crate.",
+	width = 2,
 	height = 2
 })

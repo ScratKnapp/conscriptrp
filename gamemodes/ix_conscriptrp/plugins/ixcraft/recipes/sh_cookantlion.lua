@@ -15,7 +15,7 @@ RECIPE.tools = {
 }
 
 RECIPE.results = {
-	["antlionchunks"] = 1
+	["roastedantlion"] = 1
 
 }
 

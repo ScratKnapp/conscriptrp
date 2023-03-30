@@ -14,7 +14,7 @@ RECIPE.tools = {
 }
 
 RECIPE.results = {
-	["rawbullsquidcutlet"] = 1
+	["rawbullsquidcutlet"] = 4
 
 }
 

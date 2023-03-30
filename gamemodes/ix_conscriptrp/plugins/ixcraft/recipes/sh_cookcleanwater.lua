@@ -4,7 +4,7 @@ RECIPE.model = "models/mosi/fnv/props/drink/water_clean.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Campfire or Stove"
 RECIPE.requirements = {
-	["watercan"] = 1,
+	["watercan"] = 2,
 }
 
 RECIPE.results = {

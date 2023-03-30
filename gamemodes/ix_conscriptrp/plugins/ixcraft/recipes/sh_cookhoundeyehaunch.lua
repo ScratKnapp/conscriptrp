@@ -1,5 +1,5 @@
 RECIPE.name = "Cook Houndeye Haunch"
-RECIPE.description = "Pan-fry some antlion bits for eating."
+RECIPE.description = "Boil the parasites out of a Houndeye's rear-leg and make a somewhat satisfying meal."
 RECIPE.model = "models/gibs/houndeye/left_leg.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Stove"

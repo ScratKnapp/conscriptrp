@@ -1,12 +1,11 @@
 ITEM.name = "PDA"
-ITEM.model = " models/citizen_radio.mdl"
+ITEM.model = "models/citizen_radio.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.category = "Electronics"
 ITEM.price = 3000
 ITEM.flag = "1"
 ITEM.equipIcon = Material("materials/vgui/ui/stalker/misc/equip.png")
-ITEM.img = Material("vgui/hud/pda1.png")
 ITEM.repairCost = ITEM.price/100*1
 ITEM.weight = 0.25
 ITEM.weaponCategory = "PDA"

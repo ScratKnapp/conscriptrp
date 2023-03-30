@@ -11,11 +11,11 @@ RECIPE.tools = {
 	"screwdriver"
 }
 RECIPE.results = {
-	["wirebundle"] = 2,
-	["aabattery"] = 2,
-	["consumerelectronics"] = 1,
-	["nutsbolts"] = 1,
+	["wirebundle"] = 1,
+	["consumerelectronics"] = 2,
 	["capacitors"] = 2,
+	["transmittercircuit"] = 1,
+
 
 
 }
