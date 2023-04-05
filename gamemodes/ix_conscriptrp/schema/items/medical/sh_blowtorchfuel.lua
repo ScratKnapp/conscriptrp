@@ -1,7 +1,7 @@
 ITEM.name = "Blowtorch Fuel"
 ITEM.description = "A small tool utilized to input fuel-oil into an older-model Blowtorch."
 ITEM.longdesc = "Luckily, this one has a fair bit left inside of it."
-ITEM.model = "models/teebeutel/metro/objects/gasmask_filter.mdl"
+ITEM.model = "models/mosi/fallout4/props/junk/nitrogendispenser.mdl"
 ITEM.width = 1
 ITEM.height = 2
 ITEM.category = "tools"

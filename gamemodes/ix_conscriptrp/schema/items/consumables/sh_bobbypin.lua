@@ -7,7 +7,6 @@ ITEM.price = 10
 ITEM.width = 1
 ITEM.height = 1
 ITEM.sound = "physics/metal/chain_impact_soft2.wav"
-ITEM.quantity = 2
 ITEM.flag = "5"
 ITEM:Hook("use", function(item)
 	item.player:EmitSound(item.sound or "items/battery_pickup.wav")
