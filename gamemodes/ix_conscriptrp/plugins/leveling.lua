@@ -80,7 +80,7 @@ ix.command.Add("CharRewardXP", {
 
             target:SetXP (target:GetXP() - target:GetXPToNextLevel())
 
-            target:SetXPToNextLevel(target:GetXPToNextLevel()  + 1500)
+            target:SetXPToNextLevel(target:GetXPToNextLevel()  * 2)
             target:SetXPToNextLevel(math.floor(target:GetXPToNextLevel()))
 
             target:SetSkillPoints(target:GetSkillPoints() + 5)
@@ -106,7 +106,7 @@ ix.command.Add("MyProgress", {
         local char = client:GetCharacter()
         
         str = str .. "Level: " .. char:GetLevel() .. "\n"
-        str = str .. "Next Level in: " .. char:GetXPToNextLevel() - char:GetXP() .. " XP \n"
+        str = str .. "XP to Next Level: " .. char:GetXPToNextLevel() - char:GetXP() .. " XP \n"
         str = str .. "Lifetime XP Gained: " ..char:GetLifetimeXP() .. "\n"
         str = str .. "Skillpoints: " ..char:GetSkillPoints() .. "\n"
         return str
@@ -163,7 +163,7 @@ ix.command.Add("SpendSkillpoints", {
                 client:Notify("You cannot raise an attribute above 50.")
                 return
             end 
-            char:SetAttribute("strength", currentlevel + pointstospend)
+            char:UpdateAttrib("strength", pointstospend)
             char:SetSkillPoints(currentpoints - pointstospend)
             client:Notify("Successfully upgraded Strength from " .. currentlevel .. " to " .. char:GetAttribute("strength") .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
             return
@@ -179,9 +179,9 @@ ix.command.Add("SpendSkillpoints", {
                 client:Notify("You cannot raise an attribute above 50.")
                 return
             end 
-            char:SetAttribute("fortitude", currentlevel + pointstospend)
+            char:UpdateAttrib("fortitude", pointstospend)
             char:SetSkillPoints(currentpoints - pointstospend)
-            client:Notify("Successfully upgraded Fortitude from " .. currentlevel .. " to " .. char:GetExplosives() .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
+            client:Notify("Successfully upgraded Fortitude from " .. currentlevel .. " to " .. char:GetAttribute("fortitude") .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
             return
         end 
 
@@ -195,9 +195,9 @@ ix.command.Add("SpendSkillpoints", {
                 client:Notify("You cannot raise an attribute above 50.")
                 return
             end 
-            char:SetAttribute("fortune", currentlevel + pointstospend)
+            char:UpdateAttrib("fortune", pointstospend)
             char:SetSkillPoints(currentpoints - pointstospend)
-            client:Notify("Successfully upgraded Fortune from " .. currentlevel .. " to " .. char:GetEnergyWeapons() .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
+            client:Notify("Successfully upgraded Fortune from " .. currentlevel .. " to " .. char:GetAttribute("fortune") .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
             return
         end 
 
@@ -211,9 +211,9 @@ ix.command.Add("SpendSkillpoints", {
                 client:Notify("You cannot raise an attribute above 50.")
                 return
             end 
-            char:SetAttribute("reflex", currentlevel + pointstospend)
+            char:UpdateAttrib("reflex", pointstospend)
             char:SetSkillPoints(currentpoints - pointstospend)
-            client:Notify("Successfully upgraded Reflex from " .. currentlevel .. " to " .. char:GetMelee() .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
+            client:Notify("Successfully upgraded Reflex from " .. currentlevel .. " to " .. char:GetAttribute("reflex") .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
             return
         end 
 
@@ -228,7 +228,7 @@ ix.command.Add("SpendSkillpoints", {
                 client:Notify("You cannot raise an attribute above 50.")
                 return
             end 
-            char:SetAttribute("observation", currentlevel + pointstospend)
+            char:UpdateAttrib("observation", pointstospend)
             char:SetSkillPoints(currentpoints - pointstospend)
             client:Notify("Successfully upgraded Observation from " .. currentlevel .. " to " .. char:GetScience() .. ".\n Skillpoints remaining: " .. char:GetSkillPoints())
             return

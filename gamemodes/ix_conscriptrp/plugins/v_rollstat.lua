@@ -29,6 +29,11 @@ ix.command.Add("Rollstat", {
         }
         local temp_attrib = attrib
         attrib = translate_tbl[string.lower(temp_attrib)]
+
+        if !attrib then 
+            return "Invalid attribute."
+        end 
+        
         local att = client:GetCharacter():GetAttribute(attrib,0)
         local add = att --math.Round(att*1)
 		value = value
