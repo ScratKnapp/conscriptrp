@@ -4,5 +4,5 @@ ITEM.description = "The raw, hind-leg of a Houndeye. It is known for its very te
 ITEM.category = "junk"
 ITEM.flag = "1"
 ITEM.price = 15
-ITEM.width = 2
-ITEM.height = 1
+ITEM.width = 1
+ITEM.height = 2
