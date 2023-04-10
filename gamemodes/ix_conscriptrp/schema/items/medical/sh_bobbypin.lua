@@ -9,7 +9,7 @@ ITEM.price = 10
 ITEM.flag = "1"
 ITEM.sound = "physics/metal/chain_impact_soft2.wav"
 ITEM.weight = 0.05
-
+w
 ITEM.functions.use = {
 	name = "Use",
 	icon = "icon16/stalker/heal.png",
