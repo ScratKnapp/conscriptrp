@@ -26,7 +26,6 @@ ix.lang.AddTable("dutch", {
 
 ix.command.Add("SelfExamine", {
 	description = "@cmdSelfExamine",
-	adminOnly = true,
 	OnRun = function(self, client, text, scale)
 		local textEntryData = client:GetCharacter():GetData("textDetDescData", nil) or "No detailed description found."
 		local textEntryDataURL = client:GetCharacter():GetData("textDetDescDataURL", nil) or "No detailed description found."
@@ -41,7 +40,6 @@ ix.command.Add("SelfExamine", {
 
 ix.command.Add("CharDetDesc", {
 	description = "@cmdCharDetDesc",
-	adminOnly = true,
 	OnRun = function(self, client, text, scale)
 		net.Start("ixSetDetailedDescriptions")
 			net.WriteString(client:SteamName())
