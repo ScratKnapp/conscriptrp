@@ -15,7 +15,7 @@ ENT.HUDDesc = "A workbench."
 
 if (SERVER) then
     function ENT:Initialize()
-        self:SetModel("models/props_wasteland/controlroom_desk001b.mdl")
+        self:SetModel("models/tnb/items/workbench.mdl")
         self:PhysicsInit(SOLID_VPHYSICS)
         self:SetMoveType(MOVETYPE_VPHYSICS)
         self:SetSolid(SOLID_VPHYSICS)

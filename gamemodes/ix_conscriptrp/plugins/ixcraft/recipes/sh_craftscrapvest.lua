@@ -3,13 +3,14 @@ RECIPE.description = "Combine some scrap metal with basic metalworking to create
 RECIPE.model = "models/combine_helicopter/bomb_debris_2.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
-	["scrapmetal"] = 4,
-	["gascan"] = 1,
-	["reclaimedmetal"] = 2,
+	["blowtorchfuel"] = 1,
+	["combinemetal"] = 2,
+	["reclaimedmetal"] = 4,
 }
 
 RECIPE.tools = {
 	"weldingmask",
+	"blowtorch",
 }
 
 RECIPE.results = {

@@ -1,27 +1,22 @@
-RECIPE.name = "Cook Antlion Chunks"
-RECIPE.description = "Prepare a bunch of Antlion meat into a decent meal with some cooking materials and clean water."
-RECIPE.model = "models/shampur.mdl"
+RECIPE.name = "Cook Houndeye Haunch"
+RECIPE.description = "Debeak and debone a disgusting parasite and pan-fry it into somewhat of an edible meal."
+RECIPE.model = "models/arachnit/steamvr/hla/headcrab_dinner/headcrab_dinner.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Campfire or Stove"
 RECIPE.requirements = {
-	["antlionhead"] = 1,
-	["waterclean"] = 1,
+	["rawheadcrab"] = 1,
 }
 
-
-
 RECIPE.tools = {
-	"ironpot",
+	"ironpan",
 }
 
 RECIPE.results = {
-	["roastedantlion"] = 1
+	["cookedheadcrab"] = 1
 
 }
 
-
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
-
 	for _, v in pairs(ents.FindByClass("ix_station_campfire")) do
 		if (client:GetPos():DistToSqr(v:GetPos()) < 100 * 100) then
 			return true

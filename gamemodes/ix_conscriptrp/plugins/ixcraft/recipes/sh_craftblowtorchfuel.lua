@@ -1,19 +1,17 @@
-RECIPE.name = "Molotov"
-RECIPE.description = "Assemble a proper Molotov using some scavenged ingredients."
-RECIPE.model = "models/weapons/ethereal/w_molotov.mdl"
-RECIPE.category = "Explosives"
+RECIPE.name = "Blowtorch Fuel"
+RECIPE.description = "Play with flammable substances until it creates an even more flammable substance."
+RECIPE.model = "models/mosi/fallout4/props/junk/nitrogendispenser.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
-	["vodka"] = 1,
-	["clothscrap"] = 2,
-	["matchbook"] = 1,
-	["soap"] = 1,
+	["propanetank"] = 1,
+	["recycledoil"] = 3,
 }
 RECIPE.results = {
-	["molotov"] = 1
+	["blowtorchfuel"] = 1,
 
 }
-RECIPE.flag = "8" 
+
+RECIPE.blueprint = "blueprintradio"
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do

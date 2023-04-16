@@ -1,19 +1,22 @@
-RECIPE.name = "Molotov"
-RECIPE.description = "Assemble a proper Molotov using some scavenged ingredients."
-RECIPE.model = "models/weapons/ethereal/w_molotov.mdl"
-RECIPE.category = "Explosives"
+RECIPE.name = "Refined Metal"
+RECIPE.description = "Crudely melt away slag and form together reclaimed scrap into somewhat of a refined Ingot."
+RECIPE.model = "models/mechanics/solid_steel/plank_4.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
-	["vodka"] = 1,
-	["clothscrap"] = 2,
-	["matchbook"] = 1,
-	["soap"] = 1,
+	["blowtorchfuel"] = 1,
+	["reclaimedmetal"] = 4,
 }
+
+RECIPE.tools = {
+	"blowtorch",
+	"weldingmask",
+}
+
 RECIPE.results = {
-	["molotov"] = 1
+	["refinedmetal"] = 1
 
 }
-RECIPE.flag = "8" 
+
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do
