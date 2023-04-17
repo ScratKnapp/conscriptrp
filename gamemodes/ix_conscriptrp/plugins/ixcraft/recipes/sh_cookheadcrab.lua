@@ -1,4 +1,4 @@
-RECIPE.name = "Cook Houndeye Haunch"
+RECIPE.name = "Cook Headcrab"
 RECIPE.description = "Debeak and debone a disgusting parasite and pan-fry it into somewhat of an edible meal."
 RECIPE.model = "models/arachnit/steamvr/hla/headcrab_dinner/headcrab_dinner.mdl"
 RECIPE.category = "Cooking"
