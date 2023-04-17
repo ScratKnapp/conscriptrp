@@ -6,7 +6,7 @@ RECIPE.requirements = {
 	["vodka"] = 1,
 	["clothscrap"] = 1,
 }
-}
+
 RECIPE.results = {
 	["bandage"] = 1
 

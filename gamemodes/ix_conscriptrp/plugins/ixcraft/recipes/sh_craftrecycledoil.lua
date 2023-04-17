@@ -2,6 +2,7 @@ RECIPE.name = "Recycle Oil"
 RECIPE.description = "Play with flammable substances until it creates an even more flammable substance."
 RECIPE.model = "models/mosi/fallout4/props/junk/components/oil.mdl"
 RECIPE.station = "Workbench"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["oilcannister"] = 1,
 	["watercan"] = 2,
@@ -10,8 +11,6 @@ RECIPE.results = {
 	["recycledoil"] = 1,
 
 }
-
-RECIPE.blueprint = "blueprintradio"
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do

@@ -11,7 +11,7 @@ RECIPE.results = {
 
 }
 
-RECIPE.blueprint = "blueprintradio"
+
 
 RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 	for _, v in pairs(ents.FindByClass("ix_station_workbench")) do
