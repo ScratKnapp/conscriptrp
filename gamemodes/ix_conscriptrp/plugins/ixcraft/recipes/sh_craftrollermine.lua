@@ -33,5 +33,5 @@ RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 		end
 	end
 
-	return false, "You need to be near a workbench."
+	return false, "You need to be near a Tech Bench."
 end)

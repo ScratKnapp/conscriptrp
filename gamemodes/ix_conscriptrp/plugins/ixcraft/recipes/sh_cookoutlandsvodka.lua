@@ -1,6 +1,6 @@
 RECIPE.name = "Brew Outlands Vodka"
 RECIPE.description = "Follow specific instructions to ferment and extract an alcoholic substance from a bunch of potatoes."
-RECIPE.model = "models/mosi/fnv/props/food/steak.mdl"
+RECIPE.model = "models/teebeutel/metro/objects/bottle03.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Chemistry Bench"
 RECIPE.blueprint = "blueprintvodka"

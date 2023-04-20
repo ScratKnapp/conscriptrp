@@ -2,7 +2,7 @@ RECIPE.name = "Improvised Grenade"
 RECIPE.description = "Fill a metal shell with gunpowder and shrapnel, as well as match heads, to create a self-igniting weak but useful explosion."
 RECIPE.model = "models/silver/outbreak/weapons/w_vog25.mdl"
 RECIPE.category = "Explosives"
-RECIPE.station = "Chemistry Bench"
+RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["scrapmetal"] = 2,
 	["reclaimedmetal"] = 1,
@@ -22,5 +22,5 @@ RECIPE:PostHook("OnCanCraft", function(recipeTable, client)
 		end
 	end
 
-	return false, "You need to be near a Chemistry Bench."
+	return false, "You need to be near a Workbench."
 end)
