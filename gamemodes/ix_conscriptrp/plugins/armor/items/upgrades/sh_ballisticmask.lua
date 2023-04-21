@@ -1,0 +1,12 @@
+ITEM.name = "Ballistic Mask"
+ITEM.description = "A Ballistic-Steel made mask fit for ricocheting and stopping even the rifle caliber munitions. Never fully put into production as wearing such a mask greatly hinders its wearer's vision and combat capability with a firearm.\n\nFace: III\n-10 to Observation Rolls\nWhen firing a weapon, accuracy is similar to having a Moderate/Heavy Stagger."
+ITEM.category = "Upgrades"
+ITEM.model = "models/shtokerbox/ground_mask_heat.mdl"
+ITEM.width = 2
+ITEM.height = 2
+ITEM.price = 40000
+ITEM.slot = 2
+ITEM.flag = "A"
+ITEM.isUpgrade = true
+ITEM.weight = 0.05
+ITEM.isGasmaskUpg = true
