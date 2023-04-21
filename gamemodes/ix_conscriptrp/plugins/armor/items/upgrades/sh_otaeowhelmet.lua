@@ -15,7 +15,7 @@ ITEM.res = {
 }
 ITEM.isHelmetUpg = true
 ITEM.iconCam = {
-    pos = Vector(-200, 0, 52.287582397461),
+    pos = Vector(-200, 0, 0),
     ang = Angle(0, 0, 0),
     fov = 7.6470588235294
 }
