@@ -1,5 +1,5 @@
 ITEM.name = "MPF Command Faceplate"
-ITEM.description = "Lower-level MPF commanders are issued a distinct facemask that, despite its fearsome three-filter appearence, performs well when dealing with the heat and smoke from fire.\n\nFace: II\nToxic +2\nFire +1"
+ITEM.description = "Lower-level MPF commanders are issued a distinct facemask that, despite its fearsome three-filter appearence, performs well when dealing with the heat and smoke from fire. Utilizes a moderately effective built-in Night-Vision Module.\n\nHead: IIIA\nFace: II\nToxic +2\nFire +1"
 ITEM.category = "Upgrades"
 ITEM.model = "models/dpfilms/metropolice/props/bt_gasmask.mdl"
 ITEM.width = 2

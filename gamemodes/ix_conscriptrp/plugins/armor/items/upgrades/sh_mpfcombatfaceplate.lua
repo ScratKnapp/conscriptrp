@@ -1,5 +1,5 @@
 ITEM.name = "MPF Combat Faceplate"
-ITEM.description = "More seasoned MPF officers may occassionally be issued thicker masks if they're expected to find themselves in dangerous engagements often.\n\nFace: II\nToxic +2"
+ITEM.description = "More seasoned MPF officers may occassionally be issued thicker masks if they're expected to find themselves in dangerous engagements often. Utilizes a poor-quality but built-in Night Vision module.\n\nHead: II\nFace: II\nToxic +2"
 ITEM.category = "Upgrades"
 ITEM.model = "models/dpfilms/metropolice/props/generic_gasmask.mdl"
 ITEM.width = 2
