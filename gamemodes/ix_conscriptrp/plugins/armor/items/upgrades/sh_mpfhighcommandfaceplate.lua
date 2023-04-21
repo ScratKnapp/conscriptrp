@@ -1,5 +1,5 @@
 ITEM.name = "MPF High Command Faceplate"
-ITEM.description = "High-ranking MPF officials tend to sport this alien-looking mask that not only stops low power rounds but offers unmatched environmental protection among its peers. \n\nFace: IIIA\nToxic +3\nFire +2"
+ITEM.description = "High-ranking MPF officials tend to sport this alien-looking mask that not only stops low power rounds but offers unmatched environmental protection among its peers. Utilizes a highly effective and long-distance Night-Vision Module.\n\nHead: III+\nFace: IIIA\nToxic +3\nFire +2"
 ITEM.category = "Upgrades"
 ITEM.model = "models/dpfilms/metropolice/props/elite_gasmask.mdl"
 ITEM.width = 2
