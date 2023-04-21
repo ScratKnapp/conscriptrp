@@ -14,8 +14,3 @@ ITEM.res = {
     ["Toxic"] = 3,
 }
 ITEM.isHelmetUpg = true
-ITEM.iconCam = {
-    pos = Vector(0, 0, 25),
-    ang = Angle(0, 0, 0),
-    fov = 7.6470588235294
-}
