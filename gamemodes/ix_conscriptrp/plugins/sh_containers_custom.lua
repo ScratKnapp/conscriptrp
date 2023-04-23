@@ -198,3 +198,45 @@ ix.container.Register("models/warz/items/lootcrate.mdl", {
 	width = 2,
 	height = 2
 })
+
+ix.container.Register("models/mosi/fallout4/props/fortifications/woodencrate03.mdl", {
+	name = "Long Wooden Crate",
+	description = "A long wooden crate",
+	width = 7,
+	height = 3
+})
+
+ix.container.Register("models/z-o-m-b-i-e/st/equipment_cache/st_equipment_seif_04.mdl", {
+	name = "Wall Safe",
+	description = "A small combination safe that's secured in a wall.",
+	width = 4,
+	height = 2
+})
+
+ix.container.Register("models/z-o-m-b-i-e/st/equipment_cache/st_equipment_electric_box_02.mdl", {
+	name = "Maintenance Cabinet",
+	description = "A small metal box affixed to a wall.",
+	width = 3,
+	height = 3
+})
+
+ix.container.Register("models/z-o-m-b-i-e/st/equipment_cache/st_equipment_box_02.mdl", {
+	name = "Soviet CBRN Crate",
+	description = "A metal crate related to Radiological Hazards.",
+	width = 7,
+	height = 4
+})
+
+ix.container.Register("models/z-o-m-b-i-e/st/equipment_cache/st_equipment_box_01.mdl", {
+	name = "Tool Box",
+	description = "A small metal tool box, fit for storing tools.",
+	width = 5,
+	height = 3
+})
+
+ix.container.Register("models/z-o-m-b-i-e/st/box/st_expl_dinamit_01.mdl", {
+	name = "HE Munitions Box",
+	description = "A small wooden crate related to Explosives.",
+	width = 4,
+	height = 2
+})

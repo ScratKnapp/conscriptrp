@@ -77,8 +77,7 @@ ix.command.Add("CharShowTraits", {
 
 ix.command.Add("MyTraits", {
 	description = "View your traits.",
-	privilege = "Manage Character Attributes",
-	adminOnly = false,
+adminOnly = true,
 	OnRun = function(self, client)
 		local str = "Your current traits are:"
 		local perklist = {}
