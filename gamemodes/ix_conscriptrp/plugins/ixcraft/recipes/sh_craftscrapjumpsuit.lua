@@ -12,7 +12,6 @@ RECIPE.requirements = {
 ["sewingthread"] = 2,
 }
 
-}
 RECIPE.tools = {
 	"hammer",
 "sewingkit",
