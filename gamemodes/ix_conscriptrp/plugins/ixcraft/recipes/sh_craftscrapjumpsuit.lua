@@ -6,8 +6,8 @@ RECIPE.requirements = {
 	["reclaimedmetal"] = 4,
 	["scrapmetal"] = 8,
 	["ducttape"] = 2,
-	["weldingfuel"] = 2,
-	["combinealloy"] = 1,
+	["blowtorchfuel"] = 2,
+	["combinemetal"] = 1,
 	["cityjumpsuit"] = 1,
 ["sewingthread"] = 2,
 }
