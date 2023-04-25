@@ -1,5 +1,5 @@
 ITEM.name = "Foundry Industrial Uniform"
-ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
+ITEM.model = "models/shtokerbox/ground_outfit_hunter.mdl"
 ITEM.replacements = "models/industrial_uniforms/pm_industrial_uniform2.mdl"
 ITEM.description = "A protective suit given to citizens in cities of heavy industry."
 ITEM.longdesc = "Excess chemical smog often left many of the factories and streets of Industrial sectors unsafe and uncomfortable to inhabit. To prolong the lives of Loyal Workers, the CWU designed this padded and generally protective suit for Workers. \nWeight: 2\n\nChest: 0\nLimbs: 0"

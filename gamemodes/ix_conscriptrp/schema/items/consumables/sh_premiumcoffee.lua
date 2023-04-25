@@ -1,10 +1,9 @@
-ITEM.name = "Clean Water"
-ITEM.model = "models/mosi/fnv/props/drink/water_clean.mdl"
-ITEM.thirst = 20
-ITEM.description = "Good, clean H-2_O."
-ITEM.longdesc = "A small, refilled bottle of boiled and filtered water. Preferred by most refugees when compared to Breen's water due to its lack of chemical treatment. Technically contraband."
-ITEM.quantity = 1
-ITEM.price = 5
+ITEM.name = "Premium Blend Coffee"
+ITEM.model = "models/illusion/eftcontainers/coffee.mdl"
+ITEM.thirst = 30
+ITEM.description = "A Civil-Worker produced can of delicious Coffee."
+ITEM.longdesc = "This Civil Worker's Union produced Coffee blend features a mocha-like taste, produced straight from the commerce Districts of Cities 23, 76, and the luxurious City 45. Listed to contain real Coffee plants."
+ITEM.price = 70
 ITEM.width = 1
 ITEM.height = 1
 ITEM.cookable = false

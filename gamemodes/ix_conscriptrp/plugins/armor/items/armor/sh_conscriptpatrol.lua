@@ -1,5 +1,5 @@
 ITEM.name = "Conscript Patrol Uniform"
-ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
+ITEM.model = "models/shtokerbox/ground_outfit_cs2.mdl"
 ITEM.replacements = "models/wichacks/tednovest.mdl"
 ITEM.description = "A Conscript Uniform with soft body armor implemented into its torso made up of recycled Metropolice Armor."
 ITEM.longdesc = "A common uniform for somewhat seasoned Conscripts commanded by the Combine. It has a soft level IIIA vest and some light kevlar sewn into the sleeves, and provides little protection against harsh environments..\nWeight: 2\n\nChest: IIIA\nLimbs: IIA"

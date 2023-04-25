@@ -4,7 +4,7 @@ RECIPE.model = "models/warz/items/sandbag_unbuilt.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["waterclean"] = 2,
-	["recycledoil"] = 2,
+	["recycledoil"] = 1,
 	["clothscrap"] = 1,
 }
 

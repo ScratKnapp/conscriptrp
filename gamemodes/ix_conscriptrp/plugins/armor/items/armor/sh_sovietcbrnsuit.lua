@@ -1,5 +1,5 @@
 ITEM.name = "Soviet CBRN Suit"
-ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
+ITEM.model = "models/shtokerbox/ground_outfit_skat.mdl"
 ITEM.replacements = "models/player/vad36cccp/bohazmat1.mdl"
 ITEM.description = "An old, heavier set of CBRN equipment, degraded and very, very outdated."
 ITEM.longdesc = "Despite its age, it still sees use among Resistance members and travellers who don't have much else to work with, especially in a more chemically-harsh environment. Most of these suits were developed during the Cold-War, primarily utilized by troops stationed in and around sites housing nuclear related materials. \nWeight: 2\n\nChest: IIA\nLimbs: II"

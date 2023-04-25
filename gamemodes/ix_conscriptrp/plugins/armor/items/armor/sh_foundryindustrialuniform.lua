@@ -1,5 +1,5 @@
 ITEM.name = "Foundry Industrial Uniform"
-ITEM.model = "models/tnb/items/aphelion/wintercoat.mdl"
+ITEM.model = "models/shtokerbox/ground_outfit_hunter.mdl"
 ITEM.replacements = "models/industrial_uniforms/pm_industrial_uniform.mdl"
 ITEM.description = "A flame-retardant suit used by Foundry workers of the Civil Workers Union."
 ITEM.longdesc = "Workers at Foundaries are exposed to high levels of heat, both passive and when working with molten metals. In an attempt to reduce the amount of lost effiency caused by maimed or dead workers, the Combine cobbled together these suits to reduce such hazards. Not the most comfortable to wear, but gets the job done. Any combat use would entirely be a coincidence of the thick materials involved.  \nWeight: 2\n\nChest: IIA\nLimbs: IIA"

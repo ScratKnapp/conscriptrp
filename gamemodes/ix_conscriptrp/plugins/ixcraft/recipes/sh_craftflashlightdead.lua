@@ -1,7 +1,6 @@
 RECIPE.name = "Add Batteries to Flashlight"
 RECIPE.description = "Replace the batteries in a dead Flashlight."
 RECIPE.model = "models/raviool/flashlight.mdl"
-RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["deadflashlight"] = 1,
 	["aabattery"] = 2,

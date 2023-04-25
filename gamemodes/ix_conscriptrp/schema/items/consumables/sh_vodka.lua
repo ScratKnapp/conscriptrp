@@ -1,6 +1,6 @@
 ITEM.name = "Outlands Vodka"
 ITEM.model = "models/teebeutel/metro/objects/bottle03.mdl"
-ITEM.thirst = 20
+ITEM.thirst = 15
 ITEM.description = "A bottle of home-brewed Vodka."
 ITEM.longdesc = "In a plainly labelled bottle sits some strong shit - high proof potato Vodka brewed in the Outlands, outside of Combine control, and thus considered contraband. It's potent and can get you wasted with ease."
 ITEM.price = 70
