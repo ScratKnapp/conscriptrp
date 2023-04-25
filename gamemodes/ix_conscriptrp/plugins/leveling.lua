@@ -239,3 +239,20 @@ ix.command.Add("SpendSkillpoints", {
 
     end
 })
+
+ix.command.Add("CharGetProgress", {
+    description = "View a character's leveling progress and skillpoints.",
+    adminOnly = true,
+    arguments = {ix.type.character},
+	OnRun = function(self, client, target)
+		local str = ""
+        local char = target:GetCharacter()
+        
+        str = str .. "Progress of " .. char:GetName() .. ": \n"
+        str = str .. "Level: " .. char:GetLevel() .. "\n"
+        str = str .. "Next Level in: " .. char:GetXPToNextLevel() - char:GetXP() .. " XP \n"
+        str = str .. "Lifetime XP Gained: " ..char:GetLifetimeXP() .. "\n"
+        str = str .. "Skillpoints: " ..char:GetSkillPoints() .. "\n"
+        return str
+	end
+})
