@@ -1,6 +1,6 @@
 ITEM.name = "Clean Water"
 ITEM.model = "models/mosi/fnv/props/drink/water_clean.mdl"
-ITEM.thirst = 20
+ITEM.thirst = 35
 ITEM.description = "Good, clean H-2_O."
 ITEM.longdesc = "A small, refilled bottle of boiled and filtered water. Preferred by most refugees when compared to Breen's water due to its lack of chemical treatment. Technically contraband."
 ITEM.quantity = 1
