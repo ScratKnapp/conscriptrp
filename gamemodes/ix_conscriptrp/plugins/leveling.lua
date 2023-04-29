@@ -246,7 +246,7 @@ ix.command.Add("CharGetProgress", {
     arguments = {ix.type.character},
 	OnRun = function(self, client, target)
 		local str = ""
-        local char = target:GetCharacter()
+        local char = target
         
         str = str .. "Progress of " .. char:GetName() .. ": \n"
         str = str .. "Level: " .. char:GetLevel() .. "\n"
