@@ -9,7 +9,7 @@ RECIPE.requirements = {
 }
 
 RECIPE.results = {
-	["guncleaningkittbasic"] = 1,
+	["guncleaningkitbasic"] = 1,
 }
 
 
