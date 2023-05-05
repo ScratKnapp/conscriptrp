@@ -1,5 +1,5 @@
 ITEM.name = "Universal Union Menthol Cigarettes"
-ITEM.description = "A UU-approved pack of Menthol cigarettes."
+ITEM.description = "A UU-approved pack of cigarettes."
 ITEM.longdesc = "With a nicotene-like substance within and a strong mint taste, most smokers used to the real thing would probably quit sooner than get used to dealing with these."
 ITEM.model = "models/closedboxshit.mdl"
 ITEM.width = 1

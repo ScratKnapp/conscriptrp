@@ -1,5 +1,5 @@
-ITEM.name = "Makeshift Tear Gas Cannister"
-ITEM.model = "models/props_junk/garbage_metalcan001a.mdl"
+ITEM.name = "Makeshift Chlorine Gas Cannister"
+ITEM.model = "weapons/sw500/handling/sw500_roundin.wav"
 ITEM.description = "Homemade chemical warfare."
 ITEM.longdesc = "A rusted can filled with a toxic composition. Inside is a binded mixture of Ammonia and Bleach attached to a wax-covered fuse. Ignite and throw, and keep your distance!"
 ITEM.width = 1

@@ -4,7 +4,7 @@ RECIPE.model = "models/mosi/fallout4/props/junk/nitrogendispenser.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["propanetank"] = 1,
-	["recycledoil"] = 3,
+	["recycledoil"] = 2,
 }
 RECIPE.results = {
 	["blowtorchfuel"] = 1,

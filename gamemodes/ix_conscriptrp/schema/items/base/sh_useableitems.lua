@@ -1,12 +1,18 @@
-ITEM.name = "Mutant Trinkets"
-ITEM.description = "It is the Mutant Trinkets.."
-ITEM.longdesc = " "
-ITEM.category = "Mutant Trinkets"
-ITEM.model = "models/Gibs/HGIBS.mdl"
+ITEM.name = "Useable Item"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.pacData = {}
-ITEM.equipIcon = Material("materials/vgui/ui/stalker/misc/equip.png")
+ITEM.desc = "A useable piece of Equipment"
+ITEM.longdesc = " "
+ITEM.stopsBleed = false
+ITEM.quantity = 1
+
+ITEM:Hook("use", function(item)
+	item.player:EmitSound(item.sound or "weapons/slam/mine_mode.wav")
+end)
+
+ITEM:Hook("usetarget", function(item)
+	item.player:EmitSound(item.sound or "weapons/slam/mine_mode.wav")
+end)
 
 ITEM.functions.Sell = {
 	name = "Sell",
@@ -22,7 +28,7 @@ ITEM.functions.Sell = {
 		sellprice = math.Round(sellprice)
 		client:Notify( "Sold for "..(sellprice).." rubles." )
 		client:GetCharacter():GiveMoney(sellprice)
-		return true 
+		
 	end,
 	OnCanRun = function(item)
 		return !IsValid(item.entity) and item:GetOwner():GetCharacter():HasFlags("1")

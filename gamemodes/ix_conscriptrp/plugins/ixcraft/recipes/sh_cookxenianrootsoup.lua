@@ -1,13 +1,12 @@
-RECIPE.name = "Outlander's Stew"
+RECIPE.name = "Cook Xenian Root Soup"
 RECIPE.description = "Cook, boil, and simmer a variety of Outland gathered ingredients into a delicious, warm, filling meal."
-RECIPE.model = "models/arskvshborsch/borsch.mdl"
+RECIPE.model = "models/mosi/fnv/props/food/ratstew.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Campfire or Stove"
 RECIPE.requirements = {
-	["cookedhoundeyehaunch"] = 1,
-	["wildcarrot"] = 1,
+	["xenianrootvegetable"] = 1,
+	["wildmushroom"] = 1,
 	["wildcob"] = 1,
-	["bootlegbeer"] = 1,
 	["waterclean"] = 2,
 }
 
@@ -16,7 +15,7 @@ RECIPE.tools = {
 }
 
 RECIPE.results = {
-	["outlandersstew"] = 1
+	["xenianrootstew"] = 1
 
 }
 

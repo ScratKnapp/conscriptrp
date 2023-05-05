@@ -1,14 +1,14 @@
-RECIPE.name = "Outlander's Stew"
-RECIPE.description = "Cook, boil, and simmer a variety of Outland gathered ingredients into a delicious, warm, filling meal."
-RECIPE.model = "models/arskvshborsch/borsch.mdl"
+RECIPE.name = "Cook Antlion Potroast"
+RECIPE.description = "Slow cook some Antlion meat with other tasy ingredients into a much more pleasing meal."
+RECIPE.model = "models/mosi/fnv/props/food/mirelurkspecial.mdl"
 RECIPE.category = "Cooking"
 RECIPE.station = "Campfire or Stove"
 RECIPE.requirements = {
-	["cookedhoundeyehaunch"] = 1,
-	["wildcarrot"] = 1,
-	["wildcob"] = 1,
+	["rawantlionbits"] = 3,
+	["waterclean"] = 1,
 	["bootlegbeer"] = 1,
-	["waterclean"] = 2,
+["potato"] = 2,
+["wildcarrot"] = 2,
 }
 
 RECIPE.tools = {
@@ -16,7 +16,7 @@ RECIPE.tools = {
 }
 
 RECIPE.results = {
-	["outlandersstew"] = 1
+	["antlionroast"] = 1
 
 }
 

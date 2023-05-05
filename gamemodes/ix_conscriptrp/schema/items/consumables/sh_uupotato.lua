@@ -1,8 +1,8 @@
-ITEM.name = "Wild Potato"
-ITEM.model = "models/mosi/fnv/props/food/crops/potato.mdl"
+ITEM.name = "Universal Union Potato"
+ITEM.model = "models/bioshockinfinite/hext_potato.mdl"
 ITEM.hunger = 10
-ITEM.description = "A wildly grown potato."
-ITEM.longdesc = "One of the most commonly grown vegetables in the Outlands, the resilient Potato. Favored for their high amount of carbs, and ability to compliment any meal."
+ITEM.description = "A Universal Union approved potato."
+ITEM.longdesc = "This UU-branded tater has a slightly moldy taste, but creative citizens have made wonders with them. Hey, starving kids in Ireland would probably kill for it."
 ITEM.quantity = 1
 ITEM.price = 10
 ITEM.width = 1
