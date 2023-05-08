@@ -1,7 +1,7 @@
 ITEM.name = "Useable Item"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.desc = "A useable piece of Equipment"
+ITEM.description = "A useable piece of Equipment"
 ITEM.longdesc = " "
 ITEM.stopsBleed = false
 ITEM.quantity = 1

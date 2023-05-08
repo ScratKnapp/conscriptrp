@@ -15,7 +15,7 @@ RECIPE.tools = {
 }
 
 RECIPE.results = {
-	["xenianrootstew"] = 1
+	["xenianrootsoup"] = 1
 
 }
 
