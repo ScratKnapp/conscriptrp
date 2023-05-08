@@ -1,7 +1,7 @@
 ITEM.name = "Medical"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.description = "Medical supply."
+ITEM.desc = "Medical supply."
 ITEM.longdesc = " "
 ITEM.stopsBleed = false
 ITEM.quantity = 1
