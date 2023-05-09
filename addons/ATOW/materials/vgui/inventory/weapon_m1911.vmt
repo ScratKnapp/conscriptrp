@@ -1,0 +1,6 @@
+"UnlitGeneric"
+{
+	"$basetexture" "vgui/inventory/weapon_m1911"
+$translucent 1
+}
+

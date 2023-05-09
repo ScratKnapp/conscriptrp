@@ -1,0 +1,11 @@
+CustomizableWeaponry:addFireSound("DOIPPK_FIRE", "weapons/doipack/ppk/ppk_fp.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("DOIPPK_FIRE_SUPPRESSED", "weapons/doipack/ppk/ppk_suppressed_fp.wav", 1, 70, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("DOIPPK_BOLTBACK", "weapons/doipack/ppk/handling/ppk_boltback.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_BOLTRELEASE", "weapons/doipack/ppk/handling/ppk_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_EMPTY", "weapons/doipack/ppk/handling/ppk_empty.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_MAGHIT", "weapons/doipack/ppk/handling/ppk_maghit.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_MAGIN", "weapons/doipack/ppk/handling/ppk_magin.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_MAGOUT", "weapons/doipack/ppk/handling/ppk_magout.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_MAGRELEASE", "weapons/doipack/ppk/handling/ppk_magrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIPPK_SAFETY", "weapons/doipack/ppk/handling/ppk_safety.wav")
