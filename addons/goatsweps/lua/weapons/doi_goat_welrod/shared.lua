@@ -74,8 +74,7 @@ end
 
 SWEP.MuzzleVelocity = 170
 
-SWEP.Attachments = {[1] = {header = "Action", offset = {450, -200}, atts = {"doi_atow_greasedboltwelrod"}},
-["+reload"] = {header = "Ammo", offset = {-175, 50}, atts = {"am_atow_light", "am_atow_lowvel", "am_atow_heavy"}}}
+SWEP.Attachments = {}
 
 SWEP.Animations = {fire = "base_fire",
 	fire_aim = "iron_fire",
