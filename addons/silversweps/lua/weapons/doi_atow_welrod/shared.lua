@@ -123,16 +123,12 @@ SWEP.RVBPitchMod = .5
 SWEP.RVBYawMod = 0
 SWEP.RVBRollMod = .5
 
-SWEP.Primary.ClipSize		= 8
-SWEP.Primary.DefaultClip	= 8
+SWEP.Primary.ClipSize		= 6
+SWEP.Primary.DefaultClip	= 6
 SWEP.Primary.Automatic		= false
 SWEP.Chamberable			= true
-
-if CustomizableWeaponry_doi_atow_hl2ammo then
-SWEP.Primary.Ammo			= "9x17MM"
-else
 SWEP.Primary.Ammo			= "9x19MM"
-end
+
 
 SWEP.FireDelay = 60/35
 SWEP.FireSound = "DOIWELROD_FIRE"
