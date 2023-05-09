@@ -124,7 +124,7 @@ SWEP.RVBYawMod = 0
 SWEP.RVBRollMod = .5
 
 SWEP.Primary.ClipSize		= 6
-SWEP.Primary.DefaultClip	= 6
+SWEP.Primary.DefaultClip	= 0
 SWEP.Primary.Automatic		= false
 SWEP.Chamberable			= true
 SWEP.Primary.Ammo			= "9x19MM"
