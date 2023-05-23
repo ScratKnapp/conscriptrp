@@ -1,5 +1,5 @@
 ITEM.name = "Altyn Helmet"
-ITEM.description = "A Soviet-Era Helmet utilized by Spetsnaz and other Special-Forces within Russia. It features Titanium-Lined ballistic-armor, and an adjustable face-mask that carries ballistic protection as well.\n\nHead: IIIA\nFace: IIA"
+ITEM.description = "A Soviet-Era Helmet utilized by Spetsnaz and other Special-Forces within Russia. It features Titanium-Lined ballistic-armor, and an adjustable face-mask that carries ballistic protection as well.\n\nHead: IIIA\nFace: IIIA"
 ITEM.category = "Upgrades"
 ITEM.model = "models/shtokerbox/ground_headgear_atlyn.mdl"
 ITEM.width = 2
