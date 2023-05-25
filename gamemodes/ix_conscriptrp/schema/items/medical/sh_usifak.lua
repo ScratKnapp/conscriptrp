@@ -1,11 +1,11 @@
-ITEM.name = "Evacuation IFAK"
-ITEM.description = "A mass-distributed medkit."
-ITEM.longdesc = "An Individual First Aid Kit, or IFAK, was once distributed in mass by World Governments to Civilians and Police-Related agencies to properly treat injuries during mass evacuations during the Xenian Crisis and 7-Hour War."
+ITEM.name = "U.S Army IFAK"
+ITEM.description = "A medkit once used by U.S Soldiers."
+ITEM.longdesc = "An Individual First Aid Kit, or IFAK, was once utilized by the U.S Military as standard issue to treat wounds in the field. It contains various treatment supplies for containing bleed-wounds and reducing pain."
 ITEM.model = "models/illusion/eftcontainers/ifak.mdl"
 ITEM.width = 1
-ITEM.height = 2
+ITEM.height = 1
 ITEM.category = "Medical"
-ITEM.quantity = 3
+ITEM.quantity = 4
 ITEM.price = "4000"
 ITEM.flag = "1"
 ITEM.sound = "items/smallmedkit1.wav"
