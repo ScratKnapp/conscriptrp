@@ -1,6 +1,7 @@
 RECIPE.name = "Take Apart Lamp"
 RECIPE.description = "Unscrew a bulb from a desk lamp and rip its wiring out."
-RECIPE.model = "models/props_lab/desklamp01.mdl"
+RECIPE.model = "models/mosi/fallout4/props/junk/lamp_blue.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.requirements = {
 	["lamp"] = 1,
 }

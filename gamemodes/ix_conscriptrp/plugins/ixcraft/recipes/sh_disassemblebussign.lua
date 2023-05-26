@@ -1,6 +1,7 @@
 RECIPE.name = "Melt Sign Down"
 RECIPE.description = "Utilize a Blowtorch and melt down a metal bus sign."
 RECIPE.model = "models/props_c17/streetsign003b.mdl"
+RECIPE.category = "Disassembly"
 RECIPE.station = "Work Bench"
 RECIPE.requirements = {
 	["bussign"] = 1,
