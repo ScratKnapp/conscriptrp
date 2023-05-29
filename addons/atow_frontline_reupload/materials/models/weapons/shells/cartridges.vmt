@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\shells\Cartridges"	
+	"$bumpmap" "models\weapons\shells\Cartridges_Normal"
+	"$phongexponenttexture" "models/albedotint"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.9 .5 0.25]"
+	"$phong" 			"1"
+	"$phongexponent"		"30"
+	"$phongboost" 			"1.5"
+	"$phongfresnelranges"		"[1.0 2.5 10.5]"//"[0.1 0.4 .8]"
+	$phongdisablehalflambert 1
+	$halflambert 0
+	$PhongAlbedoTint 1
+	"$normalmapalphaenvmapmask"	"1"
+}

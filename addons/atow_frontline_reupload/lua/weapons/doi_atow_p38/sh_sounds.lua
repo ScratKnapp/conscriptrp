@@ -1,0 +1,10 @@
+CustomizableWeaponry:addFireSound("DOIP38_FIRE", "weapons/doipack/p38/p38_fp.wav", 1, 105, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("DOIP38_BOLTBACK", "weapons/doipack/p38/handling/p38_boltback.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_BOLTRELEASE", "weapons/doipack/p38/handling/p38_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_EMPTY", "weapons/doipack/p38/handling/p38_empty.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_MAGHIT", "weapons/doipack/p38/handling/p38_maghit.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_MAGIN", "weapons/doipack/p38/handling/p38_magin.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_MAGOUT", "weapons/doipack/p38/handling/p38_magout.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_MAGRELEASE", "weapons/doipack/p38/handling/p38_magrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIP38_SAFETY", "weapons/doipack/p38/handling/p38_safety.wav")

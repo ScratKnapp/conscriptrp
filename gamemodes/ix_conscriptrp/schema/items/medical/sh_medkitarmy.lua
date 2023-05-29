@@ -1,7 +1,7 @@
 ITEM.name = "Evacuation IFAK"
 ITEM.description = "A mass-distributed medkit."
 ITEM.longdesc = "An Individual First Aid Kit, or IFAK, was once distributed in mass by World Governments to Civilians and Police-Related agencies to properly treat injuries during mass evacuations during the Xenian Crisis and 7-Hour War."
-ITEM.model = "models/illusion/eftcontainers/ifak.mdl"
+ITEM.model = "models/carlsmei/escapefromtarkov/medical/salewa.mdl"
 ITEM.width = 1
 ITEM.height = 2
 ITEM.category = "Medical"

@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+$basetexture "models\weapons\v_models\hands\us_sleeve_vip"
+$bumpmap "models\weapons\v_models\hands\ins_sleeve_normals"
+$rimmask 1
+$phong "1"
+$phongboost ".2"
+$phongexponent "10"
+$phongTint "[.4 .5 .8]"
+$phongfresnelranges "[.1 1 .10]"
+$rimlight "1"
+$rimlightexponent "20"
+$rimlightboost ".3"
+$halflambert "0"
+$ambientocclusion "1"
+}

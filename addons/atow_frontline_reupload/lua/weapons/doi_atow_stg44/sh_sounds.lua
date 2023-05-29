@@ -1,0 +1,11 @@
+CustomizableWeaponry:addFireSound("DOISTG44_FIRE", "weapons/doipack/stg44/stg44_fp.wav", 1, 105, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("DOISTG44_BOLTBACK", "weapons/doipack/stg44/handling/stg44_boltback.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_BOLTRELEASE", "weapons/doipack/stg44/handling/stg44_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_EMPTY", "weapons/doipack/stg44/handling/stg44_empty.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_MAGHIT", "weapons/doipack/stg44/handling/stg44_maghit.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_MAGIN", "weapons/doipack/stg44/handling/stg44_magin.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_MAGOUT", "weapons/doipack/stg44/handling/stg44_magout.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_MAGOUTRATTLE", "weapons/doipack/stg44/handling/stg44_magout_rattle.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_MAGRELEASE", "weapons/doipack/stg44/handling/stg44_magrelease.wav")
+CustomizableWeaponry:addReloadSound("DOISTG44_RATTLE", "weapons/doipack/stg44/handling/stg44_rattle.wav")
