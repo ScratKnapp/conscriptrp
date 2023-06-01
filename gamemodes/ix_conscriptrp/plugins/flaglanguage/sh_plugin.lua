@@ -13,6 +13,7 @@ local languages = {
     ["M"] = "Mandarian",
     ["H"] = "Czech",
     ["L"] = "Spanish",
+["B"] = "Binary",
     ["K"] = "French"
 }
 
