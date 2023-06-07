@@ -4,7 +4,7 @@ RECIPE.model = "models/illusion/eftcontainers/engine.mdl"
 RECIPE.category = "Disassembly"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
-	["psu"] = 1,
+	["electricalmotor"] = 1,
 }
 
 RECIPE.tools = {
