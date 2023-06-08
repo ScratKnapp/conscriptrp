@@ -2,6 +2,7 @@ RECIPE.name = "Upgrade Conscript Fatigues"
 RECIPE.description = "Utilizing such an already poor-quality armor-kit and some modern ballistic fiber, turn a relatively weak Uniform into something that can tank a bullet or two."
 RECIPE.model = "models/shtokerbox/ground_outfit_sunrise.mdl"
 RECIPE.station = "Workbench"
+RECIPE.category = "Union Suits"
 RECIPE.requirements = {
 	["ballisticfiber"] = 1,
 	["outfitsewingkitbasic"] = 1,

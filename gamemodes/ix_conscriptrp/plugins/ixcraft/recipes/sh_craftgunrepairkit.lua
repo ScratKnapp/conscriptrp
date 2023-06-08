@@ -1,6 +1,6 @@
 RECIPE.name = "Weapon Repair Kit"
 RECIPE.description = "Throw together some diluted oil and water with old weapon parts to make a Weapon Cleaning and Repair kit."
-RECIPE.model = "models/warz/items/sandbag_unbuilt.mdl"
+RECIPE.model = "models/illusion/eftcontainers/laptop.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["waterclean"] = 4,
