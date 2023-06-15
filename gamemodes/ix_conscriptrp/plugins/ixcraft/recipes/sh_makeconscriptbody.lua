@@ -1,20 +1,20 @@
-RECIPE.name = "Upgrade Conscript Fatigues"
-RECIPE.description = "Utilizing such an already poor-quality armor-kit and some modern ballistic fiber, turn a relatively weak Uniform into something that can tank a bullet or two."
+RECIPE.name = "Upgrade Conscript Patrol Armor"
+RECIPE.description = "Tear apart of a set of upgraded rags and reassemble them into an even better set of upgraded rags."
 RECIPE.model = "models/shtokerbox/ground_outfit_sunrise.mdl"
 RECIPE.station = "Workbench"
 RECIPE.category = "Armor"
 RECIPE.requirements = {
 	["ballisticfiber"] = 1,
-	["outfitsewingkitbasic"] = 1,
-["kevlarfragments"] = 2,
-["ducttape"] = 1,
-["conscriptuniform"] = 1,
+	["sewingthread"] = 1,
+["ducttape"] = 2,
+["clothscrap"] = 5,
+["conscriptpatrol"] = 1,
 }
 RECIPE.tools = {
 	"sewingkit",
 }
 RECIPE.results = {
-	["conscriptpatrol"] = 1,
+	["conscriptbodyarmor"] = 1,
 
 }
 

@@ -2,6 +2,7 @@ RECIPE.name = "Craft Forged Metal Armor"
 RECIPE.description = "Follow a highly detailed blueprint to weld together and produce a ballistically effective armor suit."
 RECIPE.model = "models/shtokerbox/ground_outfit_exoskeleton.mdl"
 RECIPE.station = "Workbench"
+RECIPE.category = "Armor"
 RECIPE.requirements = {
 	["forgedmetal"] = 4,
 	["reclaimedmetal"] = 8,

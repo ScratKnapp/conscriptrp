@@ -1,22 +1,18 @@
-RECIPE.name = "Upgrade Recruit Armor"
-RECIPE.description = "Upgrade a spiffy but light suit of Combine Civil Authority Armor into its standard issue variant."
+RECIPE.name = "Create HELIX Armor"
+RECIPE.description = "Dedicate a suit of MPF Officer Armor as an Official HELIX-Protective suit, making it much more resistant to Acidic Chemicals."
 RECIPE.model = "models/tnb/items/aphelion/shirt_rebelmetrocop.mdl"
 RECIPE.station = "Workbench"
 RECIPE.category = "Armor"
 RECIPE.requirements = {
-	["blowtorchfuel"] = 1,
-["kevlarfragments"] = 3,
-["ballisticfiber"] = 1,
-["combinemetal"] = 2,
-["mpfrctarmor"] = 1,
+["sewingthread"] = 1,
+["chemicalmaterial"] = 2,
+["mpfofficerarmor"] = 1,
 }
 RECIPE.tools = {
-	"blowtorch",
-"weldingmask",
 "sewingkit",
 }
 RECIPE.results = {
-	["mpfofficerarmor"] = 1,
+	["mpfhelixarmor"] = 1,
 
 }
 

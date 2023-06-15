@@ -1,19 +1,19 @@
-RECIPE.name = "Upgrade Partisan Suit"
-RECIPE.description = "Utilizing Kevlar bits, layered scrap, and of course duct tape, make an inconspicuous set of Partisan Armor into a proper set of Resistance Fatigues."
+RECIPE.name = "Upgrade Fighter Suit"
+RECIPE.description = "Utilizing Pre-War military materials, some ballistic materials, and a sewking kit, utterly tear a suit apart and put it back together in a better way."
 RECIPE.model = "models/tnb/items/aphelion/shirt_rebel1.mdl"
 RECIPE.station = "Workbench"
 RECIPE.category = "Armor"
 RECIPE.requirements = {
-	["blowtorchfuel"] = 1,
+	["prewaroutfittingmat"] = 1,
 ["kevlarfragments"] = 1,
-["ducttape"] = 1,
-["combinemetal"] = 1,
-["reclaimedmetal"] = 1,
-["partisansuit"] = 1,
+["ducttape"] = 2,
+["ballisticfiber"] = 2,
+["clothscrap"] = 4,
+["sewingthread"] = 2,
+["resistancefightersuit"] = 1,
 }
 RECIPE.tools = {
-	"blowtorch",
-"weldingmask",
+	"sewingkit",
 }
 RECIPE.results = {
 	["resistancefightersuit"] = 1,

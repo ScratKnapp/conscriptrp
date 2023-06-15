@@ -16,12 +16,12 @@ ITEM.isBodyArmor = false
 ITEM.isHelmet = true
 ITEM.isGasmask = true
 ITEM.noBusiness = true
-ITEM.weight = 2
+ITEM.weight = 4
 ITEM.res = {
 	["Impact"] = 5,
 	["Shock"] = -2,
-	["Fire"] = 0,
-	["Toxic"] = 0,
+	["Fire"] = 2,
+	["Toxic"] = 2,
 }
 
 
