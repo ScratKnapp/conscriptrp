@@ -12,6 +12,6 @@ function ENT:OnPopulateEntityInfo(tooltip)
     title:SizeToContents()
 
     local description = tooltip:AddRow("description")
-    description:SetText("A bank account that holds your extra money and items")
+    description:SetText("A set of locked lockers utilized to store non-mission essential supplies.")
     description:SizeToContents()
 end

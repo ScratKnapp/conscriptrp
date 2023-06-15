@@ -4,8 +4,8 @@ AddCSLuaFile("shared.lua")
 include("shared.lua")
 
 function ENT:Initialize()
-    self:SetModel("models/breen.mdl")
-    self:SetHullType(HULL_HUMAN)
+    self:SetModel("models/props_c17/Lockers001a.mdl")
+    self:SetHullType(HULL_MEDIUM)
     self:SetHullSizeNormal()
     self:SetNPCState(NPC_STATE_SCRIPT)
     self:SetSolid(SOLID_BBOX)
@@ -47,8 +47,8 @@ function ENT:Use(activator)
 
     ix.storage.Open(activator, bank, {
         entity = self,
-        name = "Bank Account",
-        searchText = "Accessing bank account...",
+        name = "FOB Storage",
+        searchText = "Accessing Storage...",
         searchTime = ix.config.Get("containerOpenTime", 1)
     })
     return
