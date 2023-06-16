@@ -1,4 +1,4 @@
-ENT.PrintName = "Bank NPC"
+ENT.PrintName = "A set of Lockers..."
 ENT.Author = "gm1003 ツ"
 ENT.PopulateEntityInfo = true
 
