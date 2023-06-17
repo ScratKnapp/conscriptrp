@@ -1,6 +1,6 @@
 local PLUGIN = PLUGIN
 ITEM.name = "Cards Base"
-ITEM.model = "models/lostsignalproject/items/quest/keycard.mdl"
+ITEM.model = "models/damik/cards/clubs.mdl"
 ITEM.material = "models/debug/debugwhite"
 ITEM.width = 1
 ITEM.height = 1

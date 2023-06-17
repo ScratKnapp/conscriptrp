@@ -13,7 +13,7 @@ RECIPE.requirements = {
 
 
 RECIPE.results = {
-	["outlandsvodka"] = 1
+	["vodka"] = 3
 
 }
 
