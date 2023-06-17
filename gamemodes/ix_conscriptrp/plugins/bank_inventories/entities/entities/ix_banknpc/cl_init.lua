@@ -1,4 +1,4 @@
-ENT.PrintName = "A set of Lockers..."
+ENT.PrintName = "Bank Entity"
 ENT.Author = "gm1003 ツ"
 ENT.PopulateEntityInfo = true
 
@@ -7,7 +7,7 @@ function ENT:OnPopulateEntityInfo(tooltip)
 
     local title = tooltip:AddRow("name")
     title:SetImportant()
-    title:SetText("Bank NPC")
+    title:SetText("A set of Lockers...")
     title:SetBackgroundColor(ix.config.Get("color"))
     title:SizeToContents()
 
