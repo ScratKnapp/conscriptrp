@@ -1,0 +1,12 @@
+ITEM.name = ".30-06"
+ITEM.model = "models/Items/BoxMRounds.mdl"
+ITEM.ammo = ".30-06" // type of the ammo
+ITEM.ammoAmount = 20 // amount of the ammo
+ITEM.description= "A box that contains %s rounds of .30-06 ammo."
+ITEM.longdesc = "placeholder"
+ITEM.flag = "1"
+ITEM.price = 600
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 0.23
+ITEM.isAmmo = true

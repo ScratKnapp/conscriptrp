@@ -113,7 +113,7 @@ SWEP.LuaViewmodelRecoil = true
 		[3] = {header = "Silencer", offset = {-400, -200},  atts = {"md_saker"}},
 		[4] = {header = "Handguard", offset = {-400, 200}, atts = {"md_foregrip"}}, 
 		["+reload"] = {header = "Ammo", offset = {800, 150}, atts = {"am_zoneloaded", "am_matchgrade", "am_armorpiercing"
-	}
+	}}}
 
 	
 SWEP.Animations = {fire = {"shoot1", "shoot2", "shoot3"},

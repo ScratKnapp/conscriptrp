@@ -24,7 +24,7 @@ ITEM.functions.Equip = {
 	icon = "icon16/tick.png",
 	OnRun = function(item)
 		local client = item.player
-		local items = client:GetChar():GetInv():GetItems()
+		local items = client:GetChar():GetInventory():GetItems()
         
 		client.carryWeapons = client.carryWeapons or {}
         

@@ -1,4 +1,3 @@
-<<<<<<< .mine
 --[[
 	PLUGIN.buffs[ << string, Buff's Unique Name>> ] = { -- This is the unique name for identifying the buff.
 		name =<< string, Buff's Display Name>>, -- This is the display name of the buff. 
@@ -130,7 +129,6 @@ PLUGIN.buffs[ "buff_strength" ] = {
 }
 
 
-=======
 --[[
 	PLUGIN.buffs[ << string, Buff's Unique Name>> ] = { -- This is the unique name for identifying the buff.
 		name =<< string, Buff's Display Name>>, -- This is the display name of the buff. 
@@ -204,7 +202,7 @@ PLUGIN.buffs[ "debuff_radiation" ] = {
 	end,
 }
 
-/*
+/*--[[
 PLUGIN.buffs[ "leghurt" ] = {
 	name = "Leg Injury",
 	desc = "Your legs are injured and your movement has been handicapped.",
@@ -229,7 +227,7 @@ PLUGIN.buffs[ "leghurt" ] = {
 		end
 	end,
 }
-*/
+]]--*/
 
 
 
@@ -239,8 +237,6 @@ PLUGIN.buffs[ "buff_strength" ] = {
 	desc = "Your strength has been buffed!",
 
 	OnDebuffed = function( player, parameter )
-	
-		eeee
 	
 	end,
 
@@ -267,10 +263,3 @@ PLUGIN.buffs[ "buff_strength" ] = {
 	end,
 	
 }
-
-
-onbuffed = function( player, parameter )
-	if !player:HasBuff( "leghurt" ) then
-		player:ChatPrint( nut.lang.Get("buff_legs_injured") )
-	end
-end,>>>>>>> .r125

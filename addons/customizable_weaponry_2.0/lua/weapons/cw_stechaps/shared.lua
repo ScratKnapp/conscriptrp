@@ -63,7 +63,7 @@ SWEP.AttachmentModelsVM = {
 SWEP.Attachments = {
 [1] = {header = "Muzzle", offset = {0, 150}, atts = {"md_tundra9mm"}},
 ["+reload"] = {header = "Ammo", offset = {-400, 330}, atts = {"am_zoneloaded", "am_matchgrade", "am_armorpiercing"
-}
+}}}
 
 SWEP.Animations = {fire = "fire",
 	reload = "reload_full",
@@ -72,14 +72,16 @@ SWEP.Animations = {fire = "fire",
 	idle = "idle",
 	draw = "draw"}
 	
-	
-	SWEP.Sounds = { reload_full = {[1] = {time = 0.3, sound = "WARFACE_pt10_MAGOUT"},
+
+SWEP.Sounds = { 
+	reload_full = {[1] = {time = 0.3, sound = "WARFACE_pt10_MAGOUT"},
 	[2] = {time = 1, sound = "WARFACE_pt10_MAGIN"}},
-	
+
 	reload_empty = {[1] = {time = 0.3, sound = "WARFACE_pt10_MAGOUT"},
 	[2] = {time = 1, sound = "WARFACE_pt10_MAGIN"},
 	[3] = {time = 1.4, sound = "WARFACE_pt10_BOLTBACK"},
-	[4] = {time = 1.5, sound = "WARFACE_pt10_BOLTFORWARD"}}}
+	[4] = {time = 1.5, sound = "WARFACE_pt10_BOLTFORWARD"}}
+}
 	
 SWEP.DryFire = true
 SWEP.AimViewModelFOV = 70

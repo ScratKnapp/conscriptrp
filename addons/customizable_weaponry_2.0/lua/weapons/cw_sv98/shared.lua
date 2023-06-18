@@ -97,7 +97,7 @@ end
 		[2] = {header = "Barrel", offset = {-250, -300},  atts = {"md_saker"}},
 		[3] = {header = "Handguard", offset = {-300, 0}, atts = {"md_foregrip"}},
 		["+reload"] = {header = "Ammo", offset = {800, 100}, atts = {"am_zoneloaded", "am_matchgrade", "am_armorpiercing"
-	}
+	}}}
 
 	
 SWEP.Animations = {fire = {"fire"},

@@ -1573,7 +1573,7 @@ function SWEP:PrimaryAttack()
 
 		self:FireBullet(self.Damage, self.CurCone, self.ClumpSpread, self.Shots)
 		self:makeFireEffects()
-		self:SetWeaponHP(self:GetWeaponHP() - self.HealthDamage)  -- HEALTH REDUCTION
+		
 		if CLIENT then
 			self:simulateRecoil()
 		end

@@ -159,12 +159,7 @@ SWEP.RVBRollMod = .5
 SWEP.Primary.ClipSize		= 5
 SWEP.Primary.DefaultClip	= 5
 SWEP.Primary.Automatic		= false
-
-if CustomizableWeaponry_doi_atow_hl2ammo then
 SWEP.Primary.Ammo			= ".30-06"
-else
-SWEP.Primary.Ammo			= ".30-06"
-end
 
 
 SWEP.FireDelay = 60/38

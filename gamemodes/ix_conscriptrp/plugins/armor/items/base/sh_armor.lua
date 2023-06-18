@@ -83,7 +83,7 @@ end,
 			local char = client:GetChar()
 
 			if (char) then
-				local inv = char:GetInv()
+				local inv = char:GetInventory()
 
 				if (inv) then
 					local mods = item:GetData("mod", {})

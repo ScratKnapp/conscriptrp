@@ -298,9 +298,9 @@ function Schema:PurchaseItems(client,x,y)
 		if baginv then
 			client:GetChar():GiveMoney(item.price)
 		else
-			local succ = client:GetChar():GetInv():Add(x)
+			local succ = client:GetChar():GetInventory():Add(x, 1, {})
 			if !succ then
-				client:GetChar():GetInv():Add(item)
+				client:GetChar():GetInventory():Add(item, 1, {})
 			end
 		end
 		hook.Run("PurchasedItems", client, x)

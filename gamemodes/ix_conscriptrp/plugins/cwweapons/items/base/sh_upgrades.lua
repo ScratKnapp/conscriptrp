@@ -22,7 +22,7 @@ ITEM.quantity = 1
 local function attachment(item, data)
     local client = item.player
     local char = client:GetChar()
-    local inv = char:GetInv()
+    local inv = char:GetInventory()
     local items = inv:GetItems()
     local target
     for k, invItem in pairs(items) do
@@ -139,7 +139,7 @@ ITEM.functions.Upgrade = {
         local targets = {}
         local char = client:GetChar()
         if (char) then
-            local inv = char:GetInv()
+            local inv = char:GetInventory()
             if (inv) then
                 local items = inv:GetItems()
                 for k, v in pairs(items) do

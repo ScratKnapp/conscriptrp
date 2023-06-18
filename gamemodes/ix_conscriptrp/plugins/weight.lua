@@ -20,7 +20,7 @@ if (SERVER) then
         if char == nil then return end
         local character = char
 		local carrybuff = character:GetData("WeightBuffCur") or 0
-        local inventory = character:GetInv()
+        local inventory = character:GetInventory()
         local weight = 0
         local totweight = 0
         local maxweight = 50
@@ -76,7 +76,7 @@ end
 function PLUGIN:PlayerInteractItem(client, action, item)
     local character = client:GetChar()
 	local carrybuff = character:GetData("WeightBuffCur") or 0
-    local inventory = character:GetInv()
+    local inventory = character:GetInventory()
     local weight = 0
     local totweight = 0
     local maxweight = 50

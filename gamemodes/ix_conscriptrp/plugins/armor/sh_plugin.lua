@@ -47,7 +47,7 @@ if (CLIENT) then
 	end)
 else
 	netstream.Hook("armordurabilityAdjust", function(client, dura, id)
-		local inv = (client:GetChar() and client:GetChar():GetInv() or nil)
+		local inv = (client:GetChar() and client:GetChar():GetInventory() or nil)
 
 		if (inv) then
 			local item

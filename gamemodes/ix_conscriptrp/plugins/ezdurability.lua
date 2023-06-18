@@ -13,7 +13,7 @@ ix.command.Add("CharDamageArmor", {
 		ix.type.number,
 	},
 	OnRun = function(self, client, target, damage)
-		local inventory = target:GetInv()
+		local inventory = target:GetInventory()
 		local resItems = {} 
 		local str = ""
 
@@ -53,7 +53,7 @@ ix.command.Add("Charrepairarmor", {
 		ix.type.number,
 	},
 	OnRun = function(self, client, target, repair)
-		local inventory = target:GetInv()
+		local inventory = target:GetInventory()
 		local resItems = {} 
 		local str = ""
 
@@ -95,7 +95,7 @@ ix.command.Add("Charsetarmor", {
 		ix.type.number,
 	},
 	OnRun = function(self, client, target, newvalue)
-		local inventory = target:GetInv()
+		local inventory = target:GetInventory()
 		local resItems = {} 
 		local str = ""
 

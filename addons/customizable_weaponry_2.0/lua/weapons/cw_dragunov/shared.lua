@@ -115,11 +115,10 @@ SWEP.SilencerBGs	= {main = 6, off = 0, on = 1, long_off = 2, long_on = 3}
 SWEP.LuaViewmodelRecoil = true
 
 
-	SWEP.Attachments = {[1] = {header = "Sight", offset = {300, -300},  atts = {"md_microt1", "md_eotech", "md_kobra", "md_aimpoint", "md_reflex", "md_cmore", "md_schmidt_shortdot", "md_pso1", "md_nightforce_nxs", "md_acog"}},
-		[2] = {header = "Barrel", offset = {-250, -300},  atts = {"md_pbs1"}},
-		[3] = {header = "Handguard", offset = {-250, 150}, atts = {"md_foregrip"}},
-		["+reload"] = {header = "Ammo", offset = {800, 100}, atts = {"am_zoneloaded", "am_matchgrade", "am_armorpiercing"
-	}
+SWEP.Attachments = {[1] = {header = "Sight", offset = {300, -300},  atts = {"md_microt1", "md_eotech", "md_kobra", "md_aimpoint", "md_reflex", "md_cmore", "md_schmidt_shortdot", "md_pso1", "md_nightforce_nxs", "md_acog"}},
+	[2] = {header = "Barrel", offset = {-250, -300},  atts = {"md_pbs1"}},
+	[3] = {header = "Handguard", offset = {-250, 150}, atts = {"md_foregrip"}},
+	["+reload"] = {header = "Ammo", offset = {800, 100}, atts = {"am_zoneloaded", "am_matchgrade", "am_armorpiercing"}}}
 	
 SWEP.Animations = {fire = {"shoot", "shoot2"},
 	reload = "reload",

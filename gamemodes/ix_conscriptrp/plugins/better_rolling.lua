@@ -12,10 +12,12 @@ ix.config.Add("rollDefault", 100, "Default max value for rollf", nil, {
 	category = "rolling"
 })
 
-ix.log.AddType("rollf", function(client, ...)
-	local arg = {...}
-	return string.format("%s has rolled %s out of %s", client:Name(), arg[1], arg[2])
-end)
+if SERVER then
+	ix.log.AddType("rollf", function(client, ...)
+		local arg = {...}
+		return string.format("%s has rolled %s out of %s", client:Name(), arg[1], arg[2])
+	end)
+end
 
 ix.command.Add("Rollf", {
 	description = "Roll, but a bit more fair.",
