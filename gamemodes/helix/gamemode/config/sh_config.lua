@@ -121,10 +121,10 @@ ix.config.Add("intro", false, "Whether or not the Helix intro is enabled for new
 ix.config.Add("music", "music/hl2_song2.mp3", "The default music played in the character menu.", nil, {
 	category = "appearance"
 })
-ix.config.Add("communityURL", "https://discord.gg/zMaebV", "The URL to navigate to when the community button is clicked.", nil, {
+ix.config.Add("communityURL", "https://docs.google.com/document/d/1Ad8h7QNYW8eEqbTRV5W7JyLRCCJ1aCl6LjlDZ_0k8Ig/edit?usp=drivesdk", "The URL to navigate to when the community button is clicked.", nil, {
 	category = "appearance"
 })
-ix.config.Add("communityText", "The Bloc",
+ix.config.Add("communityText", "Half-Life Frontline",
 	"The text to display on the community button. You can use language phrases by prefixing with @", nil, {
 	category = "appearance"
 })
