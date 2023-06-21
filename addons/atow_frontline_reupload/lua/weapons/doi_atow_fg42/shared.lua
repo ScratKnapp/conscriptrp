@@ -158,11 +158,8 @@ SWEP.Primary.ClipSize		= 20
 SWEP.Primary.DefaultClip	= 20
 SWEP.Primary.Automatic		= true
 
-if CustomizableWeaponry_doi_atow_hl2ammo then
 SWEP.Primary.Ammo			= "7.92x57MM"
-else
-SWEP.Primary.Ammo			= "7.92x57MM"
-end
+
 
 SWEP.FireDelay = 60/825
 SWEP.FireDelayAuto = 60/825

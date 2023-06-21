@@ -200,11 +200,8 @@ SWEP.Primary.DefaultClip	= 10
 SWEP.Primary.Automatic		= false
 SWEP.Chamberable			= false
 
-if CustomizableWeaponry_doi_atow_hl2ammo then
+
 SWEP.Primary.Ammo			= ".45 ACP"
-else
-SWEP.Primary.Ammo			= ".45 ACP"
-end
 
 SWEP.FireDelay = 60/500
 SWEP.FireSound = "DOIC96_FIRE"

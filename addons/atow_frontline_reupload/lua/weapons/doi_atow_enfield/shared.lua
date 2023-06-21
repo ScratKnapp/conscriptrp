@@ -158,11 +158,7 @@ SWEP.Primary.ClipSize		= 10
 SWEP.Primary.DefaultClip	= 10
 SWEP.Primary.Automatic		= false
 
-if CustomizableWeaponry_doi_atow_hl2ammo then
-SWEP.Primary.Ammo			= ".303"
-else
-SWEP.Primary.Ammo			= ".303"
-end
+SWEP.Primary.Ammo			= ".30-06"
 
 SWEP.FireDelay = 60/42
 SWEP.FireSound = "DOIENFIELD_FIRE"

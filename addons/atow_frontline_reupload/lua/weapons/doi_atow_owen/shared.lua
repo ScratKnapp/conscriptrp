@@ -129,11 +129,8 @@ SWEP.Primary.DefaultClip	= 33
 SWEP.Primary.Automatic		= true
 SWEP.Chamberable			= false
 
----if CustomizableWeaponry_doi_atow_hl2ammo then
 --SWEP.Primary.Ammo			= "9x19MM"
---else
-SWEP.Primary.Ammo			= "9x19MM"
---end
+
 
 SWEP.FireDelay = 60/790
 SWEP.FireSound = "DOIOWEN_FIRE"
