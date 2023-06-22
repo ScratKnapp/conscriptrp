@@ -1,0 +1,3 @@
+PERK.name = "Psychotic Buildup"
+PERK.description = "You start fights off pretty slowly, almost as if you forget how to handle yourself every time you enter some sort of conflict, but you get considerably more comfortable with violence every time you rack up a kill during combat."
+PERK.effect = "Stackable +10 to Strength rolls per kill during combat, resets after every fight. However, you start from -10, and also take a -5 to Reflex rolls with each kill, starting at 0."

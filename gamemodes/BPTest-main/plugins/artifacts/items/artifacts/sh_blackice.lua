@@ -1,0 +1,20 @@
+ITEM.name = "Black Ice"
+ITEM.model = "models/props_debris/concrete_spawnchunk001d.mdl"
+ITEM.description = "A piece of broken pavement covered in a thick layer of ice, extremely cold to the touch."
+ITEM.longdesc = "This artifact appears to be a chunk of broken concrete fully encased in a thick layer of slightly opaque ice. It is quite cold to the touch, and when in use gives the user a feeling of uncomfortable shivers and hampers movement, while protecting them from external heat and cold changes.  \n\nThermal +3\nMovement -4s"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 30000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1.0
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.30,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

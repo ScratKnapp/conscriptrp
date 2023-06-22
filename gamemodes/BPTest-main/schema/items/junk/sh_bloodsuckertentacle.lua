@@ -1,0 +1,11 @@
+ITEM.name = "Bloodsuckers Tentacle"
+ITEM.model ="models/jerry/bloodsuckerjaw.mdl"
+ITEM.description = "A tentacle from a Bloodsucker."
+ITEM.longdesc = "A trophy from a deceased Bloodsucker, could be valuable."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 2000
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 2
+ITEM.quantity = 1

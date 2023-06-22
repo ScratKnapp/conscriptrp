@@ -1,0 +1,23 @@
+"UnlitGeneric"
+{
+	"$basetexture"	"cwkk\reticles\kobra_dot_col"
+	"$detail"		"models\weapons\optics\laser_noise"
+	"$detailblendmode" "2"
+	"$detailframe"	"0"
+	"$translucent" 	"1"
+	"$model"		"1"
+	"$additive"	"1"
+	
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+
+	Proxies
+	{
+		TextureScroll
+		{
+			textureScrollVar	$detailtexturetransform
+			textureScrollRate	50
+			textureScrollAngle 	180
+		}
+	}
+}

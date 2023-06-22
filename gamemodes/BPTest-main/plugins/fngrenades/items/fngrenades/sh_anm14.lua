@@ -1,0 +1,14 @@
+ITEM.name = "AN/M14 Incendiary Grenade"
+ITEM.model = ("models/weapons/w_anm14.mdl")
+ITEM.description = "A Incendiary Grenade, for when the Party needs a bit more heat."
+ITEM.class = "cw_kk_ins2_nade_anm14"
+ITEM.weaponCategory = "secondary"
+ITEM.isWeapon = true
+ITEM.noAmmo = true
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 8000
+ITEM.flag = "1"
+ITEM.category = "Weapons"
+ITEM.isGrenade = true
+ITEM.weight = 0.54

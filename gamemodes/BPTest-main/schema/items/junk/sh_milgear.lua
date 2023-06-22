@@ -1,0 +1,9 @@
+ITEM.name = "Soviet Mil-Gear (CS-2)"
+ITEM.model = "models/kek1ch/outfit_waste_light.mdl"
+ITEM.description = "Parts of outdated soviet protective equipment. Two of these and a CS-1 could result in something useful."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 6400
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1

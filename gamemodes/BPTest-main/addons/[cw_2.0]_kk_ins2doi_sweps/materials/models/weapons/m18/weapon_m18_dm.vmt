@@ -1,0 +1,17 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\m18\weapon_m18_dm"
+	"$bumpmap" 			"models\weapons\m18\weapon_m18_nm"
+	"$phongexponenttexture"		"models\weapons\m18\weapon_m18_gm"
+
+	$envmap 			env_cubemap
+	$envmaptint 			"[.008 .008 .008]"
+
+	$phong 				"1"
+	$PhongAlbedoTint 		"1"	
+	$BasemapLuminancePhongMask	"1"
+	
+	$phongexponent 			"40"
+	$phongboost 			"700"
+	$phongfresnelranges		"[.2 1 3]"
+}

@@ -1,0 +1,23 @@
+"VertexLitGeneric"
+{
+	"$basetexture"				"models\cwkkins\m1a1\v_carbine_diffuse"
+	"$bumpmap" 					"models\cwkkins\m1a1\v_carbine_normal_spec"
+	"$normalmapalphaenvmapmask" "1"
+	"$envmap" 					"env_cubemap"
+	"$halflambert"				"0"
+	"$envmapfresnel" 	        "0"
+	"$envmapfresnelminmaxexp"   "[0 0 0]"
+	"$envmaptint" 				"[.005 .005 .005]"
+	"$envmapsaturation" 		"0"
+	"$phong" 					"1"
+	"$phongexponent"			"40"
+	"$phongboost" 				"1"	
+	"$phongfresnelranges"		"[1 5 3]"
+	"$phongalbedotint" 			"0"
+	
+	//$rimlight 				1
+	//$rimlightexponent       100
+	//$rimlightboost          .005
+      
+
+}

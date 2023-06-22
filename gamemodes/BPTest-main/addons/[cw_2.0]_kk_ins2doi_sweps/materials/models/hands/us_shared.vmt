@@ -1,0 +1,15 @@
+
+"VertexLitGeneric"
+{
+$phong "1"
+$phongboost ".2"
+$phongexponent "10"
+$phongTint "[.4 .5 .8]"
+$phongfresnelranges "[.1 1 .10]"
+$rimlight "1"
+$rimlightexponent "20"
+$rimlightboost ".3"
+$halflambert "0"
+$ambientocclusion "1"
+$lightwarptexture "models\player\skin_warp"
+}

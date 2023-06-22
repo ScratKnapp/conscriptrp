@@ -1,0 +1,10 @@
+patch
+{
+include "materials\models\hands\us_shared.vmt"
+insert
+{
+$basetexture "models\hands\ins_hands_H_color"
+$bumpmap "models\hands\ins_hands_H_normals"
+$rimmask 1
+}
+}

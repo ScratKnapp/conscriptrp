@@ -1,0 +1,22 @@
+ITEM.name = "Stone Blood"
+ITEM.model ="models/nasca/etherealsrp_artifacts/stoneblood.mdl"
+ITEM.description = "Red and green artifact."
+ITEM.longdesc = "An ugly reddish formation of compressed and polymerized plants, soil and bones, this artifact forms in gravitational anomalies. It is rather widespread and appears to partially neutralize the harmful effects of chemical poisons.\n\nRads +1\nChemical +2"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 2200
+ITEM.flag = "A"
+ITEM.debuff = "rads"
+ITEM.debuffval = 1
+ITEM.isArtefact = true
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.20,
+	["Psi"] = 0.00,
+}
+ITEM.weight = 1.4

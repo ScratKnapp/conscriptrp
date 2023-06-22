@@ -1,0 +1,15 @@
+ITEM.name = "Gauss Rifle Optic"
+ITEM.description = "A mysterious and oddly very advanced russian computerized targetting optic."
+ITEM.category = "Attachments"
+ITEM.width = 2
+ITEM.height = 1
+ITEM.model = "models/silver/stalker/items/a_gauss.mdl"
+ITEM.upgradeIcon = Material("materials/vgui/ui/stalker/weaponupgrades/4xmag.png")
+ITEM.slot = 1
+--ITEM.busflag = "SPECIAL3_1"
+ITEM.price = 30000 
+ITEM.Range = 10
+ITEM.isAttachment = true
+ITEM.weight = 0.65
+ITEM.attSearch = { "cw_sil_gauss_scope"}
+ITEM.flag = "A"

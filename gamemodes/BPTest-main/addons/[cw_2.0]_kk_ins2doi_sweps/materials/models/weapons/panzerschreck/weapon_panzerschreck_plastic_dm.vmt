@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\panzerschreck\weapon_panzerschreck_plastic_dm"
+	"$bumpmap"			"models\weapons\panzerschreck\weapon_panzerschreck_plastic_nm"
+
+	"normalmapalphaenvmapmask"	"1"
+	"$model" 			"1"
+	
+	"$translucent" 			"1"
+	"$phong"			"1"	
+	"$phongexponent"		"70"
+
+	"$envmap" 			"env_cubemap"
+	"$envmapcontrast" 		".8"
+	"$envmapsaturation" 		"1"
+}

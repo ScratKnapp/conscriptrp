@@ -1,0 +1,10 @@
+CustomizableWeaponry:addFireSound("CW_OUTBREAK_ASH12_FIRE", "silver/weapons/ash12/ash12_fire.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_KK_INS2_GROZA_FIRE_SUPPRESSED", "weapons/groza/groza_suppressed_fp.wav")
+
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_BOLTBACK", "silver/weapons/ash12/ash12_boltback.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_BOLTRELEASE", "silver/weapons/ash12/ash12_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_EMPTY", "silver/weapons/ash12/ash12_empty.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_FIRESELECT", "silver/weapons/ash12/ash12_fireselect.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_MAGIN", "silver/weapons/ash12/ash12_magin.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_MAGOUT", "silver/weapons/ash12/ash12_magout.wav")
+CustomizableWeaponry:addReloadSound("CW_OUTBREAK_ASH12_MAGRELEASE", "silver/weapons/ash12/ash12_magrelease.wav")

@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+
+	$basetexture 			"models\hands\ger_gloves_paratrooper"
+	$bumpmap 				"models\hands\ger_gloves_paratrooper_normal"
+	$phongexponenttexture 	"models\hands\ger_gloveS_paratrooper_exp"
+
+	$roughnessmultiplier	"1.15"
+	
+}

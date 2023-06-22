@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture"			"models\weapons\garand\weapon_garand_attachments_dm"
+	"$bumpmap"	 		"models\weapons\garand\weapon_garand_attachments_nm"
+	
+	"$phong"  			"1"
+	"$phongtint" 			"[0.6 0.8 1]"
+	"$phongalbedotint" 		"1"
+	"$phongboost"			"1"
+	"$phongexponent" 		"38"
+	"$phongfresnelranges"		"[1 2 4]"
+
+	"$envmap"			"env_cubemap"
+	"$normalmapalphaenvmapmask"	"1"
+	"$envmaptint"			"[0.08 0.08 0.08]"
+}

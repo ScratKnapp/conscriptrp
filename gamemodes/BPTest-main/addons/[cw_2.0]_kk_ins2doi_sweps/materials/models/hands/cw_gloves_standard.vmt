@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+
+	$basetexture 			"models\hands\cw_gloves_standard"
+	$bumpmap 				"models\hands\gloves_wool_normal"
+	$phongexponenttexture 	"models\hands\gloves_wool_exp"
+
+	$phong 					"1"
+	$phongboost 			".05"
+	$phongTint 				"[.4 .5 .8]"
+	$phongfresnelranges 	"[.1 1 .10]"
+	
+}

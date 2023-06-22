@@ -1,0 +1,8 @@
+VertexLitGeneric
+{
+	"$basetexture"	"models\weapons\attachments\cw_kk_ins2_cstm_acog\GlowTrit"
+	//"$translucent" 1
+	"$selfillum"1
+	//"$additive"1
+	//"$halflambert" 	"1"
+}

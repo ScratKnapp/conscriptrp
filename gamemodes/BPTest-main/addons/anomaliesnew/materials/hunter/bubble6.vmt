@@ -1,0 +1,15 @@
+"VertexLitGeneric"
+{
+	$basetexture "hunter\bubble"
+	$nocull 1
+	$translucent 1
+"Proxies" 
+{ 
+"AnimatedTexture" 
+{ 
+"animatedTextureVar" "$basetexture" 
+"animatedTextureFrameNumVar" "$frame"
+"animatedTextureFrameRate" "24" 
+}
+} 
+}

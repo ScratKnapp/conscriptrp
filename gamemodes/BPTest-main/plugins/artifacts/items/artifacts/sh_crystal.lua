@@ -1,0 +1,22 @@
+ITEM.name = "Crystal"
+ITEM.model ="models/nasca/etherealsrp_artifacts/crystal.mdl"
+ITEM.description = "A crystal-like artifact."
+ITEM.longdesc = "It is observed to form when heavy metals are exposed to anomalous zones of intense thermal activity. The artifact absorbs excess heat in its surroundings, and remains consistently cool to the touch.\n\nRads +1\nThermal +2"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 2400
+ITEM.flag = "A"
+ITEM.debuff = "rads"
+ITEM.debuffval = 1
+ITEM.isArtefact = true
+ITEM.weight = 0.6
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.20,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

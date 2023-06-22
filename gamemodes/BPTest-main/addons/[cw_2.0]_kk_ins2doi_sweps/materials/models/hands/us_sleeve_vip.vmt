@@ -1,0 +1,10 @@
+patch
+{
+include "materials\models\hands\us_shared.vmt"
+insert
+{
+$basetexture "models\hands\us_sleeve_vip"
+$bumpmap "models\hands\ins_sleeve_normals"
+$rimmask 1
+}
+}

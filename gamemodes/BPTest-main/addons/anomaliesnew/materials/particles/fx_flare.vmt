@@ -1,0 +1,9 @@
+"SpriteCard"
+{
+$basetexture "particles\fx_flare"
+$vertexcolor 1
+$vertexalpha 1
+$translucent 1
+$alphatest 1
+$color "[ 255 0 255 ]"
+}

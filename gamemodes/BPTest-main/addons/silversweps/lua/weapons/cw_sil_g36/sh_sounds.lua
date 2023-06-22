@@ -1,0 +1,17 @@
+CustomizableWeaponry:addFireSound("CW_KK_INS2_G36_FIRE", "weapons/cw_kk_ins2_g36c/fire.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_KK_INS2_G36_FIRE_SUPPRESSED", "weapons/cw_kk_ins2_g36c/fire_suppressed.wav", 1, 75, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_G36_BOLTBACK", "weapons/cw_kk_ins2_g36c/boltback.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_G36_BOLTRELEASE", "weapons/cw_kk_ins2_g36c/boltforward.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_G36_MAGIN", "weapons/cw_kk_ins2_g36c/magin.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_G36_MAGOUT", "weapons/cw_kk_ins2_g36c/magout.wav")
+
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_DRUM_MAGFETCH", "weapons/galil/handling/galil_drum_mag_fetch.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_DRUM_MAGHIT", "weapons/galil/handling/galil_drum_maghit.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_DRUM_MAGIN", "weapons/galil/handling/galil_drum_magin.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_DRUM_MAGOUT", "weapons/galil/handling/galil_drum_magout.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_DRUM_MAGOUTRATTLE", "weapons/galil/handling/galil_drum_magout_rattle.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_EMPTY", "weapons/galil/handling/galil_empty.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_FIRESELECT", "weapons/galil/handling/galil_fireselect_1.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_MAGRELEASE", "weapons/galil/handling/galil_magrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_GALIL_RATTLE", "weapons/galil/handling/galil_rattle.wav")

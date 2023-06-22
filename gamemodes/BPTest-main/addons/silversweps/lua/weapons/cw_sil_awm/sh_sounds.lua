@@ -1,0 +1,11 @@
+CustomizableWeaponry:addFireSound("CW_KK_INS2_AWM_FIRE", "weapons/new_sr/awm_fp.wav", 1, 105, CHAN_STATIC)
+CustomizableWeaponry:addFireSound("CW_KK_INS2_AWM_FIRE_SUPPRESSED", "weapons/new_sr/awm_suppressed_fp.wav", 1, 75, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_BOLTBACK", "weapons/new_sr/handling/new_sr_boltback.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_BOLTFORWARD", "weapons/new_sr/handling/new_sr_boltforward.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_BOLTLATCH", "weapons/new_sr/handling/new_sr_boltlatch.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_BOLTRELEASE", "weapons/new_sr/handling/new_sr_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_MAGRELEASE", "weapons/new_sr/handling/new_sr_magrelease.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_MAGIN", "weapons/new_sr/handling/new_sr_magin.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_NEWSR_MAGOUT", "weapons/new_sr/handling/new_sr_magout.wav")
+CustomizableWeaponry:addReloadSound("CW_KK_INS2_MOSIN_EMPTY", "weapons/mosin/handling/mosin_empty.wav")

@@ -1,0 +1,11 @@
+ITEM.name = "Rodent's Head"
+ITEM.model ="models/kek1ch/item_tushkano_head.mdl"
+ITEM.description = "A head cut off from a rodent."
+ITEM.longdesc = "The head of a tushkano. The scientists would like to study it in order to identify which creature tushkanos originate from."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 250
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 0.5
+ITEM.quantity = 1

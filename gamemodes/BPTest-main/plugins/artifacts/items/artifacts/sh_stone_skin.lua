@@ -1,0 +1,20 @@
+ITEM.name = "Stone Skin"
+ITEM.model = "models/artefacts/signet.mdl"
+ITEM.description = "A small, mundane looking stone."
+ITEM.longdesc = "The artifact looks very mundane. On first glance, it is easy to mistake this for a rock. When picked up, there is no discernible tactile sensation where skin makes. When in use, deliberately closing your eyes will turn your skin to stone and you are unable to move. Bullets of high caliber can still penetrate, but they are likely to bounce off more often. Other blunt force trauma is greatly diminished. When you open your eyes, the effect ceases. All injuries that manage to penetrate the stone skin are transmitted to your body as soon as the effect ceases. \n\nImpact +3\nExtended use causes asphyxiation and stone-skin"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 39000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 5
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.30,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

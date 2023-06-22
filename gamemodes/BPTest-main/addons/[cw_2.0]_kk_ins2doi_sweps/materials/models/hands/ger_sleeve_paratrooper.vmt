@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"models\hands\ger_sleeve_paratrooper"
+	"$bumpmap" 				"models\hands\ger_sleeve_paratrooper_normal"
+	"$phongexponenttexture"	"models\hands\ger_sleeve_paratrooper_exp"
+}

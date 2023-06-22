@@ -1,0 +1,16 @@
+ITEM.name = "20g Slug"
+ITEM.model = "models/kek1ch/ammo_12x70_buck.mdl"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.ammo = "20 Gauge -SG-" // type of the ammo
+ITEM.ammoAmount = 20 // amount of the ammo
+ITEM.description= "A box that contains %s 20 gauge slug shells. "
+ITEM.longdesc = "This heavy 20-caliber slug round is normally used for hunting big game, but is also good for other purposes."
+ITEM.price = 500
+ITEM.flag = "3"
+ITEM.img = Material("vgui/hud/12gaugesg.png")
+ITEM.Range = 20
+ITEM.Dmg = 1
+ITEM.Pen = 5
+ITEM.weight = 0.05
+ITEM.isAmmo = true

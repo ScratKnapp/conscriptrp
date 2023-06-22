@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{	
+	"$basetexture"				"models\weapons\upgrades\a_cloth_wraps"
+	"$bumpmap"					"models\weapons\upgrades\a_cloth_wraps_normal"
+	"$phongexponenttexture"		"models\weapons\upgrades\a_cloth_wraps_exp"
+	
+	"$alphatest"				"1"
+	"$alphatestreference"		"0.45"
+	"$nocull"					"1"
+	
+	"$roughnessmultiplier"		"1"
+	"$metal"					"0"
+
+	"$envmap" 					"env_cubemap"
+	"$envmapfresnel"			".33"
+	"$envmaptint"				"[0.05 0.025 0]"
+	
+	
+}

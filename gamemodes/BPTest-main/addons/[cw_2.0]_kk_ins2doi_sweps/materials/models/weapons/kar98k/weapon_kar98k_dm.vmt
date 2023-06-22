@@ -1,0 +1,20 @@
+"VertexLitGeneric"
+//"SurfaceGGX"
+{
+	"$basetexture"			"models\weapons\kar98k\weapon_kar98k_dm"
+	"$bumpmap"			"models\weapons\kar98k\weapon_kar98k_nm"
+	"$phongexponenttexture"		"models\weapons\kar98k\weapon_kar98k_exp"
+
+	"$phong"  			"1"
+	"$phongexponent" 		"36"
+	"$phongboost" 			"0.5"
+	"$phongfresnelranges" 		"[2 4 6]"
+	"$phongtint" 			"[0.6 0.8 1]"
+	"$phongalbedotint" 		"1"	
+
+//	"$envmapfresnel"			"0.5"
+
+	"$envmap" 			"env_cubemap"
+	"$normalmapalphaenvmapmask" 	"1"
+	"$envmaptint"			"[0.01 0.01 0.01]"
+}

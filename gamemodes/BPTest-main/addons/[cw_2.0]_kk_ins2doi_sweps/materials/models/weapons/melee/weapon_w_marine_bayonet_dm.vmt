@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	"$basetexture"			"models\weapons\melee\weapon_w_marine_bayonet_dm"
+	"$bumpmap"              "dev\flat_normal"
+
+	$phong 				"1"
+	$PhongAlbedoTint 		"1"	
+	$BasemapLuminancePhongMask	"1"
+	
+	$phongexponent 			"70"
+	$phongboost 			"5"
+	$phongfresnelranges		"[1 1 1]"
+}
