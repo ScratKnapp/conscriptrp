@@ -1,0 +1,9 @@
+ITEM.name = "Exotic Materials (Monolith Scientific)"
+ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
+ITEM.description = "A set of exotic materials originating from deep in the Zone. Five of these and an NBC Suit, PSZ-9, or SEVA suit could result in something useful."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 21600
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1

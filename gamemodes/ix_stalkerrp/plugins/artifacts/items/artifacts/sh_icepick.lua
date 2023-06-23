@@ -1,0 +1,20 @@
+ITEM.name = "Ice-Pick"
+ITEM.model = "models/artefacts/ice.mdl"
+ITEM.description = "A light blue, cylinder-shaped artifact with a small picket of ice at the bottom of it, giving a similar appearance to an ice-pop."
+ITEM.longdesc = "This uncommon artifact constantly emits a light smokey-haze, as if it were cryogenically frozen. It does this regardless of the temperature around it. When in contact, the user slowly becomes uncomfortably chilly over time, however preventing outright hypothermia. This has the added effect of making the user's movements more lethargic in nature, as more energy is needed to move. A strange facet of the artifact is noticed in normal, temperate climates: oddly enough, it seems to only halfway materialize, giving a middling-to-negligent cooling effect to the user during such circumstances.\n\nThermal +2\nMovement -2s"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 9000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1.0
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.20,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

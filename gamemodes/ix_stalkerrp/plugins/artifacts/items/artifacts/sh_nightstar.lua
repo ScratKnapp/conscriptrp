@@ -1,0 +1,14 @@
+ITEM.name = "Night Star"
+ITEM.model ="models/nasca/etherealsrp_artifacts/nightstar.mdl"
+ITEM.description = "Spikey yellow artifact. Glowing."
+ITEM.longdesc = "Formed under gravitational influences, this glowing artifact generates a local, directed low-gravity field. It is commonly used to reduce the weight of equipment it is placed near.\n\nRads +1\nWeight -2 (+4kg)"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 9000
+ITEM.flag = "A"
+ITEM.buff = "weight"
+ITEM.buffval = 4
+ITEM.debuff = "rads"
+ITEM.debuffval = 1
+ITEM.isArtefact = true
+ITEM.weight = 2

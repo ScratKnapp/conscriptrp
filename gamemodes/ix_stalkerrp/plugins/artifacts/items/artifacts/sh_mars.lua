@@ -1,0 +1,20 @@
+ITEM.name = "Mars"
+ITEM.model = "models/srp/items/art_fireball.mdl"
+ITEM.description = "A ball of red earth."
+ITEM.longdesc = "A ball of red earth recovered within a gravitational field, little craters are formed on the surface of the artifact that make it seem like a small planet. This red rock has the peculiar ability to absorb most of all soundwaves in its immediate vicinity, which leads to all stalkers carrying this oddity without a lead container to lose their ability to speak, at least temporarily.\n\nRads -2\nThermal -1\nUnable to speak when in use"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 2300
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 4
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.40,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

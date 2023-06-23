@@ -1,0 +1,20 @@
+ITEM.name = "Starlight"
+ITEM.model = "models/srp/items/spezzy/art_vrchen.mdl"
+ITEM.description = "A crystalline rock"
+ITEM.longdesc = "A crystalline formation created from the unique circumstances of a 'tri-fold' anomalous environment. Specifically, when crystals typically formed from a heat-based anomaly are then subject to extreme electrocution from a neighboring electrical anomalous source, capping off by being bathed in psi waves, hardening and tuning the crystals to them. The end result is a magnificent specimen that is capable of defending against all three sources, however, the process by which it defends against those sources leaves the user open to chemical attack as harmful chemicals can often congregate on the Starlight with extreme ease. In addition, due to absorbing residual psi waves, this artifact amplifies pain when the user is struck.\n\nElectrical +3\nPsi +3\nThermal +3\nChemical -2\nImpact -3"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 225000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 6.0
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.30,
+	["Burn"] = 0.30,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.30,
+}

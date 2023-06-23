@@ -1,0 +1,9 @@
+ITEM.name = "Hunter's Kit"
+ITEM.model = "models/illusion/eftcontainers/docbag.mdl"
+ITEM.description = "A leather bundle containing various tools meant for the skinning and quartering of animals. It could work well for mutants too."
+ITEM.longdesc = "Inside this kit are saws, knifes, axes, whetstones of various textures to sharpen blades, and various other tools a huntsman would use to quarter an animal. In the application of the Zone, this could assist greatly in the collection of mutant parts. \n\n+15 to mutant skinning rolls"
+ITEM.category = "Tools"
+ITEM.flag = "3"
+ITEM.price = 20000
+ITEM.width = 2
+ITEM.height = 2

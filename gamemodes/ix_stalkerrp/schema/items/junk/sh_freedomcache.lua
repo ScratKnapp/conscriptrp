@@ -1,0 +1,9 @@
+ITEM.name = "Lightweight Materials (Guardian)"
+ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
+ITEM.description = "Lightweight materials used by Freedom technicians in suits. Four of these and a Beryl-5M could result in something useful."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 4000
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1

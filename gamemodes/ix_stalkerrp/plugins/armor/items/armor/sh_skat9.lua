@@ -1,0 +1,37 @@
+ITEM.name = "Stingray-9 Armored Suit"
+ITEM.model = "models/kek1ch/military_outfit.mdl"
+ITEM.replacements = "models/nasca/stalker/male_stingray9_lone.mdl"
+ITEM.description= "SKAT-9 suit." 
+ITEM.longdesc = "An excellent protective suit for the Zone. This heavy military-grade armor was designed for major assault operations in anomalous areas. It comprises a PSZ-12 heavy military armored vest, built-in compensation system, and an anomalous protection bodysuit. The armor affords great protection against bullet and fragmentation damage, without greatly reducing the wearer's mobility. This uniform is issued primarily to military stalkers and Spetsnaz operatives who use it for operations deep in the Zone.\n\nBallistic Protection:\nSkull: III+\nNeck & Face: IIIA\nTorso: IV\nLimbs: IIIA\nWeight: 3"
+ITEM.width = 2
+ITEM.height = 3
+ITEM.price = 240000
+ITEM.flag = "A"
+ITEM.br = 0.35
+ITEM.fbr = 10
+ITEM.ar = 0.28
+ITEM.far = 3
+ITEM.isGasmask = true
+ITEM.isHelmet = true
+ITEM.isArmor = true
+ITEM.repairCost = ITEM.price/100*1
+ITEM.overlayPath = "vgui/overlays/hud_merc"
+ITEM.img = Material("vgui/hud/xm40.png")
+ITEM.noBusiness = true
+ITEM.artifactcontainers = {"3"}
+ITEM.weight = 15
+ITEM.maxArmor = 30
+ITEM.res = {
+	["Bullet"] = 0.3,
+	["Blast"] = 0.3,
+	["Fall"] = 0.3,
+	["Burn"] = 0.2,
+	["Radiation"] = 0.2,
+	["Chemical"] = 0.3,
+	["Shock"] = 0.2,
+	["Psi"] = 0.2,
+}
+
+ITEM.newSkin = 0
+ITEM.bodygroup = {0}
+ITEM.bodygroupsub = {0}

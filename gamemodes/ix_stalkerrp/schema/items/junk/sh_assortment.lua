@@ -1,0 +1,9 @@
+ITEM.name = "Tactical Assortment (Nighthunter)"
+ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
+ITEM.description = "An assortment of tactical gear of various makes and models. Three of these and a Hawk could result in something useful."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 11600
+ITEM.width = 1
+ITEM.height = 1
+ITEM.weight = 1

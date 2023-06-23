@@ -1,0 +1,10 @@
+ITEM.name = "VOG-25 Grenade"
+ITEM.model = ("models/weapons/upgrades/a_projectile_gp25.mdl")
+ITEM.description = "VOG-25 Grenade, made specifically to be launched from Warsaw Grenade Launchers."
+ITEM.price = 8000
+ITEM.flag = "3"
+ITEM.category = "Ammunition"
+ITEM.ammo = "40MM"
+ITEM.ammoAmount = 1
+ITEM.isAmmo = true
+ITEM.weight = 0.21

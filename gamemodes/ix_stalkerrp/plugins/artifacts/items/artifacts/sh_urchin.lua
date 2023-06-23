@@ -1,0 +1,22 @@
+ITEM.name = "Urchin"
+ITEM.model ="models/nasca/etherealsrp_artifacts/urchin.mdl"
+ITEM.description = "Spikey and brown artifact."
+ITEM.longdesc = "Rarely forming in Burnt Fuzz anomalies, this artifact causes an increase in blood pressure along with the rapid removal of radiation contaminating the bloodstream. Scientists struggle to find a means to replicate this artifact in laboratory conditions.\n\nRads -4\nImpact -3"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 16000
+ITEM.flag = "A"
+ITEM.buff = "antirad"
+ITEM.buffval = 4
+ITEM.isArtefact = true
+ITEM.weight = 1.4
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.40,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

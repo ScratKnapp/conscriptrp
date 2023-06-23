@@ -1,0 +1,10 @@
+ITEM.name = "Freedom Lightened Materials"
+ITEM.model = "models/kek1ch/safe_container.mdl"
+ITEM.description = "A very rare upgrade for Exoskeletons created by the Freedom Faction."
+ITEM.longdesc = "A set of reduced-weight servos with more mobility, installed by Freedom into certain exoskeletons in exceptional situations such as the highest-risk raids and defenses. Includes an extra artifact container. \n\nAllows for sprinting in an Exoskeleton\nAllows better mobility in general\nReduces skeleton carry weight."
+ITEM.category = "Parts"
+ITEM.flag = "A"
+ITEM.price = 250000
+ITEM.width = 2
+ITEM.height = 2
+ITEM.weight = 8

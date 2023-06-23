@@ -1,0 +1,20 @@
+ITEM.name = "Blue"
+ITEM.model = "models/tnb/stalker/artifacts/slug.mdl"
+ITEM.description = "A pretty blue rock."
+ITEM.longdesc = "A pretty blue rock, common but valued for its beauty. Found near Electric anomalies, this absurdity is often sold, and rarely kept by stalkers due to a very peculiar effect it has on most men and on rare occasions, women, though as of right now no one has been able to pinpoint the reason behind this issue. \n\nElectrical +2p\nImpact -1\nCauses the holder excruciating, but non-lethal pain if they are taller than 5’8"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 6000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.30,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

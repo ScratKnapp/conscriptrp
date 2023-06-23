@@ -1,0 +1,34 @@
+ITEM.name = "\"Hawk\" Mercenary Suit"
+ITEM.model ="models/kek1ch/merc_outfit.mdl"
+ITEM.replacements = "models/nasca/stalker/male_hawk_lone.mdl"
+ITEM.description= "A standard mercenary suit."
+ITEM.longdesc = "One of the most common outfits used by the Zone's Mercenaries, its design originates from its users, and is based on the suit used by the special forces of Western armies. Due to careful design, the armor has strengthened stability during the physical movement of its plates. Adequate for basic operations, but quite poor in quality compared to most military equipment, this suit was quite obviously not designed with the existence of anomalies in mind.\n\nBallistic Protection:\nSkull: 0\nNeck & Face: 0\nTorso: IIIA\nLimbs: IIA\nWeight: 1"
+ITEM.width = 2
+ITEM.height = 1
+ITEM.price = 22000
+ITEM.flag = "1"
+ITEM.br = 0.2
+ITEM.fbr = 8
+ITEM.ar = 0.05
+ITEM.far = 1.5
+ITEM.isGasmask = true
+ITEM.isArmor = true
+ITEM.overlayPath = "vgui/overlays/hud_merc"
+ITEM.img = Material("vgui/hud/xm40.png")
+ITEM.artifactcontainers = {"0"}
+ITEM.weight = 5
+ITEM.maxArmor = 10
+ITEM.res = {
+	["Bullet"] = 0.1,
+	["Blast"] = 0.1,
+	["Fall"] = 0.1,
+	["Burn"] = 0.1,
+	["Radiation"] = 0.1,
+	["Chemical"] = 0,
+	["Shock"] = 0,
+	["Psi"] = 0,
+}
+
+ITEM.newSkin = 0
+ITEM.bodygroup = {0}
+ITEM.bodygroupsub = {0}

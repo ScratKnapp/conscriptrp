@@ -136,7 +136,7 @@ SWEP.SpeedDec = 40
 
 SWEP.Slot = 3
 SWEP.SlotPos = 0
-SWEP.NormalHoldType = "smg"
+SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
 SWEP.FireModes = {"semi"}
 SWEP.Base = "cw_kk_ins2_base"

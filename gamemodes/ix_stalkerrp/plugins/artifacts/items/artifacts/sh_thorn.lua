@@ -1,0 +1,22 @@
+ITEM.name = "Thorn"
+ITEM.model ="models/nasca/etherealsrp_artifacts/crystal_thorn.mdl"
+ITEM.description = "Spikey artifact, but quite small."
+ITEM.longdesc = "Draws out radiation through the use of pricking the user’s skin, no matter if armor is worn or not. When worn will cause bleeding.\n\nRads -2\nBleeding +1"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 1000
+ITEM.flag = "A"
+ITEM.buff = "antirad"
+ITEM.buffval = 2
+ITEM.isArtefact = true
+ITEM.weight = 0.3
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.20,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}

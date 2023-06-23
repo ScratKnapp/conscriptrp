@@ -1,0 +1,11 @@
+ITEM.name = "Snork's Foot"
+ITEM.model ="models/kek1ch/item_snork_leg.mdl"
+ITEM.description = "A severed snork's foot."
+ITEM.longdesc = "Snork feet and legs contain a huge number of highly elastic tendons. This explains the beast's ability to perform its characteristic long leaps at its prey. The scientists still look for potential uses of the snork's leg, and will be grateful for each specimen you bring to their base."
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 1500
+ITEM.flag = "1"
+ITEM.value = ITEM.price*1*1
+ITEM.weight = 2
+ITEM.quantity = 1

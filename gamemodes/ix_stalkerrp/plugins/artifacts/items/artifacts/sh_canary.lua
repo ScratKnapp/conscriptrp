@@ -1,0 +1,10 @@
+ITEM.name = "Canary"
+ITEM.model = "models/artefacts/cell.mdl"
+ITEM.description = "A rough metallic core encaged by seemingly brittle crystal bars."
+ITEM.longdesc = "Found within the vicinity of the Lost Highway, this exceptionally rare artifact possesses the very unique property of turning the user (and their attached equipment) nearly completely invisible, ability on par with a Bloodsucker. The significant downside, however, is that it can only be used for a maximum of a few minutes at a time, as the user will begin immediately bleeding from their ears, eyes, nose, mouth, and other orifices at an alarming rate. It resembles a bird within a cage, hence the name given to it.\n\nInvisibility\nBleeding -4"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 100000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 0.5

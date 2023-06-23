@@ -1,0 +1,20 @@
+ITEM.name = "Beard"
+ITEM.model = "models/artefacts/moss.mdl"
+ITEM.description = "A small bundle of moss."
+ITEM.longdesc = "An off-colored bundle of moss harvested from the end of old, hanging Burnt Fuzz anomalies. Does not react in any sort of volatile manner unlike the anomaly it grows out of. \n\nChemical +2\nImpact -1"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 8800
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.20,
+	["Psi"] = 0.00,
+}

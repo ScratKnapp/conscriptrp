@@ -1,0 +1,31 @@
+ITEM.name = "Gas Mask"
+ITEM.description = "An average gasmask."
+ITEM.longdesc = "A regular plastic and rubber gas mask, used for filtering air for radioactive particles and poisonous substances. It is widely used by rookies and veterans of all factions due to its universal functionality."
+ITEM.model = "models/kek1ch/helm_respirator.mdl"
+ITEM.price = 2000
+ITEM.flag = "1"
+ITEM.width = 1
+ITEM.height = 2
+ITEM.br = 0
+ITEM.fbr = 0
+ITEM.ar = 0.15
+ITEM.far = 1
+ITEM.radProt = 0.15
+ITEM.isGasmask = true
+ITEM.isHelmet = nil
+ITEM.overlayPath = "vgui/overlays/hud_gas"
+ITEM.ballisticlevels = {"0"}
+ITEM.ballisticrpglevels = {["head"] = "0"}
+ITEM.anomalousrpglevels = {"2","2","5","5","5"}
+ITEM.img = Material("vgui/hud/eo20.png")
+ITEM.weight = 0.5
+ITEM.res = {
+	["Fall"] = 0.02,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.05,
+	["Burn"] = 0.02,
+	["Radiation"] = 0.05,
+	["Chemical"] = 0.05,
+	["Psi"] = 0.00,
+}

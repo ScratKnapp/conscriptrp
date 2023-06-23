@@ -137,7 +137,7 @@ SWEP.SpeedDec = 40
 
 SWEP.Slot = 3
 SWEP.SlotPos = 0
-SWEP.NormalHoldType = "smg"
+SWEP.NormalHoldType = "ar2"
 SWEP.RunHoldType = "passive"
 SWEP.FireModes = {"bolt"}
 SWEP.Base = "cw_kk_ins2_base"
@@ -166,7 +166,7 @@ SWEP.AdminSpawnable		= CustomizableWeaponry_KK.ins2.isContentMounted4(SWEP)
 SWEP.Primary.ClipSize		= 4
 SWEP.Primary.DefaultClip	= 4
 SWEP.Primary.Automatic		= false
-SWEP.Primary.Ammo			= "12 Gauge"
+SWEP.Primary.Ammo			= "20 Gauge"
 
 SWEP.FireDelay = 0.3
 SWEP.FireSound = "CW_KK_INS2_M590_FIRE"

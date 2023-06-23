@@ -1,0 +1,20 @@
+ITEM.name = "Baptism"
+ITEM.model = "models/tnb/stalker/artifacts/stoneflower.mdl"
+ITEM.description = "A sub-type of an Absolve artifact."
+ITEM.longdesc = "A variety of the Absolve found in a waterlogged environment heated by thermal vents. In addition to the cleansing power of the Absolve, any liquid cleansed is kept at a warm 80 degrees fahrenheit. While on the user in use, the person constantly, and profusely, sweats. This provides an ample layer of sweat to help resist against direct heat, but makes the user a prime conductor for any electrical current.\n\nThermal +4\nElectrical -2\nRads +3"
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 12000
+ITEM.flag = "A"
+ITEM.isArtefact = true
+ITEM.weight = 1
+ITEM.res = {
+	["Fall"] = 0.00,
+	["Blast"] = 0.00,
+	["Bullet"] = 0.00,
+	["Shock"] = 0.00,
+	["Burn"] = 0.00,
+	["Radiation"] = 0.00,
+	["Chemical"] = 0.00,
+	["Psi"] = 0.00,
+}
