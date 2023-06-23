@@ -40,8 +40,7 @@ if(SERVER) then
 		local itemInfo = {}
 		itemInfo.id = item.id
 		itemInfo.name = item:GetName() or item.name
-		itemInfo.description = customData.desc or item.description
-		itemInfo.longdesc = customData.longdesc or item.longdesc or ""
+		itemInfo.description = item.description
 		--itemInfo.color = customData.color or item.color or ix.config.Get("color") or Color(255, 255, 255)
 		itemInfo.model = customData.model or item.model
 		itemInfo.material = customData.material or item.material
@@ -59,14 +58,6 @@ if(SERVER) then
 			itemInfo.armor = true
 			
 			itemInfo.dura = item:GetData("durability", 100)
-			itemInfo.impact = customData.impact or item.res["Impact"]
-			itemInfo.shock = customData.shock or item.res["Shock"]
-			itemInfo.burn = customData.burn or item.res["Fire"]
-			itemInfo.chemical = customData.chemical or item.res["Toxic"]
-
-
-
-
 		end
 
 		if(item.quantity or item.maxStack or item.ammoAmount) then
@@ -166,17 +157,11 @@ else
 		--current values of item
 		local name = item.name
 		local desc = item.description
-		local longdesc = item.longdesc
 		--local color = item.color
 		local model = item.model
 		local material = item.material or ""
 		local quality = item.quality or "None"
 		local img = item.img
-		local impact = item.impact
-		local shock = item.shock
-		local burn = item.burn
-		local toxic = item.toxic
-		
 		
 		local dura = item.dura
 		local quantity = (item.maxStack or item.ammoAmount or item.quantity)
@@ -185,7 +170,6 @@ else
 		local acc = item.wepAcc
 		local rec = item.wepRec
 		local mag = item.wepMag
-		
 
 		local frame = vgui.Create("DFrame")
 		frame:SetSize(450, 600)
@@ -214,16 +198,6 @@ else
 		local descC = vgui.Create("DTextEntry", scroll)
 		descC:SetText(desc or "")
 		descC:Dock(TOP)
-
-		-- Long description customization
-
-		local longdescL = vgui.Create("DLabel", scroll)
-		longdescL:SetText("Long Description:")
-		longdescL:Dock(TOP)
-
-		local longdescC = vgui.Create("DTextEntry", scroll)
-		longdescC:SetText(longdesc or "")
-		longdescC:Dock(TOP)
 
 		--model customization
 		local modelL = vgui.Create("DLabel", scroll)
@@ -377,57 +351,6 @@ else
 			duraC = vgui.Create("DTextEntry", scroll)
 			duraC:SetText(dura or 100)
 			duraC:Dock(TOP)
-
-
-			-- Seperator for Anomaly Protection
-			local aSep = vgui.Create("DLabel", scroll)
-			aSep:SetText("Anomaly Protections")
-			aSep:Dock(TOP)		
-			
-
-			-- Impact
-
-			local impactL = vgui.Create("DLabel", scroll)
-			impactL:SetText( " Impact")
-			impactL:Dock(TOP)
-
-			impactC = vgui.Create("DTextEntry", scroll)
-			impactC:SetText(impact or 0)
-			impactC:Dock(TOP)
-
-
-			-- Electrical
-
-			local shockL = vgui.Create("DLabel", scroll)
-			shockL:SetText(" Shock")
-			shockL:Dock(TOP)
-
-			shockC = vgui.Create("DTextEntry", scroll)
-			shockC:SetText(shock or 0)
-			shockC:Dock(TOP)
-
-			-- Fire
-
-
-			local burnL = vgui.Create("DLabel", scroll)
-			burnL:SetText( " Fire")
-			burnL:Dock(TOP)
-
-			burnC = vgui.Create("DTextEntry", scroll)
-			burnC:SetText(burn or 0)
-			burnC:Dock(TOP)
-
-		
-			-- Toxic
-
-			local chemicalL = vgui.Create("DLabel", scroll)
-			chemicalL:SetText(" Toxic")
-			chemicalL:Dock(TOP)
-
-			chemicalC = vgui.Create("DTextEntry", scroll)
-			chemicalC:SetText(toxic or 0)
-			chemicalC:Dock(TOP)
-
 		end
 
 		local quantityC
@@ -451,10 +374,9 @@ else
 			local customData = {}
 			customData[1] = item.id
 			customData[2] = {}
-			customData[2].longdesc = longdescC:GetValue()
+
 			customData[2].name = nameC:GetValue()
 			customData[2].desc = descC:GetValue()
-			
 			
 			--customData[2].color = colorC:GetColor()
 			
@@ -471,13 +393,6 @@ else
 			if item.weapon or item.armor then
 				customData[2].dura = tonumber(duraC:GetValue())
 			end
-
-			if item.armor then	
-				customData[2].impact = impactC:GetValue()
-				customData[2].shock = shockC:GetValue()
-				customData[2].burn = burnC:GetValue()
-				customData[2].chemical = chemicalC:GetValue()
-			end 
 			
 			if(item.weapon and wepC:GetChecked()) then
 				--customData[2].quality = qualityC:GetValue()

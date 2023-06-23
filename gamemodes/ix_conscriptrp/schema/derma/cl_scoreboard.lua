@@ -154,6 +154,12 @@ function PANEL:Init()
 	self.name:SetTextColor(color_white)
 	self.name:SetFont("ixGenericFont")
 
+	self.rep = self:Add("DLabel")
+	self.rep:DockMargin(5, 0, 0, 0)
+	self.rep:Dock(TOP)
+	self.rep:SetTextColor(Color(138, 43, 226))
+	self.rep:SetFont("ixSmallFont")
+
 	self.description = self:Add("DLabel")
 	self.description:DockMargin(5, 0, 0, 0)
 	self.description:Dock(TOP)
@@ -169,6 +175,7 @@ function PANEL:Update()
 	local model = client:GetModel()
 	local skin = client:GetSkin()
 	local name = client:GetName()
+	local rep = client:getCurrentRankName()
 	local description = hook.Run("GetCharacterDescription", client) or
 		(client:GetCharacter() and client:GetCharacter():GetDescription()) or ""
 
@@ -199,6 +206,10 @@ function PANEL:Update()
 		self.name:SizeToContents()
 	end
 
+	if (self.rep:GetText() != rep) then
+		self.rep:SetText(rep)
+		self.rep:SizeToContents()
+	end
 
 	if (self.description:GetText() != description) then
 		self.description:SetText(description)

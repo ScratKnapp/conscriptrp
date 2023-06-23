@@ -57,7 +57,7 @@ function PLUGIN:WeaponFired(entity)
 				if string.EndsWith(wep.Primary.Ammo, " -ZL-") then
 					newdura = (dura - math.Round(item.modifier))
 				else
-					newdura = (dura - math.Round(item.modifier*4))
+					newdura = (dura - math.Round(item.modifier/2))
 				end
 				item:SetData("durability", newdura)
 			end

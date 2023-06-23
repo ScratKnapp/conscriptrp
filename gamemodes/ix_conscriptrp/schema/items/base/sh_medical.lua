@@ -1,8 +1,8 @@
 ITEM.name = "Medical"
 ITEM.width = 1
 ITEM.height = 1
-ITEM.desc = "Medical supply."
-ITEM.longdesc = " "
+ITEM.desc = "Helps your body survive in the zone - in one way or another."
+ITEM.longdesc = "Longer description here."
 ITEM.stopsBleed = false
 ITEM.quantity = 1
 
@@ -65,10 +65,6 @@ function ITEM:GetDescription()
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
 		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.."\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then

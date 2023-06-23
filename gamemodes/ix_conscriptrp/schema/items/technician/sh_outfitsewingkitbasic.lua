@@ -1,14 +1,14 @@
-ITEM.name = "Outfit Patching Kit"
-ITEM.model = "models/warz/items/sandbag_unbuilt.mdl"
-ITEM.description = "A set of sewing needles, thread, and replacement fabric pouches."
-ITEM.longdesc = "With some patches, thread, and needles one can touch up a suit that's suffered some basic damage from tears or the elements."
+ITEM.name = "Outfit Sewing Kit"
+ITEM.model = "models/kek1ch/sewing_kit_a.mdl"
+ITEM.description = "Common tools and materials for taking care of damaged outfits."
+ITEM.longdesc = "A light sewing kit consisting of a cloth reel, several steel needles and a pair of scissors. It can be used to sew up bullet holes or ruptures in soft fabrics of outfits. Its practical applications are limited due to the short length of the thread and subpar durability of needles, so the kit will be useless in case of more serious damage. For the same reason, it's compatible with only a handful of materials. Nonetheless, it is strongly advised to always use whatever is available to make the kit more effective."
 ITEM.flag = "3"
 ITEM.category = "Technician"
 ITEM.price = 15000
 ITEM.repairAmount = 5
 ITEM.repairTreshhold = 80
 ITEM.maxStack = 3
-ITEM.sound = "physics/body/body_medium_impact_soft6.wav"
+ITEM.sound = "stalkersound/inv_repair_sewing_kit_fast.mp3"
 ITEM.weight = 0.2
  
 ITEM.functions.use = {

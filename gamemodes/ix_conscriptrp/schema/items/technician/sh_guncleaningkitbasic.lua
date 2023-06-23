@@ -1,13 +1,13 @@
-ITEM.name = "Gun Oil"
-ITEM.model = "models/teebeutel/metro/objects/bottle02.mdl"
-ITEM.description = "A bottle of gun lubricants and oil."
-ITEM.longdesc = "When your gun isn't up to standard, a combination of cleaning oils and lubricants can clean off some surface level dirt and reduce friction between parts."
+ITEM.name = "Gun Cleaning Kit"
+ITEM.model = "models/kek1ch/cleaning_kit_p.mdl"
+ITEM.description = "Common tools and materials for taking care of weaponry."
+ITEM.longdesc = "Advanced gun cleaning kit fitting all common weapon calibers. Besides cleaning and maintenance, it can also be used as an effective repair tool. The set comprises a small portion of efficient lubricant and cleaning solvent as well as some light tools to facilitate access to inner mechanisms of a firearm. In order to maximize effectiveness, combine with additional materials or specialized repair sets."
+ITEM.flag = "7"
 ITEM.category = "Technician"
 ITEM.repairAmount = 500
 ITEM.repairTreshhold = 8000
 ITEM.maxStack = 3
-ITEM.flag = "A"
-ITEM.sound = "ambient/water/drip2.wav"
+ITEM.sound = "stalkersound/inv_repair_kit_use_fast_2p8.mp3"
 ITEM.weight = 0.5
 ITEM.price = 15000
 

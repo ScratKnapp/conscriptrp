@@ -1,5 +1,5 @@
 ITEM.name = "PG-7VM Grenade"
-ITEM.model = "models/dean/gtaiv/weapons/rocket.mdl"
+ITEM.model = "models/kek1ch/ammo_og_7b.mdl"
 ITEM.ammo = "PG-7VM Grenade" // type of the ammo
 ITEM.ammoAmount = 1 // amount of the ammo
 ITEM.description= "Ammo for an RPG-7"

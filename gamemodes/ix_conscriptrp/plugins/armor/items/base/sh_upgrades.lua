@@ -12,13 +12,18 @@ ITEM.quantity = 1
 ITEM.flag = "2"
 ITEM.isAttachment = true
 
-
 -- Slot Numbers Defined
 
--- Armor Vest: 1
--- Mask: 2
--- Helmet: 3
--- Misc: 4
+-- Under Armor: 1
+-- Armor: 2
+-- NVGs: 3
+-- Helmet Upgrades: 4
+-- Anom Upgrades 1: 5
+-- Anom Upgrades 2: 6
+-- Anom Upgrades 3: 7
+-- Respirator Upgrades: 8
+-- Side Armor: 9
+-- Anom Upgrades 4: 10
 
 local function attachment(item, data, combine)
     local client = item.player
@@ -40,7 +45,12 @@ local function attachment(item, data, combine)
         client:NotifyLocalized("noArmorTarget")
         return false
     else
-             
+        
+        if target:GetData("durability", 100) < 100 then
+            client:NotifyLocalized("Must Repair Armor")
+            return false
+        end
+        
         local mods = target:GetData("mod", {})
         -- Is the Armor Slot Filled?
         if (mods[item.slot]) then
@@ -117,11 +127,6 @@ ITEM.functions.Upgrade = {
                             data = {v:GetID()},
                         })
                     elseif v.isGasmask and item.isGasmaskUpg then
-						table.insert(targets, {
-                            name = L(v.name),
-                            data = {v:GetID()},
-                        })
-                    elseif v.isMisc and item.isMiscUpg then
 						table.insert(targets, {
                             name = L(v.name),
                             data = {v:GetID()},

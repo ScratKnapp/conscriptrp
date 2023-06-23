@@ -1,10 +1,10 @@
+
 if (SERVER) then
 	util.AddNetworkString("ixBagDrop")
 end
 
 ITEM.name = "Bag"
 ITEM.description = "A bag to hold items."
-ITEM.longdesc = ""
 ITEM.model = "models/props_c17/suitcase001a.mdl"
 ITEM.category = "Storage"
 ITEM.width = 2
@@ -179,13 +179,8 @@ function ITEM:GetDescription()
 	end
 
 	local customData = self:GetData("custom", {})
-	
 	if(customData.desc) then
 		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.."\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then

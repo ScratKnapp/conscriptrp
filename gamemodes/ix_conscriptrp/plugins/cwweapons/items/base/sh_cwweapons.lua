@@ -204,7 +204,7 @@ if (CLIENT) then
 end
 
 function ITEM:GetDescription()
-	local str = self.description.." \n\n"..self.longdesc or ""
+	local str = self.description.." \n\n"..self.longdesc
 	local dmg = self.Dmg
 	local range = self.Range
 	local cal
@@ -214,10 +214,6 @@ function ITEM:GetDescription()
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
 		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.. "\n\n" ..customData.longdesc 
 	end
 	
 	if atts then
@@ -763,7 +759,7 @@ ITEM.functions.RemoveUpgrade = {
 			return false
 		end
 		
-		if item.player:GetChar():HasFlags("7") then
+		if item.player:GetChar():HasFlags("2") then
 			return (!IsValid(item.entity))
 		end
 		
@@ -906,7 +902,7 @@ local function ammoswap(item, data)
                         end
 					elseif ammotype == "Normal" then
 						if (wepon) then
-							if name == "am_magnum" or name == "am_penetrator" or name == "am_matchgrade" or name == "am_slugrounds" or name == "am_flechetterounds" or name == "am_birdshot" or name == "am_zoneloaded" or name == "am_armorpiercing" then
+							if name == "am_magnum" or name == "am_matchgrade" or name == "am_slugrounds" or name == "am_flechetterounds" or name == "am_birdshot" or name == "am_zoneloaded" or name == "am_armorpiercing" then
 								client:GiveAmmo(wepon:Clip1(), wepon:GetPrimaryAmmoType(), true)
 								wepon:SetClip1(0)
 								wepon:detach(atcat, k, false)
@@ -955,9 +951,9 @@ ITEM.functions.SwapAmmo = {
     if (atts) then
         for atcat, data in pairs(atts) do
             for k, name in pairs(data.atts) do
-				if name == "am_penetrator" then
-                    ammoname = "Penetrator"
-                    table.insert(targets,{
+                if name == "am_matchgrade" then
+                    ammoname = "Match Grade"
+                    table.insert(targets, {
                         name = ammoname,
                         data = {name},
                     })
@@ -967,7 +963,12 @@ ITEM.functions.SwapAmmo = {
                         name = ammoname,
                         data = {name},
                     })
-              
+                elseif name == "am_flechetterounds" then
+                    ammoname = "Flechette"
+                    table.insert(targets,{
+                        name = ammoname,
+                        data = {name},
+                    })
 				elseif name == "am_birdshot" then
 					ammoname = "Birdshot"
 					table.insert(targets,{

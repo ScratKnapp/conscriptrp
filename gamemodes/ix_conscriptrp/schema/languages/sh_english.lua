@@ -4,8 +4,8 @@ NAME = "English"
 LANGUAGE = {
 	helix = "Helix",
 
-	introTextOne = "A bunch of idiots present",
-	introTextTwo = "a Half life 2 Gamemode cobbled together by Scrat",
+	introTextOne = "infinity networks presents",
+	introTextTwo = "a STALKER Gamemode created by verne",
 	introContinue = "press space to continue",
 
 	helpIdle = "Select a category",
@@ -246,7 +246,7 @@ LANGUAGE = {
 	vmSet = "You have set your voicemail.",
 	vmRem = "You have removed your voicemail.",
 	noPerm = "You are not allowed to do this!",
-	youreDead = "Dead",
+	youreDead = "Lost to the Zone",
 	injMajor = "Seems critically injured",
 	injLittle = "Seems injured",
 	chgName = "Change Name",

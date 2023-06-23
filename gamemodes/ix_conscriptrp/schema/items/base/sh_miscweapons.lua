@@ -1,6 +1,5 @@
 ITEM.name = "Weapon"
 ITEM.description = "A Weapon."
-ITEM.longdesc = ""
 ITEM.category = "Weapons"
 ITEM.model = "models/weapons/w_pistol.mdl"
 ITEM.class = "weapon_pistol"
@@ -86,10 +85,6 @@ function ITEM:GetDescription()
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
 		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.."\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then

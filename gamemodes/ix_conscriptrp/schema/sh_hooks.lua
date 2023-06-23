@@ -7,7 +7,7 @@ function Schema:CanDrive(client, entity)
 end
 
 function Schema:CanPlayerUseBusiness(client, uniqueID)
-	if !client:GetCharacter():HasFlags("1") and !client:GetCharacter():HasFlags("6") and !client:GetCharacter():HasFlags("5") and !client:GetCharacter():HasFlags("7") then
+	if !client:GetCharacter():HasFlags("1") and !client:GetCharacter():HasFlags("6") and !client:GetCharacter():HasFlags("5") then
     	return false
     end
 end
@@ -285,7 +285,7 @@ do
 				amount = math.Clamp(math.Round(amount),1,500000000)
 				hook.Run("DroppedMoney",client, amount)
 				client:GetCharacter():TakeMoney(amount)
-				ix.item.Spawn("stacktokens", client:GetItemDropPos(), nil, AngleRand(), {["quantity"] = amount})
+				ix.item.Spawn("bagrubles", client:GetItemDropPos(), nil, AngleRand(), {["quantity"] = amount})
 			end
 		})
 	end)

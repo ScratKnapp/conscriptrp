@@ -1,5 +1,5 @@
 ITEM.name = ".357 Magnum"
-ITEM.model = "models/Items/357ammobox.mdl"
+ITEM.model = "models/ethprops/ammo/357.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.ammo = ".357" // type of the ammo

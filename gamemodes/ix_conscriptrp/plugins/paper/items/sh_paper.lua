@@ -1,5 +1,5 @@
 ITEM.name = "Paper"
-ITEM.model = "models/props_c17/paper01.mdl"
+ITEM.model = "models/kek1ch/notes_letter_1.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.description = "A paper which one you can write on."

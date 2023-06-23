@@ -88,7 +88,7 @@ end
 -- unless you set the font/colors manually.
 -- @realm client
 function PANEL:SetImportant()
-	--self:SetFont("stalkerregulartitlefont")
+	self:SetFont("stalkerregulartitlefont")
 	self:SetExpensiveShadow(1, color_black)
 	self:SetBackgroundColor(ix.config.Get("color"))
 end
@@ -452,7 +452,7 @@ function PANEL:Init()
 end
 
 function PANEL:SetImportant()
-	--self:SetFont("stalkerregulartitlefont")
+	self:SetFont("stalkerregulartitlefont")
 	self:SetBackgroundColor(ix.config.Get("color"))
 end
 

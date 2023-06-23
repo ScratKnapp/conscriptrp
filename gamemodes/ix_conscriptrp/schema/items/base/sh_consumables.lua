@@ -1,6 +1,5 @@
 ITEM.name = "Consumable"
 ITEM.description = "Something to eat"
-ITEM.longdesc = ""
 ITEM.model = "models/kleiner.mdl"
 ITEM.width = 1
 ITEM.height = 1
@@ -14,16 +13,12 @@ function ITEM:GetDescription()
 	local quant = self:GetData("quantity", 1)
 	local str = self.description
 	if self.longdesc then
-		str = str.."\n\n"..(self.longdesc or "")
+		str = str.."\n"..(self.longdesc or "")
 	end
 
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
 		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.."\n\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then
@@ -284,14 +279,6 @@ function ITEM:DecideFunction()
 						local newhealth = math.Clamp(player:Health() + itemtable.heal, 1, 100)
 						player:SetHealth(newhealth)
 					end)
-				end
-
-
-		
-				if (istable(self.attribBoosts)) then
-					for k, v in pairs(self.attribBoosts) do
-						player.GetCharacter():AddBoost(self.uniqueID, k, v)
-					end
 				end
 
 				quantity = quantity - 1

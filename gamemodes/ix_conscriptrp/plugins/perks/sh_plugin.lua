@@ -3,101 +3,47 @@ PLUGIN.name = "Perks"
 PLUGIN.author = "Verne"
 PLUGIN.desc = "Perks that can be added to a character.."
 
-ix.command.Add("CharAddTrait", {
-	description = "Assign a trait to a character.",
+ix.command.Add("CharSetPerk", {
+	description = "@cmdCharSetPerk",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string,
+		ix.type.number
 	},
-	OnRun = function(self, client, target, perkName)
-
+	OnRun = function(self, client, target, perkName, level)
 		for k, v in pairs(ix.perks.list) do
 			if (ix.util.StringMatches(L(v.name, client), perkName) or ix.util.StringMatches(k, perkName)) then
-				target:SetPrk(k, 1)
-				return "Added trait " ..perkName.. " to " .. target:GetName()
+				target:SetPrk(k, math.abs(level))
+				return "@attributeSet", target:GetName(), L(v.name, client), math.abs(level)
 			end
 		end
 
-		return "Trait not found!"
+		return "Perk not found!"
 	end
 })
 
-ix.command.Add("CharRemoveTrait", {
-	description = "Remove a trait from a character.",
+ix.command.Add("CharAddPerk", {
+	description = "@cmdCharAddPerk",
 	privilege = "Manage Character Attributes",
 	adminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string,
+		ix.type.number
 	},
-	OnRun = function(self, client, target, perkName)
+	OnRun = function(self, client, target, perkName, level)
 		for k, v in pairs(ix.perks.list) do
 			if (ix.util.StringMatches(L(v.name, client), perkName) or ix.util.StringMatches(k, perkName)) then
-				target:SetPrk(k, 0)
-				return "Removed trait " ..perkName.. " from " .. target:GetName()
+				target:UpdatePrk(k, math.abs(level))
+				return "Perk Updated", target:GetName(), L(v.name, client), math.abs(level)
 			end
 		end
 
-		return "Trait not found!"
+		return "Perk not found!"
 	end
 })
-
-
-
-ix.command.Add("CharShowTraits", {
-	description = "List the perks the given character currently has.",
-	privilege = "Manage Character Attributes",
-	adminOnly = true,
-	arguments = {
-		ix.type.character
-	},
-
-	OnRun = function(self, client, target)
-	
-		local str = ""
-		str = str.. target:GetName().. " has the following traits:"
-		local perklist = {}
-		for k, v in pairs(ix.perks.list) do
-			perklist[k] = target:GetPerk(k, 0)
-		end
-
-		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
-
-			if perklist[k] >= 1 then
-				str = str.. "\n" ..v.name
-				str = str.. "\n" ..v.effect
-				str = str.. "\n=====\n" 
-			end 
-		end	
-		return str
-	end 
-	})
-
-ix.command.Add("MyTraits", {
-	description = "View your traits.",
-adminOnly = false,
-	OnRun = function(self, client)
-		local str = "Your current traits are:"
-		local perklist = {}
-		for k, v in pairs(ix.perks.list) do
-			perklist[k] = client:GetCharacter():GetPerk(k, 0)
-		end
-
-		for k, v in SortedPairsByMemberValue(ix.perks.list, "name") do
-
-			if perklist[k] >= 1 then
-				str = str.. "\n" ..v.name
-				str = str.. "\n" ..v.description
-				str = str.. "\n" ..v.effect
-				str = str.. "\n=====" 
-			end 
-		end	
-		return str
-	end
-})
-
 
 function PLUGIN:PostPlayerLoadout(client)
 	ix.perks.Setup(client)

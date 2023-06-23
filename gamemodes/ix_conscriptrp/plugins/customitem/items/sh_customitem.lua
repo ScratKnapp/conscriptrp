@@ -1,68 +1,21 @@
 
 ITEM.name = "Generic Item"
 ITEM.description = "Generic Description"
-ITEM.model = "models/maxofs2d/hover_rings.mdl"
-ITEM.longdesc = ""
-
-
-ITEM.functions.Custom = {
-	name = "Customize",
-	tip = "Customize this item",
-	icon = "icon16/wrench.png",
-	OnRun = function(item)		
-		ix.plugin.list["customization"]:startCustom(item.player, item)
-		
-		return false
-	end,
-	
-	OnCanRun = function(item)
-		local client = item.player
-		return client:GetCharacter():HasFlags("N") and !IsValid(item.entity)
-	end
-}
-
+ITEM.model = Model("models/maxofs2d/hover_rings.mdl")
+ITEM.longdesc = "Long Generic Description"
 
 function ITEM:GetName()
-	local str = self:GetData("name", "Generic Name")
-	
-	local customData = self:GetData("custom", {})
-	if(customData.name) then
-		str = customData.name
-	end
-
-	return (str)
+	return self:GetData("name", "Custom Item")
 end
 
 function ITEM:GetDescription()
-	local str = self:GetData("description", "Custom Description")
-	if self.longdesc then
-		str = str.."\n"..(self.longdesc or "")
-	end
-
-	local customData = self:GetData("custom", {})
-	if(customData.desc) then
-		str = customData.desc
-	end
-
-	if (customData.longdesc) then
-		str = str.."\n"..customData.longdesc or ""
-	end
-
-	if (self.entity) then
-		return (self.description)
-	else
-        return (str)
-	end
+	return self:GetData("description", "Custom item description.")
 end
 
+function ITEM:GetLongDescription()
+	return self:GetData("longdesc", "Custom item long description.")
+end
 
 function ITEM:GetModel()
-	local str = self:GetData("model", "models/Gibs/HGIBS.mdl")
-
-	local customData = self:GetData("custom", {})
-	if(customData.model) then
-		str = customData.model
-	end
-
-	return (str)
+	return self:GetData("model", "models/Gibs/HGIBS.mdl")
 end

@@ -1,12 +1,12 @@
 ITEM.name = "Crowbar"
-ITEM.description = "A one handed crowbar for prying open objects or people."
+ITEM.description = "A crowbar for prying open objects."
 ITEM.model = "models/weapons/tfa_nmrih/w_me_crowbar.mdl"
 ITEM.class = "tfa_nmrih_crowbar"
 ITEM.weaponCategory = "melee"
-ITEM.price = 1500
+ITEM.price = 1000
 ITEM.flag = "1"
-ITEM.height = 3
-ITEM.width = 1
+ITEM.height = 1
+ITEM.width = 3
 ITEM.category = "Tools"
 ITEM.canAttach = false
 ITEM.repairCost = ITEM.price/100*1
