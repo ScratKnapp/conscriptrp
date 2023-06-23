@@ -1,0 +1,1 @@
+CustomizableWeaponry:addFireSound("CW_L96_FIRE", "weapons/cw_l96/fire.wav", 1, 140, CHAN_STATIC)

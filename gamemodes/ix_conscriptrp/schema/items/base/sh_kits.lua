@@ -1,8 +1,11 @@
 ITEM.name = "Kit"
 ITEM.description= "Default kit."
+ITEM.longdesc = ""
 ITEM.model = "models/props_junk/garbage_bag001a.mdl"
 ITEM.width = 1
 ITEM.height = 1
+ITEM.flag = "A"
+ITEM.price = 0
 ITEM.category = "Kits"
 ITEM.itemsForcedDrop = {}
 ITEM.items = {}
@@ -39,6 +42,10 @@ function ITEM:GetDescription()
 	local customData = self:GetData("custom", {})
 	if(customData.desc) then
 		str = customData.desc
+	end
+
+	if (customData.longdesc) then
+		str = str.."\n"..customData.longdesc or ""
 	end
 
 	if (self.entity) then

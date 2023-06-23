@@ -1,9 +1,0 @@
-ITEM.name = "PSZ12 Remains (Jupiter)"
-ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
-ITEM.description = "Remains of a PSZ-12 vest. Five of these and a SEVA suit could result in something useful."
-ITEM.category = "Parts"
-ITEM.flag = "A"
-ITEM.price = 30000
-ITEM.width = 1
-ITEM.height = 1
-ITEM.weight = 1

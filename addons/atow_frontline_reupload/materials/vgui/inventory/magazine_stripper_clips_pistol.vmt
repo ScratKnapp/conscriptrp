@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "vgui/inventory/magazine_stripper_clips_pistol"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
+

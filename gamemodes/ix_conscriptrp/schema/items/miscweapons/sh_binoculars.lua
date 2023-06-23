@@ -1,7 +1,7 @@
 ITEM.name = "Military Binoculars"
 ITEM.description = "Standard Ukrainian-issue military binoculars with maximum magnification of x7.5. Useful in the Zone in that they allow its owner to observe things from a distance. Very durable."
-ITEM.model = "models/weapons/w_binos.mdl"
-ITEM.class = "m9k_ww2artillery"
+ITEM.model = "models/warz/items/binocs.mdl"
+ITEM.class = "weapon_bp_binoculars"
 ITEM.weaponCategory = "binoculars"
 ITEM.price = 2000
 ITEM.flag = "1"

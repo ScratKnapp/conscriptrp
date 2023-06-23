@@ -3,11 +3,13 @@ ITEM.description = "Nice desc"
 ITEM.width = 2
 ITEM.height = 2
 ITEM.isArmor = true
+ITEM.isMisc = true
 ITEM.price = 1
 ITEM.model = "models/props_c17/BriefCase001a.mdl"
 ITEM.playermodel = nil
 ITEM.isBodyArmor = true
 ITEM.resistance = true
+ITEM.longdesc = "No longer description available."
 ITEM.category = "Armor"
 ITEM.res = {
 	["Fall"] = 0,
@@ -26,7 +28,6 @@ ITEM.br = 0
 ITEM.fbr = 0
 ITEM.ar = 0
 ITEM.far = 0
-ITEM.radProt = 0
 ITEM.equipIcon = Material("materials/vgui/ui/stalker/misc/equip.png")
 ITEM.skincustom = {}
 ITEM.outfitCategory = "model"
@@ -77,11 +78,6 @@ end,
 	end,
 	OnRun = function(item, data)
 		local client = item.player
-		
-	    if item:GetData("durability", 100) < 100 then
-            client:NotifyLocalized("Must Repair Armor")
-            return false
-        end
 		
 		if (data) then
 			local char = client:GetChar()
@@ -679,11 +675,21 @@ ITEM.functions.Value = {
 
 function ITEM:GetDescription()
 	local quant = self:GetData("quantity", 1)
-	local str = self.description.."\n"..self.longdesc
+	local str = self.description.."\n\n"..self.longdesc or ""
 	local cc = false
 	local bodyap = 0
 	local limbap = 0
 	local headap = 0
+
+
+
+	if self.isBodyArmor then
+		str = str.. "\n\nAccepts replacement armor vests\n" 
+	else 
+		str = str.. "\n\nDoes not accept replacement armor vests\n"
+	end
+
+	
 	
 	if self.ballisticrpglevels then
 		bodyap = tonumber(self.ballisticrpglevels["body"]) or 0
@@ -695,26 +701,41 @@ function ITEM:GetDescription()
 	if(customData.desc) then
 		str = customData.desc
 	end
+
+	if (customData.longdesc) then
+		str = str.. "\n\n" ..customData.longdesc 
+	end
 	
 	if self.res then
 		
 		
 		local mods = self:GetData("mod")
 		local resistances = {
-			["Fall"] = 0,
+			["Impact"] = 0,
 			["Shock"] = 0,
-			["Burn"] = 0,
-			["Radiation"] = 0,
-			["Chemical"] = 0,
-			["Psi"] = 0,
+			["Fire"] = 0,
+			["Toxic"] = 0,
 		}
 		
+
+
 		for k,v in pairs(self.res) do
 			if resistances[k] then
 				resistances[k] = resistances[k] + v
 			end
 		end
+
+	
+		if(customData.impact) then
+			resistances["Impact"] = customData.impact
+			resistances["Shock"] = customData.shock
+			resistances["Fire"] = customData.burn
+			resistances["Toxic"] = customData.chemical
+		end
+	
 		
+
+
 		if mods then
 			for x,y in pairs(mods) do
 				local moditem = ix.item.Get(y[1])
@@ -767,12 +788,11 @@ function ITEM:GetDescription()
 		
 		str = str.."\n\nResistances:"
 		
+
 		for k,v in pairs(resistances) do
-			if k == "Fall" then
-				str = str.."\n".."Impact"..": "..(v*100).."%"
-			else
-				str = str.."\n"..k..": "..(v*100).."%"
-			end
+
+			str = str.."\n"..k..": T"..v
+		
 		end
 	end
 	
@@ -790,6 +810,16 @@ function ITEM:GetDescription()
 			if headap > 0 then
 				str = str.."\nHead: "..headap
 			end
+		end
+	end
+
+	local mods = self:GetData("mod", {})
+
+	if mods then
+		str = str .. "\n\nModifications:"
+		for _,v in pairs(mods) do
+			local moditem = ix.item.Get(v[1])
+			str = str .. "\n" .. moditem.name
 		end
 	end
 

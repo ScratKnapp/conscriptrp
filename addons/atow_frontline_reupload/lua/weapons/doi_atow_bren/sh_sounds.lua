@@ -1,0 +1,13 @@
+CustomizableWeaponry:addFireSound("DOIBREN_FIRE", "weapons/doipack/bren/bren_fp.wav", 1, 105, CHAN_STATIC)
+
+CustomizableWeaponry:addReloadSound("DOIBREN_BOLTBACK", "weapons/doipack/bren/handling/bren_boltback.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_BOLTRELEASE", "weapons/doipack/bren/handling/bren_boltrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_DEPLOYGROUNDHIT", "weapons/doipack/bren/handling/bren_deploygroundhit.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_EMPTY", "weapons/doipack/bren/handling/bren_empty.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_FETCHMAG", "weapons/doipack/bren/handling/bren_fetchmag.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_MAGHIT", "weapons/doipack/bren/handling/bren_mag_hit.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_MAGIN", "weapons/doipack/bren/handling/bren_magin.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_MAGOUT", "weapons/doipack/bren/handling/bren_magout.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_MAGRELEASE", "weapons/doipack/bren/handling/bren_magrelease.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_RATTLE", "weapons/doipack/bren/handling/bren_rattle.wav")
+CustomizableWeaponry:addReloadSound("DOIBREN_SHOULDERWEAPON", "weapons/doipack/bren/handling/bren_shoulder_weapon.wav")

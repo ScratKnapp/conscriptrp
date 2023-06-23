@@ -61,6 +61,10 @@ function ITEM:GetDescription()
 		str = customData.desc
 	end
 
+	if (customData.longdesc) then
+		str = str.."\n"..customData.longdesc or ""
+	end
+
 	if (self.entity) then
 		return (self.description)
 	else

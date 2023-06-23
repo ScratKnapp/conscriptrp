@@ -1,4 +1,3 @@
-
 local animationTime = 1
 
 DEFINE_BASECLASS("ixSubpanelParent")
@@ -37,29 +36,19 @@ function PANEL:Init()
 	self.buttons:Dock(LEFT)
 	self.buttons:SetPaintedManually(true)
 
-	self.unibuttons = self.buttons:Add("Panel")
-	self.unibuttons:Dock(BOTTOM)
-	self.unibuttons:SetTall(self.buttons:GetTall()*0.1)
-	self.unibuttons:DockMargin(0, 0, self.buttons:GetWide()*0.86, 20)
+	local close = self.buttons:Add("ixMenuButton")
+	close:SetText("return")
+	close:Dock(BOTTOM)
+	close.DoClick = function()
+		self:Remove()
+	end
 
-	local characters = self.unibuttons:Add("ixMenuButton")
-	characters:SetFont("stalkertitlefont")
-	characters:SetText("⇧")
-	characters:Dock(TOP)
-	characters:SetTall(self:GetParent():GetTall()*0.03)
+	local characters = self.buttons:Add("ixMenuButton")
+	characters:SetText("characters")
+	characters:Dock(BOTTOM)
 	characters.DoClick = function()
 		self:Remove()
 		vgui.Create("ixCharMenu")
-	end
-
-	local close = self.unibuttons:Add("ixMenuButton")
-	close:SetFont("ixMediumFont")
-	close:SetText("✕")
-	close:Dock(TOP)
-	close:SetTall(self:GetParent():GetTall()*0.03)
-	close:DockMargin(0, 20, 0, 0)
-	close.DoClick = function()
-		self:Remove()
 	end
 
 	-- @todo make a better way to avoid clicks in the padding PLEASE
@@ -72,10 +61,6 @@ function PANEL:Init()
 	self.tabs.buttons = {}
 	self.tabs:Dock(FILL)
 	self:PopulateTabs()
-
---	self.backgroundimage = self:Add("DImage")
---	self.backgroundimage:SetImage("stalker/ui/pdabase.png")
---	self.backgroundimage:SetSize(ScrW(), ScrH())
 
 	self:MakePopup()
 	self:OnOpened()
@@ -270,7 +255,6 @@ function PANEL:PopulateTabs()
 		button:Dock(TOP)
 		button:SetButtonList(self.tabs.buttons)
 		button:SetBackgroundColor(buttonColor)
-		button:DockMargin(0, 0, 0, 20)
 		button.id = id
 		button.OnSelected = function()
 			self:TransitionSubpanel(id)

@@ -1,5 +1,5 @@
 ITEM.name = "Handheld Radio"
-ITEM.model = "models/kek1ch/dev_fmradio.mdl"
+ITEM.model = "models/skilllem_radio.mdl"
 ITEM.width = 1
 ITEM.height = 1
 ITEM.price = 1750

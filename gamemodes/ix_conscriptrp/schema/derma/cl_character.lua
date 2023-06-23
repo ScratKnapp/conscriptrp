@@ -1,6 +1,4 @@
-
 local gradient = surface.GetTextureID("vgui/gradient-d")
-local background5 = Material("vgui/background/stalkerbackground3.jpg")
 local audioFadeInTime = 2
 local animationTime = 0.5
 
@@ -444,7 +442,7 @@ function PANEL:Close(bFromMenu)
 	self.bClosing = true
 	self.bFromMenu = bFromMenu
 
-	local fadeOutTime = animationTime * 3
+	local fadeOutTime = animationTime * 8
 
 	self:CreateAnimation(fadeOutTime, {
 		index = 1,
@@ -509,18 +507,22 @@ function PANEL:Close(bFromMenu)
 end
 
 function PANEL:Paint(width, height)
-	surface.SetMaterial(background5)
-	surface.SetDrawColor(255, 255, 255, 255)
+	surface.SetTexture(gradient)
+	surface.SetDrawColor(0, 0, 0, 255)
 	surface.DrawTexturedRect(0, 0, width, height)
 
 	if (!ix.option.Get("cheapBlur", false)) then
-		surface.SetDrawColor(255, 255, 255, 150)
+		surface.SetDrawColor(0, 0, 0, 150)
 		surface.DrawTexturedRect(0, 0, width, height)
-		--ix.util.DrawBlur(self, Lerp((self.currentAlpha - 200) / 255, 0, 10))
+		ix.util.DrawBlur(self, Lerp((self.currentAlpha - 200) / 255, 0, 10))
 	end
 end
 
 function PANEL:PaintOver(width, height)
+	if (self.bClosing and self.bFromMenu) then
+		surface.SetDrawColor(color_black)
+		surface.DrawRect(0, 0, width, height)
+	end
 end
 
 vgui.Register("ixCharMenu", PANEL, "EditablePanel")

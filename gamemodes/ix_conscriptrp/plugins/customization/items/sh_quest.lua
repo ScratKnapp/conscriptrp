@@ -90,6 +90,11 @@ function ITEM:GetDescription(partial)
 	if(customData.desc) then
 		desc = customData.desc
 	end
+
+	if (customData.longdesc) then
+		desc = desc.. "\n\n" ..customData.longdesc 
+	end
+
 		
 	if(!partial) then
 		if(customData.quality) then

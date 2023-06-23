@@ -16,15 +16,14 @@ ix.command.Add("CreateCustomItem", {
 	arguments = {
 		ix.type.string,
 		ix.type.string,
-		ix.type.string,
 		ix.type.string
 	},
-	OnRun = function(self, client, name, model, description, longdesc)
+	OnRun = function(self, client, name, model, description)
 		client:GetCharacter():GetInventory():Add("customitem", 1, {
 			name = name,
 			model = model,
-			description = description,
-			longdesc = longdesc
+			description = description
+			
 			
 		})
 	end

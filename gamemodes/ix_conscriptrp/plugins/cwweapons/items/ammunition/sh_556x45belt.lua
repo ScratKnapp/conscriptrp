@@ -1,5 +1,5 @@
 ITEM.name = "5.56x45mm Belt"
-ITEM.model = "models/kek1ch/ammo_pkm.mdl"
+ITEM.model = "models/Items/BoxMRounds.mdl"
 ITEM.width = 2
 ITEM.height = 1
 ITEM.ammo = "5.56x45MMB"

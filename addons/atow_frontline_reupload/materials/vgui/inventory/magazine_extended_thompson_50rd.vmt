@@ -1,0 +1,9 @@
+"UnlitGeneric"
+{
+	"$translucent" 1
+	"$basetexture" "vgui/inventory/magazine_extended_thompson_50rd"
+	"$nolod" 1
+	"$vertexalpha" 1
+	"$vertexcolor" 1
+}
+

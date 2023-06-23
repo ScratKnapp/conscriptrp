@@ -1,0 +1,9 @@
+ITEM.name = "Professional Grade Electronics"
+ITEM.model = "models/illusion/eftcontainers/circuitboard.mdl"
+ITEM.description = "A professional quality piece of electronics."
+ITEM.longdesc = "Electronics were used to keep machines in a professional setting working, such as machines in a factory. They're capable of both more advanced tasks and have a longer usage life."
+ITEM.category = "junk"
+ITEM.flag = "1"
+ITEM.price = 375
+ITEM.width = 2
+ITEM.height = 1

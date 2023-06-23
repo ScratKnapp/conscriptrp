@@ -1,9 +1,0 @@
-ITEM.name = "PSZ-9 Remains (Dusk)"
-ITEM.model = "models/kek1ch/armor_repair_pro.mdl"
-ITEM.description = "Damaged parts of a PSZ-9 vest. Two of these and a Sunrise suit could result in something useful."
-ITEM.category = "Parts"
-ITEM.flag = "A"
-ITEM.price = 3600
-ITEM.width = 1
-ITEM.height = 1
-ITEM.weight = 1

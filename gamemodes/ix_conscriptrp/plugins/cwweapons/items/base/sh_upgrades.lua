@@ -121,7 +121,7 @@ ITEM.functions.Upgrade = {
     
     
 	OnCanRun = function(item)
-		if item.player:GetChar():HasFlags("2") then
+		if item.player:GetChar():HasFlags("7") then
 			return (!IsValid(item.entity))
 		end
 		

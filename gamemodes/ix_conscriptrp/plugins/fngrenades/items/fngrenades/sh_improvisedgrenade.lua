@@ -1,0 +1,14 @@
+ITEM.name = "Improvised Grenade"
+ITEM.model = ("models/silver/outbreak/weapons/w_vog25.mdl")
+ITEM.description = "A homemade grenade."
+ITEM.class = "cw_sil_nade_vog25"
+ITEM.weaponCategory = "secondary"
+ITEM.isWeapon = true
+ITEM.noAmmo = true
+ITEM.width = 1
+ITEM.height = 1
+ITEM.price = 2000
+ITEM.flag = "3"
+ITEM.category = "Weapons"
+ITEM.isGrenade = true
+ITEM.weight = 0.25
