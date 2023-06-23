@@ -1,15 +1,13 @@
-RECIPE.name = "Melt Cans"
-RECIPE.description = "Utilize a Blowtorch and melt down some tin cans."
+RECIPE.name = "Cut up Cans"
+RECIPE.description = "Utilize a pair of pliers and tear up some tin cans."
 RECIPE.model = "models/props_junk/garbage_metalcan002a.mdl"
 RECIPE.station = "Work Bench"
 RECIPE.requirements = {
 	["tincan"] = 3,
-["blowtorchfuel"] = 1,
 }
 
 RECIPE.tools = {
-"blowtorch",
-"weldingmask",
+"pliers",
 }
 
 RECIPE.results = {

@@ -4,7 +4,7 @@ RECIPE.model = "models/mechanics/solid_steel/plank_4.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["blowtorchfuel"] = 1,
-	["reclaimedmetal"] = 4,
+	["reclaimedmetal"] = 3,
 }
 
 RECIPE.tools = {

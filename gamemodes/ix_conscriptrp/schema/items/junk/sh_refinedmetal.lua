@@ -1,5 +1,5 @@
 ITEM.name = "Refined Metal"
-ITEM.model = "models/mechanics/solid_steel/plank_4.mdl"
+ITEM.model = "models/mosi/fallout4/props/junk/components/steel.mdl"
 ITEM.description = "A bar of high quality metal."
 ITEM.longdesc = "A bar of titanium or other high quality alloys, with almost perfect purity and mix of lightweight and durable qualities. Before the war, it would've been used to create things with strict tolerances. These days, Combine alloys supersede them, though it's still bound to be useful."
 ITEM.category = "junk"

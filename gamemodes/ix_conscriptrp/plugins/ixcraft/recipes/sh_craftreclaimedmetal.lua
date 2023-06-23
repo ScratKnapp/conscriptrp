@@ -4,7 +4,7 @@ RECIPE.model = "models/gibs/metal_gib2.mdl"
 RECIPE.station = "Workbench"
 RECIPE.requirements = {
 	["blowtorchfuel"] = 1,
-	["scrapmetal"] = 6,
+	["scrapmetal"] = 3,
 }
 
 RECIPE.tools = {

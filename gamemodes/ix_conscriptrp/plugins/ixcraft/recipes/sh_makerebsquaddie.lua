@@ -16,7 +16,7 @@ RECIPE.tools = {
 	"sewingkit",
 }
 RECIPE.results = {
-	["resistancefightersuit"] = 1,
+	["resistancesquaddiesuit"] = 1,
 
 }
 

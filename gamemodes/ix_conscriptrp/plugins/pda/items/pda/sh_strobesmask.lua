@@ -11,7 +11,7 @@ ITEM.weight = 0.25
 ITEM.weaponCategory = "PDA"
 
 function ITEM:GetDescription()
-	return "A highly modified, black MPF Mask with a screen as its visor. Such a visor sports a built-in PDA device, and randomly odd data most users can't exactly make sense of. It seems whoever modified this mask did so in a very makeshift manner, as occasionally the entire visor will flash red and spam ERROR messages across the wearer's view. \nFace: II\nHead: II" .. "\n\nAvatar: " .. self:GetData("avatar","vgui/icons/face_31.png") .. "\n\nNickname: " .. self:GetData("nickname", "meme")
+	return "A highly modified, black MPF Mask with a screen as its visor. Such a visor sports a built-in PDA device, and randomly displays data most users can't exactly make sense of. It seems whoever modified this mask did so in a very makeshift manner, as occasionally the entire visor will flash red and spam ERROR messages across the wearer's view. \nFace: II\nHead: II" .. "\n\nAvatar: " .. self:GetData("avatar","vgui/icons/face_31.png") .. "\n\nNickname: " .. self:GetData("nickname", "meme")
 end
 
 ITEM.functions.setavatar = { -- sorry, for name order.

@@ -1,7 +1,7 @@
 ITEM.name = "Expungement Dart Burst"
 ITEM.model = "models/ez2models/items/arbeit/combine_rifle_ammo01.mdl"
-ITEM.description = "A cannister of compressed air and sharp darts."
-ITEM.longdesc = "A cannister able to be loaded by Pearl's internal 'weapon', it is unknown what exactly the substance is or how it functions, but it only seems effective against Xenian Creatures. Fires four darts per shot."
+ITEM.description = "A canister of compressed air and sharp darts."
+ITEM.longdesc = "A canister able to be loaded by Pearl's internal 'weapon', it is unknown what exactly the substance is or how it functions, but it only seems effective against Xenian Creatures. Fires four darts per shot."
 ITEM.width = 1
 ITEM.height = 1
 ITEM.category = "Medical"
