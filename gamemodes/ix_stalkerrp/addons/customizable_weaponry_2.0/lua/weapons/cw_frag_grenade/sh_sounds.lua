@@ -1,1 +1,0 @@
-CustomizableWeaponry:addFireSound("CW_PINPULL", "weapons/pinpull.wav", 1, 50, CHAN_STATIC)
