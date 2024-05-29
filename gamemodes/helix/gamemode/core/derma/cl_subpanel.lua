@@ -30,7 +30,7 @@ function PANEL:SetTitle(text, bNoTranslation, bNoUpper)
 	end
 
 	local newText = bNoTranslation and text or L(text)
-	newText = bNoUpper and newText or newText:upper()
+	newText = bNoUpper and newText or newText:utf8upper()
 
 	self.title:SetText(newText)
 	self.title:SizeToContents()
@@ -286,12 +286,20 @@ end
 
 function PANEL:Paint(width, height)
 	for i = 1, #self.childPanels do
+		if not (IsValid(self.childPanels[i])) then
+			continue
+		end
+
 		self.childPanels[i]:PaintManual()
 	end
 end
 
 function PANEL:PaintSubpanels(width, height)
 	for i = 1, #self.subpanels do
+		if not (IsValid(self.subpanels[i])) then
+			continue
+		end
+
 		self.subpanels[i]:PaintManual()
 	end
 end

@@ -2,6 +2,7 @@
 local gradient = surface.GetTextureID("vgui/gradient-d")
 local audioFadeInTime = 2
 local animationTime = 0.5
+local matrixZScale = Vector(1, 1, 0.0001)
 
 -- character menu panel
 DEFINE_BASECLASS("ixSubpanelParent")
@@ -30,10 +31,10 @@ function PANEL:Dim(length, callback)
 	self:CreateAnimation(length, {
 		target = {
 			currentDimAmount = self.targetDimAmount,
-			currentScale = self.targetScale,
-			OnComplete = callback
+			currentScale = self.targetScale
 		},
-		easing = "outCubic"
+		easing = "outCubic",
+		OnComplete = callback
 	})
 
 	self:OnDim()
@@ -69,7 +70,7 @@ function PANEL:Paint(width, height)
 	-- draw child panels with scaling if needed
 	if (bShouldScale) then
 		matrix = Matrix()
-		matrix:Scale(Vector(1, 1, 0.0001) * self.currentScale)
+		matrix:Scale(matrixZScale * self.currentScale)
 		matrix:Translate(Vector(
 			ScrW() * 0.5 - (ScrW() * self.currentScale * 0.5),
 			ScrH() * 0.5 - (ScrH() * self.currentScale * 0.5),
@@ -235,6 +236,7 @@ function PANEL:Init()
 	-- create character button
 	local createButton = self.mainButtonList:Add("ixMenuButton")
 	createButton:SetText("create")
+	createButton:SizeToContents()
 	createButton.DoClick = function()
 		local maximum = hook.Run("GetMaxPlayerCharacter", LocalPlayer()) or ix.config.Get("maxCharacters", 5)
 		-- don't allow creation if we've hit the character limit
@@ -251,6 +253,7 @@ function PANEL:Init()
 	-- load character button
 	self.loadButton = self.mainButtonList:Add("ixMenuButton")
 	self.loadButton:SetText("load")
+	self.loadButton:SizeToContents()
 	self.loadButton.DoClick = function()
 		self:Dim()
 		parent.loadCharacterPanel:SlideUp()
@@ -271,6 +274,7 @@ function PANEL:Init()
 
 		local extraButton = self.mainButtonList:Add("ixMenuButton")
 		extraButton:SetText(extraText, true)
+		extraButton:SizeToContents()
 		extraButton.DoClick = function()
 			gui.OpenURL(extraURL)
 		end
@@ -291,11 +295,12 @@ function PANEL:Init()
 end
 
 function PANEL:UpdateReturnButton(bValue)
-	if (bValue == nil) then
-		bValue = self.bUsingCharacter
+	if (bValue != nil) then
+		self.bUsingCharacter = bValue
 	end
 
-	self.returnButton:SetText(bValue and "return" or "leave")
+	self.returnButton:SetText(self.bUsingCharacter and "return" or "leave")
+	self.returnButton:SizeToContents()
 end
 
 function PANEL:OnDim()
@@ -384,7 +389,7 @@ function PANEL:PlayMusic()
 	path = url and url or path
 
 	play(path, "noplay", function(channel, error, message)
-		if (!IsValid(channel)) then
+		if (!IsValid(self) or !IsValid(channel)) then
 			return
 		end
 
@@ -523,6 +528,13 @@ function PANEL:PaintOver(width, height)
 	if (self.bClosing and self.bFromMenu) then
 		surface.SetDrawColor(color_black)
 		surface.DrawRect(0, 0, width, height)
+	end
+end
+
+function PANEL:OnRemove()
+	if (IsValid(self.channel)) then
+		self.channel:Stop()
+		self.channel = nil
 	end
 end
 

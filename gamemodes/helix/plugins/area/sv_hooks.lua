@@ -38,7 +38,7 @@ function PLUGIN:PlayerSpawn(client)
 end
 
 function PLUGIN:AreaThink()
-	for _, client in ipairs(player.GetAll()) do
+	for _, client in player.Iterator() do
 		local character = client:GetCharacter()
 
 		if (!client:Alive() or !character) then
@@ -46,10 +46,9 @@ function PLUGIN:AreaThink()
 		end
 
 		local overlappingBoxes = {}
+		local position = client:GetPos() + client:OBBCenter()
 
 		for id, info in pairs(ix.area.stored) do
-			local position = client:GetPos() + client:OBBCenter()
-
 			if (position:WithinAABox(info.startPosition, info.endPosition)) then
 				overlappingBoxes[#overlappingBoxes + 1] = id
 			end

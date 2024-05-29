@@ -1,5 +1,5 @@
 
--- You can change the default language here:
+-- You can change the default language by setting this in your schema.
 ix.config.language = "english"
 
 --[[
@@ -11,7 +11,7 @@ ix.config.language = "english"
 	Use the menu to change the variables, not this file.
 --]]
 
-ix.config.Add("maxCharacters", 10, "The maximum number of characters a player can have.", nil, {
+ix.config.Add("maxCharacters", 5, "The maximum number of characters a player can have.", nil, {
 	data = {min = 1, max = 50},
 	category = "characters"
 })
@@ -37,8 +37,8 @@ ix.config.Add("genericFont", "Roboto", "The font used to display generic texts."
 	end
 end, {category = "appearance"})
 
-ix.config.Add("maxAttributes", 30, "The total maximum amount of attribute points allowed.", nil, {
-	data = {min = 0, max = 250},
+ix.config.Add("maxAttributes", 100, "The maximum amount each attribute can be.", nil, {
+	data = {min = 0, max = 100},
 	category = "characters"
 })
 ix.config.Add("chatAutoFormat", true, "Whether or not to automatically capitalize and punctuate in-character text.", nil, {
@@ -71,11 +71,11 @@ ix.config.Add("spawnTime", 5, "The time it takes to respawn.", nil, {
 	data = {min = 0, max = 10000},
 	category = "characters"
 })
-ix.config.Add("inventoryWidth", 8, "How many slots in a row there is in a default inventory.", nil, {
+ix.config.Add("inventoryWidth", 6, "How many slots in a row there is in a default inventory.", nil, {
 	data = {min = 0, max = 20},
 	category = "characters"
 })
-ix.config.Add("inventoryHeight", 10, "How many slots in a column there is in a default inventory.", nil, {
+ix.config.Add("inventoryHeight", 4, "How many slots in a column there is in a default inventory.", nil, {
 	data = {min = 0, max = 20},
 	category = "characters"
 })
@@ -96,7 +96,7 @@ ix.config.Add("saveInterval", 300, "How often characters save in seconds.", nil,
 	category = "characters"
 })
 ix.config.Add("walkSpeed", 130, "How fast a player normally walks.", function(oldValue, newValue)
-	for _, v in ipairs(player.GetAll())	do
+	for _, v in player.Iterator()	do
 		v:SetWalkSpeed(newValue)
 	end
 end, {
@@ -104,7 +104,7 @@ end, {
 	category = "characters"
 })
 ix.config.Add("runSpeed", 235, "How fast a player normally runs.", function(oldValue, newValue)
-	for _, v in ipairs(player.GetAll())	do
+	for _, v in player.Iterator()	do
 		v:SetRunSpeed(newValue)
 	end
 end, {
@@ -115,30 +115,38 @@ ix.config.Add("walkRatio", 0.5, "How fast one goes when holding ALT.", nil, {
 	data = {min = 0, max = 1, decimals = 1},
 	category = "characters"
 })
-ix.config.Add("intro", false, "Whether or not the Helix intro is enabled for new players.", nil, {
+ix.config.Add("intro", true, "Whether or not the Helix intro is enabled for new players.", nil, {
 	category = "appearance"
 })
 ix.config.Add("music", "music/hl2_song2.mp3", "The default music played in the character menu.", nil, {
 	category = "appearance"
 })
-ix.config.Add("communityURL", "https://discord.gg/zMaebV", "The URL to navigate to when the community button is clicked.", nil, {
+ix.config.Add("communityURL", "https://nebulous.cloud/", "The URL to navigate to when the community button is clicked.", nil, {
 	category = "appearance"
 })
-ix.config.Add("communityText", "The Bloc",
+ix.config.Add("communityText", "@community",
 	"The text to display on the community button. You can use language phrases by prefixing with @", nil, {
 	category = "appearance"
 })
 ix.config.Add("vignette", true, "Whether or not the vignette is shown.", nil, {
 	category = "appearance"
 })
-ix.config.Add("scoreboardRecognition", true, "Whether or not recognition is used in the scoreboard.", nil, {
+ix.config.Add("scoreboardRecognition", false, "Whether or not recognition is used in the scoreboard.", nil, {
 	category = "characters"
 })
 ix.config.Add("defaultMoney", 0, "The amount of money that players start with.", nil, {
 	category = "characters",
 	data = {min = 0, max = 1000}
 })
-ix.config.Add("allowVoice", false, "Whether or not voice chat is allowed.", nil, {
+ix.config.Add("minMoneyDropAmount", 1, "The minimum amount of money that can be dropped.", nil, {
+	category = "characters",
+	data = {min = 1, max = 1000}
+})
+ix.config.Add("allowVoice", false, "Whether or not voice chat is allowed.", function(oldValue, newValue)
+	if (SERVER) then
+		hook.Run("VoiceToggled", newValue)
+	end
+end, {
 	category = "server"
 })
 ix.config.Add("voiceDistance", 600.0, "How far can the voice be heard.", function(oldValue, newValue)
@@ -171,15 +179,42 @@ ix.config.Add("itemPickupTime", 0.5, "How long it takes to pick up and put an it
 	data = {min = 0, max = 5, decimals = 1},
 	category = "interaction"
 })
-ix.config.Add("year", 2010, "The starting year of the schema.", nil, {
+ix.config.Add("year", 2015, "The current in-game year.", function(oldValue, newValue)
+	if (SERVER and !ix.date.bSaving) then
+		ix.date.ResolveOffset()
+		ix.date.current:setyear(newValue)
+		ix.date.Send()
+	end
+end, {
 	data = {min = 1, max = 9999},
 	category = "date"
 })
-ix.config.Add("month", 1, "The starting month of the schema.", nil, {
+ix.config.Add("month", 1, "The current in-game month.", function(oldValue, newValue)
+	if (SERVER and !ix.date.bSaving) then
+		ix.date.ResolveOffset()
+		ix.date.current:setmonth(newValue)
+		ix.date.Send()
+	end
+end, {
 	data = {min = 1, max = 12},
 	category = "date"
 })
-ix.config.Add("day", 1, "The starting day of the schema.", nil, {
+ix.config.Add("day", 1, "The current in-game day.", function(oldValue, newValue)
+	if (SERVER and !ix.date.bSaving) then
+		ix.date.ResolveOffset()
+		ix.date.current:setday(newValue)
+		ix.date.Send()
+	end
+end, {
 	data = {min = 1, max = 31},
+	category = "date"
+})
+ix.config.Add("secondsPerMinute", 60, "How many seconds it takes for a minute to pass in-game.", function(oldValue, newValue)
+	if (SERVER and !ix.date.bSaving) then
+		ix.date.UpdateTimescale(newValue)
+		ix.date.Send()
+	end
+end, {
+	data = {min = 0.01, max = 120},
 	category = "date"
 })

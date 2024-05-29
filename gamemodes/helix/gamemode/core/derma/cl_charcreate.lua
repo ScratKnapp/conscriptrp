@@ -9,6 +9,7 @@ function PANEL:Init()
 	local parent = self:GetParent()
 	local halfWidth = parent:GetWide() * 0.5 - (padding * 2)
 	local halfHeight = parent:GetTall() * 0.5 - (padding * 2)
+	local modelFOV = (ScrW() > ScrH() * 1.8) and 100 or 78
 
 	self:ResetPayload(true)
 
@@ -33,6 +34,7 @@ function PANEL:Init()
 	proceed:SetText("proceed")
 	proceed:SetContentAlignment(6)
 	proceed:Dock(BOTTOM)
+	proceed:SizeToContents()
 	proceed.DoClick = function()
 		self.progress:IncrementProgress()
 
@@ -43,7 +45,7 @@ function PANEL:Init()
 	self.factionModel = modelList:Add("ixModelPanel")
 	self.factionModel:Dock(FILL)
 	self.factionModel:SetModel("models/error.mdl")
-	self.factionModel:SetFOV(78)
+	self.factionModel:SetFOV(modelFOV)
 	self.factionModel.PaintModel = self.factionModel.Paint
 
 	self.factionButtonsPanel = self.factionPanel:Add("ixCharMenuButtonList")
@@ -52,6 +54,7 @@ function PANEL:Init()
 
 	local factionBack = self.factionPanel:Add("ixMenuButton")
 	factionBack:SetText("return")
+	factionBack:SizeToContents()
 	factionBack:Dock(BOTTOM)
 	factionBack.DoClick = function()
 		self.progress:DecrementProgress()
@@ -73,6 +76,7 @@ function PANEL:Init()
 	local descriptionBack = descriptionModelList:Add("ixMenuButton")
 	descriptionBack:SetText("return")
 	descriptionBack:SetContentAlignment(4)
+	descriptionBack:SizeToContents()
 	descriptionBack:Dock(BOTTOM)
 	descriptionBack.DoClick = function()
 		self.progress:DecrementProgress()
@@ -87,7 +91,7 @@ function PANEL:Init()
 	self.descriptionModel = descriptionModelList:Add("ixModelPanel")
 	self.descriptionModel:Dock(FILL)
 	self.descriptionModel:SetModel(self.factionModel:GetModel())
-	self.descriptionModel:SetFOV(65)
+	self.descriptionModel:SetFOV(modelFOV - 13)
 	self.descriptionModel.PaintModel = self.descriptionModel.Paint
 
 	self.descriptionPanel = self.description:Add("Panel")
@@ -97,6 +101,7 @@ function PANEL:Init()
 	local descriptionProceed = self.descriptionPanel:Add("ixMenuButton")
 	descriptionProceed:SetText("proceed")
 	descriptionProceed:SetContentAlignment(6)
+	descriptionProceed:SizeToContents()
 	descriptionProceed:Dock(BOTTOM)
 	descriptionProceed.DoClick = function()
 		if (self:VerifyProgression("description")) then
@@ -122,6 +127,7 @@ function PANEL:Init()
 	local attributesBack = attributesModelList:Add("ixMenuButton")
 	attributesBack:SetText("return")
 	attributesBack:SetContentAlignment(4)
+	attributesBack:SizeToContents()
 	attributesBack:Dock(BOTTOM)
 	attributesBack.DoClick = function()
 		self.progress:DecrementProgress()
@@ -131,7 +137,7 @@ function PANEL:Init()
 	self.attributesModel = attributesModelList:Add("ixModelPanel")
 	self.attributesModel:Dock(FILL)
 	self.attributesModel:SetModel(self.factionModel:GetModel())
-	self.attributesModel:SetFOV(65)
+	self.attributesModel:SetFOV(modelFOV - 13)
 	self.attributesModel.PaintModel = self.attributesModel.Paint
 
 	self.attributesPanel = self.attributes:Add("Panel")
@@ -141,6 +147,7 @@ function PANEL:Init()
 	local create = self.attributesPanel:Add("ixMenuButton")
 	create:SetText("finish")
 	create:SetContentAlignment(6)
+	create:SizeToContents()
 	create:Dock(BOTTOM)
 	create.DoClick = function()
 		self:SendPayload()
@@ -244,7 +251,13 @@ function PANEL:SendPayload()
 	self.payload:Prepare()
 
 	net.Start("ixCharacterCreate")
-		net.WriteTable(self.payload)
+	net.WriteUInt(table.Count(self.payload), 8)
+
+	for k, v in pairs(self.payload) do
+		net.WriteString(k)
+		net.WriteType(v)
+	end
+
 	net.SendToServer()
 end
 
@@ -342,7 +355,8 @@ function PANEL:Populate()
 			if (ix.faction.HasWhitelist(v.index)) then
 				local button = self.factionButtonsPanel:Add("ixMenuSelectionButton")
 				button:SetBackgroundColor(v.color or color_white)
-				button:SetText(L(v.name):upper())
+				button:SetText(L(v.name):utf8upper())
+				button:SizeToContents()
 				button:SetButtonList(self.factionButtons)
 				button.faction = v.index
 				button.OnSelected = function(panel)
@@ -355,6 +369,7 @@ function PANEL:Populate()
 
 				if ((lastSelected and lastSelected == v.index) or (!lastSelected and v.isDefault)) then
 					button:SetSelected(true)
+					lastSelected = v.index
 				end
 			end
 		end
@@ -409,7 +424,7 @@ function PANEL:Populate()
 				-- add label for entry
 				local label = container:Add("DLabel")
 				label:SetFont("ixMenuButtonLabelFont")
-				label:SetText(L(k):upper())
+				label:SetText(L(k):utf8upper())
 				label:SizeToContents()
 				label:DockMargin(0, 16, 0, 2)
 				label:Dock(TOP)

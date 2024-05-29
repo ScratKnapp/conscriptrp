@@ -65,9 +65,7 @@ function PLUGIN:SetupActs()
 	})
 
 	ix.act.Register("Stand", "metrocop", {
-		sequence = "plazathreat2",
-		untimed = true,
-		idle = true
+		sequence = "plazathreat2"
 	})
 
 	-- cheer
@@ -140,7 +138,7 @@ function PLUGIN:SetupActs()
 
 	-- motion
 	ix.act.Register("Motion", "metrocop", {
-		sequence = {"motionleft", "motionright", "luggage"}
+		sequence = {"motionleft", "motionright", "luggagewarn"}
 	})
 
 	-- wave

@@ -18,7 +18,7 @@ ix.config.Add("containerOpenTime", 0.7, "How long it takes to open a container."
 })
 
 function ix.container.Register(model, data)
-	ix.container.stored[model] = data
+	ix.container.stored[model:lower()] = data
 end
 
 ix.util.Include("sh_definitions.lua")
@@ -28,7 +28,7 @@ if (SERVER) then
 
 	function PLUGIN:PlayerSpawnedProp(client, model, entity)
 		model = tostring(model):lower()
-		local data = ix.container.stored[model:lower()]
+		local data = ix.container.stored[model]
 
 		if (data) then
 			if (hook.Run("CanPlayerSpawnContainer", client, model, entity) == false) then return end
@@ -39,7 +39,7 @@ if (SERVER) then
 			container:SetModel(model)
 			container:Spawn()
 
-			ix.item.NewInv(0, "container:" .. model, function(inventory)
+			ix.inventory.New(0, "container:" .. model:lower(), function(inventory)
 				-- we'll technically call this a bag since we don't want other bags to go inside
 				inventory.vars.isBag = true
 				inventory.vars.isContainer = true
@@ -72,7 +72,7 @@ if (SERVER) then
 						inventory:GetID(),
 						v:GetModel(),
 						v.password,
-						v.name,
+						v:GetDisplayName(),
 						v:GetMoney()
 					}
 				end
@@ -93,7 +93,9 @@ if (SERVER) then
 	end
 
 	function PLUGIN:SaveData()
-		self:SaveContainer()
+		if (!ix.shuttingDown) then
+			self:SaveContainer()
+		end
 	end
 
 	function PLUGIN:ContainerRemoved(entity, inventory)
@@ -130,10 +132,10 @@ if (SERVER) then
 						entity.password = v[5]
 						entity:SetLocked(true)
 						entity.Sessions = {}
+						entity.PasswordAttempts = {}
 					end
 
 					if (v[6]) then
-						entity.name = v[6]
 						entity:SetDisplayName(v[6])
 					end
 
@@ -141,7 +143,7 @@ if (SERVER) then
 						entity:SetMoney(v[7])
 					end
 
-					ix.item.RestoreInv(inventoryID, data2.width, data2.height, function(inventory)
+					ix.inventory.Restore(inventoryID, data2.width, data2.height, function(inventory)
 						inventory.vars.isBag = true
 						inventory.vars.isContainer = true
 
@@ -161,7 +163,20 @@ if (SERVER) then
 	end
 
 	net.Receive("ixContainerPassword", function(length, client)
+		if ((client.ixNextContainerPassword or 0) > RealTime()) then
+			return
+		end
+
 		local entity = net.ReadEntity()
+		local steamID = client:SteamID()
+		local attempts = entity.PasswordAttempts[steamID]
+
+		if (attempts and attempts >= 10) then
+			client:NotifyLocalized("passwordAttemptLimit")
+
+			return
+		end
+
 		local password = net.ReadString()
 		local dist = entity:GetPos():DistToSqr(client:GetPos())
 
@@ -169,9 +184,13 @@ if (SERVER) then
 			if (entity.password and entity.password == password) then
 				entity:OpenInventory(client)
 			else
+				entity.PasswordAttempts[steamID] = attempts and attempts + 1 or 1
+
 				client:NotifyLocalized("wrongPassword")
 			end
 		end
+
+		client.ixNextContainerPassword = RealTime() + 1
 	end)
 
 	ix.log.AddType("containerPassword", function(client, ...)
@@ -219,7 +238,7 @@ end
 function PLUGIN:InitializedPlugins()
 	for k, v in pairs(ix.container.stored) do
 		if (v.name and v.width and v.height) then
-			ix.item.RegisterInv("container:" .. k:lower(), v.width, v.height)
+			ix.inventory.Register("container:" .. k:lower(), v.width, v.height)
 		else
 			ErrorNoHalt("[Helix] Container for '"..k.."' is missing all inventory information!\n")
 			ix.container.stored[k] = nil
@@ -258,6 +277,7 @@ properties.Add("container_setpassword", {
 		local password = net.ReadString()
 
 		entity.Sessions = {}
+		entity.PasswordAttempts = {}
 
 		if (password:len() != 0) then
 			entity:SetLocked(true)
@@ -309,14 +329,12 @@ properties.Add("container_setname", {
 
 		if (name:len() != 0) then
 			entity:SetDisplayName(name)
-			entity.name = name
 
 			client:NotifyLocalized("containerName", name)
 		else
 			local definition = ix.container.stored[entity:GetModel():lower()]
 
 			entity:SetDisplayName(definition.name)
-			entity.name = nil
 
 			client:NotifyLocalized("containerNameRemove")
 		end

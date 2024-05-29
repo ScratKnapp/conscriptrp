@@ -104,7 +104,13 @@ if (SERVER) then
 				entity:SetBodygroup(id, bodygroup)
 			end
 
-			entity.items = v.items or {}
+			local items = {}
+
+			for uniqueID, data in pairs(v.items) do
+				items[tostring(uniqueID)] = data
+			end
+
+			entity.items = items
 			entity.factions = v.factions or {}
 			entity.classes = v.classes or {}
 			entity.money = v.money
@@ -130,6 +136,18 @@ if (SERVER) then
 	ix.log.AddType("vendorUse", function(client, ...)
 		local arg = {...}
 		return string.format("%s used the '%s' vendor.", client:Name(), arg[1])
+	end)
+
+	ix.log.AddType("vendorBuy", function(client, ...)
+		local arg = {...}
+
+		return string.format("%s purchased a '%s' from the '%s' vendor for %s.", client:Name(), arg[1], arg[2], arg[3])
+	end)
+
+	ix.log.AddType("vendorSell", function(client, ...)
+		local arg = {...}
+
+		return string.format("%s sold a '%s' to the '%s' vendor for %s.", client:Name(), arg[1], arg[2], arg[3])
 	end)
 
 	net.Receive("ixVendorClose", function(length, client)
@@ -322,6 +340,10 @@ if (SERVER) then
 			return
 		end
 
+		if (!entity:CanAccess(client)) then
+			return
+		end
+
 		local uniqueID = net.ReadString()
 		local isSellingToVendor = net.ReadBool()
 
@@ -335,6 +357,12 @@ if (SERVER) then
 
 				if (!entity:HasMoney(price)) then
 					return client:NotifyLocalized("vendorNoMoney")
+				end
+
+				local stock, max = entity:GetStock(uniqueID)
+
+				if (stock and stock >= max) then
+					return client:NotifyLocalized("vendorMaxStock")
 				end
 
 				local invOkay = true
@@ -358,13 +386,12 @@ if (SERVER) then
 					return client:NotifyLocalized("tellAdmin", "trd!iid")
 				end
 
-				client:GetCharacter():GiveMoney(price)
+				client:GetCharacter():GiveMoney(price, price == 0)
 				client:NotifyLocalized("businessSell", name, ix.currency.Get(price))
 				entity:TakeMoney(price)
 				entity:AddStock(uniqueID)
 
-				PLUGIN:SaveData()
-				hook.Run("CharacterVendorTraded", client, entity, uniqueID, isSellingToVendor)
+				ix.log.Add(client, "vendorSell", name, entity:GetDisplayName(), ix.currency.Get(price))
 			else
 				local stock = entity:GetStock(uniqueID)
 
@@ -376,9 +403,13 @@ if (SERVER) then
 					return client:NotifyLocalized("canNotAfford")
 				end
 
+				if !entity:CanSellToPlayer(client, uniqueID) then
+					return false
+				end
+
 				local name = L(ix.item.list[uniqueID].name, client)
 
-				client:GetCharacter():TakeMoney(price)
+				client:GetCharacter():TakeMoney(price, price == 0)
 				client:NotifyLocalized("businessPurchase", name, ix.currency.Get(price))
 
 				entity:GiveMoney(price)
@@ -393,9 +424,11 @@ if (SERVER) then
 
 				entity:TakeStock(uniqueID)
 
-				PLUGIN:SaveData()
-				hook.Run("CharacterVendorTraded", client, entity, uniqueID, isSellingToVendor)
+				ix.log.Add(client, "vendorBuy", name, entity:GetDisplayName(), ix.currency.Get(price))
 			end
+
+			PLUGIN:SaveData()
+			hook.Run("CharacterVendorTraded", client, entity, uniqueID, isSellingToVendor)
 		else
 			client:NotifyLocalized("vendorNoTrade")
 		end
@@ -529,18 +562,18 @@ else
 			editor.bubble:SetValue(data and 1 or 0)
 		elseif (key == "mode") then
 			if (data[2] == nil) then
-				editor.lines[data[1]]:SetValue(2, L"none")
+				editor.lines[data[1]]:SetValue(3, L"none")
 			else
-				editor.lines[data[1]]:SetValue(2, L(VENDOR_TEXT[data[2]]))
+				editor.lines[data[1]]:SetValue(3, L(VENDOR_TEXT[data[2]]))
 			end
 		elseif (key == "price") then
-			editor.lines[data]:SetValue(3, entity:GetPrice(data))
+			editor.lines[data]:SetValue(4, entity:GetPrice(data))
 		elseif (key == "stockDisable") then
-			editor.lines[data]:SetValue(4, "-")
+			editor.lines[data]:SetValue(5, "-")
 		elseif (key == "stockMax" or key == "stock") then
 			local current, max = entity:GetStock(data)
 
-			editor.lines[data]:SetValue(4, current.."/"..max)
+			editor.lines[data]:SetValue(5, current.."/"..max)
 		elseif (key == "faction") then
 			local uniqueID = data[1]
 			local state = data[2]

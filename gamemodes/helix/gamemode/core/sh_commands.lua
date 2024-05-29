@@ -5,16 +5,20 @@ ix.command.Add("Roll", {
 	OnRun = function(self, client, maximum)
 		maximum = math.Clamp(maximum or 100, 0, 1000000)
 
-		ix.chat.Send(client, "roll", tostring(math.random(0, maximum)), nil, nil, {
+		local value = math.random(0, maximum)
+
+		ix.chat.Send(client, "roll", tostring(value), nil, nil, {
 			max = maximum
 		})
+
+		ix.log.Add(client, "roll", value, maximum)
 	end
 })
 
 ix.command.Add("Event", {
 	description = "@cmdEvent",
 	arguments = ix.type.text,
-	adminOnly = true,
+	superAdminOnly = true,
 	OnRun = function(self, client, text)
 		ix.chat.Send(client, "event", text)
 	end
@@ -59,8 +63,8 @@ ix.command.Add("SetVoicemail", {
 	description = "@cmdSetVoicemail",
 	arguments = bit.bor(ix.type.text, ix.type.optional),
 	OnRun = function(self, client, message)
-		if (isstring(message) or message:find("%S")) then
-			client:SetData("vm", message:sub(1, 240))
+		if (isstring(message) and message:find("%S")) then
+			client:SetData("vm", message:utf8sub(1, 240))
 			return "@vmSet"
 		else
 			client:SetData("vm")
@@ -72,7 +76,7 @@ ix.command.Add("SetVoicemail", {
 ix.command.Add("CharGiveFlag", {
 	description = "@cmdCharGiveFlag",
 	privilege = "Manage Character Flags",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.character,
 		bit.bor(ix.type.string, ix.type.optional)
@@ -95,7 +99,8 @@ ix.command.Add("CharGiveFlag", {
 		end
 
 		target:GiveFlags(flags)
-		for _, v in ipairs(player.GetAll()) do
+
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("flagGive", client:GetName(), target:GetName(), flags)
 			end
@@ -106,7 +111,7 @@ ix.command.Add("CharGiveFlag", {
 ix.command.Add("CharTakeFlag", {
 	description = "@cmdCharTakeFlag",
 	privilege = "Manage Character Flags",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.character,
 		bit.bor(ix.type.string, ix.type.optional)
@@ -120,7 +125,7 @@ ix.command.Add("CharTakeFlag", {
 
 		target:TakeFlags(flags)
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("flagTake", client:GetName(), flags, target:GetName())
 			end
@@ -141,7 +146,7 @@ ix.command.Add("ToggleRaise", {
 
 ix.command.Add("CharSetModel", {
 	description = "@cmdCharSetModel",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string
@@ -150,7 +155,7 @@ ix.command.Add("CharSetModel", {
 		target:SetModel(model)
 		target:GetPlayer():SetupHands()
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("cChangeModel", client:GetName(), target:GetName(), model)
 			end
@@ -169,7 +174,7 @@ ix.command.Add("CharSetSkin", {
 		target:SetData("skin", skin)
 		target:GetPlayer():SetSkin(skin or 0)
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("cChangeSkin", client:GetName(), target:GetName(), skin or 0)
 			end
@@ -262,7 +267,7 @@ ix.command.Add("CharSetName", {
 			end, target:GetName())
 		end
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("cChangeName", client:GetName(), target:GetName(), newName)
 			end
@@ -274,7 +279,7 @@ ix.command.Add("CharSetName", {
 
 ix.command.Add("CharGiveItem", {
 	description = "@cmdCharGiveItem",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.character,
 		ix.type.string,
@@ -295,9 +300,10 @@ ix.command.Add("CharGiveItem", {
 
 		amount = amount or 1
 		local bSuccess, error = target:GetInventory():Add(uniqueID, amount)
-		
+
 		if (bSuccess) then
 			target:GetPlayer():NotifyLocalized("itemCreated")
+
 			if (target != client:GetCharacter()) then
 				return "@itemCreated"
 			end
@@ -316,7 +322,7 @@ ix.command.Add("CharKick", {
 			target:Kick()
 		end)
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("charKick", client:GetName(), target:GetName())
 			end
@@ -337,11 +343,10 @@ ix.command.Add("CharBan", {
 			minutes = minutes * 60
 		end
 
-		target:Save(function()
-			target:Ban(minutes)
-		end)
+		target:Ban(minutes)
+		target:Save()
 
-		for _, v in ipairs(player.GetAll()) do
+		for _, v in player.Iterator() do
 			if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
 				v:NotifyLocalized("charBan", client:GetName(), target:GetName())
 			end
@@ -367,7 +372,13 @@ ix.command.Add("CharUnban", {
 					return "@charNotBanned"
 				end
 
-				return ix.util.NotifyLocalized("charUnBan", nil, client:GetName(), v:GetName())
+				for _, v2 in player.Iterator() do
+					if (self:OnCheckAccess(v2) or v2 == v:GetPlayer()) then
+						v2:NotifyLocalized("charUnBan", client:GetName(), v:GetName())
+					end
+				end
+
+				return
 			end
 		end
 
@@ -398,7 +409,11 @@ ix.command.Add("CharUnban", {
 						updateQuery:Where("id", characterID)
 					updateQuery:Execute()
 
-					ix.util.NotifyLocalized("charUnBan", nil, client:GetName(), name)
+					for _, v in player.Iterator() do
+						if (self:OnCheckAccess(v)) then
+							v:NotifyLocalized("charUnBan", client:GetName(), name)
+						end
+					end
 				end
 			end)
 		query:Execute()
@@ -430,6 +445,7 @@ do
 					if (!client:GetCharacter():HasMoney(amount)) then
 						return
 					end
+
 					target:GetCharacter():GiveMoney(amount)
 					client:GetCharacter():TakeMoney(amount)
 
@@ -442,7 +458,7 @@ do
 		ix.command.Add("CharSet" .. MONEY_NAME, {
 			alias = {"CharSetMoney"},
 			description = "@cmdCharSetMoney",
-			adminOnly = true,
+			superAdminOnly = true,
 			arguments = {
 				ix.type.character,
 				ix.type.number
@@ -453,6 +469,7 @@ do
 				if (amount <= 0) then
 					return "@invalidArg", 2
 				end
+
 				target:SetMoney(amount)
 				client:NotifyLocalized("setMoney", target:GetName(), ix.currency.Get(amount))
 			end
@@ -465,15 +482,18 @@ do
 			OnRun = function(self, client, amount)
 				amount = math.Round(amount)
 
-				if (amount <= 0) then
-					return "@invalidArg", 1
+				local minDropAmount = ix.config.Get("minMoneyDropAmount", 1)
+
+				if (amount < minDropAmount) then
+					return "@belowMinMoneyDrop", minDropAmount
 				end
 
 				if (!client:GetCharacter():HasMoney(amount)) then
 					return "@insufficientMoney"
 				end
-	
+
 				client:GetCharacter():TakeMoney(amount)
+
 				local money = ix.currency.Spawn(client, amount)
 				money.ixCharID = client:GetCharacter():GetID()
 				money.ixSteamID = client:SteamID()
@@ -485,7 +505,7 @@ end
 ix.command.Add("PlyWhitelist", {
 	description = "@cmdPlyWhitelist",
 	privilege = "Manage Character Whitelist",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.player,
 		ix.type.text
@@ -509,7 +529,7 @@ ix.command.Add("PlyWhitelist", {
 
 		if (faction) then
 			if (target:SetWhitelisted(faction.index, true)) then
-				for _, v in ipairs(player.GetAll()) do
+				for _, v in player.Iterator() do
 					if (self:OnCheckAccess(v) or v == target) then
 						v:NotifyLocalized("whitelist", client:GetName(), target:GetName(), L(faction.name, v))
 					end
@@ -538,6 +558,7 @@ ix.command.Add("CharGetUp", {
 					return
 				end
 
+				hook.Run("OnCharacterGetup", client, entity)
 				entity:Remove()
 			end)
 		end
@@ -547,7 +568,7 @@ ix.command.Add("CharGetUp", {
 ix.command.Add("PlyUnwhitelist", {
 	description = "@cmdPlyUnwhitelist",
 	privilege = "Manage Character Whitelist",
-	adminOnly = true,
+	superAdminOnly = true,
 	arguments = {
 		ix.type.string,
 		ix.type.text
@@ -569,7 +590,7 @@ ix.command.Add("PlyUnwhitelist", {
 			local targetPlayer = ix.util.FindPlayer(target)
 
 			if (IsValid(targetPlayer) and targetPlayer:SetWhitelisted(faction.index, false)) then
-				for _, v in ipairs(player.GetAll()) do
+				for _, v in player.Iterator() do
 					if (self:OnCheckAccess(v) or v == targetPlayer) then
 						v:NotifyLocalized("unwhitelist", client:GetName(), targetPlayer:GetName(), L(faction.name, v))
 					end
@@ -596,7 +617,7 @@ ix.command.Add("PlyUnwhitelist", {
 								updateQuery:Where("steamid", steamID64)
 							updateQuery:Execute()
 
-							for _, v in ipairs(player.GetAll()) do
+							for _, v in player.Iterator() do
 								if (self:OnCheckAccess(v)) then
 									v:NotifyLocalized("unwhitelist", client:GetName(), target, L(faction.name, v))
 								end
@@ -708,15 +729,23 @@ ix.command.Add("PlyTransfer", {
 		end
 
 		if (faction) then
-			target.vars.faction = faction.uniqueID
-			target:SetFaction(faction.index)
+			local bHasWhitelist = target:GetPlayer():HasWhitelist(faction.index)
 
-			if (faction.OnTransferred) then
-				faction:OnTransferred(target)
-			end
+			if (bHasWhitelist) then
+				target.vars.faction = faction.uniqueID
+				target:SetFaction(faction.index)
 
-			for _, v in ipairs(player.GetAll()) do
-				v:NotifyLocalized("cChangeFaction", client:GetName(), target:GetName(), L(faction.name, v))
+				if (faction.OnTransferred) then
+					faction:OnTransferred(target)
+				end
+
+				for _, v in player.Iterator() do
+					if (self:OnCheckAccess(v) or v == target:GetPlayer()) then
+						v:NotifyLocalized("cChangeFaction", client:GetName(), target:GetName(), L(faction.name, v))
+					end
+				end
+			else
+				return "@charNotWhitelisted", target:GetName(), L(faction.name, client)
 			end
 		else
 			return "@invalidFaction"

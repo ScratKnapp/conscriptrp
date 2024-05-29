@@ -1,4 +1,6 @@
 
+util.AddNetworkString("ixPlayerDeath")
+
 function GM:PlayerInitialSpawn(client)
 	client.ixJoinTime = RealTime()
 
@@ -14,7 +16,7 @@ function GM:PlayerInitialSpawn(client)
 		}, botID, client, client:SteamID64())
 		character.isBot = true
 
-		local inventory = ix.item.CreateInv(ix.config.Get("inventoryWidth"), ix.config.Get("inventoryHeight"), botID)
+		local inventory = ix.inventory.Create(ix.config.Get("inventoryWidth"), ix.config.Get("inventoryHeight"), botID)
 		inventory:SetOwner(botID)
 		inventory.noSave = true
 
@@ -51,15 +53,8 @@ function GM:PlayerInitialSpawn(client)
 
 			MsgN("Loaded (" .. table.concat(charList, ", ") .. ") for " .. client:Name())
 
-			for k, v in ipairs(charList) do
-				local character = ix.char.loaded[v]
-
-				if (ix.faction.indices[character:GetFaction()]) then
-					character:Sync(client)
-				else
-					-- remove characters with an invalid faction
-					table.remove(charList, k)
-				end
+			for _, v in ipairs(charList) do
+				ix.char.loaded[v]:Sync(client)
 			end
 
 			client.ixCharList = charList
@@ -76,7 +71,7 @@ function GM:PlayerInitialSpawn(client)
 			client.ixLoaded = true
 			client:SetData("intro", true)
 
-			for _, v in ipairs(player.GetAll()) do
+			for _, v in player.Iterator() do
 				if (v:GetCharacter()) then
 					v:GetCharacter():Sync(client)
 				end
@@ -143,7 +138,7 @@ function GM:KeyRelease(client, key)
 	end
 end
 
-function GM:CanPlayerInteractItem(client, action, item)
+function GM:CanPlayerInteractItem(client, action, item, data)
 	if (client:IsRestricted()) then
 		return false
 	end
@@ -161,6 +156,26 @@ function GM:CanPlayerInteractItem(client, action, item)
 		return false
 	end
 
+	if (action == "combine") then
+		local other = data[1]
+
+		if (hook.Run("CanPlayerCombineItem", client, item, other) == false) then
+			return false
+		end
+
+		local combineItem = ix.item.instances[other]
+
+		if (combineItem and combineItem.invID != 0) then
+			local combineInv = ix.item.inventories[combineItem.invID]
+
+			if (!combineInv:OnCheckAccess(client)) then
+				return false
+			end
+		else
+			return false
+		end
+	end
+
 	if (isentity(item) and item.ixSteamID and item.ixCharID
 	and item.ixSteamID == client:SteamID() and item.ixCharID != client:GetCharacter():GetID()
 	and !item:GetItemTable().bAllowMultiCharacterInteraction) then
@@ -176,6 +191,10 @@ function GM:CanPlayerDropItem(client, item)
 end
 
 function GM:CanPlayerTakeItem(client, item)
+
+end
+
+function GM:CanPlayerCombineItem(client, item, other)
 
 end
 
@@ -307,14 +326,10 @@ function GM:PlayerSay(client, text)
 		end
 	end
 
-	if (hook.Run("PrePlayerMessageSend", client, chatType, message, anonymous) == false) then
-		return
-	end
-
 	text = ix.chat.Send(client, chatType, message, anonymous)
 
 	if (isstring(text) and chatType != "ic") then
-		ix.log.Add(client, "chat", chatType and chatType:upper() or "??", text)
+		ix.log.Add(client, "chat", chatType and chatType:utf8upper() or "??", text)
 	end
 
 	hook.Run("PostPlayerSay", client, chatType, message, anonymous)
@@ -411,6 +426,22 @@ function GM:PlayerSpawnedVehicle(client, entity)
 	entity:SetNetVar("owner", client:GetCharacter():GetID())
 end
 
+ix.allowedHoldableClasses = {
+	["ix_item"] = true,
+	["ix_money"] = true,
+	["ix_shipment"] = true,
+	["prop_physics"] = true,
+	["prop_physics_override"] = true,
+	["prop_physics_multiplayer"] = true,
+	["prop_ragdoll"] = true
+}
+
+function GM:CanPlayerHoldObject(client, entity)
+	if (ix.allowedHoldableClasses[entity:GetClass()]) then
+		return true
+	end
+end
+
 local voiceDistance = 360000
 local function CalcPlayerCanHearPlayersVoice(listener)
 	if (!IsValid(listener)) then
@@ -420,15 +451,33 @@ local function CalcPlayerCanHearPlayersVoice(listener)
 	listener.ixVoiceHear = listener.ixVoiceHear or {}
 
 	local eyePos = listener:EyePos()
-	for _, speaker in ipairs(player.GetAll()) do
+	for _, speaker in player.Iterator() do
 		local speakerEyePos = speaker:EyePos()
 		listener.ixVoiceHear[speaker] = eyePos:DistToSqr(speakerEyePos) < voiceDistance
 	end
 end
 
 function GM:InitializedConfig()
+	ix.date.Initialize()
+
 	voiceDistance = ix.config.Get("voiceDistance")
 	voiceDistance = voiceDistance * voiceDistance
+end
+
+function GM:VoiceToggled(bAllowVoice)
+	for _, v in player.Iterator() do
+		local uniqueID = v:SteamID64() .. "ixCanHearPlayersVoice"
+
+		if (bAllowVoice) then
+			timer.Create(uniqueID, 0.5, 0, function()
+				CalcPlayerCanHearPlayersVoice(v)
+			end)
+		else
+			timer.Remove(uniqueID)
+
+			v.ixVoiceHear = nil
+		end
+	end
 end
 
 function GM:VoiceDistanceChanged(distance)
@@ -554,6 +603,9 @@ function GM:DoPlayerDeath(client, attacker, damageinfo)
 		end
 	end
 
+	net.Start("ixPlayerDeath")
+	net.Send(client)
+
 	client:SetAction("@respawning", ix.config.Get("spawnTime", 5))
 	client:SetDSP(31)
 end
@@ -672,7 +724,7 @@ function GM:PlayerDisconnected(client)
 		return
 	end
 
-	for _, v in ipairs(player.GetAll()) do
+	for _, v in player.Iterator() do
 		if (!v.ixVoiceHear) then
 			continue
 		end
@@ -709,13 +761,17 @@ function GM:InitPostEntity()
 	end)
 end
 
+function GM:SaveData()
+	ix.date.Save()
+end
+
 function GM:ShutDown()
 	ix.shuttingDown = true
 	ix.config.Save()
 
 	hook.Run("SaveData")
 
-	for _, v in ipairs(player.GetAll()) do
+	for _, v in player.Iterator() do
 		v:SaveData()
 
 		if (v:GetCharacter()) then
@@ -740,8 +796,6 @@ function GM:PlayerDeathSound()
 end
 
 function GM:InitializedSchema()
-	ix.date.Initialize()
-
 	game.ConsoleCommand("sbox_persist ix_"..Schema.folder.."\n")
 end
 
@@ -807,8 +861,7 @@ function GM:PreCleanupMap()
 end
 
 function GM:PostCleanupMap()
-	hook.Run("LoadData")
-	hook.Run("PostLoadData")
+	ix.plugin.RunLoadData()
 end
 
 function GM:CharacterPreSave(character)
@@ -824,7 +877,7 @@ function GM:CharacterPreSave(character)
 end
 
 timer.Create("ixLifeGuard", 1, 0, function()
-	for _, v in ipairs(player.GetAll()) do
+	for _, v in player.Iterator() do
 		if (v:GetCharacter() and v:Alive() and hook.Run("ShouldPlayerDrowned", v) != false) then
 			if (v:WaterLevel() >= 3) then
 				if (!v.drowningTime) then
@@ -897,5 +950,5 @@ function GM:DatabaseConnected()
 		mysql:Think()
 	end)
 
-	hook.Run("LoadData")
+	ix.plugin.RunLoadData()
 end

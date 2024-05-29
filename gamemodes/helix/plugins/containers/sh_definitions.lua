@@ -86,42 +86,6 @@ ix.container.Register("models/props_junk/trashdumpster01a.mdl", {
 	height = 3
 })
 
-ix.container.Register("models/hgn/srp/containers/footlocker_01.mdl", {
-	name = "Footlocker",
-	description = "A small footlocker.",
-	width = 4,
-	height = 3,
-	locksound = "items/ammocrate_close.wav",
-	opensound = "items/ammocrate_open.wav"
-})
-
-ix.container.Register("models/props/cs_militia/footlocker01_closed.mdl", {
-	name = "Wooden crate",
-	description = "A big wooden crate.",
-	width = 5,
-	height = 3,
-	locksound = "items/ammocrate_close.wav",
-	opensound = "items/ammocrate_open.wav"
-})
-
-ix.container.Register("models/hgn/srp/containers/metal_box_04.mdl", {
-	name = "Metal crate",
-	description = "A big metal crate.",
-	width = 6,
-	height = 3,
-	locksound = "items/ammocrate_close.wav",
-	opensound = "items/ammocrate_open.wav"
-})
-
-ix.container.Register("models/hgn/srp/containers/safe_01.mdl", {
-	name = "Safe",
-	description = "A big metal safe.",
-	width = 4,
-	height = 5,
-	locksound = "items/ammocrate_close.wav",
-	opensound = "items/ammocrate_open.wav"
-})
-
 ix.container.Register("models/items/ammocrate_smg1.mdl", {
 	name = "Ammo Crate",
 	description = "A heavy crate that stores ammo.",
